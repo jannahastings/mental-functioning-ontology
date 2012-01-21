@@ -412,6 +412,15 @@ Source: http://www.jbiomedsem.com/content/1/1/10.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MF_0000019 -->
+
+    <owl:Class rdf:about="&obo;MF_0000019">
+        <rdfs:label>perception</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000008"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MF_0000020 -->
 
     <owl:Class rdf:about="&obo;MF_0000020">
@@ -553,6 +562,15 @@ Source:
 http://www.jbiomedsem.com/content/1/1/10
 </obo:IAO_0000115>
         <rdfs:comment>(from OGMS)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000027 -->
+
+    <owl:Class rdf:about="&obo;MF_0000027">
+        <rdfs:label>planning</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000008"/>
     </owl:Class>
     
 
@@ -847,6 +865,35 @@ http://www.jbiomedsem.com/content/1/1/10
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MF_0000044 -->
+
+    <owl:Class rdf:about="&obo;MF_0000044">
+        <rdfs:label>sensory perception</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000019"/>
+        <rdfs:comment>This branch is (to be) MIREOTED in from the Gene Ontology (GO). IDs are preserved. If, at a later stage, a need emerges to maintain this branch separately within MFO, special care will need to be taken to coordinate the ID space in the branch. </rdfs:comment>
+        <rdfs:seeAlso>GO:0007600, sensory perception, defined as `The series of events required for an organism to receive a sensory stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process.&#39;</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000045 -->
+
+    <owl:Class rdf:about="&obo;MF_0000045">
+        <rdfs:label>wanting</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000008"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000046 -->
+
+    <owl:Class rdf:about="&obo;MF_0000046">
+        <rdfs:label>addiction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000005"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MF_0000047 -->
 
     <owl:Class rdf:about="&obo;MF_0000047">
@@ -858,6 +905,42 @@ its genetic make-up and environment.
 Source:
 http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
         <rdfs:comment>(from OGMS)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000048 -->
+
+    <owl:Class rdf:about="&obo;MF_0000048">
+        <rdfs:label>bipolar</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000005"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000049 -->
+
+    <owl:Class rdf:about="&obo;MF_0000049">
+        <rdfs:label>depression</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000005"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000050 -->
+
+    <owl:Class rdf:about="&obo;MF_0000050">
+        <rdfs:label>bipolar I</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000051 -->
+
+    <owl:Class rdf:about="&obo;MF_0000051">
+        <rdfs:label>bipolar II</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000048"/>
     </owl:Class>
     
 
