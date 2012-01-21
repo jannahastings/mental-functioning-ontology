@@ -24,13 +24,13 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
     <owl:Ontology rdf:about="&obo;MF">
-        <dc:contributor>Mark Jensen</dc:contributor>
-        <dc:contributor>Werner Ceusters</dc:contributor>
         <dc:title>The Ontology of Mental Functioning (MF) was first described in the publication available at http://www.jbiomedsem.com/content/1/1/10 entitled &#39;Foundations for a realist ontology of mental disease&#39; (Barry Smith and Werner Ceusters). </dc:title>
-        <rdfs:comment>This OWL version of the MF ontology was created by Janna Hastings</rdfs:comment>
-        <dc:contributor>Barry Smith</dc:contributor>
         <dc:contributor>Janna Hastings</dc:contributor>
+        <dc:contributor>Werner Ceusters</dc:contributor>
+        <rdfs:comment>This OWL version of the MF ontology was originally created by Janna Hastings and is maintained by all committers to the MF ontology project. </rdfs:comment>
+        <dc:contributor>Barry Smith</dc:contributor>
         <dc:description>The Mental Functioning Ontology is an overarching ontology for all aspects of mental functioning, founded on the Basic Formal Ontology (BFO) and related to the Ontology for General Medical Science (OGMS).</dc:description>
+        <dc:contributor>Mark Jensen</dc:contributor>
         <owl:imports rdf:resource="&obo;iao.owl"/>
         <owl:imports rdf:resource="http://www.ifomis.org/bfo/1.1"/>
     </owl:Ontology>
@@ -276,6 +276,23 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MF_0000008 -->
+
+    <owl:Class rdf:about="&obo;MF_0000008">
+        <rdfs:label>cognitive process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000020"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MF#hasParticipant"/>
+                <owl:someValuesFrom rdf:resource="&obo;MF_0000031"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A mental process that creates, modifies or has as participant some cognitive representation.</obo:IAO_0000115>
+        <rdfs:seeAlso>GO:0050890, cognition, defined as  `The operation of the mind by which an organism becomes aware of objects of thought or perception; it includes the mental activities associated with thinking, learning, and memory.&#39; </rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MF_0000009 -->
 
     <owl:Class rdf:about="&obo;MF_0000009">
@@ -300,11 +317,11 @@ http://www.jbiomedsem.com/content/1/1/10.</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;MF_0000010">
         <rdfs:label rdf:datatype="&xsd;string">Disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000012"/>
+        <rdfs:comment>(from OGMS)</rdfs:comment>
         <obo:IAO_0000115>A combination of BODILY COMPONENTS of or in
 an ORGANISM that is clinically abnormal.
 Source:
 http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
-        <rdfs:comment>(from OGMS)</rdfs:comment>
     </owl:Class>
     
 
@@ -341,6 +358,15 @@ Source: http://www.jbiomedsem.com/content/1/1/10.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MF_0000013 -->
+
+    <owl:Class rdf:about="&obo;MF_0000013">
+        <rdfs:label>thinking</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000008"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MF_0000014 -->
 
     <owl:Class rdf:about="&obo;MF_0000014">
@@ -364,6 +390,24 @@ Source: http://www.jbiomedsem.com/content/1/1/10.</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;MF_0000016">
         <rdfs:label rdf:datatype="&xsd;string">Human Being</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000017 -->
+
+    <owl:Class rdf:about="&obo;MF_0000017">
+        <rdfs:label>learning</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000008"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000018 -->
+
+    <owl:Class rdf:about="&obo;MF_0000018">
+        <rdfs:label>memory</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000008"/>
     </owl:Class>
     
 
@@ -598,11 +642,11 @@ ORGANISM.</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="&obo;MF_0000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>(from OGMS)</rdfs:comment>
         <obo:IAO_0000115>COGNITIVE REPRESENTATION about a BODILY
 FEATURE resulting from an act of perception.
 Source:
 http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
+        <rdfs:comment>(from OGMS)</rdfs:comment>
     </owl:Class>
     
 
@@ -666,14 +710,14 @@ representations. Source: http://www.jbiomedsem.com/content/1/1/10</obo:IAO_00001
         <rdfs:subClassOf rdf:resource="&obo;MF_0000035"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MF#isAbout"/>
-                <owl:someValuesFrom rdf:resource="&obo;MF_0000009"/>
+                <owl:onProperty rdf:resource="&obo;MF#partOf"/>
+                <owl:someValuesFrom rdf:resource="&obo;MF_0000034"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MF#partOf"/>
-                <owl:someValuesFrom rdf:resource="&obo;MF_0000034"/>
+                <owl:onProperty rdf:resource="&obo;MF#isAbout"/>
+                <owl:someValuesFrom rdf:resource="&obo;MF_0000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>REPRESENTATIONAL UNIT which
@@ -808,12 +852,12 @@ http://www.jbiomedsem.com/content/1/1/10
     <owl:Class rdf:about="&obo;MF_0000047">
         <rdfs:label rdf:datatype="&xsd;string">Phenotype</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000009"/>
-        <rdfs:comment>(from OGMS)</rdfs:comment>
         <obo:IAO_0000115>a combination of one or more BODILY FEATURES
 of an ORGANISM determined by the interaction of
 its genetic make-up and environment.
 Source:
 http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
+        <rdfs:comment>(from OGMS)</rdfs:comment>
     </owl:Class>
     
 
