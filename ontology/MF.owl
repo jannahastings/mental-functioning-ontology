@@ -55,17 +55,6 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
     // Object Properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -154,7 +143,7 @@
     <!-- http://purl.obolibrary.org/obo/MF_0000000 -->
 
     <owl:Class rdf:about="&obo;MF_0000000">
-        <rdfs:label rdf:datatype="&xsd;string">Mental Functioning Related Anatomical Structure</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">mental functioning related anatomical structure</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000007"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -173,7 +162,7 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MF_0000001 -->
 
     <owl:Class rdf:about="&obo;MF_0000001">
-        <rdfs:label rdf:datatype="&xsd;string">Disposition to be agentOf Mental Process</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">disposition to be agent of mental process</rdfs:label>
         <rdfs:subClassOf rdf:resource="&snap;Disposition"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -188,7 +177,7 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MF_0000002 -->
 
     <owl:Class rdf:about="&obo;MF_0000002">
-        <rdfs:label rdf:datatype="&xsd;string">Disposition to lead to Pathological Mental Processes</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">disposition to lead to pathological mental processes</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000006"/>
     </owl:Class>
     
@@ -197,18 +186,18 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MF_0000003 -->
 
     <owl:Class rdf:about="&obo;MF_0000003">
-        <rdfs:label rdf:datatype="&xsd;string">Behavior Inducing State</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">behavior inducing state</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000009"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MF#participantOf"/>
-                <owl:someValuesFrom rdf:resource="&obo;MF_0000022"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;MF#inheresIn"/>
                 <owl:someValuesFrom rdf:resource="&obo;MF_0000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MF#participantOf"/>
+                <owl:someValuesFrom rdf:resource="&obo;MF_0000022"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>BODILY QUALITY inhering in a MENTAL
@@ -223,7 +212,7 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MF_0000004 -->
 
     <owl:Class rdf:about="&obo;MF_0000004">
-        <rdfs:label rdf:datatype="&xsd;string">Mental Disorder</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">mental disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000010"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -242,7 +231,7 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MF_0000005 -->
 
     <owl:Class rdf:about="&obo;MF_0000005">
-        <rdfs:label rdf:datatype="&xsd;string">Mental Disease</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">mental disease</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000002"/>
         <obo:IAO_0000115>a DISEASE which is a DISPOSITION to undergo
 PATHOLOGICAL MENTAL PROCESSES.
@@ -255,7 +244,7 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MF_0000006 -->
 
     <owl:Class rdf:about="&obo;MF_0000006">
-        <rdfs:label rdf:datatype="&xsd;string">Disposition to lead to Pathological Processes</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">disposition to lead to pathological processes</rdfs:label>
         <rdfs:subClassOf rdf:resource="&snap;Disposition"/>
     </owl:Class>
     
@@ -264,7 +253,7 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MF_0000007 -->
 
     <owl:Class rdf:about="&obo;MF_0000007">
-        <rdfs:label rdf:datatype="&xsd;string">Anatomical Structure</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">anatomical structure</rdfs:label>
         <rdfs:subClassOf rdf:resource="&snap;IndependentContinuant"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -296,7 +285,7 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MF_0000009 -->
 
     <owl:Class rdf:about="&obo;MF_0000009">
-        <rdfs:label rdf:datatype="&xsd;string">Bodily Quality</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">bodily quality</rdfs:label>
         <rdfs:subClassOf rdf:resource="&snap;Quality"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -315,7 +304,7 @@ http://www.jbiomedsem.com/content/1/1/10.</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MF_0000010 -->
 
     <owl:Class rdf:about="&obo;MF_0000010">
-        <rdfs:label rdf:datatype="&xsd;string">Disorder</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000012"/>
         <rdfs:comment>(from OGMS)</rdfs:comment>
         <obo:IAO_0000115>A combination of BODILY COMPONENTS of or in
@@ -329,7 +318,7 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MF_0000011 -->
 
     <owl:Class rdf:about="&obo;MF_0000011">
-        <rdfs:label rdf:datatype="&xsd;string">Disease</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">disease</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000006"/>
         <obo:IAO_0000115>a DISPOSITION (i) to undergo PATHOLOGICAL
 PROCESSES that (ii) exists in an ORGANISM
@@ -345,7 +334,7 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MF_0000012 -->
 
     <owl:Class rdf:about="&obo;MF_0000012">
-        <rdfs:label rdf:datatype="&xsd;string">Bodily Component</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">boodily component</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000014"/>
         <obo:IAO_0000115>MATERIAL OBJECT within or on the surface of an
 ORGANISM, including ANATOMICAL
@@ -370,7 +359,7 @@ Source: http://www.jbiomedsem.com/content/1/1/10.</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MF_0000014 -->
 
     <owl:Class rdf:about="&obo;MF_0000014">
-        <rdfs:label rdf:datatype="&xsd;string">Material Object</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">material object</rdfs:label>
         <rdfs:subClassOf rdf:resource="&snap;IndependentContinuant"/>
     </owl:Class>
     
@@ -379,7 +368,7 @@ Source: http://www.jbiomedsem.com/content/1/1/10.</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MF_0000015 -->
 
     <owl:Class rdf:about="&obo;MF_0000015">
-        <rdfs:label rdf:datatype="&xsd;string">Organism</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">organism</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000014"/>
     </owl:Class>
     
@@ -388,7 +377,7 @@ Source: http://www.jbiomedsem.com/content/1/1/10.</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MF_0000016 -->
 
     <owl:Class rdf:about="&obo;MF_0000016">
-        <rdfs:label rdf:datatype="&xsd;string">Human Being</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">human being</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000015"/>
     </owl:Class>
     
@@ -621,7 +610,7 @@ http://www.jbiomedsem.com/content/1/1/10
     <!-- http://purl.obolibrary.org/obo/MF_0000030 -->
 
     <owl:Class rdf:about="&obo;MF_0000030">
-        <rdfs:label rdf:datatype="&xsd;string">Representation</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">representation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&snap;DependentContinuant"/>
         <obo:IAO_0000115>DEPENDENT CONTINUANT which is about a
 portion of reality.
@@ -634,7 +623,7 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MF_0000031 -->
 
     <owl:Class rdf:about="&obo;MF_0000031">
-        <rdfs:label rdf:datatype="&xsd;string">Cognitive Representation</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">cognitive representation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000030"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -652,7 +641,7 @@ ORGANISM.</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MF_0000032 -->
 
     <owl:Class rdf:about="&obo;MF_0000032">
-        <rdfs:label rdf:datatype="&xsd;string">Observation</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">observation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000031"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -672,7 +661,7 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MF_0000033 -->
 
     <owl:Class rdf:about="&obo;MF_0000033">
-        <rdfs:label rdf:datatype="&xsd;string">Diagnosis</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">diagnosis</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000030"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -694,7 +683,7 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MF_0000034 -->
 
     <owl:Class rdf:about="&obo;MF_0000034">
-        <rdfs:label rdf:datatype="&xsd;string">Disease Picture</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">disease picture</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000030"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -713,7 +702,7 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MF_0000035 -->
 
     <owl:Class rdf:about="&obo;MF_0000035">
-        <rdfs:label rdf:datatype="&xsd;string">Representational Unit</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">representational Unit</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000030"/>
         <obo:IAO_0000115>REPRESENTATION none of whose proper parts are themselves
 representations. Source: http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
@@ -724,7 +713,7 @@ representations. Source: http://www.jbiomedsem.com/content/1/1/10</obo:IAO_00001
     <!-- http://purl.obolibrary.org/obo/MF_0000036 -->
 
     <owl:Class rdf:about="&obo;MF_0000036">
-        <rdfs:label rdf:datatype="&xsd;string">Disease Picture Component</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">disease picture component</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000035"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -752,7 +741,7 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MF_0000037 -->
 
     <owl:Class rdf:about="&obo;MF_0000037">
-        <rdfs:label rdf:datatype="&xsd;string">Clinical Picture</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">clinical picture</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000030"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -774,7 +763,7 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MF_0000038 -->
 
     <owl:Class rdf:about="&obo;MF_0000038">
-        <rdfs:label rdf:datatype="&xsd;string">Marker features</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">marker features</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000030"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -794,7 +783,7 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MF_0000039 -->
 
     <owl:Class rdf:about="&obo;MF_0000039">
-        <rdfs:label rdf:datatype="&xsd;string">Affective Representation</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">affective representation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000031"/>
         <obo:IAO_0000115>COGNITIVE REPRESENTATION
 sustained by an ORGANISM about its own emotions.
@@ -807,7 +796,7 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MF_0000040 -->
 
     <owl:Class rdf:about="&obo;MF_0000040">
-        <rdfs:label rdf:datatype="&xsd;string">Diagnosis of Mental Disease</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">diagnosis of mental disease</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000033"/>
         <obo:IAO_0000115>DIAGNOSIS asserting the
 presence of an instance of MENTAL DISEASE in a given ORGANISM.
@@ -820,7 +809,7 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MF_0000041 -->
 
     <owl:Class rdf:about="&obo;MF_0000041">
-        <rdfs:label rdf:datatype="&xsd;string">Manifestation of a Mental Disease</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">manifestation of a mental disease</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000009"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -840,7 +829,7 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MF_0000042 -->
 
     <owl:Class rdf:about="&obo;MF_0000042">
-        <rdfs:label rdf:datatype="&xsd;string">Disease Phenotype</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">disease phenotype</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000043"/>
         <obo:IAO_0000115>a CLINICAL PHENOTYPE that is characteristic of a
 single DISEASE.
@@ -854,7 +843,7 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MF_0000043 -->
 
     <owl:Class rdf:about="&obo;MF_0000043">
-        <rdfs:label rdf:datatype="&xsd;string">Clinical Phenotype</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">clinical phenotype</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000047"/>
         <obo:IAO_0000115>a clinically abnormal PHENOTYPE.
 Source:
@@ -897,7 +886,7 @@ http://www.jbiomedsem.com/content/1/1/10
     <!-- http://purl.obolibrary.org/obo/MF_0000047 -->
 
     <owl:Class rdf:about="&obo;MF_0000047">
-        <rdfs:label rdf:datatype="&xsd;string">Phenotype</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">phenotype</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000009"/>
         <obo:IAO_0000115>a combination of one or more BODILY FEATURES
 of an ORGANISM determined by the interaction of
@@ -986,5 +975,5 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
 
 
 
-<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.1.0.1642) http://owlapi.sourceforge.net -->
 
