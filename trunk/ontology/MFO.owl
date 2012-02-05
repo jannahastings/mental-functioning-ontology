@@ -945,6 +945,16 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MF_0000052 -->
+
+    <owl:Class rdf:about="&obo;MF_0000052">
+        <rdfs:label>substance addiction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000046"/>
+        <obo:IAO_0000115>When an individual persists in use of alcohol or other drugs despite problems related to use of the substance, substance dependence may be diagnosed. Compulsive and repetitive use may result in tolerance to the effect of the drug and withdrawal symptoms when use is reduced or stopped. (DSM-IV, American Psychiatric Association, 2000)</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://www.ifomis.org/bfo/1.1/snap#Disposition -->
 
     <owl:Class rdf:about="&snap;Disposition"/>
