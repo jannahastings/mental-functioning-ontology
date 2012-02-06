@@ -26,7 +26,7 @@
     <owl:Ontology rdf:about="&obo;MFO">
 
         <rdfs:comment>This file maintained for ID space compatibility. The Mental Functioning Ontology has ID space MF but earlier versions used MFO. </rdfs:comment>
-        <owl:imports rdf:resource="&obo;MF"/>
+        <owl:imports rdf:resource="&obo;MF.owl"/>
 
     </owl:Ontology>
     
