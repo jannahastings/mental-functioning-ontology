@@ -151,10 +151,8 @@
                 <owl:someValuesFrom rdf:resource="&obo;MF_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>ANATOMICAL STRUCTURE in which there inheres the DISPOSITION to be the agent
-of a MENTAL PROCESS.
-Source:
-http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
+        <obo:IAO_0000115>ANATOMICAL STRUCTURE in which there inheres the DISPOSITION to be the agent of a MENTAL PROCESS.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -200,11 +198,8 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="&obo;MF_0000022"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>BODILY QUALITY inhering in a MENTAL
-FUNCTIONING RELATED ANATOMICAL STRUCTURE which leads to BEHAVIOR of some
-specific sort.
-Source:
-http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <obo:IAO_0000115>BODILY QUALITY inhering in a MENTAL FUNCTIONING RELATED ANATOMICAL STRUCTURE which leads to BEHAVIOR of some specific sort.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -220,10 +215,8 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="&obo;MF_0000000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>DISORDER in a MENTAL FUNCTIONING
-RELATED ANATOMICAL STRUCTURE.
-Source:
-http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <obo:IAO_0000115>DISORDER in a MENTAL FUNCTIONING RELATED ANATOMICAL STRUCTURE.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -293,9 +286,8 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="&obo;MF_0000012"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>QUALITY inhering in a BODILY COMPONENT.
-Source:
-http://www.jbiomedsem.com/content/1/1/10.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <obo:IAO_0000115>QUALITY inhering in a BODILY COMPONENT.</obo:IAO_0000115>
         <rdfs:comment>(from OGMS)</rdfs:comment>
     </owl:Class>
     
@@ -307,10 +299,8 @@ http://www.jbiomedsem.com/content/1/1/10.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="&xsd;string">disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000012"/>
         <rdfs:comment>(from OGMS)</rdfs:comment>
-        <obo:IAO_0000115>A combination of BODILY COMPONENTS of or in
-an ORGANISM that is clinically abnormal.
-Source:
-http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
+        <obo:IAO_0000115>A combination of BODILY COMPONENTS of or in an ORGANISM that is clinically abnormal.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -336,12 +326,8 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;MF_0000012">
         <rdfs:label rdf:datatype="&xsd;string">boodily component</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000014"/>
-        <obo:IAO_0000115>MATERIAL OBJECT within or on the surface of an
-ORGANISM, including ANATOMICAL
-STRUCTURES, body flora, pathogens, toxins, and
-their combinations, potentially including also the
-organism as a whole.
-Source: http://www.jbiomedsem.com/content/1/1/10.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <obo:IAO_0000115>MATERIAL OBJECT within or on the surface of an ORGANISM, including ANATOMICAL STRUCTURES, body flora, pathogens, toxins, and their combinations, potentially including also the organism as a whole.</obo:IAO_0000115>
         <rdfs:comment>(from OGMS)</rdfs:comment>
     </owl:Class>
     
@@ -413,25 +399,22 @@ Source: http://www.jbiomedsem.com/content/1/1/10.</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MF_0000020 -->
 
     <owl:Class rdf:about="&obo;MF_0000020">
-        <rdfs:label rdf:datatype="&xsd;string">Mental Process</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">mental process</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000026"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MF#realizationOf"/>
-                <owl:someValuesFrom rdf:resource="&obo;MF_0000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;MF#hasParticipant"/>
                 <owl:someValuesFrom rdf:resource="&obo;MF_0000003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>BODILY PROCESS which brings into being,
-sustains or modifies a COGNITIVE REPRESENTATION or a BEHAVIOR INDUCING
-STATE.
-Source:
-http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MF#realizationOf"/>
+                <owl:someValuesFrom rdf:resource="&obo;MF_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>BODILY PROCESS which brings into being, sustains or modifies a COGNITIVE REPRESENTATION or a BEHAVIOR INDUCING STATE.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -439,7 +422,7 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MF_0000021 -->
 
     <owl:Class rdf:about="&obo;MF_0000021">
-        <rdfs:label rdf:datatype="&xsd;string">Interpersonal Process</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">interpersonal process</rdfs:label>
         <rdfs:subClassOf rdf:resource="&span;Process"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -448,10 +431,8 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
                 <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minQualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>PROCESS in which at least two HUMAN
-BEINGS are agents.
-Source:
-http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <obo:IAO_0000115>PROCESS in which at least two HUMAN BEINGS are agents.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -459,7 +440,7 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MF_0000022 -->
 
     <owl:Class rdf:about="&obo;MF_0000022">
-        <rdfs:label rdf:datatype="&xsd;string">Behavior</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">behavior</rdfs:label>
         <rdfs:subClassOf rdf:resource="&span;Process"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -467,13 +448,8 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="&obo;MF_0000015"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a PROCESS having PROCESSES as parts in which an
-ORGANISM participates as agent in response to external or internal stimuli and
-following some pattern which is dependent upon some combination of that
-ORGANISM’s internal state and external conditions. (Derived from the Gene
-Ontology).
-Source:
-http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
+        <obo:IAO_0000115>A PROCESS having PROCESSES as parts in which an ORGANISM participates as agent in response to external or internal stimuli and following some pattern which is dependent upon some combination of that ORGANISM’s internal state and external conditions. (Derived from the Gene Ontology).</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -481,7 +457,7 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MF_0000023 -->
 
     <owl:Class rdf:about="&obo;MF_0000023">
-        <rdfs:label rdf:datatype="&xsd;string">Interpersonal Behavior</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">interpersonal behavior</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000022"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -489,10 +465,8 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="&obo;MF_0000021"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>BEHAVIOR having INTERPERSONAL
-PROCESSES as parts, each involving the same instances of HUMAN BEING.
-Source:
-http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <obo:IAO_0000115>BEHAVIOR having INTERPERSONAL PROCESSES as parts, each involving the same instances of HUMAN BEING.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -500,7 +474,7 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MF_0000024 -->
 
     <owl:Class rdf:about="&obo;MF_0000024">
-        <rdfs:label rdf:datatype="&xsd;string">Pathological Mental Process</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">pathological mental process</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000020"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -508,10 +482,8 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="&obo;MF_0000004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>PATHOLOGICAL PROCESS
-which is the manifestation of a MENTAL DISORDER.
-Source:
-http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
+        <obo:IAO_0000115>PATHOLOGICAL PROCESS which is the manifestation of a MENTAL DISORDER.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -519,7 +491,7 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MF_0000025 -->
 
     <owl:Class rdf:about="&obo;MF_0000025">
-        <rdfs:label rdf:datatype="&xsd;string">Mental Disease Course</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">mental disease course</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000029"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -527,9 +499,8 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="&obo;MF_0000024"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>DISEASE COURSE of a MENTAL DISEASE.
-Source:
-http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <obo:IAO_0000115>DISEASE COURSE of a MENTAL DISEASE.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -537,7 +508,7 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MF_0000026 -->
 
     <owl:Class rdf:about="&obo;MF_0000026">
-        <rdfs:label rdf:datatype="&xsd;string">Bodily Process</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">bodily process</rdfs:label>
         <rdfs:subClassOf rdf:resource="&span;Process"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -545,10 +516,8 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="&obo;MF_0000012"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>PROCESS in which at least one BODILY
-COMPONENT of an ORGANISM participates.
-Source:
-http://www.jbiomedsem.com/content/1/1/10
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <obo:IAO_0000115>PROCESS in which at least one BODILY COMPONENT of an ORGANISM participates.
 </obo:IAO_0000115>
         <rdfs:comment>(from OGMS)</rdfs:comment>
     </owl:Class>
@@ -567,7 +536,7 @@ http://www.jbiomedsem.com/content/1/1/10
     <!-- http://purl.obolibrary.org/obo/MF_0000028 -->
 
     <owl:Class rdf:about="&obo;MF_0000028">
-        <rdfs:label rdf:datatype="&xsd;string">Pathological Process</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">pathological process</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000026"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -575,12 +544,9 @@ http://www.jbiomedsem.com/content/1/1/10
                 <owl:someValuesFrom rdf:resource="&obo;MF_0000010"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <obo:IAO_0000115>A BODILY PROCESS that is a manifestation of a DISORDER.</obo:IAO_0000115>
         <rdfs:comment>(from OGMS)</rdfs:comment>
-        <obo:IAO_0000115>a BODILY PROCESS that is a manifestation of a
-DISORDER.
-Source:
-http://www.jbiomedsem.com/content/1/1/10
-</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -588,7 +554,7 @@ http://www.jbiomedsem.com/content/1/1/10
     <!-- http://purl.obolibrary.org/obo/MF_0000029 -->
 
     <owl:Class rdf:about="&obo;MF_0000029">
-        <rdfs:label rdf:datatype="&xsd;string">Disease Course</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">disease course</rdfs:label>
         <rdfs:subClassOf rdf:resource="&span;Process"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -597,12 +563,8 @@ http://www.jbiomedsem.com/content/1/1/10
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>(from OGMS)</rdfs:comment>
-        <obo:IAO_0000115>the totality of all PROCESSES through which a
-given DISEASE instance is realized.
-Source:
-http://www.jbiomedsem.com/content/1/1/10
-
-</obo:IAO_0000115>
+        <obo:IAO_0000115>The totality of all PROCESSES through which a given DISEASE instance is realized.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -612,10 +574,8 @@ http://www.jbiomedsem.com/content/1/1/10
     <owl:Class rdf:about="&obo;MF_0000030">
         <rdfs:label rdf:datatype="&xsd;string">representation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&snap;DependentContinuant"/>
-        <obo:IAO_0000115>DEPENDENT CONTINUANT which is about a
-portion of reality.
-Source:
-http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <obo:IAO_0000115>DEPENDENT CONTINUANT which is about a portion of reality.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -631,9 +591,8 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="&obo;MF_0000007"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>REPRESENTATION which
-specifically depends on an ANATOMICAL STRUCTURE in the cognitive system of an
-ORGANISM.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <obo:IAO_0000115>REPRESENTATION which specifically depends on an ANATOMICAL STRUCTURE in the cognitive system of an ORGANISM.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -649,11 +608,9 @@ ORGANISM.</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="&obo;MF_0000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>COGNITIVE REPRESENTATION about a BODILY
-FEATURE resulting from an act of perception.
-Source:
-http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
+        <obo:IAO_0000115>COGNITIVE REPRESENTATION about a BODILY FEATURE resulting from an act of perception.</obo:IAO_0000115>
         <rdfs:comment>(from OGMS)</rdfs:comment>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -669,12 +626,8 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="&obo;MF_0000011"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>REPRESENTATION asserting the presence of an
-instance of DISEASE in a given ORGANISM
-resulting from an interpretive process that has as
-input a CLINICAL PICTURE of that ORGANISM.
-Source:
-http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <obo:IAO_0000115>REPRESENTATION asserting the presence of an instance of DISEASE in a given ORGANISM resulting from an interpretive process that has as input a CLINICAL PICTURE of that ORGANISM.</obo:IAO_0000115>
         <rdfs:comment>(from OGMS)</rdfs:comment>
     </owl:Class>
     
@@ -691,10 +644,8 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="&obo;MF_0000042"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>REPRESENTATION of a DISEASE PHENOTYPE
-concretized in some information artifact.
-Source:
-http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <obo:IAO_0000115>REPRESENTATION of a DISEASE PHENOTYPE concretized in some information artifact.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -702,10 +653,10 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MF_0000035 -->
 
     <owl:Class rdf:about="&obo;MF_0000035">
-        <rdfs:label rdf:datatype="&xsd;string">representational Unit</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">representational unit</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000030"/>
-        <obo:IAO_0000115>REPRESENTATION none of whose proper parts are themselves
-representations. Source: http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <obo:IAO_0000115>REPRESENTATION none of whose proper parts are themselves representations.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -717,23 +668,18 @@ representations. Source: http://www.jbiomedsem.com/content/1/1/10</obo:IAO_00001
         <rdfs:subClassOf rdf:resource="&obo;MF_0000035"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MF#partOf"/>
-                <owl:someValuesFrom rdf:resource="&obo;MF_0000034"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;MF#isAbout"/>
                 <owl:someValuesFrom rdf:resource="&obo;MF_0000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>REPRESENTATIONAL UNIT which
-is a part of some DISEASE PICTURE and which either (1) represents (or is believed to
-represent) a BODILY FEATURE that is believed to be manifested in the DISEASE
-PHENOTYPE represented by the DISEASE PICTURE of which it is a component or (2)
-expresses a negative finding. 
-Source:
-http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MF#partOf"/>
+                <owl:someValuesFrom rdf:resource="&obo;MF_0000034"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>REPRESENTATIONAL UNIT which is a part of some DISEASE PICTURE and which either (1) represents (or is believed to represent) a BODILY FEATURE that is believed to be manifested in the DISEASE PHENOTYPE represented by the DISEASE PICTURE of which it is a component or (2) expresses a negative finding.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -749,13 +695,9 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="&obo;MF_0000043"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A CLINICAL PICTURE is a REPRESENTATION of a CLINICAL PHENOTYPE
-that is inferred from the combination of laboratory,
-image and clinical findings about a given
-ORGANISM.
-Source:
-http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
         <rdfs:comment>(from OGMS)</rdfs:comment>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <obo:IAO_0000115>A CLINICAL PICTURE is a REPRESENTATION of a CLINICAL PHENOTYPE that is inferred from the combination of laboratory, image and clinical findings about a given ORGANISM.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -771,11 +713,8 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="&obo;MF_0000036"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>REPRESENTATION which is a collection of DISEASE PICTURE COMPONENTS which
-are characteristic for DISEASE X (where ‘X’ serves as placeholder for some disease
-name).
-Source:
-http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <obo:IAO_0000115>REPRESENTATION which is a collection of DISEASE PICTURE COMPONENTS which are characteristic for DISEASE X (where ‘X’ serves as placeholder for some disease name).</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -785,10 +724,8 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;MF_0000039">
         <rdfs:label rdf:datatype="&xsd;string">affective representation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000031"/>
-        <obo:IAO_0000115>COGNITIVE REPRESENTATION
-sustained by an ORGANISM about its own emotions.
-Source:
-http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
+        <obo:IAO_0000115>COGNITIVE REPRESENTATION sustained by an ORGANISM about its own emotions.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -798,10 +735,8 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;MF_0000040">
         <rdfs:label rdf:datatype="&xsd;string">diagnosis of mental disease</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000033"/>
-        <obo:IAO_0000115>DIAGNOSIS asserting the
-presence of an instance of MENTAL DISEASE in a given ORGANISM.
-Source:
-http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
+        <obo:IAO_0000115>DIAGNOSIS asserting the presence of an instance of MENTAL DISEASE in a given ORGANISM.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -817,11 +752,8 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="&obo;MF_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a BODILY FEATURE of
-an ORGANISM that is (a) a deviation from clinical normality that is the realization of
-a MENTAL DISEASE and is (b) observable.
-Source:
-http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <obo:IAO_0000115>A BODILY FEATURE of an ORGANISM that is (a) a deviation from clinical normality that is the realization of a MENTAL DISEASE and is (b) observable.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -831,10 +763,8 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;MF_0000042">
         <rdfs:label rdf:datatype="&xsd;string">disease phenotype</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000043"/>
-        <obo:IAO_0000115>a CLINICAL PHENOTYPE that is characteristic of a
-single DISEASE.
-Source:
-http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
+        <obo:IAO_0000115>A CLINICAL PHENOTYPE that is characteristic of a single DISEASE.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
         <rdfs:comment>(from OGMS)</rdfs:comment>
     </owl:Class>
     
@@ -845,10 +775,8 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;MF_0000043">
         <rdfs:label rdf:datatype="&xsd;string">clinical phenotype</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000047"/>
-        <obo:IAO_0000115>a clinically abnormal PHENOTYPE.
-Source:
-http://www.jbiomedsem.com/content/1/1/10
-</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <obo:IAO_0000115>A clinically abnormal PHENOTYPE.</obo:IAO_0000115>
         <rdfs:comment>(from OGMS)</rdfs:comment>
     </owl:Class>
     
@@ -888,12 +816,9 @@ http://www.jbiomedsem.com/content/1/1/10
     <owl:Class rdf:about="&obo;MF_0000047">
         <rdfs:label rdf:datatype="&xsd;string">phenotype</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000009"/>
-        <obo:IAO_0000115>a combination of one or more BODILY FEATURES
-of an ORGANISM determined by the interaction of
-its genetic make-up and environment.
-Source:
-http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
+        <obo:IAO_0000115>A combination of one or more BODILY FEATURES of an ORGANISM determined by the interaction of its genetic make-up and environment.</obo:IAO_0000115>
         <rdfs:comment>(from OGMS)</rdfs:comment>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
     </owl:Class>
     
 
