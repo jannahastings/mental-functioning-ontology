@@ -929,7 +929,7 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
 
     <owl:Class rdf:about="&obo;MF_0000059">
         <rdfs:label>heroin addiction</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000052"/>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000065"/>
     </owl:Class>
     
 
@@ -966,6 +966,51 @@ http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;MF_0000063">
         <rdfs:label>addiction to use of a sunbed</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000053"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000064 -->
+
+    <owl:Class rdf:about="&obo;MF_0000064">
+        <rdfs:label>internet addiction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000053"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000065 -->
+
+    <owl:Class rdf:about="&obo;MF_0000065">
+        <rdfs:label>opiate addiction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000052"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000066 -->
+
+    <owl:Class rdf:about="&obo;MF_0000066">
+        <rdfs:label>benzodiazepine addiction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000052"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000067 -->
+
+    <owl:Class rdf:about="&obo;MF_0000067">
+        <rdfs:label>diazepam addiction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000066"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000068 -->
+
+    <owl:Class rdf:about="&obo;MF_0000068">
+        <rdfs:label>morphine addiction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000065"/>
     </owl:Class>
     
 
