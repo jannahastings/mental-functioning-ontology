@@ -176,14 +176,14 @@
         <rdfs:subClassOf rdf:resource="&obo;MF_0000009"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MF#participantOf"/>
-                <owl:someValuesFrom rdf:resource="&obo;MF_0000022"/>
+                <owl:onProperty rdf:resource="&obo;MF#inheresIn"/>
+                <owl:someValuesFrom rdf:resource="&obo;MF_0000000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MF#inheresIn"/>
-                <owl:someValuesFrom rdf:resource="&obo;MF_0000000"/>
+                <owl:onProperty rdf:resource="&obo;MF#participantOf"/>
+                <owl:someValuesFrom rdf:resource="&obo;MF_0000022"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
@@ -200,7 +200,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;MF#partOf"/>
-                <owl:someValuesFrom rdf:resource="&obo;MF_0000015"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGMS_0000087"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>*** Need to Fix ***
@@ -265,21 +265,11 @@ If truly needed, this class doesn&#39;t belong in MF.</rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MF_0000015 -->
-
-    <owl:Class rdf:about="&obo;MF_0000015">
-        <rdfs:label rdf:datatype="&xsd;string">extended organism</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
-        <rdfs:comment>From OGMS: http://purl.obolibrary.org/obo/OGMS_0000087</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MF_0000016 -->
 
     <owl:Class rdf:about="&obo;MF_0000016">
         <rdfs:label rdf:datatype="&xsd;string">human being</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000015"/>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000087"/>
     </owl:Class>
     
 
@@ -360,7 +350,7 @@ If truly needed, this class doesn&#39;t belong in MF.</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;MF#hasAgent"/>
-                <owl:someValuesFrom rdf:resource="&obo;MF_0000015"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGMS_0000087"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A process having processes as parts in which an organism participates as agent in response to external or internal stimuli and following some pattern which is dependent upon some combination of that organism’s internal state and external conditions. (Derived from the Gene Ontology).</obo:IAO_0000115>
@@ -497,6 +487,16 @@ If truly needed, this class doesn&#39;t belong in MF.</rdfs:comment>
         <obo:IAO_0000115>A process in which at least one bodily component of an organsim participates.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
         <rdfs:comment>From OGMS: http://purl.obolibrary.org/obo/OGMS_0000060</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000087 -->
+
+    <owl:Class rdf:about="&obo;OGMS_0000087">
+        <rdfs:label rdf:datatype="&xsd;string">extended organism</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
+        <rdfs:comment>From OGMS: http://purl.obolibrary.org/obo/OGMS_0000087</rdfs:comment>
     </owl:Class>
 </rdf:RDF>
 
