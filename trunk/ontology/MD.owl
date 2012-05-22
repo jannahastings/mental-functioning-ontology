@@ -221,14 +221,14 @@
         <rdfs:subClassOf rdf:resource="&obo;MF_0000035"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MF#partOf"/>
-                <owl:someValuesFrom rdf:resource="&obo;MD_0000034"/>
+                <owl:onProperty rdf:resource="&obo;MF#isAbout"/>
+                <owl:someValuesFrom rdf:resource="&obo;MF_0000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MF#isAbout"/>
-                <owl:someValuesFrom rdf:resource="&obo;MF_0000009"/>
+                <owl:onProperty rdf:resource="&obo;MF#partOf"/>
+                <owl:someValuesFrom rdf:resource="&obo;MD_0000034"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A representational unit which is a part of some disease picture and which either (1) represents (or is believed to represent) a bodily feature that is believed to be manifested in the disease phenotype represented by the disease picture of which it is a component or (2) expresses a negative finding.</obo:IAO_0000115>
@@ -431,7 +431,6 @@
 
     <owl:Class rdf:about="&obo;MF_0000000">
         <rdfs:label rdf:datatype="&xsd;string">mental functioning related anatomical structure</rdfs:label>
-        <obo:IAO_0000115>ANATOMICAL STRUCTURE in which there inheres the DISPOSITION to be the agent of a MENTAL PROCESS.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
     </owl:Class>
     
