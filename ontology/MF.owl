@@ -20,7 +20,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about="&obo;MF">
-        <dc:title>The Ontology of Mental Functioning (MF) was first described in the publication available at http://www.jbiomedsem.com/content/1/1/10 entitled &#39;Foundations for a realist ontology of mental disease&#39; (Barry Smith and Werner Ceusters). </dc:title>
+        <dc:title>The Ontology of Mental Functioning (MF) was first described in the publication available at http://www.jbiomedsem.com/content/1/1/10 entitled &apos;Foundations for a realist ontology of mental disease&apos; (Barry Smith and Werner Ceusters). </dc:title>
         <dc:contributor>Janna Hastings</dc:contributor>
         <rdfs:comment>The Mental Functioning Ontology is an overarching ontology for all aspects of mental functioning, founded on the Basic Formal Ontology (BFO) and related to the Ontology for General Medical Science (OGMS).</rdfs:comment>
         <rdfs:comment>This OWL version of the MF ontology was originally created by Janna Hastings and is maintained by all committers to the MF ontology project. </rdfs:comment>
@@ -28,6 +28,7 @@
         <dc:contributor>Barry Smith</dc:contributor>
         <dc:contributor>Mark Jensen</dc:contributor>
         <owl:imports rdf:resource="&obo;bfo.owl"/>
+        <owl:imports rdf:resource="&obo;MF/external/GO_import.owl"/>
         <owl:imports rdf:resource="&obo;iao/dev/ontology-metadata.owl"/>
     </owl:Ontology>
     
@@ -70,69 +71,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MF#hasAgent -->
-
-    <owl:ObjectProperty rdf:about="&obo;MF#hasAgent"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MF#hasPart -->
-
-    <owl:ObjectProperty rdf:about="&obo;MF#hasPart"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MF#hasParticipant -->
-
-    <owl:ObjectProperty rdf:about="&obo;MF#hasParticipant"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MF#inhererOf -->
-
-    <owl:ObjectProperty rdf:about="&obo;MF#inhererOf"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MF#inheresIn -->
-
-    <owl:ObjectProperty rdf:about="&obo;MF#inheresIn"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MF#isAbout -->
 
     <owl:ObjectProperty rdf:about="&obo;MF#isAbout"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MF#manifestationOf -->
-
-    <owl:ObjectProperty rdf:about="&obo;MF#manifestationOf"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MF#partOf -->
-
-    <owl:ObjectProperty rdf:about="&obo;MF#partOf"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MF#participantOf -->
-
-    <owl:ObjectProperty rdf:about="&obo;MF#participantOf"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MF#realizationOf -->
-
-    <owl:ObjectProperty rdf:about="&obo;MF#realizationOf"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MF#specificallyDependsOn -->
-
-    <owl:ObjectProperty rdf:about="&obo;MF#specificallyDependsOn"/>
     
 
 
@@ -147,14 +88,54 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GO_0007600 -->
+
+    <rdf:Description rdf:about="&obo;GO_0007600">
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000044"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0007610 -->
+
+    <rdf:Description rdf:about="&obo;GO_0007610">
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000022"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0007612 -->
+
+    <rdf:Description rdf:about="&obo;GO_0007612">
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000017"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0007613 -->
+
+    <rdf:Description rdf:about="&obo;GO_0007613">
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000018"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <rdf:Description rdf:about="&obo;IAO_0000030">
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000031"/>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MF_0000000 -->
 
     <owl:Class rdf:about="&obo;MF_0000000">
         <rdfs:label rdf:datatype="&xsd;string">mental functioning related anatomical structure</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000007"/>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000012"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MF#inhererOf"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000112"/>
                 <owl:someValuesFrom rdf:resource="&obo;MF_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -171,7 +152,7 @@
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000016"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MF#inheresIn"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000107"/>
                 <owl:someValuesFrom rdf:resource="&obo;MF_0000000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -186,35 +167,18 @@
         <rdfs:subClassOf rdf:resource="&obo;MF_0000009"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MF#inheresIn"/>
-                <owl:someValuesFrom rdf:resource="&obo;MF_0000000"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000056"/>
+                <owl:someValuesFrom rdf:resource="&obo;MF_0000022"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MF#participantOf"/>
-                <owl:someValuesFrom rdf:resource="&obo;MF_0000022"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000052"/>
+                <owl:someValuesFrom rdf:resource="&obo;MF_0000000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
         <obo:IAO_0000115>A bodily quality inhering in a mental functioning related anatomical structure which leads to behavior of some specific sort.</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MF_0000007 -->
-
-    <owl:Class rdf:about="&obo;MF_0000007">
-        <rdfs:label rdf:datatype="&xsd;string">anatomical structure</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000004"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MF#partOf"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGMS_0000087"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>*** Need to Fix ***
-If truly needed, this class doesn&#39;t belong in MF.</rdfs:comment>
     </owl:Class>
     
 
@@ -226,12 +190,12 @@ If truly needed, this class doesn&#39;t belong in MF.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000020"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MF#hasParticipant"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000167"/>
                 <owl:someValuesFrom rdf:resource="&obo;MF_0000031"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A mental process that creates, modifies or has as participant some cognitive representation.</obo:IAO_0000115>
-        <rdfs:seeAlso>GO:0050890, cognition, defined as  `The operation of the mind by which an organism becomes aware of objects of thought or perception; it includes the mental activities associated with thinking, learning, and memory.&#39; </rdfs:seeAlso>
+        <rdfs:seeAlso>GO:0050890, cognition, defined as  `The operation of the mind by which an organism becomes aware of objects of thought or perception; it includes the mental activities associated with thinking, learning, and memory.&apos; </rdfs:seeAlso>
     </owl:Class>
     
 
@@ -243,7 +207,7 @@ If truly needed, this class doesn&#39;t belong in MF.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MF#inheresIn"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000052"/>
                 <owl:someValuesFrom rdf:resource="&obo;MF_0000012"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -289,6 +253,9 @@ If truly needed, this class doesn&#39;t belong in MF.</rdfs:comment>
     <owl:Class rdf:about="&obo;MF_0000017">
         <rdfs:label>learning</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000008"/>
+        <obo:IAO_0000119>Gene Ontology version as of 13-08-2012.</obo:IAO_0000119>
+        <obo:IAO_0000115>Any process in an organism in which a relatively long-lasting adaptive behavioral change occurs as the result of experience. [GO:0007612]</obo:IAO_0000115>
+        <rdfs:seeAlso>GO:0007612</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -298,6 +265,9 @@ If truly needed, this class doesn&#39;t belong in MF.</rdfs:comment>
     <owl:Class rdf:about="&obo;MF_0000018">
         <rdfs:label>memory</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000008"/>
+        <obo:IAO_0000119>Gene Ontology as of 13-08-2012</obo:IAO_0000119>
+        <rdfs:seeAlso>GO:0007613</rdfs:seeAlso>
+        <obo:IAO_0000115>The activities involved in the mental information processing system that receives (registers), modifies, stores, and retrieves informational stimuli. The main stages involved in the formation and retrieval of memory are encoding (processing of received information by acquisition), storage (building a permanent record of received information as a result of consolidation) and retrieval (calling back the stored information and use it in a suitable way to execute a given task). [GO:0007613]</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -318,14 +288,14 @@ If truly needed, this class doesn&#39;t belong in MF.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000060"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MF#realizationOf"/>
-                <owl:someValuesFrom rdf:resource="&obo;MF_0000001"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000057"/>
+                <owl:someValuesFrom rdf:resource="&obo;MF_0000003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MF#hasParticipant"/>
-                <owl:someValuesFrom rdf:resource="&obo;MF_0000003"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
+                <owl:someValuesFrom rdf:resource="&obo;MF_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A bodily process which brings into being, sustains or modifies a cognitive representation or a beahvior inducing state.</obo:IAO_0000115>
@@ -338,16 +308,16 @@ If truly needed, this class doesn&#39;t belong in MF.</rdfs:comment>
 
     <owl:Class rdf:about="&obo;MF_0000021">
         <rdfs:label rdf:datatype="&xsd;string">interpersonal process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000007"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MF#hasParticipant"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000167"/>
                 <owl:onClass rdf:resource="&obo;MF_0000016"/>
                 <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minQualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
         <obo:IAO_0000115>A process in which at least two human beings are agents.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -356,10 +326,10 @@ If truly needed, this class doesn&#39;t belong in MF.</rdfs:comment>
 
     <owl:Class rdf:about="&obo;MF_0000022">
         <rdfs:label rdf:datatype="&xsd;string">behavior</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000007"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MF#hasAgent"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000167"/>
                 <owl:someValuesFrom rdf:resource="&obo;OGMS_0000087"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -376,7 +346,7 @@ If truly needed, this class doesn&#39;t belong in MF.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000022"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MF#hasPart"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
                 <owl:someValuesFrom rdf:resource="&obo;MF_0000021"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -399,7 +369,7 @@ If truly needed, this class doesn&#39;t belong in MF.</rdfs:comment>
 
     <owl:Class rdf:about="&obo;MF_0000030">
         <rdfs:label rdf:datatype="&xsd;string">representation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000005"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000002"/>
         <obo:IAO_0000115>A dependent continuant which is about a portion of reality.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
     </owl:Class>
@@ -410,33 +380,9 @@ If truly needed, this class doesn&#39;t belong in MF.</rdfs:comment>
 
     <owl:Class rdf:about="&obo;MF_0000031">
         <rdfs:label rdf:datatype="&xsd;string">cognitive representation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000030"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MF#specificallyDependsOn"/>
-                <owl:someValuesFrom rdf:resource="&obo;MF_0000007"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000020"/>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
         <obo:IAO_0000115>A representation which specifically depends on an anatomical structure in the cognitive system of an organism.</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MF_0000032 -->
-
-    <owl:Class rdf:about="&obo;MF_0000032">
-        <rdfs:label rdf:datatype="&xsd;string">observation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000031"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MF#isAbout"/>
-                <owl:someValuesFrom rdf:resource="&obo;MF_0000009"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment>From old version of OGMS, not in current version.</rdfs:comment>
-        <obo:IAO_0000115>A cognitive representation about a bodily feature resulting from an act of perception.</obo:IAO_0000115>
-        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -446,8 +392,8 @@ If truly needed, this class doesn&#39;t belong in MF.</rdfs:comment>
     <owl:Class rdf:about="&obo;MF_0000035">
         <rdfs:label rdf:datatype="&xsd;string">representational unit</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000030"/>
-        <obo:IAO_0000115>A representation none of whose proper parts are themselves representations.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <obo:IAO_0000115>A representation none of whose proper parts are themselves representations.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -469,7 +415,8 @@ If truly needed, this class doesn&#39;t belong in MF.</rdfs:comment>
         <rdfs:label>sensory perception</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000019"/>
         <rdfs:comment>This branch is (to be) MIREOTED in from the Gene Ontology (GO). IDs are preserved. If, at a later stage, a need emerges to maintain this branch separately within MFO, special care will need to be taken to coordinate the ID space in the branch. </rdfs:comment>
-        <rdfs:seeAlso>GO:0007600, sensory perception, defined as `The series of events required for an organism to receive a sensory stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process.&#39;</rdfs:seeAlso>
+        <obo:IAO_0000115>The series of events required for an organism to receive a sensory stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process. [GO:0007600]</obo:IAO_0000115>
+        <rdfs:seeAlso>GO:0007600, sensory perception, defined as `The series of events required for an organism to receive a sensory stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process.&apos;</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -487,10 +434,10 @@ If truly needed, this class doesn&#39;t belong in MF.</rdfs:comment>
 
     <owl:Class rdf:about="&obo;OGMS_0000060">
         <rdfs:label rdf:datatype="&xsd;string">bodily process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000007"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MF#hasParticipant"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000167"/>
                 <owl:someValuesFrom rdf:resource="&obo;MF_0000012"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -512,5 +459,5 @@ If truly needed, this class doesn&#39;t belong in MF.</rdfs:comment>
 
 
 
-<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
 

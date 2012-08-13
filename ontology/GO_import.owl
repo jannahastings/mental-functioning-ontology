@@ -1,0 +1,1327 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY go "http://purl.obolibrary.org/obo/go#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+]>
+
+
+<rdf:RDF xmlns="&obo;MF/external/GO_import.owl#"
+     xml:base="&obo;MF/external/GO_import.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:go="&obo;go#">
+    <owl:Ontology rdf:about="&obo;MF/external/GO_import.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;shorthand">
+        <rdfs:label rdf:datatype="&xsd;string">shorthand</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;creation_date"/>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;inSubset">
+        <rdfs:label rdf:datatype="&xsd;string">in_subset</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;created_by"/>
+    <owl:AnnotationProperty rdf:about="&obo;go#goslim_metagenomics">
+        <rdfs:comment rdf:datatype="&xsd;string">Metagenomics GO slim</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&oboInOwl;SubsetProperty"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115">
+        <rdfs:label rdf:datatype="&xsd;string">definition</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasDbXref">
+        <rdfs:label rdf:datatype="&xsd;string">database_cross_reference</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;go#goslim_generic">
+        <rdfs:comment rdf:datatype="&xsd;string">Generic GO slim</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&oboInOwl;SubsetProperty"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;go#goslim_aspergillus">
+        <rdfs:comment rdf:datatype="&xsd;string">Aspergillus GO slim</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&oboInOwl;SubsetProperty"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasAlternativeId">
+        <rdfs:label rdf:datatype="&xsd;string">has_alternative_id</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasOBONamespace">
+        <rdfs:label rdf:datatype="&xsd;string">has_obo_namespace</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;go#gosubset_prok">
+        <rdfs:comment rdf:datatype="&xsd;string">Prokaryotic GO subset</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&oboInOwl;SubsetProperty"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;SubsetProperty">
+        <rdfs:label rdf:datatype="&xsd;string">subset_property</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;id"/>
+    <owl:AnnotationProperty rdf:about="&obo;go#goslim_pir">
+        <rdfs:comment rdf:datatype="&xsd;string">PIR GO slim</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&oboInOwl;SubsetProperty"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasExactSynonym">
+        <rdfs:label rdf:datatype="&xsd;string">has_exact_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;go#goslim_candida">
+        <rdfs:comment rdf:datatype="&xsd;string">Candida GO slim</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&oboInOwl;SubsetProperty"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;go#goslim_plant">
+        <rdfs:comment rdf:datatype="&xsd;string">Plant GO slim</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&oboInOwl;SubsetProperty"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasRelatedSynonym">
+        <rdfs:label rdf:datatype="&xsd;string">has_related_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasNarrowSynonym">
+        <rdfs:label rdf:datatype="&xsd;string">has_narrow_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;go#high_level_annotation_qc">
+        <rdfs:comment rdf:datatype="&xsd;string">High-level terms not to be used for direct annotation</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&oboInOwl;SubsetProperty"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasBroadSynonym">
+        <rdfs:label rdf:datatype="&xsd;string">has_broad_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;go#goslim_yeast">
+        <rdfs:comment rdf:datatype="&xsd;string">Yeast GO slim</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&oboInOwl;SubsetProperty"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;go#goslim_pombe">
+        <rdfs:comment rdf:datatype="&xsd;string">Fission yeast GO slim</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&oboInOwl;SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000050">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label rdf:datatype="&xsd;string">part_of</rdfs:label>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BFO:0000050</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBO_REL:part_of</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">gene_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">part_of</oboInOwl:id>
+        <oboInOwl:shorthand rdf:datatype="&xsd;string">part_of</oboInOwl:shorthand>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000051">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label rdf:datatype="&xsd;string">has_part</rdfs:label>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BFO:0000051</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OBO_REL:has_part</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">gene_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">has_part</oboInOwl:id>
+        <oboInOwl:shorthand rdf:datatype="&xsd;string">has_part</oboInOwl:shorthand>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000066 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000066">
+        <rdfs:label rdf:datatype="&xsd;string">occurs in</rdfs:label>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BFO:0000066</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">gene_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">occurs_in</oboInOwl:id>
+        <oboInOwl:shorthand rdf:datatype="&xsd;string">occurs_in</oboInOwl:shorthand>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;BFO_0000066"/>
+            <rdf:Description rdf:about="&obo;BFO_0000050"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002211 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0002211">
+        <rdfs:label rdf:datatype="&xsd;string">regulates</rdfs:label>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">RO:0002211</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">gene_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">regulates</oboInOwl:id>
+        <oboInOwl:shorthand rdf:datatype="&xsd;string">regulates</oboInOwl:shorthand>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;RO_0002211"/>
+            <rdf:Description rdf:about="&obo;BFO_0000050"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;go#results_in"/>
+            <rdf:Description rdf:about="&obo;RO_0002211"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002212 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0002212">
+        <rdfs:label rdf:datatype="&xsd;string">negatively_regulates</rdfs:label>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">RO:0002212</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">gene_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:shorthand rdf:datatype="&xsd;string">negatively_regulates</oboInOwl:shorthand>
+        <oboInOwl:id rdf:datatype="&xsd;string">negatively_regulates</oboInOwl:id>
+        <rdfs:subPropertyOf rdf:resource="&obo;RO_0002211"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;go#results_in"/>
+            <rdf:Description rdf:about="&obo;RO_0002212"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002213 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0002213">
+        <rdfs:label rdf:datatype="&xsd;string">positively_regulates</rdfs:label>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">RO:0002213</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">gene_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:shorthand rdf:datatype="&xsd;string">positively_regulates</oboInOwl:shorthand>
+        <oboInOwl:id rdf:datatype="&xsd;string">positively_regulates</oboInOwl:id>
+        <rdfs:subPropertyOf rdf:resource="&obo;RO_0002211"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;go#results_in"/>
+            <rdf:Description rdf:about="&obo;RO_0002213"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/go#results_in -->
+
+    <owl:ObjectProperty rdf:about="&obo;go#results_in">
+        <rdfs:label rdf:datatype="&xsd;string">results_in</rdfs:label>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2012-03-14T10:35:44Z</oboInOwl:creation_date>
+        <rdfs:comment rdf:datatype="&xsd;string">This relation is currently used to connect two regulation processes p1 and p2, such that if r1 regulates p1 and r2 regulates p2, and r1 results_in r2 then the regulation of p1 is required for the regulation of p2. For an example of use, see GO:0035958 &apos;regulation of glyoxylate cycle by regulation of transcription from RNA polymerase II promoter&apos;. Note that a precise definition of this relation is under discussion. After it has been formalized it will be added to RO, where it will have a RO ID. Note that the existing identifier and label are subject to change.</rdfs:comment>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">cjm</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">gene_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">results_in</oboInOwl:id>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0001661 -->
+
+    <owl:Class rdf:about="&obo;GO_0001661">
+        <rdfs:label rdf:datatype="&xsd;string">conditioned taste aversion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007631"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0008306"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A conditioned aversion to a specific chemical compound as a result of that compound being coupled with a noxious stimulus.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0001661</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Conditioned_taste_aversion</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Taste_aversion</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0002023 -->
+
+    <owl:Class rdf:about="&obo;GO_0002023">
+        <rdfs:label rdf:datatype="&xsd;string">reduction of food intake in response to dietary excess</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0042755"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0002023</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The specific actions of an organism that are triggered by the detection of dietary excess and result in a decreased intake of food.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0003051 -->
+
+    <owl:Class rdf:about="&obo;GO_0003051">
+        <rdfs:label rdf:datatype="&xsd;string">angiotensin-mediated drinking behavior</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0042756"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0003051</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The drinking behavior that is mediated by the action of angiotensin in the brain. Angiotensin stimulates the brain centers that control thirst.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">angiotensin mediated drinking behavior</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0007600 -->
+
+    <owl:Class rdf:about="&obo;GO_0007600">
+        <rdfs:label rdf:datatype="&xsd;string">sensory perception [GO]</rdfs:label>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0007600</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The series of events required for an organism to receive a sensory stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Perception</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0007601 -->
+
+    <owl:Class rdf:about="&obo;GO_0007601">
+        <rdfs:label rdf:datatype="&xsd;string">visual perception</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0050953"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0007601</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The series of events required for an organism to receive a visual stimulus, convert it to a molecular signal, and recognize and characterize the signal. Visual stimuli are detected in the form of photons and are processed to form an image.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Visual_perception</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">sense of sight</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">sensory visual perception</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">vision</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0007605 -->
+
+    <owl:Class rdf:about="&obo;GO_0007605">
+        <rdfs:label rdf:datatype="&xsd;string">sensory perception of sound</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0050954"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0007605</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The series of events required for an organism to receive an auditory stimulus, convert it to a molecular signal, and recognize and characterize the signal. Sonic stimuli are detected in the form of vibrations and are processed to form a sound.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Hearing_(sense)</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">hearing</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">perception of sound</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0007606 -->
+
+    <owl:Class rdf:about="&obo;GO_0007606">
+        <rdfs:label rdf:datatype="&xsd;string">sensory perception of chemical stimulus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007600"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0007606</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The series of events required for an organism to receive a sensory chemical stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">chemosensory perception</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0007608 -->
+
+    <owl:Class rdf:about="&obo;GO_0007608">
+        <rdfs:label rdf:datatype="&xsd;string">sensory perception of smell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007606"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0007608</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The series of events required for an organism to receive an olfactory stimulus, convert it to a molecular signal, and recognize and characterize the signal. Olfaction involves the detection of chemical composition of an organism&apos;s ambient medium by chemoreceptors. This is a neurological process.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Olfaction</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">olfaction</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">scent perception</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">sense of smell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">smell perception</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0007610 -->
+
+    <owl:Class rdf:about="&obo;GO_0007610">
+        <rdfs:label rdf:datatype="&xsd;string">behavior [GO]</rdfs:label>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0007610</oboInOwl:id>
+        <rdfs:comment rdf:datatype="&xsd;string">Note that this term is in the subset of terms that should not be used for direct gene product annotation. Annotations to this term will be removed during annotation QC.</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The specific actions or reactions of an organism in response to external or internal stimuli. Patterned activity of a whole organism in a manner dependent upon some combination of that organism&apos;s internal state and external conditions.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Behavior</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">behavioral response to stimulus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">behaviour</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">behavioural response to stimulus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+        <oboInOwl:inSubset rdf:resource="&obo;go#goslim_plant"/>
+        <oboInOwl:inSubset rdf:resource="&obo;go#gosubset_prok"/>
+        <oboInOwl:inSubset rdf:resource="&obo;go#high_level_annotation_qc"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0007612 -->
+
+    <owl:Class rdf:about="&obo;GO_0007612">
+        <rdfs:label rdf:datatype="&xsd;string">learning [GO]</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Any process in an organism in which a relatively long-lasting adaptive behavioral change occurs as the result of experience.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0007612</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Learning</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0007613 -->
+
+    <owl:Class rdf:about="&obo;GO_0007613">
+        <rdfs:label rdf:datatype="&xsd;string">memory [GO]</rdfs:label>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0007613</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The activities involved in the mental information processing system that receives (registers), modifies, stores, and retrieves informational stimuli. The main stages involved in the formation and retrieval of memory are encoding (processing of received information by acquisition), storage (building a permanent record of received information as a result of consolidation) and retrieval (calling back the stored information and use it in a suitable way to execute a given task).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Memory</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0007614 -->
+
+    <owl:Class rdf:about="&obo;GO_0007614">
+        <rdfs:label rdf:datatype="&xsd;string">short-term memory</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007613"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0007614</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The memory process that deals with the storage, retrieval and modification of information received a short time (up to about 30 minutes) ago. This type of memory is typically dependent on direct, transient effects of second messenger activation.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Short-term_memory</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0007615 -->
+
+    <owl:Class rdf:about="&obo;GO_0007615">
+        <rdfs:label rdf:datatype="&xsd;string">anesthesia-resistant memory</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007613"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0007615</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The memory process that results in the formation of consolidated memory resistant to disruption of the patterned activity of the brain, without requiring protein synthesis.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0007616 -->
+
+    <owl:Class rdf:about="&obo;GO_0007616">
+        <rdfs:label rdf:datatype="&xsd;string">long-term memory</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007613"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0007616</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The memory process that deals with the storage, retrieval and modification of information a long time (typically weeks, months or years) after receiving that information. This type of memory is typically dependent on gene transcription regulated by second messenger activation.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Long-term_memory</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0007625 -->
+
+    <owl:Class rdf:about="&obo;GO_0007625">
+        <rdfs:label rdf:datatype="&xsd;string">grooming behavior</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007610"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0007625</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The specific actions or reactions of an organism relating to grooming, cleaning and brushing to remove dirt and parasites.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">grooming behaviour</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0007626 -->
+
+    <owl:Class rdf:about="&obo;GO_0007626">
+        <rdfs:label rdf:datatype="&xsd;string">locomotory behavior</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007610"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0007626</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The specific movement from place to place of an organism in response to external or internal stimuli. Locomotion of a whole organism in a manner dependent upon some combination of that organism&apos;s internal state and external conditions.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">behavior via locomotion</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">locomotion in response to stimulus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">locomotory behavioral response to stimulus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">locomotory behaviour</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">locomotory behavioural response to stimulus</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+        <oboInOwl:inSubset rdf:resource="&obo;go#gosubset_prok"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0007631 -->
+
+    <owl:Class rdf:about="&obo;GO_0007631">
+        <rdfs:label rdf:datatype="&xsd;string">feeding behavior</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007610"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Behavior associated with the intake of food.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0007631</oboInOwl:id>
+        <rdfs:comment rdf:datatype="&xsd;string">See also the biological process term &apos;behavior ; GO:0007610&apos;.</rdfs:comment>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:List_of_feeding_behaviours</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">behavioral response to food</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">behavioural response to food</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">drinking</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">eating</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">feeding behaviour</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008306 -->
+
+    <owl:Class rdf:about="&obo;GO_0008306">
+        <rdfs:label rdf:datatype="&xsd;string">associative learning</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007612"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0008306</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Learning by associating a stimulus (the cause) with a particular outcome (the effect).</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Pavlovian conditioning</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Learning#Associative_learning</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">classical conditioning</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">conditional learning</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">conditional response</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0019230 -->
+
+    <owl:Class rdf:about="&obo;GO_0019230">
+        <rdfs:label rdf:datatype="&xsd;string">proprioception</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007600"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0019230</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The series of events by which an organism senses the position, location, orientation, and movement of the body and its parts. Proprioception is mediated by proprioceptors, sensory nerve terminals found in muscles, tendons, and joint capsules, which give information concerning movements and position of the body. The receptors in the labyrinth are sometimes also considered proprioceptors.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Proprioception</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0019231 -->
+
+    <owl:Class rdf:about="&obo;GO_0019231">
+        <rdfs:label rdf:datatype="&xsd;string">perception of static position</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0019230"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0019231</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The perception of the orientation of different parts of the body with respect to one another.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0019232 -->
+
+    <owl:Class rdf:about="&obo;GO_0019232">
+        <rdfs:label rdf:datatype="&xsd;string">perception of rate of movement</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0019230"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0019232</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The series of events by which an organism senses the speed and direction of movement of the body and its parts.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">kinesthesia</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0019233 -->
+
+    <owl:Class rdf:about="&obo;GO_0019233">
+        <rdfs:label rdf:datatype="&xsd;string">sensory perception of pain</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007600"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0019233</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The series of events required for an organism to receive a painful stimulus, convert it to a molecular signal, and recognize and characterize the signal. Pain is medically defined as the physical sensation of discomfort or distress caused by injury or illness, so can hence be described as a harmful stimulus which signals current (or impending) tissue damage. Pain may come from extremes of temperature, mechanical damage, electricity or from noxious chemical substances. This is a neurological process.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Nociception</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">nociception</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">perception of physiological pain</oboInOwl:hasNarrowSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0019234 -->
+
+    <owl:Class rdf:about="&obo;GO_0019234">
+        <rdfs:label rdf:datatype="&xsd;string">sensory perception of fast pain</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0019233"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0019234</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The series of events required for an organism to receive a fast pain stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process. Fast pain is often subjectively described as a sharp or stabbing pain; in humans, the signals from a fast pain stimulus are perceived and relayed along myelinated A-delta fibers to the central nervous system, reaching their target in about 0.1 seconds.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0019235 -->
+
+    <owl:Class rdf:about="&obo;GO_0019235">
+        <rdfs:label rdf:datatype="&xsd;string">sensory perception of slow pain</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0019233"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0019235</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The series of events required for an organism to receive a slow pain stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process. Slow pain is often subjectively described as an aching or throbbing pain; in humans, the signals from a slow pain stimulus are perceived and relayed along unmyelinated C fibers to the central nervous system, reaching their target in about 1 second. Slow pain is often associated with tissue destruction.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0032537 -->
+
+    <owl:Class rdf:about="&obo;GO_0032537">
+        <rdfs:label rdf:datatype="&xsd;string">host-seeking behavior</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007610"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0032537</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The specific actions or reactions of an organism that are associated with finding a host organism; may include behavioral responses to light, temperature, or chemical emanations from the prospective host.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">host-seeking behaviour</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0035106 -->
+
+    <owl:Class rdf:about="&obo;GO_0035106">
+        <rdfs:label rdf:datatype="&xsd;string">operant conditioning</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007612"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0035106</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Learning to anticipate future events on the basis of past experience with the consequences of one&apos;s own behavior.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Operant_conditioning</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">instrumental conditioning</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0035178 -->
+
+    <owl:Class rdf:about="&obo;GO_0035178">
+        <rdfs:label rdf:datatype="&xsd;string">turning behavior</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007626"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Fine-tuning the spatial position of an organism in response to variability in their environment. For example, reorientation of an organism in the direction of a food source.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0035178</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">turning behaviour</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0035640 -->
+
+    <owl:Class rdf:about="&obo;GO_0035640">
+        <rdfs:label rdf:datatype="&xsd;string">exploration behavior</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007610"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2011-01-19T10:35:45Z</oboInOwl:creation_date>
+        <rdfs:comment rdf:datatype="&xsd;string">For changes in locomotory behavior upon introduction to a novel environment, consider instead the child term: locomotory exploration behavior ; GO:0035641.</rdfs:comment>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0035640</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The specific actions or reactions of an organism in response to a novel environment or stimulus.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">exploration behaviour</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">exploratory behavior</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">exploratory behaviour</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">open-field behavior</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">rfoulger</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0035641 -->
+
+    <owl:Class rdf:about="&obo;GO_0035641">
+        <rdfs:label rdf:datatype="&xsd;string">locomotory exploration behavior</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007626"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0035640"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2011-01-19T10:40:04Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0035641</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The specific movement from place to place of an organism in response to a novel environment.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">rfoulger</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0036269 -->
+
+    <owl:Class rdf:about="&obo;GO_0036269">
+        <rdfs:label rdf:datatype="&xsd;string">swimming behavior</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007626"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2012-07-04T10:14:49Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0036269</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The response to external or internal stimuli that results in the locomotory process of swimming. Swimming is the self-propelled movement of an organism through the water.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">rfoulger</oboInOwl:created_by>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">swimming behaviour</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0042755 -->
+
+    <owl:Class rdf:about="&obo;GO_0042755">
+        <rdfs:label rdf:datatype="&xsd;string">eating behavior</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007631"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0042755</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The specific actions or reactions of an organism relating to the intake of food, any substance (usually solid) that can be metabolized by an organism to give energy and build tissue.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">eating behaviour</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0042756 -->
+
+    <owl:Class rdf:about="&obo;GO_0042756">
+        <rdfs:label rdf:datatype="&xsd;string">drinking behavior</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007631"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0042756</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The specific actions or reactions of an organism relating to the intake of liquids, especially water.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">drinking behaviour</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0043050 -->
+
+    <owl:Class rdf:about="&obo;GO_0043050">
+        <rdfs:label rdf:datatype="&xsd;string">pharyngeal pumping</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0042755"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0043050</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The contraction and relaxation movements of the pharyngeal muscle that mediate feeding in nematodes.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">pumping behavior</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0046958 -->
+
+    <owl:Class rdf:about="&obo;GO_0046958">
+        <rdfs:label rdf:datatype="&xsd;string">nonassociative learning</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007612"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A simple form of learning whereby the repeated presence of a stimulus leads to a change in the probability or strength of the response to that stimulus. There is no association of one type of stimulus with another, rather it is a generalized response to the environment.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0046958</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">unconditional response</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0046959 -->
+
+    <owl:Class rdf:about="&obo;GO_0046959">
+        <rdfs:label rdf:datatype="&xsd;string">habituation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0046958"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A decrease in a behavioral response to a repeated stimulus. This is exemplified by the failure of a person to show a startle response to a loud noise that has been repeatedly presented.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0046959</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Habituation</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0046960 -->
+
+    <owl:Class rdf:about="&obo;GO_0046960">
+        <rdfs:label rdf:datatype="&xsd;string">sensitization</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0046958"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An increased in a behavioral response to a repeated stimulus. For example, a shock to the tail of the marine snail Aplysia, to which the snail responds by withdrawing its gill, will result in increased gill withdrawal the next time the skin is touched.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0046960</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Sensitization</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0050909 -->
+
+    <owl:Class rdf:about="&obo;GO_0050909">
+        <rdfs:label rdf:datatype="&xsd;string">sensory perception of taste</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007606"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0050909</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The series of events required for an organism to receive a gustatory stimulus, convert it to a molecular signal, and recognize and characterize the signal. Gustation involves the direct detection of chemical composition, usually through contact with chemoreceptor cells. This is a neurological process.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Taste</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">gustation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">sense of taste</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">taste</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">taste perception</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0050913 -->
+
+    <owl:Class rdf:about="&obo;GO_0050913">
+        <rdfs:label rdf:datatype="&xsd;string">sensory perception of bitter taste</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0050909"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0050913</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The series of events required to receive a bitter taste stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">bitter taste perception</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0050914 -->
+
+    <owl:Class rdf:about="&obo;GO_0050914">
+        <rdfs:label rdf:datatype="&xsd;string">sensory perception of salty taste</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0050909"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0050914</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The series of events required to receive a salty taste stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">salty taste perception</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0050915 -->
+
+    <owl:Class rdf:about="&obo;GO_0050915">
+        <rdfs:label rdf:datatype="&xsd;string">sensory perception of sour taste</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0050909"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0050915</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The series of events required to receive a sour taste stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">sour taste perception</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0050916 -->
+
+    <owl:Class rdf:about="&obo;GO_0050916">
+        <rdfs:label rdf:datatype="&xsd;string">sensory perception of sweet taste</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0050909"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0050916</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The series of events required to receive a sweet taste stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">sweet taste perception</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0050917 -->
+
+    <owl:Class rdf:about="&obo;GO_0050917">
+        <rdfs:label rdf:datatype="&xsd;string">sensory perception of umami taste</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0050909"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0050917</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The series of events required to receive an umami taste stimulus, convert it to a molecular signal, and recognize and characterize the signal. Umami taste is the savory taste of meats and other foods that are rich in glutamates. This is a neurological process.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">umami taste perception</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0050951 -->
+
+    <owl:Class rdf:about="&obo;GO_0050951">
+        <rdfs:label rdf:datatype="&xsd;string">sensory perception of temperature stimulus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007600"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0050951</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The series of events required for an organism to receive a sensory temperature stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">sensory perception of thermal stimulus</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0050952 -->
+
+    <owl:Class rdf:about="&obo;GO_0050952">
+        <rdfs:label rdf:datatype="&xsd;string">sensory perception of electrical stimulus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007600"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0050952</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The series of events required for an organism to receive a sensory electrical stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0050953 -->
+
+    <owl:Class rdf:about="&obo;GO_0050953">
+        <rdfs:label rdf:datatype="&xsd;string">sensory perception of light stimulus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007600"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0050953</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The series of events required for an organism to receive a sensory light stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0050954 -->
+
+    <owl:Class rdf:about="&obo;GO_0050954">
+        <rdfs:label rdf:datatype="&xsd;string">sensory perception of mechanical stimulus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007600"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0050954</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The series of events required for an organism to receive a sensory mechanical stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">chemi-mechanical coupling</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">mechanosensory perception</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">perception of mechanical stimulus</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0050955 -->
+
+    <owl:Class rdf:about="&obo;GO_0050955">
+        <rdfs:label rdf:datatype="&xsd;string">thermoception</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0050951"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0050955</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The series of events required for an organism to receive a temperature stimulus, convert it to a molecular signal, and recognize and characterize the signal. Thermoception in larger animals is mainly done in the skin; mammals have at least two types of sensor, for detecting heat (temperatures above body temperature) and cold (temperatures below body temperature).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Thermoception</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">thermoreception</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0050956 -->
+
+    <owl:Class rdf:about="&obo;GO_0050956">
+        <rdfs:label rdf:datatype="&xsd;string">electroception</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0050952"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0050956</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The series of events required for an organism to receive an electrical stimulus, convert it to a molecular signal, and recognize and characterize the signal. Many fish possess an electroception sense; for example, the electric eel uses low voltage pulses of electricity for navigation and prey location.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Electroreception</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">electroception sense</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">electroceptive sense</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0050957 -->
+
+    <owl:Class rdf:about="&obo;GO_0050957">
+        <rdfs:label rdf:datatype="&xsd;string">equilibrioception</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007600"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0050957</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The series of events required for an organism to receive an orientational stimulus, convert it to a molecular signal, and recognize and characterize the signal. Equilibrioception refers to a combination of processes by which an organism can perceive its orientation with respect to gravity. In animals, stimuli come from labyrinth system of the inner ears, monitoring the direction of motion; visual stimuli, with information on orientation and motion; pressure receptors, which tell the organism which body surfaces are in contact with the ground; and proprioceptive cues, which report which parts of the body are in motion.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Equilibrioception</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">sensory perception of orientation with respect to gravity</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0050958 -->
+
+    <owl:Class rdf:about="&obo;GO_0050958">
+        <rdfs:label rdf:datatype="&xsd;string">magnetoreception</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007600"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0050958</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The series of events required for an organism to receive a stimulus relating to a magnetic field, convert it to a molecular signal, and recognize and characterize the signal. Stimuli may be chemical, mechanical or electrical and interpreting these stimuli allows an organism to determine the orientation of a magnetic field. Magnetoreception also involves the perception of light; birds cannot orient without the presence of short wavelength (blue/green) light.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Magnetoception</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">magnetoception</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">sensory perception of magnetic field</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0050975 -->
+
+    <owl:Class rdf:about="&obo;GO_0050975">
+        <rdfs:label rdf:datatype="&xsd;string">sensory perception of touch</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0050954"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0050975</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The series of events required for an organism to receive a touch stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process. The perception of touch in animals is mediated by mechanoreceptors in the skin and mucous membranes and is the sense by which contact with objects gives evidence as to certain of their qualities. Different types of touch can be perceived (for example, light, coarse, pressure and tickling) and the stimulus may be external or internal (e.g. the feeling of a full stomach).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Touch</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">perception of touch</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">tactile sense</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">taction</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">tactition</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0050977 -->
+
+    <owl:Class rdf:about="&obo;GO_0050977">
+        <rdfs:label rdf:datatype="&xsd;string">magnetoreception by sensory perception of chemical stimulus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007606"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0050958"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0050977</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The series of events required for an organism to receive a chemical stimulus relating to a magnetic field, convert it to a molecular signal, and recognize and characterize the signal. It is believed that organisms such as birds and salamanders use a &apos;chemical compass&apos;: chemical reactions that involve transitions between different spin states can be influenced by magnetic fields and by detecting the different product ratios, these organisms can perceive the direction of the magnetic field. The mechanism by which this is detected is not certain but it may also involve light stimuli.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">magnetoreception by chemical stimulus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">magnetoreception through chemical stimulus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">magnetoreception, sensory perception of chemical stimulus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">magnetoreception, using chemical stimulus</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0050978 -->
+
+    <owl:Class rdf:about="&obo;GO_0050978">
+        <rdfs:label rdf:datatype="&xsd;string">magnetoreception by sensory perception of electrical stimulus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0050952"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0050958"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0050978</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The series of events required for an organism to receive an electrical stimulus relating to a magnetic field, convert it to a molecular signal, and recognize and characterize the signal. Movement in a magnetic field results in an induced electric field, which can be perceived by organisms such as elasmobranch fish.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">magnetoreception by electrical stimulus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">magnetoreception through electrical stimulus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">magnetoreception, sensory perception of electrical stimulus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">magnetoreception, using electrical stimulus</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0050979 -->
+
+    <owl:Class rdf:about="&obo;GO_0050979">
+        <rdfs:label rdf:datatype="&xsd;string">magnetoreception by sensory perception of mechanical stimulus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0050954"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0050958"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0050979</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The series of events required for an organism to receive a mechanical stimulus relating to a magnetic field, convert it to a molecular signal, and recognize and characterize the signal. A magnetic field exerts a torque on a ferromagnetic material (e.g. magnetite) or on a material with diamagnetic anisotropy; organisms that can detect this torque can use it to determine the orientation of the magnetic field.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">magnetoreception through mechanical stimulus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">magnetoreception, sensory perception of mechanical stimulus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">magnetoreception, using mechanical stimulus</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0051355 -->
+
+    <owl:Class rdf:about="&obo;GO_0051355">
+        <rdfs:label rdf:datatype="&xsd;string">proprioception involved in equilibrioception</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;GO_0019230"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="&obo;GO_0050957"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0019230"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;GO_0050957"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0051355</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The series of events contributing to equilibrioception by which an organism senses the position, location, orientation, and movement of the body and its parts. Proprioception plays an important role in the ability of an organism to perceive its orientation with respect to gravity.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">equilibrioception by proprioception</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">perception of orientation with respect to gravity by proprioception</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">proprioception during equilibrioception</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0051356 -->
+
+    <owl:Class rdf:about="&obo;GO_0051356">
+        <rdfs:label rdf:datatype="&xsd;string">visual perception involved in equilibrioception</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;GO_0007601"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="&obo;GO_0050957"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007601"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;GO_0050957"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0051356</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The series of events during equilibrioception required for an organism to receive a visual stimulus, convert it to a molecular signal, and recognize and characterize the signal. Visual input plays an important role in the ability of an organism to perceive its orientation with respect to gravity.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">equilibrioception by visual perception</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">perception of orientation with respect to gravity by visual perception</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">visual perception during equilibrioception</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0051816 -->
+
+    <owl:Class rdf:about="&obo;GO_0051816">
+        <rdfs:label rdf:datatype="&xsd;string">acquisition of nutrients from other organism during symbiotic interaction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007631"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0051816</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The production of structures and/or molecules in an organism that are required for the acquisition and/or utilization of nutrients obtained from a second organism, where the two organisms are in a symbiotic interaction.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+        <oboInOwl:inSubset rdf:resource="&obo;go#gosubset_prok"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0051867 -->
+
+    <owl:Class rdf:about="&obo;GO_0051867">
+        <rdfs:label rdf:datatype="&xsd;string">general adaptation syndrome, behavioral process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007610"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0051867</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The set of behavioral processes that occur as part of the general adaptation syndrome, the response of the body to a strong, stressful stimulus.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">behavioral process during general adaptation syndrome</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">behavioral response during general adaptation syndrome</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">behavioural process during general adaptation syndrome</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">behavioural response during general adaptation syndrome</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">general adaptation syndrome, behavioral response</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">general adaptation syndrome, behavioural process</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">general adaptation syndrome, behavioural response</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0060273 -->
+
+    <owl:Class rdf:about="&obo;GO_0060273">
+        <rdfs:label rdf:datatype="&xsd;string">crying behavior</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007610"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0060273</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The behavior in which an organism sheds tears, often accompanied by non-verbal vocalizations and in response to external or internal stimuli.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0060756 -->
+
+    <owl:Class rdf:about="&obo;GO_0060756">
+        <rdfs:label rdf:datatype="&xsd;string">foraging behavior</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007610"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2009-06-22T02:46:25Z</oboInOwl:creation_date>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Behavior by which an organism locates food.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0060756</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">dph</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0060757 -->
+
+    <owl:Class rdf:about="&obo;GO_0060757">
+        <rdfs:label rdf:datatype="&xsd;string">adult foraging behavior</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0060756"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2009-06-22T02:50:56Z</oboInOwl:creation_date>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Behavior by which an adult locates food.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0060757</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">dph</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0060758 -->
+
+    <owl:Class rdf:about="&obo;GO_0060758">
+        <rdfs:label rdf:datatype="&xsd;string">foraging behavior by probing substrate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0060756"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2009-06-22T02:53:09Z</oboInOwl:creation_date>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Foraging behavior in which an anatomical part of the organism is inserted into the substrate to locate food.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0060758</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">dph</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0070998 -->
+
+    <owl:Class rdf:about="&obo;GO_0070998">
+        <rdfs:label rdf:datatype="&xsd;string">sensory perception of gravity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007600"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2009-11-03T03:25:12Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0070998</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The series of events required for an organism to receive a gravitational stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">midori</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0071063 -->
+
+    <owl:Class rdf:about="&obo;GO_0071063">
+        <rdfs:label rdf:datatype="&xsd;string">sensory perception of wind</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0050954"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2009-11-04T02:40:34Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0071063</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The series of events required for an organism to receive sensory mechanical stimulus resulting from air flow, convert it to a molecular signal, and recognize and characterize the signal.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">midori</oboInOwl:created_by>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">perception of wind</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">sensory perception of air flow</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0071625 -->
+
+    <owl:Class rdf:about="&obo;GO_0071625">
+        <rdfs:label rdf:datatype="&xsd;string">vocalization behavior</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007610"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2010-02-10T11:02:58Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0071625</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The behavior in which an organism produces sounds by a mechanism involving its respiratory system.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">midori</oboInOwl:created_by>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">vocalisation behaviour</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0072375 -->
+
+    <owl:Class rdf:about="&obo;GO_0072375">
+        <rdfs:label rdf:datatype="&xsd;string">medium-term memory</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007613"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2010-11-22T11:26:54Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0072375</oboInOwl:id>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">MTM</oboInOwl:hasNarrowSynonym>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The memory process that deals with the storage, retrieval and modification of information received at a time ago that is intermediate between that of short and long term memory (30min - 7hrs in Drosophila melanogaster).</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">middle-term memory</oboInOwl:hasExactSynonym>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">midori</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0097270 -->
+
+    <owl:Class rdf:about="&obo;GO_0097270">
+        <rdfs:label rdf:datatype="&xsd;string">dishabituation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0046958"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2012-03-20T01:39:25Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0097270</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The temporary recovery of response to a stimulus when a novel stimulus is added.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">paola</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+
