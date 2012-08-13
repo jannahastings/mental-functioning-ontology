@@ -62,12 +62,12 @@
     <owl:AnnotationProperty rdf:about="&oboInOwl;hasAlternativeId">
         <rdfs:label rdf:datatype="&xsd;string">has_alternative_id</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="&oboInOwl;hasOBONamespace">
-        <rdfs:label rdf:datatype="&xsd;string">has_obo_namespace</rdfs:label>
-    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="&obo;go#gosubset_prok">
         <rdfs:comment rdf:datatype="&xsd;string">Prokaryotic GO subset</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="&oboInOwl;SubsetProperty"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasOBONamespace">
+        <rdfs:label rdf:datatype="&xsd;string">has_obo_namespace</rdfs:label>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="&oboInOwl;SubsetProperty">
         <rdfs:label rdf:datatype="&xsd;string">subset_property</rdfs:label>
@@ -80,12 +80,12 @@
     <owl:AnnotationProperty rdf:about="&oboInOwl;hasExactSynonym">
         <rdfs:label rdf:datatype="&xsd;string">has_exact_synonym</rdfs:label>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="&obo;go#goslim_candida">
-        <rdfs:comment rdf:datatype="&xsd;string">Candida GO slim</rdfs:comment>
-        <rdfs:subPropertyOf rdf:resource="&oboInOwl;SubsetProperty"/>
-    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="&obo;go#goslim_plant">
         <rdfs:comment rdf:datatype="&xsd;string">Plant GO slim</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&oboInOwl;SubsetProperty"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="&obo;go#goslim_candida">
+        <rdfs:comment rdf:datatype="&xsd;string">Candida GO slim</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="&oboInOwl;SubsetProperty"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="&oboInOwl;hasRelatedSynonym">
@@ -312,7 +312,7 @@
     <!-- http://purl.obolibrary.org/obo/GO_0007600 -->
 
     <owl:Class rdf:about="&obo;GO_0007600">
-        <rdfs:label rdf:datatype="&xsd;string">sensory perception [GO]</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">sensory perception</rdfs:label>
         <oboInOwl:id rdf:datatype="&xsd;string">GO:0007600</oboInOwl:id>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The series of events required for an organism to receive a sensory stimulus, convert it to a molecular signal, and recognize and characterize the signal. This is a neurological process.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Perception</oboInOwl:hasDbXref>
@@ -390,7 +390,7 @@
     <!-- http://purl.obolibrary.org/obo/GO_0007610 -->
 
     <owl:Class rdf:about="&obo;GO_0007610">
-        <rdfs:label rdf:datatype="&xsd;string">behavior [GO]</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">behavior</rdfs:label>
         <oboInOwl:id rdf:datatype="&xsd;string">GO:0007610</oboInOwl:id>
         <rdfs:comment rdf:datatype="&xsd;string">Note that this term is in the subset of terms that should not be used for direct gene product annotation. Annotations to this term will be removed during annotation QC.</rdfs:comment>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The specific actions or reactions of an organism in response to external or internal stimuli. Patterned activity of a whole organism in a manner dependent upon some combination of that organism&apos;s internal state and external conditions.</obo:IAO_0000115>
@@ -410,7 +410,7 @@
     <!-- http://purl.obolibrary.org/obo/GO_0007612 -->
 
     <owl:Class rdf:about="&obo;GO_0007612">
-        <rdfs:label rdf:datatype="&xsd;string">learning [GO]</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">learning</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">Any process in an organism in which a relatively long-lasting adaptive behavioral change occurs as the result of experience.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="&xsd;string">GO:0007612</oboInOwl:id>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Learning</oboInOwl:hasDbXref>
@@ -423,7 +423,7 @@
     <!-- http://purl.obolibrary.org/obo/GO_0007613 -->
 
     <owl:Class rdf:about="&obo;GO_0007613">
-        <rdfs:label rdf:datatype="&xsd;string">memory [GO]</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">memory</rdfs:label>
         <oboInOwl:id rdf:datatype="&xsd;string">GO:0007613</oboInOwl:id>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The activities involved in the mental information processing system that receives (registers), modifies, stores, and retrieves informational stimuli. The main stages involved in the formation and retrieval of memory are encoding (processing of received information by acquisition), storage (building a permanent record of received information as a result of consolidation) and retrieval (calling back the stored information and use it in a suitable way to execute a given task).</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Memory</oboInOwl:hasDbXref>
