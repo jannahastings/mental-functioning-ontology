@@ -1,0 +1,10 @@
+http://purl.obolibrary.org/obo/GO_0007600
+includeAllChildren
+http://purl.obolibrary.org/obo/GO_0007612
+includeAllChildren
+http://purl.obolibrary.org/obo/GO_0007613
+includeAllChildren
+http://purl.obolibrary.org/obo/GO_0007610
+includeAllChildren
+
+also: includeAllAxioms
