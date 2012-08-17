@@ -11,23 +11,23 @@
 ]>
 
 
-<rdf:RDF xmlns="&obo;MF#"
-     xml:base="&obo;MF"
+<rdf:RDF xmlns="&obo;MF.owl#"
+     xml:base="&obo;MF.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <owl:Ontology rdf:about="&obo;MF">
+    <owl:Ontology rdf:about="&obo;MF.owl">
+        <dc:contributor>Janna Hastings</dc:contributor>
+        <rdfs:comment>The Mental Functioning Ontology is an overarching ontology for all aspects of mental functioning, founded on the Basic Formal Ontology (BFO) and related to the Ontology for General Medical Science (OGMS).</rdfs:comment>
+        <dc:contributor>Mark Jensen</dc:contributor>
+        <dc:contributor>Barry Smith</dc:contributor>
         <dc:title>The Ontology of Mental Functioning (MF) was first described in the publication available at http://www.jbiomedsem.com/content/1/1/10 entitled &apos;Foundations for a realist ontology of mental disease&apos; (Barry Smith and Werner Ceusters). </dc:title>
         <owl:versionInfo>alpha 2012-08-17</owl:versionInfo>
-        <rdfs:comment>The Mental Functioning Ontology is an overarching ontology for all aspects of mental functioning, founded on the Basic Formal Ontology (BFO) and related to the Ontology for General Medical Science (OGMS).</rdfs:comment>
-        <dc:contributor>Barry Smith</dc:contributor>
-        <dc:contributor>Janna Hastings</dc:contributor>
-        <rdfs:comment>This OWL version of the MF ontology was originally created by Janna Hastings and is maintained by all committers to the MF ontology project. </rdfs:comment>
         <rdfs:comment>The OWL representaions of MF and MD were split on 22 May 2012.</rdfs:comment>
-        <dc:contributor>Mark Jensen</dc:contributor>
+        <rdfs:comment>This OWL version of the MF ontology was originally created by Janna Hastings and is maintained by all committers to the MF ontology project. </rdfs:comment>
         <owl:imports rdf:resource="&obo;bfo.owl"/>
         <owl:imports rdf:resource="&obo;MF/external/GO_import.owl"/>
         <owl:imports rdf:resource="&obo;iao/dev/ontology-metadata.owl"/>
