@@ -1,0 +1,375 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY MF "http://purl.obolibrary.org/obo/MF#" >
+    <!ENTITY snap "http://www.ifomis.org/bfo/1.1/snap#" >
+    <!ENTITY span "http://www.ifomis.org/bfo/1.1/span#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="&obo;MD.owl#"
+     xml:base="&obo;MD.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:MF="&obo;MF#"
+     xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
+    <owl:Ontology rdf:about="&obo;MF/internal/MD-core.owl">
+        <rdfs:comment>MD-core.owl -- the core content of the Mental Disease ontology branch of the Mental Functioning ontology project. To be imported into the full ontology project. </rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about="&dc;contributor"/>
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    <owl:AnnotationProperty rdf:about="&dc;title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF#hasAgent -->
+
+    <owl:ObjectProperty rdf:about="&obo;MF#hasAgent"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF#hasPart -->
+
+    <owl:ObjectProperty rdf:about="&obo;MF#hasPart"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF#hasParticipant -->
+
+    <owl:ObjectProperty rdf:about="&obo;MF#hasParticipant"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF#inhererOf -->
+
+    <owl:ObjectProperty rdf:about="&obo;MF#inhererOf"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF#inheresIn -->
+
+    <owl:ObjectProperty rdf:about="&obo;MF#inheresIn"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF#isAbout -->
+
+    <owl:ObjectProperty rdf:about="&obo;MF#isAbout"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF#manifestationOf -->
+
+    <owl:ObjectProperty rdf:about="&obo;MF#manifestationOf"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF#partOf -->
+
+    <owl:ObjectProperty rdf:about="&obo;MF#partOf"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF#participantOf -->
+
+    <owl:ObjectProperty rdf:about="&obo;MF#participantOf"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF#realizationOf -->
+
+    <owl:ObjectProperty rdf:about="&obo;MF#realizationOf"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF#specificallyDependsOn -->
+
+    <owl:ObjectProperty rdf:about="&obo;MF#specificallyDependsOn"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000001 -->
+
+    <owl:Class rdf:about="&obo;MD_0000001">
+        <rdfs:label rdf:datatype="&xsd;string">mental disease</rdfs:label>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <obo:IAO_0000115>A disease which is a disposition to undergo pathological mental processess.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000004 -->
+
+    <owl:Class rdf:about="&obo;MD_0000004">
+        <rdfs:label rdf:datatype="&xsd;string">mental disorder</rdfs:label>
+        <obo:IAO_0000115>A disorder in a mental functioning related anatomical structure.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000024 -->
+
+    <owl:Class rdf:about="&obo;MD_0000024">
+        <rdfs:label rdf:datatype="&xsd;string">pathological mental process</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MF#manifestationOf"/>
+                <owl:someValuesFrom rdf:resource="&obo;MD_0000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <obo:IAO_0000115>A pathological process which is the manifestation of a mental disorder.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000025 -->
+
+    <owl:Class rdf:about="&obo;MD_0000025">
+        <rdfs:label rdf:datatype="&xsd;string">mental disease course</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MF#hasPart"/>
+                <owl:someValuesFrom rdf:resource="&obo;MD_0000024"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <obo:IAO_0000115>A disease course of a mental disease.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000040 -->
+
+    <owl:Class rdf:about="&obo;MD_0000040">
+        <rdfs:label rdf:datatype="&xsd;string">diagnosis of mental disease</rdfs:label>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <obo:IAO_0000115>A diagnosis asserting the presence of an instance of a mental disease in a given organsim.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000041 -->
+
+    <owl:Class rdf:about="&obo;MD_0000041">
+        <rdfs:label rdf:datatype="&xsd;string">manifestation of a mental disease</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;MF#realizationOf"/>
+                <owl:someValuesFrom rdf:resource="&obo;MD_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <obo:IAO_0000115>A bodily feature of an organism that is (a) a deviation from clinical normality that is the realization of a mental disease and is (b) observable.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000046 -->
+
+    <owl:Class rdf:about="&obo;MD_0000046">
+        <rdfs:label>addiction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000048 -->
+
+    <owl:Class rdf:about="&obo;MD_0000048">
+        <rdfs:label>bipolar</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000049 -->
+
+    <owl:Class rdf:about="&obo;MD_0000049">
+        <rdfs:label>depression</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000050 -->
+
+    <owl:Class rdf:about="&obo;MD_0000050">
+        <rdfs:label>bipolar I</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000051 -->
+
+    <owl:Class rdf:about="&obo;MD_0000051">
+        <rdfs:label>bipolar II</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000052 -->
+
+    <owl:Class rdf:about="&obo;MD_0000052">
+        <rdfs:label>substance addiction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000046"/>
+        <obo:IAO_0000115>When an individual persists in use of alcohol or other drugs despite problems related to use of the substance, substance dependence may be diagnosed. Compulsive and repetitive use may result in tolerance to the effect of the drug and withdrawal symptoms when use is reduced or stopped. (DSM-IV, American Psychiatric Association, 2000)</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000053 -->
+
+    <owl:Class rdf:about="&obo;MD_0000053">
+        <rdfs:label>process addiction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000046"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000054 -->
+
+    <owl:Class rdf:about="&obo;MD_0000054">
+        <rdfs:label>gambling addiction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000053"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000055 -->
+
+    <owl:Class rdf:about="&obo;MD_0000055">
+        <rdfs:label>sex addiction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000053"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000057 -->
+
+    <owl:Class rdf:about="&obo;MD_0000057">
+        <rdfs:label>shopping addiction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000053"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000058 -->
+
+    <owl:Class rdf:about="&obo;MD_0000058">
+        <rdfs:label>cocaine addiction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000052"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000059 -->
+
+    <owl:Class rdf:about="&obo;MD_0000059">
+        <rdfs:label>heroin addiction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000052"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000060 -->
+
+    <owl:Class rdf:about="&obo;MD_0000060">
+        <rdfs:label>alcohol addiction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000052"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000061 -->
+
+    <owl:Class rdf:about="&obo;MD_0000061">
+        <rdfs:label>marijuana addiction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000052"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000062 -->
+
+    <owl:Class rdf:about="&obo;MD_0000062">
+        <rdfs:label>nicotine addiction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000052"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000063 -->
+
+    <owl:Class rdf:about="&obo;MD_0000063">
+        <rdfs:label>addiction to use of a sunbed</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000053"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+
