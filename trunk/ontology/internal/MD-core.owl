@@ -27,6 +27,8 @@
      xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
     <owl:Ontology rdf:about="&obo;MF/internal/MD-core.owl">
         <rdfs:comment>MD-core.owl -- the core content of the Mental Disease ontology branch of the Mental Functioning ontology project. To be imported into the full ontology project. </rdfs:comment>
+        <owl:imports rdf:resource="&obo;MF/external/bfo-properties-slim.owl"/>
+        <owl:imports rdf:resource="&obo;MF/external/ontology-metadata-slim.owl"/>
     </owl:Ontology>
     
 
@@ -70,69 +72,17 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MF#hasAgent -->
+    <!-- http://purl.obolibrary.org/obo/BFO_0000163 -->
 
-    <owl:ObjectProperty rdf:about="&obo;MF#hasAgent"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MF#hasPart -->
-
-    <owl:ObjectProperty rdf:about="&obo;MF#hasPart"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MF#hasParticipant -->
-
-    <owl:ObjectProperty rdf:about="&obo;MF#hasParticipant"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MF#inhererOf -->
-
-    <owl:ObjectProperty rdf:about="&obo;MF#inhererOf"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MF#inheresIn -->
-
-    <owl:ObjectProperty rdf:about="&obo;MF#inheresIn"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MF#isAbout -->
-
-    <owl:ObjectProperty rdf:about="&obo;MF#isAbout"/>
+    <rdf:Description rdf:about="&obo;BFO_0000163"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF#manifestationOf -->
 
-    <owl:ObjectProperty rdf:about="&obo;MF#manifestationOf"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MF#partOf -->
-
-    <owl:ObjectProperty rdf:about="&obo;MF#partOf"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MF#participantOf -->
-
-    <owl:ObjectProperty rdf:about="&obo;MF#participantOf"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MF#realizationOf -->
-
-    <owl:ObjectProperty rdf:about="&obo;MF#realizationOf"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MF#specificallyDependsOn -->
-
-    <owl:ObjectProperty rdf:about="&obo;MF#specificallyDependsOn"/>
+    <owl:ObjectProperty rdf:about="&obo;MF#manifestationOf">
+        <owl:inverseOf rdf:resource="&obo;BFO_0000163"/>
+    </owl:ObjectProperty>
     
 
 
@@ -152,7 +102,43 @@
     <owl:Class rdf:about="&obo;MD_0000001">
         <rdfs:label rdf:datatype="&xsd;string">mental disease</rdfs:label>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <rdfs:comment>The Mental Disease ontology follows the strategy of the Ontology of General Medical Science in distinguishing mental disease, mental disorder, diagnosis of mental disease, mental disease course and pathological mental process as separately distinguishable entities. Here is a quick guide to how these terms are used in this ontology. 
+
+A mental disease is an underlying disposition to pathological mental processes. 
+
+A mental disease course is the sum of the pathological mental processes that are caused by the underlying disease. 
+
+A pathological mental process is a pathological process caused by a mental disease. 
+
+A mental disorder is a physical disorder, for example, dysfunctional neurotransmitter receptors, altered brain connectivity, missing or damaged brain parts etc.  The disorder is the material basis for the disease and it is by virtue of the disorder that the disease causes the pathological processes that form part of the disease course. 
+
+A diagnosis of a mental disease is a clinician&apos;s statement that a patient has a mental disease by virtue of observable manifestations of that disease, such as behaviour, observable aspects of the underlying disorder, or self-reported experiences. 
+
+
+
+
+</rdfs:comment>
         <obo:IAO_0000115>A disease which is a disposition to undergo pathological mental processess.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000002 -->
+
+    <owl:Class rdf:about="&obo;MD_0000002">
+        <rdfs:label xml:lang="en">internet addiction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000053"/>
+        <obo:IAO_0000115>A process addiction in which the subject makes compulsive use of Internet facilities.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000003 -->
+
+    <owl:Class rdf:about="&obo;MD_0000003">
+        <rdfs:label xml:lang="en">internet gaming addiction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000002"/>
+        <obo:IAO_0000115>An internet addiction in which the subject makes compulsive use of internet gaming facilities. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -163,6 +149,228 @@
         <rdfs:label rdf:datatype="&xsd;string">mental disorder</rdfs:label>
         <obo:IAO_0000115>A disorder in a mental functioning related anatomical structure.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000005 -->
+
+    <owl:Class rdf:about="&obo;MD_0000005">
+        <rdfs:label xml:lang="en">facebook addiction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000002"/>
+        <obo:IAO_0000115>An internet addiction in which the subject makes compulsive use of the Internet software Facebook. </obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000006 -->
+
+    <owl:Class rdf:about="&obo;MD_0000006">
+        <rdfs:label xml:lang="en">addiction disease course</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000025"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
+                <owl:someValuesFrom rdf:resource="&obo;MD_0000046"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An addiction disease course is the occurrent sum of the mental and behavioural processes that are caused by an addiction.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000007 -->
+
+    <owl:Class rdf:about="&obo;MD_0000007">
+        <rdfs:label xml:lang="en">bipolar disease course</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000025"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
+                <owl:someValuesFrom rdf:resource="&obo;MD_0000048"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;MD_0000011"/>
+                            <rdf:Description rdf:about="&obo;MD_0000012"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A bipolar disease course is the occurrent sum of the mental and behavioural processes that are caused by an underlying bipolar disease.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000008 -->
+
+    <owl:Class rdf:about="&obo;MD_0000008">
+        <rdfs:label xml:lang="en">attention deficit - hyperactivity disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000001"/>
+        <obo:IAO_0000115>Attention deficit - hyperactivity is a mental disease that causes difficulties in concentrating and performing tasks, particularly in children. </obo:IAO_0000115>
+        <rdfs:comment>Attention deficit-hyperactivity disorder (ADHD) is a psychiatric and a neurobehavioral disorder. It is characterized by either significant difficulties of inattention or hyperactivity and impulsiveness or a combination of the two. According to the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV-TR), symptoms emerge before seven years of age. There are three subtypes of the disorder which consist of it being predominantly inattentive (ADHD-PI or ADHD-I), predominately hyperactive-impulsive (ADHD-HI or ADHD-H), or the two combined (ADHD-C). Oftentimes people refer to ADHD-PI as &quot;Attention deficit disorder&quot; (ADD), however, the term was revised in the 1994 version of the DSM.
+
+ADHD impacts school-aged children and results in restlessness, acting impulsively, and lack of focus which impairs their ability to learn properly. It is the most commonly studied and diagnosed psychiatric disorder in children, affecting about 3 to 5 percent of children globally and diagnosed in about 2 to 16 percent of school-aged children. It is a chronic disorder with 30 to 50 percent of those individuals diagnosed in childhood continuing to have symptoms into adulthood. Adolescents and adults with ADHD tend to develop coping mechanisms to compensate for some or all of their impairments. It is estimated that 4.7 percent of American adults live with ADHD. Standardized rating scales such as the World Health Organization&apos;s Adult ADHD Self-Report Scale can be used for ADHD screening and assessment of the disorder&apos;s symptoms&apos; severity.
+
+ADHD is diagnosed two to four times more frequently in boys than in girls, though studies suggest this discrepancy may be partially due to subjective bias of referring teachers. ADHD management usually involves some combination of medications, applied behavior analysis (ABA, previously known as behavior modification), lifestyle changes, and counseling. Its symptoms can be difficult to differentiate from other disorders, increasing the likelihood that the diagnosis of ADHD will be missed. In addition, most clinicians have not received formal training in the assessment and treatment of ADHD, in particular in adult patients.
+
+[Wikipedia: http://en.wikipedia.org/wiki/Attention-Deficit_Hyperactivity_Disorder]</rdfs:comment>
+        <obo:IAO_0000118>attention deficit - hyperactivity disorder [DSM-IV]</obo:IAO_0000118>
+        <obo:IAO_0000118>314.01 [DSM-IV Code]</obo:IAO_0000118>
+        <obo:IAO_0000118>ADHD</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000009 -->
+
+    <owl:Class rdf:about="&obo;MD_0000009">
+        <rdfs:label xml:lang="en">attention deficit - hyperactivity disease course</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000025"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
+                <owl:someValuesFrom rdf:resource="&obo;MD_0000008"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An attention deficit - hyperactivity disease course is the occurrent sum of the mental and behavioural processes that are caused by an underlying attention deficit - hyperactivity disease.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000010 -->
+
+    <owl:Class rdf:about="&obo;MD_0000010">
+        <rdfs:label xml:lang="en">depression disease course</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000025"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="&obo;MD_0000013"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
+                <owl:someValuesFrom rdf:resource="&obo;MD_0000049"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A depression disease course is the occurrent sum of the mental and behavioural processes that are caused by an underlying depression disease.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000011 -->
+
+    <owl:Class rdf:about="&obo;MD_0000011">
+        <rdfs:label xml:lang="en">full-blown manic mood episode</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000024"/>
+        <owl:disjointWith rdf:resource="&obo;MD_0000012"/>
+        <owl:disjointWith rdf:resource="&obo;MD_0000013"/>
+        <rdfs:comment>Mood is elevated out of keeping with the patient&apos;s circumstances and may vary from carefree joviality to almost uncontrollable excitement. Elation is accompanied by increased energy, resulting in overactivity, pressure of speech, and a decreased need for sleep. Attention cannot be sustained, and there is often marked distractibility. Self-esteem is often inflated with grandiose ideas and overconfidence. Loss of normal social inhibitions may result in behaviour that is reckless, foolhardy, or inappropriate to the circumstances, and out of character.
+
+[ICD-10]</rdfs:comment>
+        <obo:IAO_0000118>manic episode [ICD-10]</obo:IAO_0000118>
+        <obo:IAO_0000118>F30.1 (mania without psychotic symptoms), F30.2 (mania with psychotic symptoms)
+ [ICD-10]</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000012 -->
+
+    <owl:Class rdf:about="&obo;MD_0000012">
+        <rdfs:label xml:lang="en">hypomanic mood episode</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000024"/>
+        <rdfs:comment>The DSM-IV-TR defines a hypomanic episode as including, over the course of at least four days, elevated mood plus three of the following symptoms OR irritable mood plus four of the following symptoms:
+
+    pressured speech
+    inflated self-esteem or grandiosity
+    decreased need for sleep
+    flight of ideas or the subjective experience that thoughts are racing
+    easy distractibility and attention-deficit similar to attention deficit hyperactivity disorder
+    increase in psychomotor agitation
+    involvement in pleasurable activities that may have a high potential for negative psycho-social or physical consequences (e.g., the person engages in unrestrained buying sprees, sexual indiscretions, reckless driving, or foolish business investments)
+
+[Wikipedia: http://en.wikipedia.org/wiki/Hypomania]</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000013 -->
+
+    <owl:Class rdf:about="&obo;MD_0000013">
+        <rdfs:label xml:lang="en">depressed mood episode</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000024"/>
+        <obo:IAO_0000115>A depressed mood episode is a pathological mental process characterised by persistent feelings of sadness, anxiety, guilt, anger, isolation or hopelessness and other negative valence emotions, disturbances in sleep and appetite, fatigue, loss of interest in usually enjoyable activities and morbid or suicidal ideation. </obo:IAO_0000115>
+        <rdfs:comment>The criteria below are based on the formal DSM-IV criteria for a Major Depressive Episode. A diagnoses of major depressive episode requires that the patient has—over a two-week period—experienced five or more of the symptoms below, and these must be outside the patient&apos;s normal behaviour. Either depressed mood or decreased interest or pleasure must be one of the five (although both are frequently concomitant).
+
+Mood
+    For the better part of nearly every day, the patient reports a depressed mood or appears depressed to others.
+        The patient may state that he or she has been feeling sad, depressed, blue, empty, &quot;down in the dumps,&quot; hopeless, etc. If the patient is in denial about these feelings, yet appears to be on the verge of tearfulness, manifests a depressed facial expression and disposition, or appears to be overly irritable, these may also indicate the presence of depressed mood. Some people may report physical complaints (i.e., aches, pains, headaches) rather than depressed mood, and physical symptoms without physical cause are sometimes indicators of depression.
+
+Anhedonia and loss of interest
+
+    For most of nearly every day, interest or pleasure is markedly decreased in nearly all activities (noted by the patient or by others).
+        People suffering with depression tend to lose interest in things they once found enjoyable. Activities are no longer enjoyable and there is often a loss of interest in or desire for sex. People who are depressed may say, &quot;I just don&apos;t care anymore,&quot; or &quot;nothing matters anymore.&quot; Friends and family of the depressed person may notice that he/she has withdrawn from friends, or has neglected or quit doing activities that were once a source of enjoyment.
+
+Change in eating, appetite, or weight
+
+    Although not dieting, there is a marked loss or gain of weight (such as 5% in one month) or appetite is markedly decreased or increased nearly every day.
+    Changes in appetite take on two manifestations: under- or over-eating.
+        In the first instance, some people never feel hungry, can go long periods without wanting to eat, may forget to eat, or if they do eat a small amount of food may be sufficient. A reduction in weight is often associated with a melancholic type of depression.
+        In the second instance, some people tend toward an increase in appetite and may gain significant amounts of weight. They may tend to crave certain types of food such as sweets or carbohydrates. People with seasonal affective disorder (SAD) often crave foods high in carbohydrates. Weight gain is often associated with atypical depression.
+
+Sleep
+
+    Nearly every day the patient sleeps excessively, known as hypersomnia, or not enough, known as insomnia.
+        Insomnia is the most common type of sleep disturbance for people who are clinically depressed. Having difficulty falling asleep at night is known as &quot;initial&quot; insomnia; waking in the middle of the night and being unable to go back to sleep as &quot;middle insomnia&quot;, and; waking too early as &quot;terminal insomnia&quot;. Insomnia is often associated with a melancholic type of depression.
+        A less frequent sleeping problem is oversleeping (called &quot;hypersomnia&quot;). This may occur in the form of sleeping for prolonged periods at night or increased sleeping during the daytime. Even with excess sleep, a person may still feel tired and sluggish during the day. People with seasonal affective disorder (SAD) may sleep longer during the winter months. Hypersomnia is often associated with an atypical depression.
+
+Motor activity
+
+    Nearly every day others can see that the patient&apos;s activity is agitated or slow.
+        People suffering from depression may be either quite agitated (psychomotor agitation), or very lethargic (psychomotor retardation) in their mannerisms and behavior. If a person is agitated, he or she may find it difficult to sit still, may pace the room, wring his/her hands, or fidget with clothes or objects. Someone with psychomotor retardation tends to move sluggishly, may move across a room very slowly, avert his/her eyes, sit slumped in a chair and speak slowly, saying little.
+        In terms of diagnosis, the agitation or slowing down of one&apos;s demeanor must be to the degree that it can be observed by others.
+
+Fatigue
+
+    Nearly every day the person experiences extreme fatigue.[3]
+        A decrease in energy and feeling fatigued are very common symptoms for those who are clinically depressed. A person may feel tired without having engaged in any physical activity, and day-to-day tasks become difficult, including getting washed and dressed in the morning. Job tasks or housework become very tiring, and the person finds that his/her work at home, school, or on the job suffers.[4]
+
+Self-worth
+
+    Nearly every day the patient feels worthless or inappropriately guilty. These feelings are not just about being depressed, they may be delusional.
+        Depressed people may think of themselves in very negative, unrealistic ways such as manifesting a preoccupation with past &quot;failures&quot;, personalisation of trivial events, or believing that minor mistakes prove their inadequacy. They also may have an unrealistic sense of personal responsibility and see things beyond their control as being their fault. Additionally, self-loathing is common in clinical depression, and can lead to a downward spiral when combined with other symptoms.
+
+Concentration
+
+    Noted by the patient or by others, nearly every day the patient is indecisive or has trouble thinking or concentrating.
+        A person with depression frequently experiences negative and pessimistic thoughts, and reports that his/her ability to think, concentrate, or make decisions becomes impaired. Memory and distraction problems are common. This problem can be notably pronounced, causing significant difficulty in functioning for those involved in intellectually demanding activities.
+
+Thoughts of death
+
+    The patient has had repeated thoughts about death (other than the fear of dying), suicide (with or without a plan) or has made a suicide attempt.
+        The frequency and intensity of thoughts about suicide can range from believing that friends and family would be better off if one were dead, to frequent thoughts about committing suicide (generally related to wishing to stop the emotional pain), to detailed plans about how the suicide would be carried out. Less severely suicidal people may have regular thoughts of suicide, while those who are more severely suicidal may have made specific plans and decided upon a day and location for the suicide attempt.
+            Thoughts of suicide occur mostly when triggered. Thoughts of suicide happen more frequently than normal.
+
+Diagnostic caveats
+
+In diagnosing the symptoms a trained therapist must take the following into account:
+
+    These symptoms must cause clinically important distress, or impair work, social or personal functioning, and they should not fulfil the criteria for Mixed Episode.
+    The symptoms are not due to the direct physiological effects of a substance (e.g., abuse of a drug or medication) or a general medical condition (e.g., hypothyroidism).
+    Other than in the case of severe symptoms (severely impaired functioning, severe preoccupation with worthlessness, ideas of suicide, delusions or hallucinations or psychomotor retardation), the episode should not have begun within two months of the loss of a loved one.
+ 
+
+[Wikipedia: http://en.wikipedia.org/wiki/Major_depressive_episode]
+</rdfs:comment>
     </owl:Class>
     
 
@@ -189,7 +397,13 @@
         <rdfs:label rdf:datatype="&xsd;string">mental disease course</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MF#hasPart"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
+                <owl:someValuesFrom rdf:resource="&obo;MD_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
                 <owl:someValuesFrom rdf:resource="&obo;MD_0000024"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -215,8 +429,14 @@
         <rdfs:label rdf:datatype="&xsd;string">manifestation of a mental disease</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;MF#realizationOf"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
                 <owl:someValuesFrom rdf:resource="&obo;MD_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
+                <owl:someValuesFrom rdf:resource="&obo;MD_0000025"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
@@ -228,8 +448,10 @@
     <!-- http://purl.obolibrary.org/obo/MD_0000046 -->
 
     <owl:Class rdf:about="&obo;MD_0000046">
-        <rdfs:label>addiction</rdfs:label>
+        <rdfs:label>addiction disease</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000001"/>
+        <rdfs:comment>Addictions can include, but are not limited to, alcohol abuse, drug abuse, exercise abuse, pornography and gambling. Classic hallmarks of addiction include: impaired control over substances/behavior, preoccupation with substance/behavior, continued use despite consequences, and denial. Habits and patterns associated with addiction are typically characterized by immediate gratification (short-term reward), coupled with delayed deleterious effects (long-term costs). Physiological dependence occurs when the body has to adjust to the substance by incorporating the substance into its &apos;normal&apos; functioning. This state creates the conditions of tolerance and withdrawal. Tolerance is the process by which the body continually adapts to the substance and requires increasingly larger amounts to achieve the original effects. Withdrawal refers to physical and psychological symptoms people experience when reducing or discontinuing a substance the body had become dependent on. Symptoms of withdrawal generally include but are not limited to anxiety, irritability, intense cravings for the substance, nausea, hallucinations, headaches, cold sweats, and tremors. [WIkipedia: http://en.wikipedia.org/wiki/Addiction]</rdfs:comment>
+        <obo:IAO_0000115>Addiction is a mental disease in which a person persists in the use of a mood altering substance or in a behaviour despite adverse consequences. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -237,8 +459,53 @@
     <!-- http://purl.obolibrary.org/obo/MD_0000048 -->
 
     <owl:Class rdf:about="&obo;MD_0000048">
-        <rdfs:label>bipolar</rdfs:label>
+        <rdfs:label>bipolar disease</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000001"/>
+        <obo:IAO_0000118>F31 [ICD-10 Code]</obo:IAO_0000118>
+        <obo:IAO_0000118>bipolar disorder [DSM-IV]</obo:IAO_0000118>
+        <obo:IAO_0000115>Bipolar disease is a mental disease that leads to disruptive mood swings encompassing manic and depressive moods. </obo:IAO_0000115>
+        <obo:IAO_0000118>Bipolar affective disorder [ICD-10]</obo:IAO_0000118>
+        <rdfs:comment>Bipolar disorder or bipolar affective disorder (historically known as manic-depressive disorder) is a psychiatric diagnosis for a mood disorder in which people experience disruptive mood swings that encompass a frenzied state known as mania (or hypomania) and, usually, symptoms of depression. Bipolar disorder is defined by the presence of one or more episodes of abnormally elevated energy levels, cognition, and mood with or without one or more depressive episodes.
+
+At the lower levels of mania, such as hypomania, individuals may appear energetic and excitable. At a higher level, individuals may behave erratically and impulsively, often making poor decisions due to unrealistic ideas about the future, and may have great difficulty with sleep. At the highest level, individuals can show psychotic behavior, including violence. Individuals who experience manic episodes also commonly experience depressive episodes, or symptoms, or a mixed state in which features of both mania and depression are present at the same time. These events are usually separated by periods of &quot;normal&quot; mood; but, in some individuals, depression and mania may rapidly alternate, which is known as rapid cycling. Severe manic episodes can sometimes lead to such psychotic symptoms as delusions and hallucinations.
+
+The lifetime prevalence of all types of bipolar disorder is thought to be about 4% (meaning that about 4% of people experience some of the characteristic symptoms at some point in their life). Prevalence is similar in men and women and, broadly, across different cultures and ethnic groups. Genetic factors contribute substantially to the likelihood of developing bipolar disorder, and environmental factors are also implicated. Bipolar disorder is often treated with mood stabilizing medications and psychotherapy. In serious cases, in which there is a risk of harm to oneself or others, involuntary commitment may be used. These cases generally involve severe manic episodes with dangerous behavior or depressive episodes with suicidal ideation. There are widespread problems with social stigma, stereotypes, and prejudice against individuals with a diagnosis of bipolar disorder. People with bipolar disorder exhibiting psychotic symptoms can sometimes be misdiagnosed as having schizophrenia.
+
+[Wikipedia: http://en.wikipedia.org/wiki/Bipolar_disorder]</rdfs:comment>
+        <rdfs:comment>DSM offers several different codes for bipolar, disambiguating the type of the most recent episode: 
+
+296.8 	Bipolar Disorder NOS
+296.56 	Bipolar I Disorder, Most Recent Episode Depressed, In Full Remission
+296.55 	Bipolar I Disorder, Most Recent Episode Depressed, In Partial Remission
+296.51 	Bipolar I Disorder, Most Recent Episode Depressed, Mild
+296.52 	Bipolar I Disorder, Most Recent Episode Depressed, Moderate
+296.54 	Bipolar I Disorder, Most Recent Episode Depressed, Severe With Psychotic Features
+296.53 	Bipolar I Disorder, Most Recent Episode Depressed, Severe Without Psychotic Features
+296.5 	Bipolar I Disorder, Most Recent Episode Depressed, Unspecified
+296.4 	Bipolar I Disorder, Most Recent Episode Hypomanic
+296.46 	Bipolar I Disorder, Most Recent Episode Manic, In Full Remission
+296.45 	Bipolar I Disorder, Most Recent Episode Manic, In Partial Remission
+296.41 	Bipolar I Disorder, Most Recent Episode Manic, Mild
+296.42 	Bipolar I Disorder, Most Recent Episode Manic, Moderate
+296.44 	Bipolar I Disorder, Most Recent Episode Manic, Severe With Psychotic Features
+296.43 	Bipolar I Disorder, Most Recent Episode Manic, Severe Without Psychotic Features
+296.4 	Bipolar I Disorder, Most Recent Episode Manic, Unspecified
+296.66 	Bipolar I Disorder, Most Recent Episode Mixed, In Full Remission
+296.65 	Bipolar I Disorder, Most Recent Episode Mixed, In Partial Remission
+296.61 	Bipolar I Disorder, Most Recent Episode Mixed, Mild
+296.62 	Bipolar I Disorder, Most Recent Episode Mixed, Moderate
+296.64 	Bipolar I Disorder, Most Recent Episode Mixed, Severe With Psychotic Features
+296.63 	Bipolar I Disorder, Most Recent Episode Mixed, Severe Without Psychotic Features
+296.6 	Bipolar I Disorder, Most Recent Episode Mixed, Unspecified
+296.7 	Bipolar I Disorder, Most Recent Episode Unspecified
+296.06 	Bipolar I Disorder, Single Manic Episode, In Full Remission
+296.05 	Bipolar I Disorder, Single Manic Episode, In Partial Remission
+296.01 	Bipolar I Disorder, Single Manic Episode, Mild
+296.02 	Bipolar I Disorder, Single Manic Episode, Moderate
+296.04 	Bipolar I Disorder, Single Manic Episode, Severe With Psychotic Features
+296.03 	Bipolar I Disorder, Single Manic Episode, Severe Without Psychotic Features
+296 	Bipolar I Disorder, Single Manic Episode, Unspecified
+296.89 	Bipolar II Disorder </rdfs:comment>
     </owl:Class>
     
 
@@ -246,8 +513,25 @@
     <!-- http://purl.obolibrary.org/obo/MD_0000049 -->
 
     <owl:Class rdf:about="&obo;MD_0000049">
-        <rdfs:label>depression</rdfs:label>
+        <rdfs:label>depression disease</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000001"/>
+        <obo:IAO_0000118>major depressive disorder [DSM-IV]</obo:IAO_0000118>
+        <rdfs:comment>DSM-IV lists several codes for depression depending on the most recent episode: 
+
+296.36 	Major Depressive Disorder, Recurrent, In Full Remission
+296.35 	Major Depressive Disorder, Recurrent, In Partial Remission
+296.31 	Major Depressive Disorder, Recurrent, Mild
+296.32 	Major Depressive Disorder, Recurrent, Moderate
+296.34 	Major Depressive Disorder, Recurrent, Severe With Psychotic Features
+296.33 	Major Depressive Disorder, Recurrent, Severe Without Psychotic Features
+296.3 	Major Depressive Disorder, Recurrent, Unspecified
+296.26 	Major Depressive Disorder, Single Episode, In Full Remission
+296.25 	Major Depressive Disorder, Single Episode, In Partial Remission
+296.21 	Major Depressive Disorder, Single Episode, Mild
+296.22 	Major Depressive Disorder, Single Episode, Moderate
+296.24 	Major Depressive Disorder, Single Episode, Severe With Psychotic Features
+296.23 	Major Depressive Disorder, Single Episode, Severe Without Psychotic Features
+296.2 	Major Depressive Disorder, Single Episode, Unspecified </rdfs:comment>
     </owl:Class>
     
 
@@ -255,8 +539,10 @@
     <!-- http://purl.obolibrary.org/obo/MD_0000050 -->
 
     <owl:Class rdf:about="&obo;MD_0000050">
-        <rdfs:label>bipolar I</rdfs:label>
+        <rdfs:label>bipolar I disease</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000048"/>
+        <obo:IAO_0000118>bipolar I disorder [DSM-IV]</obo:IAO_0000118>
+        <obo:IAO_0000115>Bipolar I disease is the more severe form of bipolar disease in which subjects have experienced a full-blown manic episode.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -264,8 +550,10 @@
     <!-- http://purl.obolibrary.org/obo/MD_0000051 -->
 
     <owl:Class rdf:about="&obo;MD_0000051">
-        <rdfs:label>bipolar II</rdfs:label>
+        <rdfs:label>bipolar II disease</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000048"/>
+        <obo:IAO_0000115>Bipolar II is the less severe form of bipolar disease, in which subjects experience alternating depressive and hypomanic episodes. </obo:IAO_0000115>
+        <obo:IAO_0000118>bipolar II disorder [DSM-IV]</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -276,6 +564,23 @@
         <rdfs:label>substance addiction</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000046"/>
         <obo:IAO_0000115>When an individual persists in use of alcohol or other drugs despite problems related to use of the substance, substance dependence may be diagnosed. Compulsive and repetitive use may result in tolerance to the effect of the drug and withdrawal symptoms when use is reduced or stopped. (DSM-IV, American Psychiatric Association, 2000)</obo:IAO_0000115>
+        <rdfs:comment>Substance dependence can be diagnosed with physiological dependence, evidence of tolerance or withdrawal, or without physiological dependence. DSM-IV substance dependencies include:
+
+    303.90 Alcohol dependence
+    304.00 Opioid dependence
+    304.10 Sedative, hypnotic, or anxiolytic dependence (including benzodiazepine dependence and barbiturate dependence)
+    304.20 Cocaine dependence
+    304.30 Cannabis dependence
+    304.40 Amphetamine dependence (or amphetamine-like)
+    304.50 Hallucinogen dependence
+    304.60 Inhalant dependence
+    304.80 Polysubstance dependence
+    304.90 Phencyclidine (or phencyclidine-like) dependence
+    304.90 Other (or unknown) substance dependence
+    305.10 Nicotine dependence
+[Wikipedia:http://en.wikipedia.org/wiki/Addiction]</rdfs:comment>
+        <rdfs:comment>ICD-10 codes F10-F19 [WHO ICD:http://apps.who.int/classifications/icd10/browse/2010/en#/F10-F19]</rdfs:comment>
+        <obo:IAO_0000118>substance dependence [DSM-IV]</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -285,6 +590,10 @@
     <owl:Class rdf:about="&obo;MD_0000053">
         <rdfs:label>process addiction</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000046"/>
+        <rdfs:comment>Increasingly referred to as process addiction or non-substance-related addiction, behavioral addiction includes a compulsion to repeatedly engage in an action until said action causes serious negative consequences to the person&apos;s physical, mental, social, and/or financial well-being. One sign that a behavior has become addictive is if it persists despite these consequences. [Wikipedia: http://en.wikipedia.org/wiki/Behavioral_addiction]</rdfs:comment>
+        <obo:IAO_0000115>An addiction to a process, which might be a behaviour, such as gambling, or procrastination. </obo:IAO_0000115>
+        <obo:IAO_0000118>behavioural addiction [DSM-IV]</obo:IAO_0000118>
+        <rdfs:comment>Process or behaviour addiction is not included in DSM-IV. Behavioral addiction has been proposed as a new class in DSM-5, but the only category included is gambling addiction. Internet addiction and sex addiction are included in the appendix. [Wikipedia:http://en.wikipedia.org/wiki/Behavioral_addiction]</rdfs:comment>
     </owl:Class>
     
 
@@ -294,6 +603,7 @@
     <owl:Class rdf:about="&obo;MD_0000054">
         <rdfs:label>gambling addiction</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000053"/>
+        <obo:IAO_0000115>A process addiction in which the patient compulsively gambles.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -303,6 +613,7 @@
     <owl:Class rdf:about="&obo;MD_0000055">
         <rdfs:label>sex addiction</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000053"/>
+        <obo:IAO_0000115>A process addiction in which the subject compulsively performs sexual activity. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -312,6 +623,7 @@
     <owl:Class rdf:about="&obo;MD_0000057">
         <rdfs:label>shopping addiction</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000053"/>
+        <obo:IAO_0000115>A process addiction in which the person compulsively performs shopping activities. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -321,6 +633,11 @@
     <owl:Class rdf:about="&obo;MD_0000058">
         <rdfs:label>cocaine addiction</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000052"/>
+        <obo:IAO_0000118>F14 [ICD-10 Code]</obo:IAO_0000118>
+        <obo:IAO_0000118>Mental and behavioural disorders due to use of cocaine [ICD-10]</obo:IAO_0000118>
+        <obo:IAO_0000115>A substance addiction in which the substance compulsively consumed is cocaine (CHEBI:27958)</obo:IAO_0000115>
+        <obo:IAO_0000118>304.20 [DSM-IV Code]</obo:IAO_0000118>
+        <obo:IAO_0000118>cocaine dependence [DSM-IV]</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -330,6 +647,7 @@
     <owl:Class rdf:about="&obo;MD_0000059">
         <rdfs:label>heroin addiction</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000052"/>
+        <rdfs:comment>A substance addiction in which the substance compulsively consumed is heroin (CHEBI:27808)</rdfs:comment>
     </owl:Class>
     
 
@@ -339,6 +657,11 @@
     <owl:Class rdf:about="&obo;MD_0000060">
         <rdfs:label>alcohol addiction</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000052"/>
+        <obo:IAO_0000118>F10 [ICD-10 Code]</obo:IAO_0000118>
+        <obo:IAO_0000118>Mental and behavioural disorders due to use of alcohol [ICD-10]</obo:IAO_0000118>
+        <obo:IAO_0000115>A substance addiction in which the substance that is compulsively consumed is alcohol (CHEBI:30879). </obo:IAO_0000115>
+        <obo:IAO_0000118>alcohol dependence [DSM-IV]</obo:IAO_0000118>
+        <obo:IAO_0000118>309.90 [DSM-IV code]</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -348,6 +671,11 @@
     <owl:Class rdf:about="&obo;MD_0000061">
         <rdfs:label>marijuana addiction</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000052"/>
+        <obo:IAO_0000118>cannabis dependence [DSM-IV]</obo:IAO_0000118>
+        <obo:IAO_0000118>304.30 [DSM-IV Code]</obo:IAO_0000118>
+        <obo:IAO_0000118>F12 [ICD-10 Code]</obo:IAO_0000118>
+        <obo:IAO_0000118>Mental and behavioural disorders due to use of cannabinoids [ICD-10]</obo:IAO_0000118>
+        <obo:IAO_0000115>A substance addiction in which the substance compulsively consumed is marijuana.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -357,6 +685,12 @@
     <owl:Class rdf:about="&obo;MD_0000062">
         <rdfs:label>nicotine addiction</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000052"/>
+        <obo:IAO_0000118>F17 [ICD-10 Code]</obo:IAO_0000118>
+        <obo:IAO_0000118>Mental and behavioural disorders due to use of tobacco [ICD-10]</obo:IAO_0000118>
+        <obo:IAO_0000115>A substance addiction in which the substance compulsively consumed is nicotine (CHEBI:18723).</obo:IAO_0000115>
+        <obo:IAO_0000118>305.1 [DSM-IV Code]
+</obo:IAO_0000118>
+        <obo:IAO_0000118>nicotine dependence [DSM-IV]</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -366,6 +700,7 @@
     <owl:Class rdf:about="&obo;MD_0000063">
         <rdfs:label>addiction to use of a sunbed</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000053"/>
+        <obo:IAO_0000115>A process addiction in which the subject compulsively makes use of a sunbed.</obo:IAO_0000115>
     </owl:Class>
 </rdf:RDF>
 
