@@ -158,13 +158,30 @@
         <rdfs:label xml:lang="en">material basis of at all times</rdfs:label>
     </owl:ObjectProperty>
     
+    <!-- http://purl.obolibrary.org/obo/BFO_0000167 -->
 
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000167"><!-- has participant at all times -->
+        <rdfs:label xml:lang="en">has participant at all times</rdfs:label>
+    </owl:ObjectProperty>
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000176 -->
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0000176">
         <rdfs:label xml:lang="en">part of continuant at some time</rdfs:label>
     </owl:ObjectProperty>
+
+   <!-- http://purl.obolibrary.org/obo/BFO_0000107 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000107"><!-- disposition of at all times -->
+        <rdfs:label xml:lang="en">disposition of at all times</rdfs:label>
+    </owl:ObjectProperty>
+
+   <!-- http://purl.obolibrary.org/obo/BFO_0000112 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000112"><!-- has disposition at some time -->
+        <rdfs:label xml:lang="en">has disposition at some time</rdfs:label>
+    </owl:ObjectProperty>
+
 </rdf:RDF>
 
 
