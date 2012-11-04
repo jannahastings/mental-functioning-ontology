@@ -210,19 +210,6 @@ We also have the outstanding issue of how to aim different definitions to differ
     >Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w</obo:IAO_0000119>
     <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
   </owl:AnnotationProperty>
-  <owl:AllDifferent>
-    <owl:distinctMembers rdf:parseType="Collection">
-      <obo:IAO_0000225 rdf:about="http://purl.obolibrary.org/obo/IAO_0000226"/>
-      <obo:IAO_0000225 rdf:about="http://purl.obolibrary.org/obo/IAO_0000227"/>
-      <obo:IAO_0000225 rdf:about="http://purl.obolibrary.org/obo/IAO_0000228"/>
-      <obo:IAO_0000225 rdf:about="http://purl.obolibrary.org/obo/IAO_0000229"/>
-    </owl:distinctMembers>
-  </owl:AllDifferent>
-  <owl:AllDifferent>
-    <owl:distinctMembers rdf:parseType="Collection">
-      <oboInOwl:Subset rdf:about="http://purl.obolibrary.org/obo/IAO_0000224"/>
-    </owl:distinctMembers>
-  </owl:AllDifferent>
   <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000427">
     <obo:IAO_0000115 xml:lang="en">use boolean value xsd:true to indicate that the property is an antisymmetric property</obo:IAO_0000115>
     <obo:IAO_0000112 xml:lang="en">part_of antisymmetric property xsd:true</obo:IAO_0000112>
@@ -247,18 +234,6 @@ Annotations: IAO_0000424 "http://purl.obolibrary.org/obo/BFO_0000051 some (http:
     <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
   </owl:AnnotationProperty>
   <owl:AnnotationProperty rdf:about="http://protege.stanford.edu/plugins/owl/protege#defaultLanguage"/>
-  <owl:AllDifferent>
-    <owl:distinctMembers rdf:parseType="Collection">
-      <obo:IAO_0000078 rdf:about="http://purl.obolibrary.org/obo/IAO_0000120"/>
-      <obo:IAO_0000078 rdf:about="http://purl.obolibrary.org/obo/IAO_0000121"/>
-      <obo:IAO_0000078 rdf:about="http://purl.obolibrary.org/obo/IAO_0000122"/>
-      <obo:IAO_0000078 rdf:about="http://purl.obolibrary.org/obo/IAO_0000123"/>
-      <obo:IAO_0000078 rdf:about="http://purl.obolibrary.org/obo/IAO_0000124"/>
-      <obo:IAO_0000078 rdf:about="http://purl.obolibrary.org/obo/IAO_0000125"/>
-      <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000423"/>
-      <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000428"/>
-    </owl:distinctMembers>
-  </owl:AllDifferent>
   <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
     <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obfoundry.org/obo/obi&gt;</obo:IAO_0000119>
     <obo:IAO_0000115 xml:lang="en">An administrative note intended for its editor. It may not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology.</obo:IAO_0000115>
