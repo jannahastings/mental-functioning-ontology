@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="&obo;MF/external/bfo-properties-slim.owl#"
+     xml:base="&obo;MF/external/bfo-properties-slim.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="&obo;MF/external/bfo-properties-slim.owl">
+        <rdfs:comment>A slim of BFO with only object selected properties. </rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000052 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000052">
+        <rdfs:label xml:lang="en">inheres in at all times</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000054 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000054">
+        <rdfs:label xml:lang="en">realized in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000055 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000055">
+        <rdfs:label xml:lang="en">realizes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000056 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000056">
+        <rdfs:label xml:lang="en">participates in at some time</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000057 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000057">
+        <rdfs:label xml:lang="en">has participant at some time</rdfs:label>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;BFO_0000055"/>
+            <rdf:Description rdf:about="&obo;BFO_0000052"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000110 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000110">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label xml:lang="en">has continuant part at all times</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000111 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000111">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label xml:lang="en">has proper continuant part at all times</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&obo;BFO_0000110"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000117 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000117">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label xml:lang="en">has occurrent part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000118 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000118">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label xml:lang="en">has proper occurrent part</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&obo;BFO_0000117"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000132 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000132">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label xml:lang="en">part of occurrent</rdfs:label>
+        <owl:inverseOf rdf:resource="&obo;BFO_0000117"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000163 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000163">
+        <rdfs:label xml:lang="en">material basis of at all times</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000176 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000176">
+        <rdfs:label xml:lang="en">part of continuant at some time</rdfs:label>
+    </owl:ObjectProperty>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+
