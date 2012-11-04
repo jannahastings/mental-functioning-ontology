@@ -213,6 +213,12 @@ A diagnosis of a mental disease is a clinician&apos;s statement that a patient h
     <owl:Class rdf:about="&obo;MD_0000008">
         <rdfs:label xml:lang="en">attention deficit - hyperactivity disease</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                <owl:allValuesFrom rdf:resource="&obo;MD_0000009"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>Attention deficit - hyperactivity is a mental disease that causes difficulties in concentrating and performing tasks, particularly in children. </obo:IAO_0000115>
         <rdfs:comment>Attention deficit-hyperactivity disorder (ADHD) is a psychiatric and a neurobehavioral disorder. It is characterized by either significant difficulties of inattention or hyperactivity and impulsiveness or a combination of the two. According to the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV-TR), symptoms emerge before seven years of age. There are three subtypes of the disorder which consist of it being predominantly inattentive (ADHD-PI or ADHD-I), predominately hyperactive-impulsive (ADHD-HI or ADHD-H), or the two combined (ADHD-C). Oftentimes people refer to ADHD-PI as &quot;Attention deficit disorder&quot; (ADD), however, the term was revised in the 1994 version of the DSM.
 
@@ -429,14 +435,14 @@ In diagnosing the symptoms a trained therapist must take the following into acco
         <rdfs:label rdf:datatype="&xsd;string">manifestation of a mental disease</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
-                <owl:someValuesFrom rdf:resource="&obo;MD_0000001"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
+                <owl:someValuesFrom rdf:resource="&obo;MD_0000025"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
-                <owl:someValuesFrom rdf:resource="&obo;MD_0000025"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
+                <owl:someValuesFrom rdf:resource="&obo;MD_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
@@ -450,6 +456,12 @@ In diagnosing the symptoms a trained therapist must take the following into acco
     <owl:Class rdf:about="&obo;MD_0000046">
         <rdfs:label>addiction disease</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                <owl:allValuesFrom rdf:resource="&obo;MD_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>Addictions can include, but are not limited to, alcohol abuse, drug abuse, exercise abuse, pornography and gambling. Classic hallmarks of addiction include: impaired control over substances/behavior, preoccupation with substance/behavior, continued use despite consequences, and denial. Habits and patterns associated with addiction are typically characterized by immediate gratification (short-term reward), coupled with delayed deleterious effects (long-term costs). Physiological dependence occurs when the body has to adjust to the substance by incorporating the substance into its &apos;normal&apos; functioning. This state creates the conditions of tolerance and withdrawal. Tolerance is the process by which the body continually adapts to the substance and requires increasingly larger amounts to achieve the original effects. Withdrawal refers to physical and psychological symptoms people experience when reducing or discontinuing a substance the body had become dependent on. Symptoms of withdrawal generally include but are not limited to anxiety, irritability, intense cravings for the substance, nausea, hallucinations, headaches, cold sweats, and tremors. [WIkipedia: http://en.wikipedia.org/wiki/Addiction]</rdfs:comment>
         <obo:IAO_0000115>Addiction is a mental disease in which a person persists in the use of a mood altering substance or in a behaviour despite adverse consequences. </obo:IAO_0000115>
     </owl:Class>
@@ -461,6 +473,12 @@ In diagnosing the symptoms a trained therapist must take the following into acco
     <owl:Class rdf:about="&obo;MD_0000048">
         <rdfs:label>bipolar disease</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                <owl:allValuesFrom rdf:resource="&obo;MD_0000007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000118>F31 [ICD-10 Code]</obo:IAO_0000118>
         <obo:IAO_0000118>bipolar disorder [DSM-IV]</obo:IAO_0000118>
         <obo:IAO_0000115>Bipolar disease is a mental disease that leads to disruptive mood swings encompassing manic and depressive moods. </obo:IAO_0000115>
@@ -515,6 +533,12 @@ The lifetime prevalence of all types of bipolar disorder is thought to be about 
     <owl:Class rdf:about="&obo;MD_0000049">
         <rdfs:label>depression disease</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                <owl:allValuesFrom rdf:resource="&obo;MD_0000010"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000118>major depressive disorder [DSM-IV]</obo:IAO_0000118>
         <rdfs:comment>DSM-IV lists several codes for depression depending on the most recent episode: 
 
