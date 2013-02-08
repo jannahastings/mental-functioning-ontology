@@ -164,6 +164,24 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MF_0000010 -->
+
+    <owl:Class rdf:about="&obo;MF_0000010">
+        <rdfs:label xml:lang="en">mathematical problem solving behavior</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NBO_0000297"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000011 -->
+
+    <owl:Class rdf:about="&obo;MF_0000011">
+        <rdfs:label xml:lang="en">visual problem solving behavior</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NBO_0000297"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MF_0000012 -->
 
     <owl:Class rdf:about="&obo;MF_0000012">
