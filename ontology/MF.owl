@@ -30,7 +30,7 @@
         <rdfs:comment>This OWL version of the MF ontology was originally created by Janna Hastings and is maintained by all committers to the MF ontology project. </rdfs:comment>
         <owl:imports rdf:resource="&obo;bfo.owl"/>
         <owl:imports rdf:resource="&obo;MF/external/GO_import.owl"/>
-        <owl:imports rdf:resource="&obo;MF/external/output/behavior-slim.owl"/>
+        <owl:imports rdf:resource="&obo;MF/external/behavior-slim.owl"/>
         <owl:imports rdf:resource="&obo;MF/internal/MF-core.owl"/>
         <owl:imports rdf:resource="&obo;iao/dev/ontology-metadata.owl"/>
     </owl:Ontology>
@@ -210,9 +210,9 @@
 
     <!-- http://purl.obolibrary.org/obo/NBO_0000313 -->
 
-    <rdf:Description rdf:about="&obo;NBO_0000313">
+    <owl:Class rdf:about="&obo;NBO_0000313">
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000060"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
