@@ -157,6 +157,7 @@
     <owl:Class rdf:about="&obo;MF_0000002">
         <rdfs:label xml:lang="en">remembering</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000008"/>
+        <obo:IAO_0000115>(for the case of remembering X, where X is an event in the organism’s history) a mental process that is a) about X, and b) made possible by the physical traces left by a causal process involving the organism during the event X</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -267,6 +268,7 @@
     <owl:Class rdf:about="&obo;MF_0000013">
         <rdfs:label>thinking</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000008"/>
+        <obo:IAO_0000115>a mental process that involves the manipulation of mental language and/or mental images</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -298,11 +300,38 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MF_0000017 -->
+
+    <owl:Class rdf:about="&obo;MF_0000017">
+        <rdfs:label xml:lang="en">consciousness</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
+                <owl:someValuesFrom rdf:resource="&obo;MF_0000020"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>a process profile that is a) part of a process of mental functioning and b) grants awareness of this process to the organism whose mental process it is</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000018 -->
+
+    <owl:Class rdf:about="&obo;MF_0000018">
+        <rdfs:label xml:lang="en">attention</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000020"/>
+        <obo:IAO_0000115>the process whereby relevant aspects of our mental experience are focused on specific targets</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MF_0000019 -->
 
     <owl:Class rdf:about="&obo;MF_0000019">
         <rdfs:label>perception</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000008"/>
+        <obo:IAO_0000115>a mental process which is a) produced by a causal process (for example involving light rays or air vibrations) involving a part of the environment of the organism, and b) is experienced by the organism as being so caused, and c) in
+which the relevant part of the environment is thereby represented to the organism</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -348,6 +377,26 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MF_0000022 -->
+
+    <owl:Class rdf:about="&obo;MF_0000022">
+        <rdfs:label xml:lang="en">language</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000052"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000110"/>
+                        <owl:someValuesFrom rdf:resource="&obo;MF_0000016"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>a complex disposition inhering in a population by virtue of the fact that members thereof can communicate with each other through speech</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MF_0000023 -->
 
     <owl:Class rdf:about="&obo;MF_0000023">
@@ -361,6 +410,16 @@
         </rdfs:subClassOf>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
         <obo:IAO_0000115>Behavior having interpersonal processes as parts, each involving the same instances of human being.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000024 -->
+
+    <owl:Class rdf:about="&obo;MF_0000024">
+        <rdfs:label xml:lang="en">learning</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000020"/>
+        <obo:IAO_0000115>a mental process that changes an organism’s capabilities</obo:IAO_0000115>
     </owl:Class>
     
 

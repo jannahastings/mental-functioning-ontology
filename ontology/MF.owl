@@ -146,13 +146,19 @@
     
 
 
-    
-
     <!-- http://purl.obolibrary.org/obo/MF_0000012 -->
 
     <owl:Class rdf:about="&obo;MF_0000012">
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000017 -->
+
+    <rdf:Description rdf:about="&obo;MF_0000017">
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000144"/>
+    </rdf:Description>
     
 
 
@@ -167,6 +173,14 @@
     <owl:Class rdf:about="&obo;MF_0000021">
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000022 -->
+
+    <rdf:Description rdf:about="&obo;MF_0000022">
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000016"/>
+    </rdf:Description>
     
 
 
