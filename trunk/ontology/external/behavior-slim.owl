@@ -5444,19 +5444,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NBO_0000547 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NBO_0000547">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anhedonia</rdfs:label>
-        <obo:creation_date>2011-04-10T10:41:10Z</obo:creation_date>
-        <obo:def>&quot;Lack of ability to enjoy a sense of pleasure.&quot; [NBO:GVG]</obo:def>
-        <obo:namespace>behavior_ontology</obo:namespace>
-        <obo:xref>MP:0009710</obo:xref>
-        <obo:created_by>George Gkoutos</obo:created_by>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NBO_0000548 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NBO_0000548">
