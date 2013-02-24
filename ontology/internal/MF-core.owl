@@ -424,11 +424,45 @@ which the relevant part of the environment is thereby represented to the organis
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MF_0000025 -->
+
+    <owl:Class rdf:about="&obo;MF_0000025">
+        <rdfs:label xml:lang="en">intelligence</rdfs:label>
+        <obo:IAO_0000115>A mental disposition realised in processes involving understanding complex ideas, adapting effectively to the environment, learning from experience, engaging in various forms of reasoning, and overcome obstacles through the outcome of thinking processes.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000026 -->
+
+    <owl:Class rdf:about="&obo;MF_0000026">
+        <rdfs:label xml:lang="en">introversion</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MF_0000027 -->
 
     <owl:Class rdf:about="&obo;MF_0000027">
         <rdfs:label>planning</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000008"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000028 -->
+
+    <owl:Class rdf:about="&obo;MF_0000028">
+        <rdfs:label xml:lang="en">extraversion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000029 -->
+
+    <owl:Class rdf:about="&obo;MF_0000029">
+        <rdfs:label xml:lang="en">irascibility</rdfs:label>
+        <obo:IAO_0000115>A mental disposition to frequent or easily incited outbursts of anger. </obo:IAO_0000115>
     </owl:Class>
     
 
