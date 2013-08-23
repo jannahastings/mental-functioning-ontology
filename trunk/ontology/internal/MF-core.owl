@@ -20,8 +20,8 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about="&obo;MF/internal/MF-core.owl">
-        <rdfs:comment>Core mental functioning ontology classes and properties. </rdfs:comment>
         <rdfs:comment>To be imported into the full MF.owl</rdfs:comment>
+        <rdfs:comment>Core mental functioning ontology classes and properties. </rdfs:comment>
         <owl:imports rdf:resource="&obo;MF/external/bfo-properties-slim.owl"/>
         <owl:imports rdf:resource="&obo;MF/external/ontology-metadata-slim.owl"/>
     </owl:Ontology>
@@ -36,23 +36,42 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
-    <owl:AnnotationProperty rdf:about="&dc;contributor"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
-    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
-    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="&dc;contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
     <owl:AnnotationProperty rdf:about="&dc;title"/>
     
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
 
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
     
 
 
@@ -144,6 +163,30 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000202 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000202">
+        <rdfs:label xml:lang="en">personality</rdfs:label>
+        <obo:IAO_0000115>A personality is a complex sum of dispositions and predispositions towards mental processes and behaviour. It inheres in a person. Personality is not the same as mood, although a person may have a personality that includes a predisposition to moods of certain types, moods may come and go but a personality stays relatively constant, not appearing and disappearing. Personality typically changes slowly over time. </obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000203 -->
+
+    <owl:Class rdf:about="&obo;MFOEM_000203">
+        <rdfs:label xml:lang="en">personality trait</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000176"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000202"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A personality trait is an individual disposition or predisposition that forms part of an overall personality and is realized in repeated occurrences of a specific mental process type or behavioural profile. </obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MF_0000001 -->
 
     <owl:Class rdf:about="&obo;MF_0000001">
@@ -166,8 +209,8 @@
 
     <owl:Class rdf:about="&obo;MF_0000003">
         <rdfs:label rdf:datatype="&xsd;string">behavior inducing state</rdfs:label>
-        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
         <obo:IAO_0000115>A bodily quality inhering in a mental functioning related anatomical structure which leads to behavior of some specific sort.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -219,8 +262,8 @@
                 <owl:someValuesFrom rdf:resource="&obo;MF_0000031"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A mental process that creates, modifies or has as participant some cognitive representation.</obo:IAO_0000115>
         <rdfs:seeAlso>GO:0050890, cognition, defined as  `The operation of the mind by which an organism becomes aware of objects of thought or perception; it includes the mental activities associated with thinking, learning, and memory.&apos; </rdfs:seeAlso>
+        <obo:IAO_0000115>A mental process that creates, modifies or has as participant some cognitive representation.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -256,9 +299,9 @@
 
     <owl:Class rdf:about="&obo;MF_0000012">
         <rdfs:label rdf:datatype="&xsd;string">bodily component</rdfs:label>
-        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
-        <rdfs:comment>From old version of OGMS, no longer in current version.</rdfs:comment>
         <obo:IAO_0000115>Material object within or on the surface of an organism, including anatomical structures, body flora, pathogens, toxins, and their combinations, potentially including also the organism as a whole.</obo:IAO_0000115>
+        <rdfs:comment>From old version of OGMS, no longer in current version.</rdfs:comment>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -343,18 +386,18 @@ which the relevant part of the environment is thereby represented to the organis
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000060"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
-                <owl:someValuesFrom rdf:resource="&obo;MF_0000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000057"/>
                 <owl:someValuesFrom rdf:resource="&obo;MF_0000003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A bodily process which brings into being, sustains or modifies a cognitive representation or a beahvior inducing state.</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
+                <owl:someValuesFrom rdf:resource="&obo;MF_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <obo:IAO_0000115>A bodily process which brings into being, sustains or modifies a cognitive representation or a beahvior inducing state.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -408,8 +451,8 @@ which the relevant part of the environment is thereby represented to the organis
                 <owl:someValuesFrom rdf:resource="&obo;MF_0000021"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
         <obo:IAO_0000115>Behavior having interpersonal processes as parts, each involving the same instances of human being.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -428,6 +471,7 @@ which the relevant part of the environment is thereby represented to the organis
 
     <owl:Class rdf:about="&obo;MF_0000025">
         <rdfs:label xml:lang="en">intelligence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000203"/>
         <obo:IAO_0000115>A mental disposition realised in processes involving understanding complex ideas, adapting effectively to the environment, learning from experience, engaging in various forms of reasoning, and overcome obstacles through the outcome of thinking processes.</obo:IAO_0000115>
     </owl:Class>
     
@@ -437,6 +481,7 @@ which the relevant part of the environment is thereby represented to the organis
 
     <owl:Class rdf:about="&obo;MF_0000026">
         <rdfs:label xml:lang="en">introversion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000203"/>
     </owl:Class>
     
 
@@ -454,6 +499,7 @@ which the relevant part of the environment is thereby represented to the organis
 
     <owl:Class rdf:about="&obo;MF_0000028">
         <rdfs:label xml:lang="en">extraversion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000203"/>
     </owl:Class>
     
 
@@ -462,6 +508,7 @@ which the relevant part of the environment is thereby represented to the organis
 
     <owl:Class rdf:about="&obo;MF_0000029">
         <rdfs:label xml:lang="en">irascibility</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000203"/>
         <obo:IAO_0000115>A mental disposition to frequent or easily incited outbursts of anger. </obo:IAO_0000115>
     </owl:Class>
     
@@ -471,8 +518,8 @@ which the relevant part of the environment is thereby represented to the organis
 
     <owl:Class rdf:about="&obo;MF_0000030">
         <rdfs:label rdf:datatype="&xsd;string">representation</rdfs:label>
-        <obo:IAO_0000115>A dependent continuant which is about a portion of reality.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <obo:IAO_0000115>A dependent continuant which is about a portion of reality.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -481,8 +528,8 @@ which the relevant part of the environment is thereby represented to the organis
 
     <owl:Class rdf:about="&obo;MF_0000031">
         <rdfs:label rdf:datatype="&xsd;string">cognitive representation</rdfs:label>
-        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
         <obo:IAO_0000115>A representation which specifically depends on an anatomical structure in the cognitive system of an organism.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -492,8 +539,8 @@ which the relevant part of the environment is thereby represented to the organis
     <owl:Class rdf:about="&obo;MF_0000039">
         <rdfs:label rdf:datatype="&xsd;string">affective representation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000031"/>
-        <obo:IAO_0000115>A cognitive representation sustained by an organsim about its own emotions.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <obo:IAO_0000115>A cognitive representation sustained by an organsim about its own emotions.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -523,9 +570,9 @@ which the relevant part of the environment is thereby represented to the organis
                 <owl:someValuesFrom rdf:resource="&obo;MF_0000012"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A process in which at least one bodily component of an organsim participates.</obo:IAO_0000115>
-        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
         <rdfs:comment>From OGMS: http://purl.obolibrary.org/obo/OGMS_0000060</rdfs:comment>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <obo:IAO_0000115>A process in which at least one bodily component of an organsim participates.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -540,5 +587,5 @@ which the relevant part of the environment is thereby represented to the organis
 
 
 
-<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
 
