@@ -215,38 +215,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MF_0000025 -->
-
-    <rdf:Description rdf:about="&obo;MF_0000025">
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000016"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MF_0000026 -->
-
-    <rdf:Description rdf:about="&obo;MF_0000026">
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000016"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MF_0000028 -->
-
-    <rdf:Description rdf:about="&obo;MF_0000028">
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000016"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MF_0000029 -->
-
-    <rdf:Description rdf:about="&obo;MF_0000029">
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000016"/>
-    </rdf:Description>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MF_0000030 -->
 
     <owl:Class rdf:about="&obo;MF_0000030">
