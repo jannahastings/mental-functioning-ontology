@@ -109,17 +109,17 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MFOEM_000202 -->
+    <!-- http://purl.obolibrary.org/obo/MF_0000202 -->
 
-    <rdf:Description rdf:about="&obo;MFOEM_000202">
+    <rdf:Description rdf:about="&obo;MF_0000202">
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000016"/>
     </rdf:Description>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MFOEM_000203 -->
+    <!-- http://purl.obolibrary.org/obo/MF_0000203 -->
 
-    <rdf:Description rdf:about="&obo;MFOEM_000203">
+    <rdf:Description rdf:about="&obo;MF_0000203">
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000016"/>
     </rdf:Description>
     
