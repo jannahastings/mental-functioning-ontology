@@ -20,14 +20,14 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about="&obo;MF.owl">
-        <dc:contributor>Janna Hastings</dc:contributor>
-        <dc:title>The Mental Functioning Ontology (MF) was first described in the publication available at http://www.jbiomedsem.com/content/1/1/10 entitled &apos;Foundations for a realist ontology of mental disease&apos; (Barry Smith and Werner Ceusters). </dc:title>
-        <owl:versionInfo>alpha 2012-11-03</owl:versionInfo>
-        <rdfs:comment>The Mental Functioning Ontology is an overarching ontology for all aspects of mental functioning, founded on the Basic Formal Ontology (BFO) and related to the Ontology for General Medical Science (OGMS).</rdfs:comment>
-        <dc:contributor>Mark Jensen</dc:contributor>
-        <dc:contributor>Barry Smith</dc:contributor>
-        <rdfs:comment>The OWL representaions of MF and MD were split on 22 May 2012.</rdfs:comment>
         <rdfs:comment>This OWL version of the MF ontology was originally created by Janna Hastings and is maintained by all committers to the MF ontology project. </rdfs:comment>
+        <rdfs:comment>The OWL representaions of MF and MD were split on 22 May 2012.</rdfs:comment>
+        <dc:contributor>Barry Smith</dc:contributor>
+        <dc:contributor>Mark Jensen</dc:contributor>
+        <rdfs:comment>The Mental Functioning Ontology is an overarching ontology for all aspects of mental functioning, founded on the Basic Formal Ontology (BFO) and related to the Ontology for General Medical Science (OGMS).</rdfs:comment>
+        <owl:versionInfo>alpha 2012-11-03</owl:versionInfo>
+        <dc:title>The Mental Functioning Ontology (MF) was first described in the publication available at http://www.jbiomedsem.com/content/1/1/10 entitled &apos;Foundations for a realist ontology of mental disease&apos; (Barry Smith and Werner Ceusters). </dc:title>
+        <dc:contributor>Janna Hastings</dc:contributor>
         <owl:imports rdf:resource="&obo;bfo.owl"/>
         <owl:imports rdf:resource="&obo;MF/external/GO_import.owl"/>
         <owl:imports rdf:resource="&obo;MF/external/behavior-slim.owl"/>
@@ -45,21 +45,30 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
     <owl:AnnotationProperty rdf:about="&dc;contributor"/>
-    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
-    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
     <owl:AnnotationProperty rdf:about="&dc;title"/>
     
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
 
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
     
 
 
@@ -100,6 +109,22 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000202 -->
+
+    <rdf:Description rdf:about="&obo;MFOEM_000202">
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000016"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOEM_000203 -->
+
+    <rdf:Description rdf:about="&obo;MFOEM_000203">
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000016"/>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MF_0000000 -->
 
     <owl:Class rdf:about="&obo;MF_0000000">
@@ -111,8 +136,8 @@
                 <owl:someValuesFrom rdf:resource="&obo;MF_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>An anatomical structure in which there inheres the disposition to be the agent of a mental process.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <obo:IAO_0000115>An anatomical structure in which there inheres the disposition to be the agent of a mental process.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -251,9 +276,9 @@
     <owl:Class rdf:about="&obo;OGMS_0000060">
         <rdfs:label rdf:datatype="&xsd;string">bodily process</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
-        <obo:IAO_0000115>A process in which at least one bodily component of an organsim participates.</obo:IAO_0000115>
-        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
         <rdfs:comment>From OGMS: http://purl.obolibrary.org/obo/OGMS_0000060</rdfs:comment>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <obo:IAO_0000115>A process in which at least one bodily component of an organsim participates.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -269,5 +294,5 @@
 
 
 
-<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
 
