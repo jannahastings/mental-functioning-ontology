@@ -163,23 +163,23 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MFOEM_000202 -->
+    <!-- http://purl.obolibrary.org/obo/MF_0000202 -->
 
-    <owl:Class rdf:about="&obo;MFOEM_000202">
+    <owl:Class rdf:about="&obo;MF_0000202">
         <rdfs:label xml:lang="en">personality</rdfs:label>
         <obo:IAO_0000115>A personality is a complex sum of dispositions and predispositions towards mental processes and behaviour. It inheres in a person. Personality is not the same as mood, although a person may have a personality that includes a predisposition to moods of certain types, moods may come and go but a personality stays relatively constant, not appearing and disappearing. Personality typically changes slowly over time. </obo:IAO_0000115>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MFOEM_000203 -->
+    <!-- http://purl.obolibrary.org/obo/MF_0000203 -->
 
-    <owl:Class rdf:about="&obo;MFOEM_000203">
+    <owl:Class rdf:about="&obo;MF_0000203">
         <rdfs:label xml:lang="en">personality trait</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000176"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOEM_000202"/>
+                <owl:someValuesFrom rdf:resource="&obo;MF_0000202"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A personality trait is an individual disposition or predisposition that forms part of an overall personality and is realized in repeated occurrences of a specific mental process type or behavioural profile. </obo:IAO_0000115>
@@ -471,7 +471,7 @@ which the relevant part of the environment is thereby represented to the organis
 
     <owl:Class rdf:about="&obo;MF_0000025">
         <rdfs:label xml:lang="en">intelligence</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000203"/>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000203"/>
         <obo:IAO_0000115>A mental disposition realised in processes involving understanding complex ideas, adapting effectively to the environment, learning from experience, engaging in various forms of reasoning, and overcome obstacles through the outcome of thinking processes.</obo:IAO_0000115>
     </owl:Class>
     
@@ -481,7 +481,7 @@ which the relevant part of the environment is thereby represented to the organis
 
     <owl:Class rdf:about="&obo;MF_0000026">
         <rdfs:label xml:lang="en">introversion</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000203"/>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000203"/>
     </owl:Class>
     
 
@@ -499,7 +499,7 @@ which the relevant part of the environment is thereby represented to the organis
 
     <owl:Class rdf:about="&obo;MF_0000028">
         <rdfs:label xml:lang="en">extraversion</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000203"/>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000203"/>
     </owl:Class>
     
 
@@ -508,7 +508,7 @@ which the relevant part of the environment is thereby represented to the organis
 
     <owl:Class rdf:about="&obo;MF_0000029">
         <rdfs:label xml:lang="en">irascibility</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOEM_000203"/>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000203"/>
         <obo:IAO_0000115>A mental disposition to frequent or easily incited outbursts of anger. </obo:IAO_0000115>
     </owl:Class>
     
