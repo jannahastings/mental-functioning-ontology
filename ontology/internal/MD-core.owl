@@ -26,7 +26,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
     <owl:Ontology rdf:about="&obo;MF/internal/MD-core.owl">
-        <rdfs:comment>MD-core.owl -- the core content of the Mental Disease ontology branch of the Mental Functioning ontology project. To be imported into the full ontology project. </rdfs:comment>
+        <rdfs:comment>MD-core.owl -- the core content of the Mental Disease ontology branch of the Mental Functioning ontology project. To be imported into the full ontology project.</rdfs:comment>
         <owl:imports rdf:resource="&obo;MF/external/bfo-properties-slim.owl"/>
         <owl:imports rdf:resource="&obo;MF/external/ontology-metadata-slim.owl"/>
     </owl:Ontology>
@@ -41,23 +41,50 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
-    <owl:AnnotationProperty rdf:about="&dc;contributor"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
-    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
-    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000014 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;MD_0000014">
+        <rdfs:label xml:lang="en">Symptoms</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="&dc;contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
     <owl:AnnotationProperty rdf:about="&dc;title"/>
     
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
 
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
     
 
 
@@ -97,11 +124,63 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MD_0000000 -->
+
+    <owl:Class rdf:about="&obo;MD_0000000">
+        <rdfs:label xml:lang="en">Schizophrenia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000004"/>
+        <obo:MD_0000014> 
+- Lack of insight 
+- Auditory hallucinations 
+- Ideas of reference 
+- Delusions of reference 
+- Suspiciousness 
+- Flatness of affect 
+- Delusional mood 
+- Delusions of persecution 
+- Thought alienation 
+- Thoughts spoken aloud 
+
+ICD-10 diagnostic criteria 
+
+At least one present most of the time for a month
+
+ - Thought echo, insertion or withdrawal, or thought broadcast
+ - Delusions of control referred to body parts, actions, or sensations
+ - Delusional perception
+ - Hallucinatory voices giving a running commentary, discussing the patient, or coming
+    from some part of the patient’s body
+ - Persistent bizarre or culturally inappropriate delusions
+ 
+Or at least two present most of the time for a month
+
+ - Persistent daily hallucinations accompanied by delusions
+ - Incoherent or irrelevant speech
+ - Catatonic behaviour such as stupor or posturing
+ - Negative symptoms such as marked apathy, blunted or incongruous mood</obo:MD_0000014>
+        <obo:IAO_0000115>A long-term mental disorder of a type involving a breakdown in the relation between thought, emotion, and behaviour, leading to faulty perception, inappropriate actions and feelings, withdrawal from reality and personal relationships into fantasy and delusion, and a sense of mental fragmentation. http://oxforddictionaries.com/definition/english/schizophrenia
+</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="es">Esquizofrenia</obo:IAO_0000118>
+        <rdfs:comment>People with schizophrenia typically hear voices (auditory hallucinations), which often criticise or abuse them. The voices may speak directly to the patient, comment on their actions, or discuss the patients among themselves. Often this people try to make some sense of these hallucinations, and this can lead to the development of strange beliefs or delusions (mild symptoms can occur in healthy people and are not associated with illness).
+Schizophrenia typically presents in early adulthood or late adolescence. Men have an earlier age of onset than women, and also tend to experience a more serious form of the illness with more negative symptoms, less chance of a full recovery, and a generally worse outcome. 
+
+The greatest risk factor for schizophrenia is a positive family history, although the risks in general point to an interaction between biological, psychological, and social factors that drive increasingly deviant development and finally frank psychosis.
+
+Stimulants like cocaine and amphetamines can induce a picture clinically identical to paranoid schizophrenia, and recent reports have also implicated cannabis.
+
+More than 80% of patients with their first episode of psychosis will recover, although less than 20% will never have another episode. While many patients with schizophrenia have a lifelong vulnerability to recurrent episodes of illness, a large proportion will have few relapses and make a good functional recovery. An acute onset, an obvious psychosocial precipitant, and good premorbid adjustment all can improve the prognosis.
+
+
+http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1914490/pdf/bmj-335-7610-cr-00091.pdf</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MD_0000001 -->
 
     <owl:Class rdf:about="&obo;MD_0000001">
         <rdfs:label rdf:datatype="&xsd;string">mental disease</rdfs:label>
-        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <obo:IAO_0000115>A disease which is a disposition to undergo pathological mental processess.</obo:IAO_0000115>
         <rdfs:comment>The Mental Disease ontology follows the strategy of the Ontology of General Medical Science in distinguishing mental disease, mental disorder, diagnosis of mental disease, mental disease course and pathological mental process as separately distinguishable entities. Here is a quick guide to how these terms are used in this ontology. 
 
 A mental disease is an underlying disposition to pathological mental processes. 
@@ -118,7 +197,7 @@ A diagnosis of a mental disease is a clinician&apos;s statement that a patient h
 
 
 </rdfs:comment>
-        <obo:IAO_0000115>A disease which is a disposition to undergo pathological mental processess.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -147,8 +226,8 @@ A diagnosis of a mental disease is a clinician&apos;s statement that a patient h
 
     <owl:Class rdf:about="&obo;MD_0000004">
         <rdfs:label rdf:datatype="&xsd;string">mental disorder</rdfs:label>
-        <obo:IAO_0000115>A disorder in a mental functioning related anatomical structure.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <obo:IAO_0000115>A disorder in a mental functioning related anatomical structure.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -186,12 +265,6 @@ A diagnosis of a mental disease is a clinician&apos;s statement that a patient h
         <rdfs:subClassOf rdf:resource="&obo;MD_0000025"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
-                <owl:someValuesFrom rdf:resource="&obo;MD_0000048"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -201,6 +274,12 @@ A diagnosis of a mental disease is a clinician&apos;s statement that a patient h
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
+                <owl:someValuesFrom rdf:resource="&obo;MD_0000048"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A bipolar disease course is the occurrent sum of the mental and behavioural processes that are caused by an underlying bipolar disease.</obo:IAO_0000115>
@@ -219,7 +298,9 @@ A diagnosis of a mental disease is a clinician&apos;s statement that a patient h
                 <owl:allValuesFrom rdf:resource="&obo;MD_0000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Attention deficit - hyperactivity is a mental disease that causes difficulties in concentrating and performing tasks, particularly in children. </obo:IAO_0000115>
+        <obo:IAO_0000118>ADHD</obo:IAO_0000118>
+        <obo:IAO_0000118>314.01 [DSM-IV Code]</obo:IAO_0000118>
+        <obo:IAO_0000118>attention deficit - hyperactivity disorder [DSM-IV]</obo:IAO_0000118>
         <rdfs:comment>Attention deficit-hyperactivity disorder (ADHD) is a psychiatric and a neurobehavioral disorder. It is characterized by either significant difficulties of inattention or hyperactivity and impulsiveness or a combination of the two. According to the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV-TR), symptoms emerge before seven years of age. There are three subtypes of the disorder which consist of it being predominantly inattentive (ADHD-PI or ADHD-I), predominately hyperactive-impulsive (ADHD-HI or ADHD-H), or the two combined (ADHD-C). Oftentimes people refer to ADHD-PI as &quot;Attention deficit disorder&quot; (ADD), however, the term was revised in the 1994 version of the DSM.
 
 ADHD impacts school-aged children and results in restlessness, acting impulsively, and lack of focus which impairs their ability to learn properly. It is the most commonly studied and diagnosed psychiatric disorder in children, affecting about 3 to 5 percent of children globally and diagnosed in about 2 to 16 percent of school-aged children. It is a chronic disorder with 30 to 50 percent of those individuals diagnosed in childhood continuing to have symptoms into adulthood. Adolescents and adults with ADHD tend to develop coping mechanisms to compensate for some or all of their impairments. It is estimated that 4.7 percent of American adults live with ADHD. Standardized rating scales such as the World Health Organization&apos;s Adult ADHD Self-Report Scale can be used for ADHD screening and assessment of the disorder&apos;s symptoms&apos; severity.
@@ -227,9 +308,7 @@ ADHD impacts school-aged children and results in restlessness, acting impulsivel
 ADHD is diagnosed two to four times more frequently in boys than in girls, though studies suggest this discrepancy may be partially due to subjective bias of referring teachers. ADHD management usually involves some combination of medications, applied behavior analysis (ABA, previously known as behavior modification), lifestyle changes, and counseling. Its symptoms can be difficult to differentiate from other disorders, increasing the likelihood that the diagnosis of ADHD will be missed. In addition, most clinicians have not received formal training in the assessment and treatment of ADHD, in particular in adult patients.
 
 [Wikipedia: http://en.wikipedia.org/wiki/Attention-Deficit_Hyperactivity_Disorder]</rdfs:comment>
-        <obo:IAO_0000118>attention deficit - hyperactivity disorder [DSM-IV]</obo:IAO_0000118>
-        <obo:IAO_0000118>314.01 [DSM-IV Code]</obo:IAO_0000118>
-        <obo:IAO_0000118>ADHD</obo:IAO_0000118>
+        <obo:IAO_0000115>Attention deficit - hyperactivity is a mental disease that causes difficulties in concentrating and performing tasks, particularly in children. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -279,12 +358,12 @@ ADHD is diagnosed two to four times more frequently in boys than in girls, thoug
         <rdfs:subClassOf rdf:resource="&obo;MD_0000024"/>
         <owl:disjointWith rdf:resource="&obo;MD_0000012"/>
         <owl:disjointWith rdf:resource="&obo;MD_0000013"/>
+        <obo:IAO_0000118>F30.1 (mania without psychotic symptoms), F30.2 (mania with psychotic symptoms)
+ [ICD-10]</obo:IAO_0000118>
+        <obo:IAO_0000118>manic episode [ICD-10]</obo:IAO_0000118>
         <rdfs:comment>Mood is elevated out of keeping with the patient&apos;s circumstances and may vary from carefree joviality to almost uncontrollable excitement. Elation is accompanied by increased energy, resulting in overactivity, pressure of speech, and a decreased need for sleep. Attention cannot be sustained, and there is often marked distractibility. Self-esteem is often inflated with grandiose ideas and overconfidence. Loss of normal social inhibitions may result in behaviour that is reckless, foolhardy, or inappropriate to the circumstances, and out of character.
 
 [ICD-10]</rdfs:comment>
-        <obo:IAO_0000118>manic episode [ICD-10]</obo:IAO_0000118>
-        <obo:IAO_0000118>F30.1 (mania without psychotic symptoms), F30.2 (mania with psychotic symptoms)
- [ICD-10]</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -314,7 +393,6 @@ ADHD is diagnosed two to four times more frequently in boys than in girls, thoug
     <owl:Class rdf:about="&obo;MD_0000013">
         <rdfs:label xml:lang="en">depressed mood episode</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000024"/>
-        <obo:IAO_0000115>A depressed mood episode is a pathological mental process characterised by persistent feelings of sadness, anxiety, guilt, anger, isolation or hopelessness and other negative valence emotions, disturbances in sleep and appetite, fatigue, loss of interest in usually enjoyable activities and morbid or suicidal ideation. </obo:IAO_0000115>
         <rdfs:comment>The criteria below are based on the formal DSM-IV criteria for a Major Depressive Episode. A diagnoses of major depressive episode requires that the patient has—over a two-week period—experienced five or more of the symptoms below, and these must be outside the patient&apos;s normal behaviour. Either depressed mood or decreased interest or pleasure must be one of the five (although both are frequently concomitant).
 
 Mood
@@ -377,6 +455,268 @@ In diagnosing the symptoms a trained therapist must take the following into acco
 
 [Wikipedia: http://en.wikipedia.org/wiki/Major_depressive_episode]
 </rdfs:comment>
+        <obo:IAO_0000115>A depressed mood episode is a pathological mental process characterised by persistent feelings of sadness, anxiety, guilt, anger, isolation or hopelessness and other negative valence emotions, disturbances in sleep and appetite, fatigue, loss of interest in usually enjoyable activities and morbid or suicidal ideation. </obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000015 -->
+
+    <owl:Class rdf:about="&obo;MD_0000015">
+        <rdfs:label xml:lang="en">Posttraumatic stress disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000004"/>
+        <obo:MD_0000014>A person suffering from Post Traumatic stress disorder can experience:
+- Flashbacks 
+- Nightmares or daydreams (in which the traumatic event is experienced again). 
+- Experience of abnormally intense startle responses
+- Insomnia 
+- May have difficulty concentrating.
+- Traumatic memories, which have two distinctive characteristics: 
+     1) they can be triggered by stimuli that remind the patient of the traumatic event; 
+     2) they have a &quot;frozen&quot; or wordless quality, consisting of images and sensations rather            than verbal descriptions.
+ http://www.minddisorders.com/Ob-Ps/Post-traumatic-stress-disorder.html#ixzz2h8VzYrwc
+
+</obo:MD_0000014>
+        <rdfs:comment>Post traumatic stress disorder (PTSD) can be summarized as a &quot;a normal reaction to abnormal events.&quot;
+ 
+Although the most important causal factor in PTSD is the traumatic event itself, individuals differ in the intensity of their cognitive and emotional responses to trauma; some persons appear to be more vulnerable than others. In some cases, this greater vulnerability is related to temperament or natural disposition, with shy or introverted people being at greater risk. In other cases, the person&apos;s vulnerability results from chronic illness, a physical disability, or previous traumatization—particularly abuse in childhood. 
+
+Studies of specific populations have shed light on the social and cultural causes of PTSD. In general, societies that are highly authoritarian, glorify violence, or sexualize violence have high rates of PTSD even among civilians. Researchers have not found any correlation between race and biological vulnerability to PTSD.
+
+The degree of risk for PTSD is related to three factors: 
+- the amount and intensity of exposure to the suffering of trauma victims; 
+- the worker&apos;s degree of empathy and sensitivity; 
+- and unresolved issues from the worker&apos;s personal history.
+
+The patient attempts to reduce the possibility of exposure to anything that might trigger memories of the trauma, and to minimize his or her reactions to such memories. This cluster of symptoms includes feeling disconnected from other people, psychic numbing, and avoidance of places, persons, or things associated with the trauma. Patients with PTSD are at increased risk of substance abuse as a form of self-medication to numb painful memories.
+
+The patient suffers from significant social, interpersonal, or work-related problems as a result of the PTSD symptoms. 
+
+http://www.minddisorders.com/Ob-Ps/Post-traumatic-stress-disorder.html
+
+
+</rdfs:comment>
+        <obo:IAO_0000115>Mental condition in which a person suffers severe anxiety and depression after a very frightening or shocking experience, such as an accident or a war.
+http://dictionary.cambridge.org/dictionary/british/post-traumatic-stress-disorder</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="es">Trastorno por estrés postraumático
+</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000016 -->
+
+    <owl:Class rdf:about="&obo;MD_0000016">
+        <rdfs:label xml:lang="en">Specific Phobias</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000004"/>
+        <obo:IAO_0000115>
+Extreme fear of a specific object or situation. 
+
+
+&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.
+</obo:IAO_0000115>
+        <rdfs:comment>
+Exposure to the stimulus nearly always produces intense anxiety or a panic attack. Specific phobias are about twice as prevalent in women as in men and are rearely incapacitating. 
+
+The degree to which they interfere with daily life depends on how easy is to avoid the feared object or situation. The phobias often begin during childhood.
+
+Is plausible that phobias may result from an interaction of biological, cognitive, and environmental factors.
+
+According to the psychodynamic viewpoint, phobias are expressions of wishes, fears and fantasies that are unacceptable to the patient. these unconscious conflicts are displaced (or shifted) from their original internal source to an external object or situation; the person blocks from consciousness the real source of anxiety and is able to avoid the dangerous impulse that the phobia represents.
+
+
+DSM-IV-TR divides specific phobias into five types:
+
+1.- Animal (such as spiders or snakes)
+2.- Natural environmental ( such as earthquakes, thunder, water)
+3.- Blood/injections or injury; individuals with this type of phobia, as opposed to other phobias, are likely to have a history of fainting in the phobic situation.
+4.- Situational (includes fear of traveling in cars, planes, and elevators and fear of heights, tunnels, and bridges)
+5.- Other (phobic avoidance of situations that may lead to choking, vomiting, or contracting an illness) 
+
+
+&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</rdfs:comment>
+        <obo:MD_0000014>
+- Excessive or irrational fear of a specific object or situation.
+
+- Avoiding the object or situation or enduring it with great distress.
+
+- Physical symptoms of anxiety or a panic attack, such as a pounding heart, nausea or diarrhea, sweating, trembling or shaking, numbness or tingling, problems with breathing (shortness of breath), feeling dizzy or lightheaded, feeling like you are choking.
+
+- Anticipatory anxiety, which involves becoming nervous ahead of time about being in certain situations or coming into contact with the object of your phobia. (For example, a person with a fear of dogs may become anxious about going for a walk because he or she may see a dog along the way.)
+
+Children with a specific phobia may express their anxiety by crying, clinging to a parent, or throwing a tantrum.
+
+http://www.webmd.com/anxiety-panic/specific-phobias</obo:MD_0000014>
+        <obo:IAO_0000118 xml:lang="es">Fobia específica</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000017 -->
+
+    <owl:Class rdf:about="&obo;MD_0000017">
+        <rdfs:label xml:lang="en">Paranoid Schizophrenia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000000"/>
+        <rdfs:comment xml:lang="en">
+Is the most common form of schizophrenia, and is characterized by the preoccupations with one or more systematized delusions or auditory hallucinations and by the absence of such symptoms as disorganized speech and behaviour or flat affect. 
+
+The deluded individuals believe that others are plotting against them, are talking about them, or are out to harm them in some way. They are constantly suspicious, and their interpretations of the behaviour and motives of others are distorted.
+
+&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000018 -->
+
+    <owl:Class rdf:about="&obo;MD_0000018">
+        <rdfs:label xml:lang="en">Social Phobia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000004"/>
+        <obo:IAO_0000115>Intense, excessive fear of being scrutinised in one or more social or performance situations.
+
+&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</obo:IAO_0000115>
+        <obo:MD_0000014>
+Individuals with Social Phobia almost always experience symptoms of anxiety , such as:
+
+- palpitations
+- tremors
+- sweating
+- gastrointestinal discomfort, diarrhoea
+- muscle tension
+- blushing
+- confusion
+
+http://books.google.co.uk/books?hl=en&amp;lr=&amp;id=w_HajjMnjxwC&amp;oi=fnd&amp;pg=PP1&amp;dq=social+phobia+symptoms+dsm+iv&amp;ots=i7TQ8qcO8C&amp;sig=7U7UHMprbc5VaLks9rhHl3LJX4E#v=onepage&amp;q=social%20phobia%20symptoms%20dsm%20iv&amp;f=true
+</obo:MD_0000014>
+        <rdfs:comment>
+An individual with this phobia avoids or endures these situations, which often lead to intense anxiety reactions or panic attacks. The person&apos;s fear stems foam anxiety that, when in the company of others, he or she will perform one or more activities in a way that is embarrassing or humiliating. There is no such a fear when the person engages in any of these activities in private.
+
+People with this phobia, usually realise that their behaviour and fears are irrational, but this understanding does not reduce the distress they feel.
+
+Social phobias can be divided into three types:
+
+1.- Performance (excessive anxiety over activities such as playing a musical instrument, public speaking, eating in a restaurant, using public restrooms).
+
+2.- Limited interactional (excessive fear only in specific social situations, such as going out on a date or interacting with an authority figure).
+
+3.- Generalized (extreme anxiety displayed in most social situations; where multiple social fears were present, including fears of public speaking, using the toilet away from home, eating or drinking in public, and writing with someone watching).
+
+
+&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</rdfs:comment>
+        <obo:IAO_0000118 xml:lang="es">Fobia Social</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000019 -->
+
+    <owl:Class rdf:about="&obo;MD_0000019">
+        <rdfs:label xml:lang="en">Acute Stress Disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000004"/>
+        <obo:IAO_0000115>
+Disorder that results from exposure to a traumatic stressor that results in dissociation, reliving the experience, and attempts to avoid reminders events.
+
+
+&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.
+</obo:IAO_0000115>
+        <obo:MD_0000014>Either while experiencing the traumatic event or after the event, the individual has at least three of the following dissociative symptoms:
+
+- A subjective sense of numbing, detachment or absence of emotional responsiveness
+- A reduction in awareness of his or her surroundings
+- Derealization
+- Depersonalization 
+- Dissiciative amnesia
+
+They may experience difficulty concentrating, feel deterched from their bodies, experience the world as unreal or dreamlike, or have increasing difficulty recalling specific details of the traumatic event.
+
+At list one of the symptoms from each of the symptoms clusters required for posttraumatic stress disorder is presents.
+
+- The traumatic event is persistently reexperienced (e.g. recurrent recollections, images, thoughts, dreams, illusions, flashback episodes, a sense of reliving the event, or distress on exposure to reminders of the event.)
+- Reminders of the traumas (e.g. places, people, activities) are avoided.
+- hyperarousal in response to stimuli reminiscent of the trauma is present (e.g., difficulty sleeping, irritability, poor concentration, hypervigilance, and exaggerated startle response, and motor restlessness.)
+
+DSM-IV-TR (American Psychiatric Association)
+</obo:MD_0000014>
+        <rdfs:comment>
+In this disorder, following the trauma, the traumatic event is persistently reexperienced, and the individual displays marked avoidance of stimuli that may arouse recollections of the trauma and has marked symptoms of anxiety or increased arousal. The disturbance lasts for a minimum of 2 days and a maximum of 4 weeks after the traumatic event; if symptoms persist beyond 4 weeks, the diagnosis of posttraumatic stress disorder may be applied.
+
+Individuals with this disorder may have a decrease in emotional responsiveness, often finding it difficult or impossible to experience pleasure in previously enjoyable activities, and frequently feel guilty about pursuing usual life tasks. 
+
+If the trauma led to another&apos;s death or to serious injury, survivors may feel guilt about having remanded intact or about not providing enough help to others. Individuals with this disorder often perceived themselves to have greater responsibility for the consequences of the trauma than is warranted.
+
+There is some evidence that social supports, family history, childhood experiences, personality variables, and preexisting mental disorders may influence the development of Acute Stress Disorder. This disorder can develop in individuals without any predisposing conditions, particularly if the stressor is especially extreme.
+
+DSM-IV-TR (american Psychiatric Association)
+</rdfs:comment>
+        <obo:IAO_0000118 xml:lang="es">Trastorno por estrés agudo</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000020 -->
+
+    <owl:Class rdf:about="&obo;MD_0000020">
+        <rdfs:label xml:lang="en">Disorganized Schizophrenia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000000"/>
+        <rdfs:comment xml:lang="en">(Formerly called hebephrenic schizophrenia) is characterized by grossly disorganized behaviours manifested in disorganized speech and behaviour and flat or grossly inappropriate affect.
+
+People with this disorder act in an absurd, incoherent, or very odd manner that conforms to the stereotype of “crazy” behaviour. Their emotional responses to real-life situations are typically flat, the hallucinations and delusions of patients with this form of schizophrenia tend to shift from theme to theme rather than remain centered on a single idea. 
+
+People with this disorder usually exhibit extremely bizarre and seemingly childish behaviours, such as masturbating in public or fantasizing aloud.
+
+
+&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000021 -->
+
+    <owl:Class rdf:about="&obo;MD_0000021">
+        <rdfs:label xml:lang="en">Catatonic Schizophrenia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000000"/>
+        <rdfs:comment xml:lang="en">The prime characteristic of this form of schizophrenia is a marked disturbance in motor activity, either extreme excitement or motoric immobility.
+
+Diagnostic criteria include two or more of the following symptoms:
+- Motoric immobility or stupor
+- Excessive, purposeless motor activity
+- Extreme negativism (resisting direction) or physical resistance
+- Peculiar voluntary posturing or movements
+- Echolalia (repetition of others people’s speech) or echopraxia (repetition of others                people’s movements).
+
+During periods of extreme withdrawal, people with this form of schizophrenia may not eat or control their bladder or bowel functions. Alternating periods of excited motor activity and withdrawal may occur in this disorder.
+
+
+&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000022 -->
+
+    <owl:Class rdf:about="&obo;MD_0000022">
+        <rdfs:label xml:lang="en">Undifferentiated Schizophrenia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000000"/>
+        <rdfs:comment xml:lang="es">
+This form of schizophrenia is diagnosed when the person’s behaviour shows prominent psychotic symptoms that do not meet the criteria for the paranoid, disorganized or catatonic categories. These symptoms may include thought disturbances, delusions, hallucinations, incoherence, and severely impaired behaviour. 
+
+Some time undifferentiated schizophrenia turns out to be an early stage of another subtype. 
+
+&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000023 -->
+
+    <owl:Class rdf:about="&obo;MD_0000023">
+        <rdfs:label xml:lang="en">Residual Schizophrenia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000000"/>
+        <rdfs:comment xml:lang="es">The diagnosis of this form of schizophrenia is reserved for people who have had at least one previous schizophrenic episode but who are now showing an absence of prominent psychotic features. 
+
+There is continuing evidence of two or more symptoms, such as marked social isolation, peculiar behaviours, blunted affect, odd beliefs, or unusual perceptual experiences. The disorder may be in remission. In any case, the person’s symptoms are neither strong enough nor prominent enough to warrant classification as one of the other types of schizophrenia.
+
+&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</rdfs:comment>
     </owl:Class>
     
 
@@ -391,8 +731,8 @@ In diagnosing the symptoms a trained therapist must take the following into acco
                 <owl:someValuesFrom rdf:resource="&obo;MD_0000004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
         <obo:IAO_0000115>A pathological process which is the manifestation of a mental disorder.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -403,18 +743,238 @@ In diagnosing the symptoms a trained therapist must take the following into acco
         <rdfs:label rdf:datatype="&xsd;string">mental disease course</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
-                <owl:someValuesFrom rdf:resource="&obo;MD_0000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
                 <owl:someValuesFrom rdf:resource="&obo;MD_0000024"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
+                <owl:someValuesFrom rdf:resource="&obo;MD_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A disease course of a mental disease.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000026 -->
+
+    <owl:Class rdf:about="&obo;MD_0000026">
+        <rdfs:label xml:lang="en">Panic Disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000004"/>
+        <obo:IAO_0000115>
+Psychiatric disorder in which debilitating anxiety and fear arise frequently and without reasonable cause.
+
+http://oxforddictionaries.com/definition/english/panic-disorder</obo:IAO_0000115>
+        <obo:MD_0000014>
+Individuals with panic disorder report intense panic attacks alternating with periods of somewhat low anxiety, during which they may be apprehensive about having another panic attack. 
+
+Some physical symptoms that the people report during the attack are: 
+- breathlessness
+- sweating
+- choking
+- nausea
+- heart palpitations.
+
+An example of a patient describing her feelings is this:
+
+“ It happened so suddenly. Without warning I felt like I had been swept up in a tornado! … my pulse was pounding, my palms were drenched with sweat, and my throat was closing up, leaving me gasping for air. I felt paralyzed with fear, convinced I was going to die.“
+</obo:MD_0000014>
+        <rdfs:comment>Anxiety itself is the major disturbance in this disorder, which is characterized by severe frightening episodes of apprehension and feelings of impending doom. These episodes are often described as horrible and can last from a few minutes to several hours. 
+
+According to DSM-IV-TR, a diagnosis of panic disorder includes recurrent unexpected panic attacks and at least one month of apprehension over having another attack or worrying about the consequences of an attack. The attacks are especially fared because they often occur unpredictably and without warning. 
+
+Many patients report a disturbed childhood environment that involved anxiety over separation from parents, family conflicts, or school problems. Others indicate that they first experienced after some forms of separation, such as leaving home, or after the loss or threatened loss of a loved one. 
+
+
+
+&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</rdfs:comment>
+        <obo:IAO_0000118 xml:lang="es">Trastorno de pánico </obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000027 -->
+
+    <owl:Class rdf:about="&obo;MD_0000027">
+        <rdfs:label xml:lang="en">Generalized Anxiety Disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000004"/>
+        <obo:MD_0000014 xml:lang="es"></obo:MD_0000014>
+        <rdfs:comment>
+This disorder is characterized by persistent high levels of anxiety and excessive worry over many life circumstances, the disorder is chronic, and it produces social and functional impairment.
+
+Because the people with this disorder are unable to discover the “real” source of their fears, they remain anxious and occasionally experience even more acute attacks of anxiety. They appear to have lower threshold for uncertainty, which leads worrying; to have erroneous beliefs such as “worry is an effective way to deal with problems”.
+
+&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</rdfs:comment>
+        <obo:IAO_0000115>
+Disorder where anxiety (worry, fear, apprehension, or unease) happens over otherwise common things or events, is difficult for the individual to control, is excessive, and lasts at least 6 months.
+
+
+&quot;Generalized Anxiety Disorder&quot; Janet M. Torpy, MD; Alison E. Burke, MA; Robert M. Golub, MD.</obo:IAO_0000115>
+        <obo:MD_0000014 xml:lang="es"> 
+The concerns of this disorder are accompanied by physiological responses such as:
+
+- Heart palpitations
+- Muscle tension
+- Restlessness
+- Trembling
+- Sleep difficulties 
+- Poor concentration
+- Persistent apprehension 
+- Nervousness
+
+&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.
+
+Other symptoms can be headaches, changes in appetite, nausea, vomiting and diarrhea, ediginess or irritability.
+
+
+&quot;Generalized Anxiety Disorder&quot; Janet M. Torpy, MD; Alison E. Burke, MA; Robert M. Golub, MD.
+
+</obo:MD_0000014>
+        <obo:IAO_0000118 xml:lang="es">Trastorno de ansiedad generalizada</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000028 -->
+
+    <owl:Class rdf:about="&obo;MD_0000028">
+        <rdfs:label xml:lang="en">Obsessive-Compulsive Disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000004"/>
+        <obo:IAO_0000115>
+Anxiety disorder characterized by recurrent and persistent thoughts and feelings and repetitive, ritualized behaviors.
+
+http://wordnetweb.princeton.edu/perl/webwn?s=obsessive-compulsive%20disorder</obo:IAO_0000115>
+        <rdfs:comment>
+Is characterized by obsessions (intrusive, repetitive thoughts or images that produces anxiety) or compulsions (the need to perform acts or to dwell on thoughts to reduce anxiety). Frequently this two occur together, although is possible to occur separately.
+
+In this disorder are described the inability to resist or rid oneself of uncontrollable, alien, and often unacceptable thoughts or to keep from performing ritualistic acts over and over again arouses intense anxiety.
+
+&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.
+
+The obsessions or compulsions in this disorder Cause marked distress, are time consuming (take longer than 1 h a day), or greatly interfere with the person&apos;s normal routine, occupational (or academic) functioning, or usual social activities or relationships.
+
+&quot;Obsessive-compulsive disorder&quot; Dan J Stein</rdfs:comment>
+        <obo:MD_0000014 xml:lang="es">
+The characteristics of Obsessive-compulsive disorder are: 
+- Intrusive thoughts or images (obsessions)
+- Repetitive or ritualistic actions (compulsions)
+
+The most frequent symptoms in this disorder are:
+- contamination concerns with consequent washing
+- concerns about harm to self or others with consequent checking.
+
+Additional subgroups has been shown such as a cluster of symptoms of symmetry concerns and arranging rituals, and a cluster focused on hoarding.
+
+
+&quot;Obsessive-compulsive disorder&quot;. Dan J Stein</obo:MD_0000014>
+        <obo:IAO_0000118 xml:lang="es">Trastorno Obsesivo Compulsivo</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000029 -->
+
+    <owl:Class rdf:about="&obo;MD_0000029">
+        <rdfs:label xml:lang="en">Somatization Disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000004"/>
+        <obo:MD_0000014>
+Each of the following criteria must have been met, with individual symptoms occurring at any time during the course of the disturbance:
+
+1) Four pain symptoms: a history of pain related to at least four different sites (e.g., head, abdomen, back, joints, extremities, chest, rectum) or functions (e.g., menstruation, sexual intercourse, urination).
+
+2) Two gastrointestinal symptoms: a history of at list two gastrointestinal symptoms other than pain (e.g., nausea, bloating, vomiting other than during pregnancy, diarrhoea, or intolerance of several different foods).
+
+3) One sexual symptom: a history of at least one sexual or reproductive symptom other than pain (e.g., sexual indifference, erectile or ejaculatory dysfunction, irregular menses, excessive menstrual bleeding, vomiting throughout pregnancy).
+
+4) One pseudoneurological symptom: a history of at least one symptom or deficit suggesting a neurological condition not limited to pain (conversion symptoms such as impaired coordination or balance, paralysis or localised weakness, difficulty swallowing or lump in throat, aphonia, urinary retention, hallucinations, loss of touch or pain sensation, double vision, blindness, deafness, seizures; dissociative symptoms such as amnesia; or loss of consciousness other than fainting).
+
+DSM-IV-TR (american Psychiatric Association)
+</obo:MD_0000014>
+        <rdfs:comment>The essential feature of Somatization disorder is a pattern of recurring, multiple, clinically significant somatic complaints. A somatic complaint is considered to be clinically significant if it results in medical treatment (e. g., the taking of medication) or causes significant impairment in social, occupational, or other important areas of functioning.
+
+Individuals with this disorder usually describe their complaints in colourful, exaggerated terms, but specific factual information is often lacking. They often seek treatment from several physicians concurrently, which may lead to complicated and sometimes hazardous combinations of treatments.  Adoption studies indicate that both genetic and environmental factors contribute to the risk for this disorder; having a biological or adoptive parent with this disorder increase the risk of developing it.
+
+Three features that suggest a diagnosis of Somatization disorder  rather than a general medical condition include:
+1) Involvement of multiple organ system.
+2) Early onset and chronic course without development of physical signs or structural abnormalities.
+3) Absence of laboratory abnormalities that are characteristic of the suggested general medical condition.
+
+Somatization disorder does nor protect individuals from having other independent general medical conditions. The onset of multiple physical symptoms late in life is almost always due to a general medical condition.
+
+DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
+        <obo:IAO_0000115>
+Disorder in which the individual with it chronically complains of bodily symptoms that have no physical basis.
+
+&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="es">Trastorno de somatización</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000030 -->
+
+    <owl:Class rdf:about="&obo;MD_0000030">
+        <rdfs:label xml:lang="en">Undifferentiated Somatoform Disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000004"/>
+        <obo:IAO_0000115></obo:IAO_0000115>
+        <rdfs:comment xml:lang="es"></rdfs:comment>
+        <obo:MD_0000014 xml:lang="es"></obo:MD_0000014>
+        <obo:IAO_0000118 xml:lang="es">Trastorno somatomorfo indiferenciado
+</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000031 -->
+
+    <owl:Class rdf:about="&obo;MD_0000031">
+        <rdfs:label xml:lang="en">Conversion Disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000004"/>
+        <rdfs:comment>
+The symptoms of this disorder are not intentionally produced or feigned, and is not diagnosed if the symptoms or deficits are fully explained by a neurological or general medical condition, by the direct effects of a substance, or as a culturally sanctioned behaviour or experience.
+
+A person with this disorder actually believes that there is a genuine physical problem, and it produces notable distress or impairment in social or occupational functioning.
+the most common conversion symptoms seen in neurological clinics involve psychogenic pain, disturbances of stance and gait, sensory symptoms, dizziness, and psychogenic seizures.
+ 
+The occurrence of symptoms is often related to stress. Nearly 75 percent of respondents in one sample reported that their conversion symptoms developed after they had experienced a stressor.
+
+Some symptoms may require extensive neurological and physical examinations to rule out a true medical disorder before a diagnosis of conversion disorder can be made. Discriminating between people who are faking and those with this disorder is difficult.
+
+                  &quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.
+
+Conversion symptoms typically do not conform to known anatomical pathways and physiological mechanisms, but instead follow the individual&apos;s conceptualization of a condition. A&quot;paralyzed&quot; extremity will be moved inadvertently while dressing or when attention is directed elsewhere. If placed above the head and released, a &quot;paralyzed&quot; arm will be briefly retain its position, then fall to the side, rather than striking the head.
+
+this disorder has been reported to be more common in rural populations, individuals of lower socioeconomic status, and individuals less knowledgeable about medical and psychological concepts. As many as one-third of individuals with conversion symptoms have a current or prior neurological condition. This disorder appears to be more frequent in women than in men. 
+
+                                                                   DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
+        <obo:IAO_0000115>Disorder in which the individual will complain of physical problems or impairments of sensory or motor functions controlled by the voluntary nervous system, all suggesting a neurological disorder but with no underlying organic cause.
+
+&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</obo:IAO_0000115>
+        <obo:MD_0000014>
+Motor symptoms or deficits include: 
+
+- Impaired coordination or balance 
+- Paralysis or localised weakness  
+- Aphonia
+- Difficulty swallowing or a sensation of a lump in the throat
+- Urinary retention
+
+Sensory symptoms or deficits include:
+
+- Loss of touch or pain sensation
+- Double vision
+- Blindness
+- Deafness
+- Hallucinations.
+
+Symptoms may also include seizures or convulsions.
+
+DSM-IV-TR (american Psychiatric Association)
+</obo:MD_0000014>
+        <obo:IAO_0000118 xml:lang="es">Trastorno de conversión</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -423,8 +983,8 @@ In diagnosing the symptoms a trained therapist must take the following into acco
 
     <owl:Class rdf:about="&obo;MD_0000040">
         <rdfs:label rdf:datatype="&xsd;string">diagnosis of mental disease</rdfs:label>
-        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
         <obo:IAO_0000115>A diagnosis asserting the presence of an instance of a mental disease in a given organsim.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -435,18 +995,18 @@ In diagnosing the symptoms a trained therapist must take the following into acco
         <rdfs:label rdf:datatype="&xsd;string">manifestation of a mental disease</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
-                <owl:someValuesFrom rdf:resource="&obo;MD_0000025"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
                 <owl:someValuesFrom rdf:resource="&obo;MD_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
+                <owl:someValuesFrom rdf:resource="&obo;MD_0000025"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A bodily feature of an organism that is (a) a deviation from clinical normality that is the realization of a mental disease and is (b) observable.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -462,8 +1022,8 @@ In diagnosing the symptoms a trained therapist must take the following into acco
                 <owl:allValuesFrom rdf:resource="&obo;MD_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Addictions can include, but are not limited to, alcohol abuse, drug abuse, exercise abuse, pornography and gambling. Classic hallmarks of addiction include: impaired control over substances/behavior, preoccupation with substance/behavior, continued use despite consequences, and denial. Habits and patterns associated with addiction are typically characterized by immediate gratification (short-term reward), coupled with delayed deleterious effects (long-term costs). Physiological dependence occurs when the body has to adjust to the substance by incorporating the substance into its &apos;normal&apos; functioning. This state creates the conditions of tolerance and withdrawal. Tolerance is the process by which the body continually adapts to the substance and requires increasingly larger amounts to achieve the original effects. Withdrawal refers to physical and psychological symptoms people experience when reducing or discontinuing a substance the body had become dependent on. Symptoms of withdrawal generally include but are not limited to anxiety, irritability, intense cravings for the substance, nausea, hallucinations, headaches, cold sweats, and tremors. [WIkipedia: http://en.wikipedia.org/wiki/Addiction]</rdfs:comment>
         <obo:IAO_0000115>Addiction is a mental disease in which a person persists in the use of a mood altering substance or in a behaviour despite adverse consequences. </obo:IAO_0000115>
+        <rdfs:comment>Addictions can include, but are not limited to, alcohol abuse, drug abuse, exercise abuse, pornography and gambling. Classic hallmarks of addiction include: impaired control over substances/behavior, preoccupation with substance/behavior, continued use despite consequences, and denial. Habits and patterns associated with addiction are typically characterized by immediate gratification (short-term reward), coupled with delayed deleterious effects (long-term costs). Physiological dependence occurs when the body has to adjust to the substance by incorporating the substance into its &apos;normal&apos; functioning. This state creates the conditions of tolerance and withdrawal. Tolerance is the process by which the body continually adapts to the substance and requires increasingly larger amounts to achieve the original effects. Withdrawal refers to physical and psychological symptoms people experience when reducing or discontinuing a substance the body had become dependent on. Symptoms of withdrawal generally include but are not limited to anxiety, irritability, intense cravings for the substance, nausea, hallucinations, headaches, cold sweats, and tremors. [WIkipedia: http://en.wikipedia.org/wiki/Addiction]</rdfs:comment>
     </owl:Class>
     
 
@@ -479,17 +1039,6 @@ In diagnosing the symptoms a trained therapist must take the following into acco
                 <owl:allValuesFrom rdf:resource="&obo;MD_0000007"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>F31 [ICD-10 Code]</obo:IAO_0000118>
-        <obo:IAO_0000118>bipolar disorder [DSM-IV]</obo:IAO_0000118>
-        <obo:IAO_0000115>Bipolar disease is a mental disease that leads to disruptive mood swings encompassing manic and depressive moods. </obo:IAO_0000115>
-        <obo:IAO_0000118>Bipolar affective disorder [ICD-10]</obo:IAO_0000118>
-        <rdfs:comment>Bipolar disorder or bipolar affective disorder (historically known as manic-depressive disorder) is a psychiatric diagnosis for a mood disorder in which people experience disruptive mood swings that encompass a frenzied state known as mania (or hypomania) and, usually, symptoms of depression. Bipolar disorder is defined by the presence of one or more episodes of abnormally elevated energy levels, cognition, and mood with or without one or more depressive episodes.
-
-At the lower levels of mania, such as hypomania, individuals may appear energetic and excitable. At a higher level, individuals may behave erratically and impulsively, often making poor decisions due to unrealistic ideas about the future, and may have great difficulty with sleep. At the highest level, individuals can show psychotic behavior, including violence. Individuals who experience manic episodes also commonly experience depressive episodes, or symptoms, or a mixed state in which features of both mania and depression are present at the same time. These events are usually separated by periods of &quot;normal&quot; mood; but, in some individuals, depression and mania may rapidly alternate, which is known as rapid cycling. Severe manic episodes can sometimes lead to such psychotic symptoms as delusions and hallucinations.
-
-The lifetime prevalence of all types of bipolar disorder is thought to be about 4% (meaning that about 4% of people experience some of the characteristic symptoms at some point in their life). Prevalence is similar in men and women and, broadly, across different cultures and ethnic groups. Genetic factors contribute substantially to the likelihood of developing bipolar disorder, and environmental factors are also implicated. Bipolar disorder is often treated with mood stabilizing medications and psychotherapy. In serious cases, in which there is a risk of harm to oneself or others, involuntary commitment may be used. These cases generally involve severe manic episodes with dangerous behavior or depressive episodes with suicidal ideation. There are widespread problems with social stigma, stereotypes, and prejudice against individuals with a diagnosis of bipolar disorder. People with bipolar disorder exhibiting psychotic symptoms can sometimes be misdiagnosed as having schizophrenia.
-
-[Wikipedia: http://en.wikipedia.org/wiki/Bipolar_disorder]</rdfs:comment>
         <rdfs:comment>DSM offers several different codes for bipolar, disambiguating the type of the most recent episode: 
 
 296.8 	Bipolar Disorder NOS
@@ -524,6 +1073,17 @@ The lifetime prevalence of all types of bipolar disorder is thought to be about 
 296.03 	Bipolar I Disorder, Single Manic Episode, Severe Without Psychotic Features
 296 	Bipolar I Disorder, Single Manic Episode, Unspecified
 296.89 	Bipolar II Disorder </rdfs:comment>
+        <rdfs:comment>Bipolar disorder or bipolar affective disorder (historically known as manic-depressive disorder) is a psychiatric diagnosis for a mood disorder in which people experience disruptive mood swings that encompass a frenzied state known as mania (or hypomania) and, usually, symptoms of depression. Bipolar disorder is defined by the presence of one or more episodes of abnormally elevated energy levels, cognition, and mood with or without one or more depressive episodes.
+
+At the lower levels of mania, such as hypomania, individuals may appear energetic and excitable. At a higher level, individuals may behave erratically and impulsively, often making poor decisions due to unrealistic ideas about the future, and may have great difficulty with sleep. At the highest level, individuals can show psychotic behavior, including violence. Individuals who experience manic episodes also commonly experience depressive episodes, or symptoms, or a mixed state in which features of both mania and depression are present at the same time. These events are usually separated by periods of &quot;normal&quot; mood; but, in some individuals, depression and mania may rapidly alternate, which is known as rapid cycling. Severe manic episodes can sometimes lead to such psychotic symptoms as delusions and hallucinations.
+
+The lifetime prevalence of all types of bipolar disorder is thought to be about 4% (meaning that about 4% of people experience some of the characteristic symptoms at some point in their life). Prevalence is similar in men and women and, broadly, across different cultures and ethnic groups. Genetic factors contribute substantially to the likelihood of developing bipolar disorder, and environmental factors are also implicated. Bipolar disorder is often treated with mood stabilizing medications and psychotherapy. In serious cases, in which there is a risk of harm to oneself or others, involuntary commitment may be used. These cases generally involve severe manic episodes with dangerous behavior or depressive episodes with suicidal ideation. There are widespread problems with social stigma, stereotypes, and prejudice against individuals with a diagnosis of bipolar disorder. People with bipolar disorder exhibiting psychotic symptoms can sometimes be misdiagnosed as having schizophrenia.
+
+[Wikipedia: http://en.wikipedia.org/wiki/Bipolar_disorder]</rdfs:comment>
+        <obo:IAO_0000118>Bipolar affective disorder [ICD-10]</obo:IAO_0000118>
+        <obo:IAO_0000118>bipolar disorder [DSM-IV]</obo:IAO_0000118>
+        <obo:IAO_0000115>Bipolar disease is a mental disease that leads to disruptive mood swings encompassing manic and depressive moods. </obo:IAO_0000115>
+        <obo:IAO_0000118>F31 [ICD-10 Code]</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -539,7 +1099,6 @@ The lifetime prevalence of all types of bipolar disorder is thought to be about 
                 <owl:allValuesFrom rdf:resource="&obo;MD_0000010"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>major depressive disorder [DSM-IV]</obo:IAO_0000118>
         <rdfs:comment>DSM-IV lists several codes for depression depending on the most recent episode: 
 
 296.36 	Major Depressive Disorder, Recurrent, In Full Remission
@@ -556,6 +1115,7 @@ The lifetime prevalence of all types of bipolar disorder is thought to be about 
 296.24 	Major Depressive Disorder, Single Episode, Severe With Psychotic Features
 296.23 	Major Depressive Disorder, Single Episode, Severe Without Psychotic Features
 296.2 	Major Depressive Disorder, Single Episode, Unspecified </rdfs:comment>
+        <obo:IAO_0000118>major depressive disorder [DSM-IV]</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -565,8 +1125,8 @@ The lifetime prevalence of all types of bipolar disorder is thought to be about 
     <owl:Class rdf:about="&obo;MD_0000050">
         <rdfs:label>bipolar I disease</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000048"/>
-        <obo:IAO_0000118>bipolar I disorder [DSM-IV]</obo:IAO_0000118>
         <obo:IAO_0000115>Bipolar I disease is the more severe form of bipolar disease in which subjects have experienced a full-blown manic episode.</obo:IAO_0000115>
+        <obo:IAO_0000118>bipolar I disorder [DSM-IV]</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -576,8 +1136,8 @@ The lifetime prevalence of all types of bipolar disorder is thought to be about 
     <owl:Class rdf:about="&obo;MD_0000051">
         <rdfs:label>bipolar II disease</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000048"/>
-        <obo:IAO_0000115>Bipolar II is the less severe form of bipolar disease, in which subjects experience alternating depressive and hypomanic episodes. </obo:IAO_0000115>
         <obo:IAO_0000118>bipolar II disorder [DSM-IV]</obo:IAO_0000118>
+        <obo:IAO_0000115>Bipolar II is the less severe form of bipolar disease, in which subjects experience alternating depressive and hypomanic episodes. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -587,7 +1147,8 @@ The lifetime prevalence of all types of bipolar disorder is thought to be about 
     <owl:Class rdf:about="&obo;MD_0000052">
         <rdfs:label>substance addiction</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000046"/>
-        <obo:IAO_0000115>When an individual persists in use of alcohol or other drugs despite problems related to use of the substance, substance dependence may be diagnosed. Compulsive and repetitive use may result in tolerance to the effect of the drug and withdrawal symptoms when use is reduced or stopped. (DSM-IV, American Psychiatric Association, 2000)</obo:IAO_0000115>
+        <obo:IAO_0000118>substance dependence [DSM-IV]</obo:IAO_0000118>
+        <rdfs:comment>ICD-10 codes F10-F19 [WHO ICD:http://apps.who.int/classifications/icd10/browse/2010/en#/F10-F19]</rdfs:comment>
         <rdfs:comment>Substance dependence can be diagnosed with physiological dependence, evidence of tolerance or withdrawal, or without physiological dependence. DSM-IV substance dependencies include:
 
     303.90 Alcohol dependence
@@ -603,8 +1164,7 @@ The lifetime prevalence of all types of bipolar disorder is thought to be about 
     304.90 Other (or unknown) substance dependence
     305.10 Nicotine dependence
 [Wikipedia:http://en.wikipedia.org/wiki/Addiction]</rdfs:comment>
-        <rdfs:comment>ICD-10 codes F10-F19 [WHO ICD:http://apps.who.int/classifications/icd10/browse/2010/en#/F10-F19]</rdfs:comment>
-        <obo:IAO_0000118>substance dependence [DSM-IV]</obo:IAO_0000118>
+        <obo:IAO_0000115>When an individual persists in use of alcohol or other drugs despite problems related to use of the substance, substance dependence may be diagnosed. Compulsive and repetitive use may result in tolerance to the effect of the drug and withdrawal symptoms when use is reduced or stopped. (DSM-IV, American Psychiatric Association, 2000)</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -614,10 +1174,10 @@ The lifetime prevalence of all types of bipolar disorder is thought to be about 
     <owl:Class rdf:about="&obo;MD_0000053">
         <rdfs:label>process addiction</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000046"/>
-        <rdfs:comment>Increasingly referred to as process addiction or non-substance-related addiction, behavioral addiction includes a compulsion to repeatedly engage in an action until said action causes serious negative consequences to the person&apos;s physical, mental, social, and/or financial well-being. One sign that a behavior has become addictive is if it persists despite these consequences. [Wikipedia: http://en.wikipedia.org/wiki/Behavioral_addiction]</rdfs:comment>
-        <obo:IAO_0000115>An addiction to a process, which might be a behaviour, such as gambling, or procrastination. </obo:IAO_0000115>
-        <obo:IAO_0000118>behavioural addiction [DSM-IV]</obo:IAO_0000118>
         <rdfs:comment>Process or behaviour addiction is not included in DSM-IV. Behavioral addiction has been proposed as a new class in DSM-5, but the only category included is gambling addiction. Internet addiction and sex addiction are included in the appendix. [Wikipedia:http://en.wikipedia.org/wiki/Behavioral_addiction]</rdfs:comment>
+        <obo:IAO_0000118>behavioural addiction [DSM-IV]</obo:IAO_0000118>
+        <obo:IAO_0000115>An addiction to a process, which might be a behaviour, such as gambling, or procrastination. </obo:IAO_0000115>
+        <rdfs:comment>Increasingly referred to as process addiction or non-substance-related addiction, behavioral addiction includes a compulsion to repeatedly engage in an action until said action causes serious negative consequences to the person&apos;s physical, mental, social, and/or financial well-being. One sign that a behavior has become addictive is if it persists despite these consequences. [Wikipedia: http://en.wikipedia.org/wiki/Behavioral_addiction]</rdfs:comment>
     </owl:Class>
     
 
@@ -657,11 +1217,11 @@ The lifetime prevalence of all types of bipolar disorder is thought to be about 
     <owl:Class rdf:about="&obo;MD_0000058">
         <rdfs:label>cocaine addiction</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000052"/>
-        <obo:IAO_0000118>F14 [ICD-10 Code]</obo:IAO_0000118>
-        <obo:IAO_0000118>Mental and behavioural disorders due to use of cocaine [ICD-10]</obo:IAO_0000118>
-        <obo:IAO_0000115>A substance addiction in which the substance compulsively consumed is cocaine (CHEBI:27958)</obo:IAO_0000115>
-        <obo:IAO_0000118>304.20 [DSM-IV Code]</obo:IAO_0000118>
         <obo:IAO_0000118>cocaine dependence [DSM-IV]</obo:IAO_0000118>
+        <obo:IAO_0000118>304.20 [DSM-IV Code]</obo:IAO_0000118>
+        <obo:IAO_0000115>A substance addiction in which the substance compulsively consumed is cocaine (CHEBI:27958)</obo:IAO_0000115>
+        <obo:IAO_0000118>Mental and behavioural disorders due to use of cocaine [ICD-10]</obo:IAO_0000118>
+        <obo:IAO_0000118>F14 [ICD-10 Code]</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -681,11 +1241,11 @@ The lifetime prevalence of all types of bipolar disorder is thought to be about 
     <owl:Class rdf:about="&obo;MD_0000060">
         <rdfs:label>alcohol addiction</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000052"/>
-        <obo:IAO_0000118>F10 [ICD-10 Code]</obo:IAO_0000118>
-        <obo:IAO_0000118>Mental and behavioural disorders due to use of alcohol [ICD-10]</obo:IAO_0000118>
-        <obo:IAO_0000115>A substance addiction in which the substance that is compulsively consumed is alcohol (CHEBI:30879). </obo:IAO_0000115>
         <obo:IAO_0000118>alcohol dependence [DSM-IV]</obo:IAO_0000118>
         <obo:IAO_0000118>309.90 [DSM-IV code]</obo:IAO_0000118>
+        <obo:IAO_0000115>A substance addiction in which the substance that is compulsively consumed is alcohol (CHEBI:30879). </obo:IAO_0000115>
+        <obo:IAO_0000118>Mental and behavioural disorders due to use of alcohol [ICD-10]</obo:IAO_0000118>
+        <obo:IAO_0000118>F10 [ICD-10 Code]</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -695,11 +1255,11 @@ The lifetime prevalence of all types of bipolar disorder is thought to be about 
     <owl:Class rdf:about="&obo;MD_0000061">
         <rdfs:label>marijuana addiction</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000052"/>
-        <obo:IAO_0000118>cannabis dependence [DSM-IV]</obo:IAO_0000118>
-        <obo:IAO_0000118>304.30 [DSM-IV Code]</obo:IAO_0000118>
-        <obo:IAO_0000118>F12 [ICD-10 Code]</obo:IAO_0000118>
-        <obo:IAO_0000118>Mental and behavioural disorders due to use of cannabinoids [ICD-10]</obo:IAO_0000118>
         <obo:IAO_0000115>A substance addiction in which the substance compulsively consumed is marijuana.</obo:IAO_0000115>
+        <obo:IAO_0000118>Mental and behavioural disorders due to use of cannabinoids [ICD-10]</obo:IAO_0000118>
+        <obo:IAO_0000118>F12 [ICD-10 Code]</obo:IAO_0000118>
+        <obo:IAO_0000118>304.30 [DSM-IV Code]</obo:IAO_0000118>
+        <obo:IAO_0000118>cannabis dependence [DSM-IV]</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -709,12 +1269,12 @@ The lifetime prevalence of all types of bipolar disorder is thought to be about 
     <owl:Class rdf:about="&obo;MD_0000062">
         <rdfs:label>nicotine addiction</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000052"/>
-        <obo:IAO_0000118>F17 [ICD-10 Code]</obo:IAO_0000118>
-        <obo:IAO_0000118>Mental and behavioural disorders due to use of tobacco [ICD-10]</obo:IAO_0000118>
-        <obo:IAO_0000115>A substance addiction in which the substance compulsively consumed is nicotine (CHEBI:18723).</obo:IAO_0000115>
         <obo:IAO_0000118>305.1 [DSM-IV Code]
 </obo:IAO_0000118>
         <obo:IAO_0000118>nicotine dependence [DSM-IV]</obo:IAO_0000118>
+        <obo:IAO_0000118>Mental and behavioural disorders due to use of tobacco [ICD-10]</obo:IAO_0000118>
+        <obo:IAO_0000115>A substance addiction in which the substance compulsively consumed is nicotine (CHEBI:18723).</obo:IAO_0000115>
+        <obo:IAO_0000118>F17 [ICD-10 Code]</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -730,5 +1290,5 @@ The lifetime prevalence of all types of bipolar disorder is thought to be about 
 
 
 
-<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
 
