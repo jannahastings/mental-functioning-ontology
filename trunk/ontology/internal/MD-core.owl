@@ -127,7 +127,7 @@
     <!-- http://purl.obolibrary.org/obo/MD_0000000 -->
 
     <owl:Class rdf:about="&obo;MD_0000000">
-        <rdfs:label xml:lang="en">Schizophrenia</rdfs:label>
+        <rdfs:label xml:lang="en">schizophrenia</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000004"/>
         <obo:MD_0000014> 
 - Lack of insight 
@@ -160,7 +160,6 @@ Or at least two present most of the time for a month
  - Negative symptoms such as marked apathy, blunted or incongruous mood</obo:MD_0000014>
         <obo:IAO_0000115>A long-term mental disorder of a type involving a breakdown in the relation between thought, emotion, and behaviour, leading to faulty perception, inappropriate actions and feelings, withdrawal from reality and personal relationships into fantasy and delusion, and a sense of mental fragmentation. http://oxforddictionaries.com/definition/english/schizophrenia
 </obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="es">Esquizofrenia</obo:IAO_0000118>
         <rdfs:comment>People with schizophrenia typically hear voices (auditory hallucinations), which often criticise or abuse them. The voices may speak directly to the patient, comment on their actions, or discuss the patients among themselves. Often this people try to make some sense of these hallucinations, and this can lead to the development of strange beliefs or delusions (mild symptoms can occur in healthy people and are not associated with illness).
 Schizophrenia typically presents in early adulthood or late adolescence. Men have an earlier age of onset than women, and also tend to experience a more serious form of the illness with more negative symptoms, less chance of a full recovery, and a generally worse outcome. 
 
@@ -172,6 +171,7 @@ More than 80% of patients with their first episode of psychosis will recover, al
 
 
 http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1914490/pdf/bmj-335-7610-cr-00091.pdf</rdfs:comment>
+        <obo:IAO_0000118 xml:lang="es">esquizofrenia</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -463,8 +463,8 @@ In diagnosing the symptoms a trained therapist must take the following into acco
     <!-- http://purl.obolibrary.org/obo/MD_0000015 -->
 
     <owl:Class rdf:about="&obo;MD_0000015">
-        <rdfs:label xml:lang="en">Posttraumatic stress disorder</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MD_0000004"/>
+        <rdfs:label xml:lang="en">posttraumatic stress disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000033"/>
         <obo:MD_0000014>A person suffering from Post Traumatic stress disorder can experience:
 - Flashbacks 
 - Nightmares or daydreams (in which the traumatic event is experienced again). 
@@ -498,7 +498,7 @@ http://www.minddisorders.com/Ob-Ps/Post-traumatic-stress-disorder.html
 </rdfs:comment>
         <obo:IAO_0000115>Mental condition in which a person suffers severe anxiety and depression after a very frightening or shocking experience, such as an accident or a war.
 http://dictionary.cambridge.org/dictionary/british/post-traumatic-stress-disorder</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="es">Trastorno por estrés postraumático
+        <obo:IAO_0000118 xml:lang="es">trastorno por estrés postraumático
 </obo:IAO_0000118>
     </owl:Class>
     
@@ -507,8 +507,8 @@ http://dictionary.cambridge.org/dictionary/british/post-traumatic-stress-disorde
     <!-- http://purl.obolibrary.org/obo/MD_0000016 -->
 
     <owl:Class rdf:about="&obo;MD_0000016">
-        <rdfs:label xml:lang="en">Specific Phobias</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MD_0000004"/>
+        <rdfs:label xml:lang="en">specific phobia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000033"/>
         <obo:IAO_0000115>
 Extreme fear of a specific object or situation. 
 
@@ -547,7 +547,7 @@ DSM-IV-TR divides specific phobias into five types:
 Children with a specific phobia may express their anxiety by crying, clinging to a parent, or throwing a tantrum.
 
 http://www.webmd.com/anxiety-panic/specific-phobias</obo:MD_0000014>
-        <obo:IAO_0000118 xml:lang="es">Fobia específica</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="es">fobia específica</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -570,8 +570,8 @@ The deluded individuals believe that others are plotting against them, are talki
     <!-- http://purl.obolibrary.org/obo/MD_0000018 -->
 
     <owl:Class rdf:about="&obo;MD_0000018">
-        <rdfs:label xml:lang="en">Social Phobia</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MD_0000004"/>
+        <rdfs:label xml:lang="en">social phobia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000033"/>
         <obo:IAO_0000115>Intense, excessive fear of being scrutinised in one or more social or performance situations.
 
 &quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</obo:IAO_0000115>
@@ -603,7 +603,7 @@ Social phobias can be divided into three types:
 
 
 &quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</rdfs:comment>
-        <obo:IAO_0000118 xml:lang="es">Fobia Social</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="es">fobia social</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -611,8 +611,8 @@ Social phobias can be divided into three types:
     <!-- http://purl.obolibrary.org/obo/MD_0000019 -->
 
     <owl:Class rdf:about="&obo;MD_0000019">
-        <rdfs:label xml:lang="en">Acute Stress Disorder</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MD_0000004"/>
+        <rdfs:label xml:lang="en">acute stress disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000033"/>
         <obo:IAO_0000115>
 Disorder that results from exposure to a traumatic stressor that results in dissociation, reliving the experience, and attempts to avoid reminders events.
 
@@ -648,7 +648,7 @@ There is some evidence that social supports, family history, childhood experienc
 
 DSM-IV-TR (american Psychiatric Association)
 </rdfs:comment>
-        <obo:IAO_0000118 xml:lang="es">Trastorno por estrés agudo</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="es">trastorno por estrés agudo</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -762,8 +762,8 @@ There is continuing evidence of two or more symptoms, such as marked social isol
     <!-- http://purl.obolibrary.org/obo/MD_0000026 -->
 
     <owl:Class rdf:about="&obo;MD_0000026">
-        <rdfs:label xml:lang="en">Panic Disorder</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MD_0000004"/>
+        <rdfs:label xml:lang="en">panic disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000033"/>
         <obo:IAO_0000115>
 Psychiatric disorder in which debilitating anxiety and fear arise frequently and without reasonable cause.
 
@@ -791,7 +791,7 @@ Many patients report a disturbed childhood environment that involved anxiety ove
 
 
 &quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</rdfs:comment>
-        <obo:IAO_0000118 xml:lang="es">Trastorno de pánico </obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="es">trastorno de pánico </obo:IAO_0000118>
     </owl:Class>
     
 
@@ -799,8 +799,8 @@ Many patients report a disturbed childhood environment that involved anxiety ove
     <!-- http://purl.obolibrary.org/obo/MD_0000027 -->
 
     <owl:Class rdf:about="&obo;MD_0000027">
-        <rdfs:label xml:lang="en">Generalized Anxiety Disorder</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MD_0000004"/>
+        <rdfs:label xml:lang="en">generalized anxiety disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000033"/>
         <obo:MD_0000014 xml:lang="es"></obo:MD_0000014>
         <rdfs:comment>
 This disorder is characterized by persistent high levels of anxiety and excessive worry over many life circumstances, the disorder is chronic, and it produces social and functional impairment.
@@ -833,7 +833,7 @@ Other symptoms can be headaches, changes in appetite, nausea, vomiting and diarr
 &quot;Generalized Anxiety Disorder&quot; Janet M. Torpy, MD; Alison E. Burke, MA; Robert M. Golub, MD.
 
 </obo:MD_0000014>
-        <obo:IAO_0000118 xml:lang="es">Trastorno de ansiedad generalizada</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="es">trastorno de ansiedad generalizada</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -841,8 +841,8 @@ Other symptoms can be headaches, changes in appetite, nausea, vomiting and diarr
     <!-- http://purl.obolibrary.org/obo/MD_0000028 -->
 
     <owl:Class rdf:about="&obo;MD_0000028">
-        <rdfs:label xml:lang="en">Obsessive-Compulsive Disorder</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MD_0000004"/>
+        <rdfs:label xml:lang="en">obsessive-compulsive disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000033"/>
         <obo:IAO_0000115>
 Anxiety disorder characterized by recurrent and persistent thoughts and feelings and repetitive, ritualized behaviors.
 
@@ -870,7 +870,7 @@ Additional subgroups has been shown such as a cluster of symptoms of symmetry co
 
 
 &quot;Obsessive-compulsive disorder&quot;. Dan J Stein</obo:MD_0000014>
-        <obo:IAO_0000118 xml:lang="es">Trastorno Obsesivo Compulsivo</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="es">trastorno obsesivo compulsivo</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -878,8 +878,8 @@ Additional subgroups has been shown such as a cluster of symptoms of symmetry co
     <!-- http://purl.obolibrary.org/obo/MD_0000029 -->
 
     <owl:Class rdf:about="&obo;MD_0000029">
-        <rdfs:label xml:lang="en">Somatization Disorder</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MD_0000004"/>
+        <rdfs:label xml:lang="en">somatization disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000034"/>
         <obo:MD_0000014>
 Each of the following criteria must have been met, with individual symptoms occurring at any time during the course of the disturbance:
 
@@ -909,21 +909,7 @@ DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
 Disorder in which the individual with it chronically complains of bodily symptoms that have no physical basis.
 
 &quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="es">Trastorno de somatización</obo:IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MD_0000030 -->
-
-    <owl:Class rdf:about="&obo;MD_0000030">
-        <rdfs:label xml:lang="en">Undifferentiated Somatoform Disorder</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MD_0000004"/>
-        <obo:IAO_0000115></obo:IAO_0000115>
-        <rdfs:comment xml:lang="es"></rdfs:comment>
-        <obo:MD_0000014 xml:lang="es"></obo:MD_0000014>
-        <obo:IAO_0000118 xml:lang="es">Trastorno somatomorfo indiferenciado
-</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="es">trastorno de somatización</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -931,8 +917,8 @@ Disorder in which the individual with it chronically complains of bodily symptom
     <!-- http://purl.obolibrary.org/obo/MD_0000031 -->
 
     <owl:Class rdf:about="&obo;MD_0000031">
-        <rdfs:label xml:lang="en">Conversion Disorder</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MD_0000004"/>
+        <rdfs:label xml:lang="en">conversion disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000034"/>
         <rdfs:comment>
 The symptoms of this disorder are not intentionally produced or feigned, and is not diagnosed if the symptoms or deficits are fully explained by a neurological or general medical condition, by the direct effects of a substance, or as a culturally sanctioned behaviour or experience.
 
@@ -974,7 +960,7 @@ Symptoms may also include seizures or convulsions.
 
 DSM-IV-TR (american Psychiatric Association)
 </obo:MD_0000014>
-        <obo:IAO_0000118 xml:lang="es">Trastorno de conversión</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="es">trastorno de conversión</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -983,11 +969,57 @@ DSM-IV-TR (american Psychiatric Association)
 
     <owl:Class rdf:about="&obo;MD_0000032">
         <rdfs:label xml:lang="en">pain disorder</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MD_0000004"/>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000034"/>
         <rdfs:comment></rdfs:comment>
         <obo:IAO_0000115></obo:IAO_0000115>
         <obo:MD_0000014></obo:MD_0000014>
         <obo:IAO_0000118></obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000033 -->
+
+    <owl:Class rdf:about="&obo;MD_0000033">
+        <rdfs:label xml:lang="en">anxiety disorders</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000004"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000034 -->
+
+    <owl:Class rdf:about="&obo;MD_0000034">
+        <rdfs:label xml:lang="en">somatoform disorders</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000004"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000035 -->
+
+    <owl:Class rdf:about="&obo;MD_0000035">
+        <rdfs:label xml:lang="en">agoraphobia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000033"/>
+        <rdfs:comment>
+The anxiety typically leads to a pervasive avoidance of a variety of situations that may include being alone outside the home or being home alone; being in a crowd of people; travelling in automobile, bus, or airplane; or being on a bridge or in an elevator.
+
+The differential diagnosis to distinguish agoraphobia from social and specific phobia and from severe separation anxiety disorder can be difficult because all of this conditions are characterised by avoidance of specific situations.
+
+DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
+        <obo:MD_0000014>
+Some of the following patterns have been found in patients with Agoraphobia.
+
+- Some physical or psychological stressor.
+- Altered physical sensation, such as increased heart rate and over-breathing.
+- Faulty appraisal, such as incorrectly interpreting the symptoms as representing a severe physical problem- a heart attack or loss of control.
+- Avoidance of the situation associated with the fear. the attack were described as highly aversive, and the patients&apos; belief that they represented a pathological outcome intensified the fear. this lead to avoidance. 
+
+DSM-IV-TR (american Psychiatric Association)</obo:MD_0000014>
+        <obo:IAO_0000115>Anxiety about being in places or situations from which escape might be difficult (or embarrassing) or in which help may not be available in the event of having a panic attack or panic like symptoms.
+
+DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="es">agorafobia</obo:IAO_0000118>
     </owl:Class>
     
 
