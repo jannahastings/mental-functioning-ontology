@@ -64,6 +64,23 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MD_0000036 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;MD_0000036">
+        <rdfs:label xml:lang="en">code DSM-IV-TR</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&obo;IAO_0000118"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000037 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;MD_0000037">
+        <rdfs:label xml:lang="en">code DSM-IV-TR</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.org/dc/elements/1.1/contributor -->
 
     <owl:AnnotationProperty rdf:about="&dc;contributor"/>
@@ -160,6 +177,7 @@ Or at least two present most of the time for a month
  - Negative symptoms such as marked apathy, blunted or incongruous mood</obo:MD_0000014>
         <obo:IAO_0000115>A long-term mental disorder of a type involving a breakdown in the relation between thought, emotion, and behaviour, leading to faulty perception, inappropriate actions and feelings, withdrawal from reality and personal relationships into fantasy and delusion, and a sense of mental fragmentation. http://oxforddictionaries.com/definition/english/schizophrenia
 </obo:IAO_0000115>
+        <obo:IAO_0000597></obo:IAO_0000597>
         <rdfs:comment>People with schizophrenia typically hear voices (auditory hallucinations), which often criticise or abuse them. The voices may speak directly to the patient, comment on their actions, or discuss the patients among themselves. Often this people try to make some sense of these hallucinations, and this can lead to the development of strange beliefs or delusions (mild symptoms can occur in healthy people and are not associated with illness).
 Schizophrenia typically presents in early adulthood or late adolescence. Men have an earlier age of onset than women, and also tend to experience a more serious form of the illness with more negative symptoms, less chance of a full recovery, and a generally worse outcome. 
 
@@ -496,6 +514,7 @@ http://www.minddisorders.com/Ob-Ps/Post-traumatic-stress-disorder.html
 
 
 </rdfs:comment>
+        <obo:MD_0000037>309.81</obo:MD_0000037>
         <obo:IAO_0000115>Mental condition in which a person suffers severe anxiety and depression after a very frightening or shocking experience, such as an accident or a war.
 http://dictionary.cambridge.org/dictionary/british/post-traumatic-stress-disorder</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="es">trastorno por estrés postraumático
@@ -547,6 +566,7 @@ DSM-IV-TR divides specific phobias into five types:
 Children with a specific phobia may express their anxiety by crying, clinging to a parent, or throwing a tantrum.
 
 http://www.webmd.com/anxiety-panic/specific-phobias</obo:MD_0000014>
+        <obo:MD_0000037>300.29</obo:MD_0000037>
         <obo:IAO_0000118 xml:lang="es">fobia específica</obo:IAO_0000118>
     </owl:Class>
     
@@ -555,14 +575,16 @@ http://www.webmd.com/anxiety-panic/specific-phobias</obo:MD_0000014>
     <!-- http://purl.obolibrary.org/obo/MD_0000017 -->
 
     <owl:Class rdf:about="&obo;MD_0000017">
-        <rdfs:label xml:lang="en">Paranoid Schizophrenia</rdfs:label>
+        <rdfs:label xml:lang="en">paranoid schizophrenia</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000000"/>
+        <obo:MD_0000037>295.30</obo:MD_0000037>
         <rdfs:comment xml:lang="en">
 Is the most common form of schizophrenia, and is characterized by the preoccupations with one or more systematized delusions or auditory hallucinations and by the absence of such symptoms as disorganized speech and behaviour or flat affect. 
 
 The deluded individuals believe that others are plotting against them, are talking about them, or are out to harm them in some way. They are constantly suspicious, and their interpretations of the behaviour and motives of others are distorted.
 
 &quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</rdfs:comment>
+        <obo:IAO_0000118 xml:lang="es">esquizofrenia tipo paranoide</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -572,6 +594,7 @@ The deluded individuals believe that others are plotting against them, are talki
     <owl:Class rdf:about="&obo;MD_0000018">
         <rdfs:label xml:lang="en">social phobia</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000033"/>
+        <obo:MD_0000037>300.23</obo:MD_0000037>
         <obo:IAO_0000115>Intense, excessive fear of being scrutinised in one or more social or performance situations.
 
 &quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</obo:IAO_0000115>
@@ -613,6 +636,7 @@ Social phobias can be divided into three types:
     <owl:Class rdf:about="&obo;MD_0000019">
         <rdfs:label xml:lang="en">acute stress disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000033"/>
+        <obo:MD_0000037>308.3</obo:MD_0000037>
         <obo:IAO_0000115>
 Disorder that results from exposure to a traumatic stressor that results in dissociation, reliving the experience, and attempts to avoid reminders events.
 
@@ -656,8 +680,9 @@ DSM-IV-TR (american Psychiatric Association)
     <!-- http://purl.obolibrary.org/obo/MD_0000020 -->
 
     <owl:Class rdf:about="&obo;MD_0000020">
-        <rdfs:label xml:lang="en">Disorganized Schizophrenia</rdfs:label>
+        <rdfs:label xml:lang="en">disorganized schizophrenia</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000000"/>
+        <obo:MD_0000037>295.10</obo:MD_0000037>
         <rdfs:comment xml:lang="en">(Formerly called hebephrenic schizophrenia) is characterized by grossly disorganized behaviours manifested in disorganized speech and behaviour and flat or grossly inappropriate affect.
 
 People with this disorder act in an absurd, incoherent, or very odd manner that conforms to the stereotype of “crazy” behaviour. Their emotional responses to real-life situations are typically flat, the hallucinations and delusions of patients with this form of schizophrenia tend to shift from theme to theme rather than remain centered on a single idea. 
@@ -666,6 +691,7 @@ People with this disorder usually exhibit extremely bizarre and seemingly childi
 
 
 &quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</rdfs:comment>
+        <obo:IAO_0000118 xml:lang="es">esquizofrenia tipo desorganizado</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -673,8 +699,9 @@ People with this disorder usually exhibit extremely bizarre and seemingly childi
     <!-- http://purl.obolibrary.org/obo/MD_0000021 -->
 
     <owl:Class rdf:about="&obo;MD_0000021">
-        <rdfs:label xml:lang="en">Catatonic Schizophrenia</rdfs:label>
+        <rdfs:label xml:lang="en">catatonic schizophrenia</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000000"/>
+        <obo:MD_0000037>295.20</obo:MD_0000037>
         <rdfs:comment xml:lang="en">The prime characteristic of this form of schizophrenia is a marked disturbance in motor activity, either extreme excitement or motoric immobility.
 
 Diagnostic criteria include two or more of the following symptoms:
@@ -688,6 +715,7 @@ During periods of extreme withdrawal, people with this form of schizophrenia may
 
 
 &quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</rdfs:comment>
+        <obo:IAO_0000118>esquizofrenia tipo catatónico</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -695,7 +723,7 @@ During periods of extreme withdrawal, people with this form of schizophrenia may
     <!-- http://purl.obolibrary.org/obo/MD_0000022 -->
 
     <owl:Class rdf:about="&obo;MD_0000022">
-        <rdfs:label xml:lang="en">Undifferentiated Schizophrenia</rdfs:label>
+        <rdfs:label xml:lang="en">undifferentiated schizophrenia</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000000"/>
         <rdfs:comment xml:lang="es">
 This form of schizophrenia is diagnosed when the person’s behaviour shows prominent psychotic symptoms that do not meet the criteria for the paranoid, disorganized or catatonic categories. These symptoms may include thought disturbances, delusions, hallucinations, incoherence, and severely impaired behaviour. 
@@ -703,6 +731,8 @@ This form of schizophrenia is diagnosed when the person’s behaviour shows prom
 Some time undifferentiated schizophrenia turns out to be an early stage of another subtype. 
 
 &quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</rdfs:comment>
+        <obo:MD_0000037>295.90</obo:MD_0000037>
+        <obo:IAO_0000118 xml:lang="es">esquizofrenia tipo indiferenciado</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -710,13 +740,15 @@ Some time undifferentiated schizophrenia turns out to be an early stage of anoth
     <!-- http://purl.obolibrary.org/obo/MD_0000023 -->
 
     <owl:Class rdf:about="&obo;MD_0000023">
-        <rdfs:label xml:lang="en">Residual Schizophrenia</rdfs:label>
+        <rdfs:label xml:lang="en">residual schizophrenia</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000000"/>
+        <obo:MD_0000037>295.60</obo:MD_0000037>
         <rdfs:comment xml:lang="es">The diagnosis of this form of schizophrenia is reserved for people who have had at least one previous schizophrenic episode but who are now showing an absence of prominent psychotic features. 
 
 There is continuing evidence of two or more symptoms, such as marked social isolation, peculiar behaviours, blunted affect, odd beliefs, or unusual perceptual experiences. The disorder may be in remission. In any case, the person’s symptoms are neither strong enough nor prominent enough to warrant classification as one of the other types of schizophrenia.
 
 &quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</rdfs:comment>
+        <obo:IAO_0000118 xml:lang="es">esquizofrenia tipo residual</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -808,6 +840,7 @@ This disorder is characterized by persistent high levels of anxiety and excessiv
 Because the people with this disorder are unable to discover the “real” source of their fears, they remain anxious and occasionally experience even more acute attacks of anxiety. They appear to have lower threshold for uncertainty, which leads worrying; to have erroneous beliefs such as “worry is an effective way to deal with problems”.
 
 &quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</rdfs:comment>
+        <obo:MD_0000037>300.02</obo:MD_0000037>
         <obo:IAO_0000115>
 Disorder where anxiety (worry, fear, apprehension, or unease) happens over otherwise common things or events, is difficult for the individual to control, is excessive, and lasts at least 6 months.
 
@@ -843,6 +876,7 @@ Other symptoms can be headaches, changes in appetite, nausea, vomiting and diarr
     <owl:Class rdf:about="&obo;MD_0000028">
         <rdfs:label xml:lang="en">obsessive-compulsive disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000033"/>
+        <obo:MD_0000037>301.4</obo:MD_0000037>
         <obo:IAO_0000115>
 Anxiety disorder characterized by recurrent and persistent thoughts and feelings and repetitive, ritualized behaviors.
 
@@ -909,6 +943,7 @@ DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
 Disorder in which the individual with it chronically complains of bodily symptoms that have no physical basis.
 
 &quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</obo:IAO_0000115>
+        <obo:MD_0000037>300.81</obo:MD_0000037>
         <obo:IAO_0000118 xml:lang="es">trastorno de somatización</obo:IAO_0000118>
     </owl:Class>
     
@@ -919,6 +954,7 @@ Disorder in which the individual with it chronically complains of bodily symptom
     <owl:Class rdf:about="&obo;MD_0000031">
         <rdfs:label xml:lang="en">conversion disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000034"/>
+        <obo:MD_0000037>300.11</obo:MD_0000037>
         <rdfs:comment>
 The symptoms of this disorder are not intentionally produced or feigned, and is not diagnosed if the symptoms or deficits are fully explained by a neurological or general medical condition, by the direct effects of a substance, or as a culturally sanctioned behaviour or experience.
 
@@ -970,10 +1006,9 @@ DSM-IV-TR (american Psychiatric Association)
     <owl:Class rdf:about="&obo;MD_0000032">
         <rdfs:label xml:lang="en">pain disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000034"/>
-        <rdfs:comment></rdfs:comment>
-        <obo:IAO_0000115></obo:IAO_0000115>
-        <obo:MD_0000014></obo:MD_0000014>
-        <obo:IAO_0000118></obo:IAO_0000118>
+        <obo:IAO_0000115>A somatoform disorder characterized by a chief complaint of severe chronic pain which is neither feigned nor intentionally produced, but in which psychological factors appear to play a major role in onset, severity, exacerbation, or maintenance.
+
+http://medical-dictionary.thefreedictionary.com/pain+disorder</obo:IAO_0000115>
     </owl:Class>
     
 
