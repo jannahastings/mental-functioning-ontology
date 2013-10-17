@@ -1234,6 +1234,14 @@ DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
 
 DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
         <obo:MD_0000037>301.7</obo:MD_0000037>
+        <obo:MD_0000014>
+1.- superficial charm and good intelligence
+2.- shallow emotions and lack of empathy, guilt, or remorse
+3.- behaviours indicative of little life plan or order
+4.- failure to learn from experiences and absence of anxiety
+5.- unreliability, insincerity, and untruthfulness
+
+&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</obo:MD_0000014>
         <rdfs:comment>The indicators of this disorder are chronic antisocial behavioural patterns, such as a failure to conform to social or legal codes, a lack of anxiety and guilt, and irresponsible behaviours.
 
 People with this disorder show little guilt for their wrongdoing, which may include lying, using other people, and aggressive sexual acts. Their relationship with others are superficial and fleeting and involve little loyalty.
@@ -1260,6 +1268,19 @@ Antisocial personality disorder is more prevalent among men than women, and amon
         </rdfs:subClassOf>
         <obo:IAO_0000115>Addiction is a mental disease in which a person persists in the use of a mood altering substance or in a behaviour despite adverse consequences. </obo:IAO_0000115>
         <rdfs:comment>Addictions can include, but are not limited to, alcohol abuse, drug abuse, exercise abuse, pornography and gambling. Classic hallmarks of addiction include: impaired control over substances/behavior, preoccupation with substance/behavior, continued use despite consequences, and denial. Habits and patterns associated with addiction are typically characterized by immediate gratification (short-term reward), coupled with delayed deleterious effects (long-term costs). Physiological dependence occurs when the body has to adjust to the substance by incorporating the substance into its &apos;normal&apos; functioning. This state creates the conditions of tolerance and withdrawal. Tolerance is the process by which the body continually adapts to the substance and requires increasingly larger amounts to achieve the original effects. Withdrawal refers to physical and psychological symptoms people experience when reducing or discontinuing a substance the body had become dependent on. Symptoms of withdrawal generally include but are not limited to anxiety, irritability, intense cravings for the substance, nausea, hallucinations, headaches, cold sweats, and tremors. [WIkipedia: http://en.wikipedia.org/wiki/Addiction]</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000047 -->
+
+    <owl:Class rdf:about="&obo;MD_0000047">
+        <rdfs:label xml:lang="en">borderline personality disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000039"/>
+        <obo:IAO_0000115></obo:IAO_0000115>
+        <rdfs:comment></rdfs:comment>
+        <obo:MD_0000037>301.83</obo:MD_0000037>
+        <obo:IAO_0000118 xml:lang="es">Trastorno límite de la personalidad</obo:IAO_0000118>
     </owl:Class>
     
 
