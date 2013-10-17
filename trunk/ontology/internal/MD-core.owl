@@ -1006,9 +1006,21 @@ DSM-IV-TR (american Psychiatric Association)
     <owl:Class rdf:about="&obo;MD_0000032">
         <rdfs:label xml:lang="en">pain disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000034"/>
+        <rdfs:comment>
+The pain cannot be fully attributed to a known medical disorder, and causes clinically significant distress, impairment, or both in social, academic, occupational, or other areas of functioning.
+
+Psychological factors are judged to play an important role in the onset, severity, exacerbation, or maintenance of the pain and the pain is not intentionally produced or better accounted for by a mood disorder, anxiety disorder, or psychotic disorder.
+
+http://emedicine.medscape.com/article/914594-overview
+
+In most cases the pain has persisted for many years by the time the individual comes to the attention of the mental health profession. Important factors that appear to influence recovery from pain disorder are the individual&apos;s acknowledgment of pain.
+
+DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
         <obo:IAO_0000115>A somatoform disorder characterized by a chief complaint of severe chronic pain which is neither feigned nor intentionally produced, but in which psychological factors appear to play a major role in onset, severity, exacerbation, or maintenance.
 
 http://medical-dictionary.thefreedictionary.com/pain+disorder</obo:IAO_0000115>
+        <obo:MD_0000037>307.89</obo:MD_0000037>
+        <obo:IAO_0000118 xml:lang="es">Trastorno por dolor</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1055,6 +1067,45 @@ DSM-IV-TR (american Psychiatric Association)</obo:MD_0000014>
 
 DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="es">agorafobia</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000038 -->
+
+    <owl:Class rdf:about="&obo;MD_0000038">
+        <rdfs:label xml:lang="en">hypochondriasis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000034"/>
+        <obo:IAO_0000115>
+Preoccupation with fears of having, or the idea that one has, a serious disease based on a misinterpretation of one or more bodily signs or symptoms.
+
+DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
+        <obo:MD_0000014>
+- Having a long-term intense fear or anxiety about having a serious disease or health condition
+- Worrying that minor symptoms or bodily sensations mean you have a serious illness
+- Seeing doctors repeated times or having involved medical exams 
+- Frequently switching doctors — if one doctor tells you that you aren&apos;t sick, you may not believe it and seek out other opinions
+- Continuously talking about your symptoms or suspected diseases with family and friends
+- Obsessively doing health research
+- Frequently checking your body for problems
+- Frequently checking your vital signs
+- Thinking you have a disease after reading or hearing about it
+
+http://www.mayoclinic.com/health/hypochondria/DS00841/DSECTION=symptoms</obo:MD_0000014>
+        <rdfs:comment>
+The preoccupation in Hypochondriasis may be with bodily functions; minor physical abnormalities; or with vague and ambiguous physical sensations. The person attributes this symptoms or signs to the suspected disease and is very concerned with their meaning, authenticity, and aetiology. Repeated physical examinations, diagnostic test, and reassurance from the physician do little to allay the concern about bodily disease or affliction. 
+
+Individuals with Hypochondriasis may become alarmed by reading or hearing about disease, knowing someone who becomes sick, or from observations, sensations, or occurrences within their own bodies. 
+
+Concern about the feared illness often becomes a central feature of the individual&apos;s self-image, a topic of social discourse, and response to life stresses.
+
+DSM-IV-TR (american Psychiatric Association)
+
+Some several predisposing factors of hypocondriasis included a history of physical illness, parental attention to somatic symptoms, low pain threshold, or greater sensitivity to somatic cues.
+
+&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</rdfs:comment>
+        <obo:MD_0000037>300.7</obo:MD_0000037>
+        <obo:IAO_0000118 xml:lang="es">hipocondría</obo:IAO_0000118>
     </owl:Class>
     
 
