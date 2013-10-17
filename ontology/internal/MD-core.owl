@@ -1110,6 +1110,19 @@ Some several predisposing factors of hypocondriasis included a history of physic
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MD_0000039 -->
+
+    <owl:Class rdf:about="&obo;MD_0000039">
+        <rdfs:label xml:lang="en">personality disorders</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000004"/>
+        <rdfs:comment xml:lang="es">
+Only when personality traits are inflexible and maladaptive and cause significant functional impairment or subjective distress do they constitute Personality Disorders.
+
+DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MD_0000040 -->
 
     <owl:Class rdf:about="&obo;MD_0000040">
@@ -1138,6 +1151,98 @@ Some several predisposing factors of hypocondriasis included a history of physic
         </rdfs:subClassOf>
         <obo:IAO_0000115>A bodily feature of an organism that is (a) a deviation from clinical normality that is the realization of a mental disease and is (b) observable.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000042 -->
+
+    <owl:Class rdf:about="&obo;MD_0000042">
+        <rdfs:label xml:lang="en">paranoid personality disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000039"/>
+        <obo:MD_0000037>301.0</obo:MD_0000037>
+        <obo:IAO_0000115>Pattern of distrust and suspiciousness such that others&apos; motives are interpreted as malevolent.
+
+DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
+        <rdfs:comment>
+People with this disorder show unwarranted suspiciousness, hypersensitivity, and reluctant to trust others. They interpret others&apos; motives as being malevolent, question their loyalty or trustworthiness, persistently bear grudges, or are suspicious of the fidelity of their spouses.
+
+Many persons with this disorder fail to go for treatment because of their guardedness and mistrust.
+
+&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.
+
+This disorder may be first apparent in childhood and adolescence with solitariness, poor peer relationships, social anxiety, underachievement in school, hypersensitivity, peculiar thoughts and language, and idiosyncratic fantasies. These children may appear to be &quot;odd: or &quot;eccentric&quot; and attract teasing.
+
+DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
+        <obo:IAO_0000118 xml:lang="es">trastorno paranoide de la personalidad</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000043 -->
+
+    <owl:Class rdf:about="&obo;MD_0000043">
+        <rdfs:label xml:lang="en">schizoid personality disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000039"/>
+        <rdfs:comment>
+Individuals with this personality disorder appear to lack a desire for intimacy, seem indifferent to opportunities to develop close relationships, and do not seem to derive much satisfaction from being part of a family or other social group. They prefer expending time by themselves, rather than been with other people, and often appear to be socially isolated or &quot;loners&quot; and almost always choose solitary activities or hobbies that do not include interaction with others. 
+
+ DSM-IV-TR (american Psychiatric Association)
+
+Some studies have shown that schizoid personality disorder is associated with a cold, unempathic, and emotionally impoverished childhood. Whether there is a genetic predisposition to the disorder is not clear.
+
+&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</rdfs:comment>
+        <obo:MD_0000037 xml:lang="es">301.20</obo:MD_0000037>
+        <obo:IAO_0000115>Personality disorder where the essential feature is a pervasive pattern of detachment from social relationships and a restricted range of expression of emotions in interpersonal settings. 
+
+DSM-IV-TR (american Psychiatric Association)
+</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="es">Trastorno esquizoide de la personalidad</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000044 -->
+
+    <owl:Class rdf:about="&obo;MD_0000044">
+        <rdfs:label xml:lang="en">schizotypal personality disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000039"/>
+        <rdfs:comment>People with this personality disorder manifest peculiar thoughts and behaviours and have poor interpersonal relationships. Many believe they posses magical thinking abilities or special powers, and some are subject to recurrent illusions. Speech oddities, such as frequent digression or vagueness in conversation, are often present.
+
+The evaluation of individuals must take into account their cultural milieu. The people with this disorder seem to have problems in thinking and perceiving; and often show social isolation, hypersensitivity, and inappropriate affect (emotions); they seem to lack pleasure from social interactions.
+
+Research has demonstrated some cognitive processing abnormalities in individuals with schizotypal personality disorder that help to explain many of the symptoms, and is more prevalent among the first-degree biological relatives of individuals with Schizophrenia than the general population.
+
+&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.
+ 
+DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
+        <obo:MD_0000037>301.22</obo:MD_0000037>
+        <obo:IAO_0000115>Personality disorder that is a pattern of acute discomfort in close relationships, cognitive or perceptual distortions, and eccentricities of behaviour.
+
+DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="es">Trastorno esquizotípico de la personalidad</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000045 -->
+
+    <owl:Class rdf:about="&obo;MD_0000045">
+        <rdfs:label xml:lang="en">antisocial personality disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000039"/>
+        <obo:IAO_0000115>Personality disorder that is a pattern of disregard for, and violation of, the rights of others.
+
+DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
+        <obo:MD_0000037>301.7</obo:MD_0000037>
+        <rdfs:comment>The indicators of this disorder are chronic antisocial behavioural patterns, such as a failure to conform to social or legal codes, a lack of anxiety and guilt, and irresponsible behaviours.
+
+People with this disorder show little guilt for their wrongdoing, which may include lying, using other people, and aggressive sexual acts. Their relationship with others are superficial and fleeting and involve little loyalty.
+
+Antisocial personality disorder is more prevalent among men than women, and among the first-degree biological relatives of those with the disorder than the general population. The risk to biological relatives of females with the disorder tends to be higher than the risk to biological relatives of males with the disorder. Both adopted and biological children of parents with this disorder have and increased risk of developing it.
+
+ DSM-IV-TR (american Psychiatric Association)
+&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</rdfs:comment>
+        <obo:IAO_0000118 xml:lang="es">trastorno antisocial de la personalidad</obo:IAO_0000118>
     </owl:Class>
     
 
