@@ -1046,7 +1046,7 @@ DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
 
 http://medical-dictionary.thefreedictionary.com/pain+disorder</obo:IAO_0000115>
         <obo:MD_0000037>307.89</obo:MD_0000037>
-        <obo:IAO_0000118 xml:lang="es">Trastorno por dolor</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="es">trastorno por dolor</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1056,6 +1056,7 @@ http://medical-dictionary.thefreedictionary.com/pain+disorder</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;MD_0000033">
         <rdfs:label xml:lang="en">anxiety disorders</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000004"/>
+        <obo:IAO_0000118 xml:lang="es">trastornos de ansiedad</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1065,6 +1066,7 @@ http://medical-dictionary.thefreedictionary.com/pain+disorder</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;MD_0000034">
         <rdfs:label xml:lang="en">somatoform disorders</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000004"/>
+        <obo:IAO_0000118 xml:lang="es">trastornos somatomorfos</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1145,6 +1147,7 @@ Some several predisposing factors of hypocondriasis included a history of physic
 Only when personality traits are inflexible and maladaptive and cause significant functional impairment or subjective distress do they constitute Personality Disorders.
 
 DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
+        <obo:IAO_0000118 xml:lang="es">trastornos de la personalidad</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1690,6 +1693,7 @@ DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
         <rdfs:comment>This disorders are characterised by severe disturbances in eating behaviour, from which a perception of body shape and weight is an essential feature of them.
 
 DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
+        <obo:IAO_0000118 xml:lang="es">trastornos de la conducta alimentaria</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1742,7 +1746,7 @@ DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
     <owl:Class rdf:about="&obo;MD_0000074">
         <rdfs:label xml:lang="en">dissociative disorders</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000004"/>
-        <rdfs:comment></rdfs:comment>
+        <obo:IAO_0000118 xml:lang="es">trastornos disociativos</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1844,6 +1848,7 @@ DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;MD_0000079">
         <rdfs:label xml:lang="en">sexual and gender identity disorders</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000004"/>
+        <obo:IAO_0000118 xml:lang="es">trastornos sexuales y de la identidad sexual:</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2062,6 +2067,7 @@ DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
 Primary sleep disorders are those in which none of another mental disorder, a general medical condition or a substance is responsible. This disorders are presumed to arise from endogenous abnormalities in sleep-wake generating or timing mechanisms, often complicated by conditioning factors, and are subdivided into: Dyssomnias and Parasomnias.
 
 DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="es">trastornos del sueño</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2103,6 +2109,7 @@ DSM-IV-TR (american Psychiatric Association)
         <obo:IAO_0000115>Primary disorders of initiating or maintaining sleep or of excessive sleepiness and are characterized by abnormalities in the amount, quality or timing of sleep.
 
 DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="es">disomnias</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2136,6 +2143,7 @@ DSM-IV-TR (american Psychiatric Association)
 F51.4  Sleep Terror Disorder
 F51.3  Sleepwalking Disorder
 F51.8  Parasomnia Not Otherwise Specified</obo:MD_0000069>
+        <obo:IAO_0000118 xml:lang="es">parasomnias</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2161,10 +2169,24 @@ F51.8  Parasomnia Not Otherwise Specified</obo:MD_0000069>
 
 
 DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
+        <obo:MD_0000037>312.34  Intermittent explosive disorder
+312.32  Kleptomania 
+312.33  Pyromania
+312.31  Pathological gambling 
+312.39  Trichotillomania 
+312.30  Impulse-control disorder not otherwise specified</obo:MD_0000037>
+        <obo:MD_0000069>F63.8  Intermittent explosive disorder
+F63.2  Kleptomania 
+F63.1  Pyromania
+F63.0  Pathological gambling 
+F63.3  Trichotillomania 
+F63.9  Impulse-control disorder not otherwise specified</obo:MD_0000069>
         <obo:IAO_0000115>
 This section include disorders of impulse control that are not classified as part of the presentation of disorders in other sections of the DSM-IV-TR.
 
 DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="es">trastornos del control de los impulsos no clasificados en otros
+apartados</obo:IAO_0000118>
     </owl:Class>
 </rdf:RDF>
 
