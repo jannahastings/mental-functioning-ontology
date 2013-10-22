@@ -1933,7 +1933,8 @@ The sexual arousal disorders are divided in two:
 
 - Male Orgasmic Disorder (formerly inhibited Male Orgasm), in which the essential feature is a persistent or recurrent delay in, or absence of, orgasm following a normal sexual excitement phase. Some males with this disorder can reach coital orgasm but only after very prolonged and intense noncoital stimulation. Some can ejaculate only from masturbation. An even subgroup have experienced orgasm only at the moment of waking from an erotic dream.
 
-- Premature Ejaculation
+- Premature Ejaculation, in which the essential feature is the persistent or recurrent onset of orgasm and ejaculation with minimal sexual stimulation before, on, or shortly after penetration and before the person wishes it. The majority of males with this disorder can delay orgasm during self-masturbation for a considerably longer time than during coitus. The clinician must take into account factors that affect duration of the excitement phase, such as age, novelty of the sexual partner or situation, and recent frequency of sexual activity.
+
 
 DSM-IV-TR (american Psychiatric Association)
 
@@ -1961,6 +1962,12 @@ F52.4 (Premature Ejaculation)</obo:MD_0000069>
 306.51 (Vaginismus)
 
 (Both not due to a general medical condition)</obo:MD_0000037>
+        <obo:IAO_0000115>
+In the sexual pain disorders there are two condition how it can be manifested:
+
+Dyspareunia.- is a recurrent or persistent pain in the genitals before, during, or after sexual intercourse. The physical examination for individuals with this disorder typically does not demonstrate genital abnormalities. The repeated experience of genital pain during coitus may result in the avoidance of sexual experience, disrupting existing sexual relationships or limiting the development of new sexual relationship.
+
+Vaginismus.- the essential feature of this disorder is the recurrent or persistent involuntary contraction of the perineal muscles surrounding the outer third of the vagina when vaginal penetration with penis, finger, tampon, or speculum is attempted. In some females, even the anticipation of vaginal insertion may result in muscle spam. Once the disorder is established, the course is usually chronic unless ameliorated by treatment. Acquired Vaginismus also may occur suddenly in response to a sexual trauma or a general medical condition.</obo:IAO_0000115>
         <obo:MD_0000069>F52.6 (Dyspareunia)
 F52.5 (Vaginismus)
 
@@ -1975,6 +1982,189 @@ F52.5 (Vaginismus)
     <owl:Class rdf:about="&obo;MD_0000085">
         <rdfs:label xml:lang="en">paraphilias</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000079"/>
+        <obo:MD_0000037>302.4    Exhibitionism
+302.81  Fetishism
+302.89  Frotteurism
+302.2    Pedophilia
+302.83  Sexual Masochism
+302.84  Sexual Sadism 
+302.3    Transvestic Fetishism
+302.82  Voyeurism
+302.9    Paraphilia Not Otherwise Specified</obo:MD_0000037>
+        <obo:MD_0000069>F65.2  Exhibitionism
+F65.0  Fetishism
+F65.8  Frotteurism
+F65.4  Pedophilia
+F65.5  Sexual Masochism
+F65.5  Sexual Sadism 
+F65.1  Transvestic Fetishism
+F65.3  Voyeurism
+F65.9  Paraphilia Not Otherwise Specified</obo:MD_0000069>
+        <rdfs:comment>
+
+The Paraphilias include:
+
+- Pedophilia (sexual activity with a child usually 13 years old or younger)
+- Exhibitionism (exposure of genitals to strangers)
+- Voyeurism (observing private activities of unaware victims)
+- Frotteurism (touching, rubbing against a nonconsenting person)
+- Fetishism (use of inanimate objects)
+- Sexual masochism (being humiliated or forced to suffer)
+- Sexual sadism (inflicting humiliation or suffering)
+- Transvestic fetishism (cross-dressing) 
+- Paraphilia Not Otherwise Specified (cover paraphilias not falling into the already named diagnoses such as those involving dead people, urine, feces, enemas and obscene phone calls)
+
+http://www.psychologytoday.com/conditions/paraphilias
+</rdfs:comment>
+        <obo:IAO_0000115>Disorder that is characterised by recurrent, intense sexual urges, fantasies, or behaviours that involve unusual objects, activities, or situations.
+
+DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="es">parafilia</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000086 -->
+
+    <owl:Class rdf:about="&obo;MD_0000086">
+        <rdfs:label xml:lang="en">gender identity disorders</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000079"/>
+        <obo:MD_0000037>302.85  Gender Identity Disorder in Adolescents or Adults
+302.6    Gender Identity Disorder in Children</obo:MD_0000037>
+        <obo:IAO_0000115>This disorders are characterized by conflict between a persona&apos;s anatomical sex and his or her gender identity, or self-identification as male or female.
+
+ &quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</obo:IAO_0000115>
+        <obo:IAO_0000118>trastornos de la identidad sexual</obo:IAO_0000118>
+        <obo:MD_0000069>F64.0  Gender Identity Disorder in Adolescents or Adults
+F64.2  Gender Identity Disorder in Children</obo:MD_0000069>
+        <rdfs:comment>
+There must be evidence of a strong and persistent cross-gender identification, which is the desire to be, or the insistence that one is, of the other sex. This cross-gender identification must not merely be a desire for any perceived cultural advantages of being the other sex. There must also be evidence of persistent discomfort about one&apos;s assigned sex or a sense of inappropriateness in the gender role of that sex.
+
+In boys, the cross-gender identification is manifested by a marked preoccupation with traditionally feminine activities. They may have preference for dressing in girls&apos;or women&apos;s clothes or may improvise such items from available materials when genuine articles are unavailable. There is a strong attraction for the stereotypical games and pastimes of girls. They avoid rough-and-tumble play and competitive sports and have a little interest in cars and trucks or other nonaggressive but stereotypical boys&apos;toys. They may express a wish to be a girl and assert that they will grow up to be a woman. They may insist on sitting to urinate and pretend not to have a penis by pushing it in between their legs.
+
+Girls with Gender Identity Disorder display intense negative reactions to parental expectations or attempts to have them wear dresses or other feminine attire. They prefer boys&apos; clothing and short hair, are often misidentified by strangers as boys, and may ask to be called by boy&apos;s name. These girls prefer boys as play-mates, with whom they share interests in contact sports, rough-and-tumble play, and traditional boyhood games. A girl with tis disorder may occasionally refuse to urinate in a sitting position. She may claim that she has or will grow a penis and may not want to grow breasts or to menstruate. She may assert that she will grow up to be a man.
+
+Adults whit this disorder are preoccupied with their wish to live as a member of the other sex. This preoccupation may be manifested as an intense desire to adopt the social role of the other sex or to acquire the physical appearance of the other sex through hormonal or surgical manipulation. To varying degrees, they adopt the behaviour, dress, and mannerisms of the other sex. Whit cross-dressing and hormonal treatment (and for males, electrolysis), many individuals with this disorder may pass convincingly as the other sex.
+
+In Adolescents, the clinical features may resemble either those of children or those of adults, depending on the individual&apos;s developmental level, and the criteria should be applied accordingly.
+
+DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000087 -->
+
+    <owl:Class rdf:about="&obo;MD_0000087">
+        <rdfs:label xml:lang="en">sleep disorders</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000004"/>
+        <obo:IAO_0000115>
+Primary sleep disorders are those in which none of another mental disorder, a general medical condition or a substance is responsible. This disorders are presumed to arise from endogenous abnormalities in sleep-wake generating or timing mechanisms, often complicated by conditioning factors, and are subdivided into: Dyssomnias and Parasomnias.
+
+DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000088 -->
+
+    <owl:Class rdf:about="&obo;MD_0000088">
+        <rdfs:label xml:lang="en">primary sleep disorders: dyssomnias</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000087"/>
+        <obo:MD_0000069>F51.0  Primary Insomnia
+F51.1  Primary Hypersomnia
+G47.4  Narcolepsy
+G47.3  Breathing-Related Sleep Disorder
+F51.2  Circadian Rhythm Sleep Disorder
+F51.9  Dyssomnia Not Otherwise Specified</obo:MD_0000069>
+        <obo:MD_0000037>307.42  Primary Insomnia
+307.44  Primary Hypersomnia
+347.00  Narcolepsy
+780.57  Breathing-Related Sleep Disorder
+327.3x  Circadian Rhythm Sleep Disorder
+307.47  Dyssomnia Not Otherwise Specified</obo:MD_0000037>
+        <rdfs:comment>
+This section includes:
+
+- Primary Insomnia.- The essential feature of this disorder is a complaint of difficulty initiating or maintaining sleep or of nonrestorative sleep that lasts for at least one month.
+
+- Primary Hypersomnia.- The essential feature of this disorder is excessive sleepiness for at least one month as evidenced either by prolonged sleep episodes or by daytime sleep episodes occurring almost daily.
+
+- Narcolepsy.- The essential feature of this disorder are repeated irresistible attacks of refreshing sleep, cataplexy, and recurrent intrusion of elements of rapid eye movement (REM) sleep into the transition period between sleep and wakefulness. 
+
+- Breathing-Related Sleep Disorder.- The essential feature of this disorder is sleep disruption, leading to excessive sleepiness or, less commonly, to insomnia, that is judged to be due to abnormalities of ventilation during sleep.
+
+- Circadian Rhythm Sleep Disorder.- The essential feature of this disorder is a persistent or recurrent pattern of sleep disruption that results from altered function of the circadian timing system or from a mismatch between the individual&apos;s endogenous circadian sleep-wake system and exogenous demands regarding the timing and duration of sleep. 
+
+- Dyssomnia Not Otherwise Specified.- Is a category for insomnias, hypersomnias, or circadian rhythm disturbances that do not meet criteria for any specific Dyssomnia.
+
+DSM-IV-TR (american Psychiatric Association)
+</rdfs:comment>
+        <obo:IAO_0000115>Primary disorders of initiating or maintaining sleep or of excessive sleepiness and are characterized by abnormalities in the amount, quality or timing of sleep.
+
+DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000089 -->
+
+    <owl:Class rdf:about="&obo;MD_0000089">
+        <rdfs:label xml:lang="en">primary sleep disorders: parasomnias</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000087"/>
+        <obo:MD_0000037>307.47  Nightmare Disorder
+307.46  Sleep Terror Disorder
+307.46  Sleepwalking Disorder
+307.47  Parasomnia Not Otherwise Specified</obo:MD_0000037>
+        <obo:IAO_0000115>Disorders characterised by abnormal behavioural or physiological events occurring in association with sleep, specific sleep stages, or sleep-wake transitions.
+
+DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
+        <rdfs:comment>This section includes:
+
+- Nightmare Disorder.- The essential feature of this disorder is the repeated occurrence of frightening dreams that lead to awakenings from sleep.
+
+- Sleep Terror Disorder.- The essential feature of this disorder is the repeated occurrence of sleep terrors, that is, abrupt awakenings from sleep usually beginning with a panicky scream or cry.
+
+- Sleepwalking Disorder.- The essential feature of this disorder is repeated episodes of complex motor behaviour initiated during sleep, including rising from bed and walking about.
+
+- Parasomnia Not Otherwise Specified.- This category is for disturbances that are characterized by abnormal behavioural or physiological events during sleep or sleep-wake transitions, but that do not meet criteria for a more specific Parasomnia. 
+
+DSM-IV-TR (american Psychiatric Association)
+
+</rdfs:comment>
+        <obo:MD_0000069>F51.5  Nightmare Disorder
+F51.4  Sleep Terror Disorder
+F51.3  Sleepwalking Disorder
+F51.8  Parasomnia Not Otherwise Specified</obo:MD_0000069>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000090 -->
+
+    <owl:Class rdf:about="&obo;MD_0000090">
+        <rdfs:label xml:lang="en">impulse-control disorders not elsewhere classified</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000004"/>
+        <rdfs:comment>The disorders include in this section are:
+
+- Intermittent explosive disorder.- Disorder characterised by discrete episodes of failure to resist aggressive impulses resulting in serious assaults or destruction of property.
+
+- Kleptomania .- Disorder characterised by the recurrent failure to resist impulses to steal objects not needed for personal use or monetary value.
+
+- Pyromania.- Disorder characterised by a pattern of fire setting for pleasure, gratification, or relief of tension.
+
+- Pathological gambling .- Disorder characterised by recurrent and persistent maladaptive gambling behaviour.
+
+- Trichotillomania .- Disorder characterised by recurrent pulling out of one&apos;s hair for pleasure, gratification, or relief of tension that results in noticeable hair loss.
+
+- Impulse-control disorder not otherwise specified.- Is included for coding disorders of impulse control that do not meet the criteria for any of the specific Impulse-Control Disorders.
+
+
+DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
+        <obo:IAO_0000115>
+This section include disorders of impulse control that are not classified as part of the presentation of disorders in other sections of the DSM-IV-TR.
+
+DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
     </owl:Class>
 </rdf:RDF>
 
