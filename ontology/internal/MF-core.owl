@@ -487,16 +487,6 @@ which the relevant part of the environment is thereby represented to the organis
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MF_0000024 -->
-
-    <owl:Class rdf:about="&obo;MF_0000024">
-        <rdfs:label xml:lang="en">learning</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000020"/>
-        <obo:IAO_0000115>a mental process that changes an organism’s capabilities</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MF_0000025 -->
 
     <owl:Class rdf:about="&obo;MF_0000025">
