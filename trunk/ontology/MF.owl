@@ -25,8 +25,8 @@
         <dc:contributor>Barry Smith</dc:contributor>
         <dc:contributor>Mark Jensen</dc:contributor>
         <rdfs:comment>The Mental Functioning Ontology is an overarching ontology for all aspects of mental functioning, founded on the Basic Formal Ontology (BFO) and related to the Ontology for General Medical Science (OGMS).</rdfs:comment>
-        <dc:title>The Mental Functioning Ontology (MF) was first described in the publication available at http://www.jbiomedsem.com/content/1/1/10 entitled &apos;Foundations for a realist ontology of mental disease&apos; (Barry Smith and Werner Ceusters). </dc:title>
         <dc:contributor>Jeanette Alicia Chacón Candia</dc:contributor>
+        <dc:title>The Mental Functioning Ontology (MF) was first described in the publication available at http://www.jbiomedsem.com/content/1/1/10 entitled &apos;Foundations for a realist ontology of mental disease&apos; (Barry Smith and Werner Ceusters). </dc:title>
         <dc:contributor>Janna Hastings</dc:contributor>
         <owl:versionInfo>beta 2013-11-05</owl:versionInfo>
         <owl:imports rdf:resource="&obo;bfo.owl"/>
@@ -101,11 +101,35 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GO_0007600 -->
+
+    <rdf:Description rdf:about="&obo;GO_0007600">
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000019"/>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GO_0007610 -->
 
     <rdf:Description rdf:about="&obo;GO_0007610">
         <owl:equivalentClass rdf:resource="&obo;NBO_0000313"/>
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000060"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0007612 -->
+
+    <rdf:Description rdf:about="&obo;GO_0007612">
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000020"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0007613 -->
+
+    <rdf:Description rdf:about="&obo;GO_0007613">
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000033"/>
     </rdf:Description>
     
 
@@ -213,6 +237,22 @@
     <owl:Class rdf:about="&obo;MF_0000031">
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000020"/>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000032 -->
+
+    <rdf:Description rdf:about="&obo;MF_0000032">
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000016"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000037 -->
+
+    <rdf:Description rdf:about="&obo;MF_0000037">
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000016"/>
+    </rdf:Description>
     
 
 
