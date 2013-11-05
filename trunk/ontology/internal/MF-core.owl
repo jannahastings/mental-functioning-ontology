@@ -7,6 +7,7 @@
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY ace_lexicon "http://attempto.ifi.uzh.ch/ace_lexicon#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
 ]>
 
@@ -18,7 +19,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#">
     <owl:Ontology rdf:about="&obo;MF/internal/MF-core.owl">
         <rdfs:comment>To be imported into the full MF.owl</rdfs:comment>
         <rdfs:comment>Core mental functioning ontology classes and properties. </rdfs:comment>
@@ -36,6 +38,18 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl -->
+
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;CN_pl"/>
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg -->
+
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;CN_sg"/>
     
 
 
@@ -88,43 +102,101 @@
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000052 -->
 
-    <owl:ObjectProperty rdf:about="&obo;BFO_0000052"/>
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000052">
+        <ace_lexicon:TV_sg>BFO_0000052s</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>BFO_0000052</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>BFO_0000052ed</ace_lexicon:TV_vbg>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000055 -->
 
-    <owl:ObjectProperty rdf:about="&obo;BFO_0000055"/>
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000055">
+        <ace_lexicon:TV_sg>BFO_0000055s</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>BFO_0000055</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>BFO_0000055ed</ace_lexicon:TV_vbg>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000057 -->
 
-    <owl:ObjectProperty rdf:about="&obo;BFO_0000057"/>
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000057">
+        <ace_lexicon:TV_sg>BFO_0000057s</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>BFO_0000057</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>BFO_0000057ed</ace_lexicon:TV_vbg>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000107 -->
 
-    <owl:ObjectProperty rdf:about="&obo;BFO_0000107"/>
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000107">
+        <ace_lexicon:TV_sg>BFO_0000107s</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>BFO_0000107ed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>BFO_0000107</ace_lexicon:TV_pl>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000110 -->
+
+    <rdf:Description rdf:about="&obo;BFO_0000110">
+        <ace_lexicon:TV_sg>BFO_0000110s</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>BFO_0000110</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>BFO_0000110ed</ace_lexicon:TV_vbg>
+    </rdf:Description>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000112 -->
 
-    <owl:ObjectProperty rdf:about="&obo;BFO_0000112"/>
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000112">
+        <ace_lexicon:TV_pl>BFO_0000112</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>BFO_0000112ed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>BFO_0000112s</ace_lexicon:TV_sg>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000117 -->
 
-    <owl:ObjectProperty rdf:about="&obo;BFO_0000117"/>
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000117">
+        <ace_lexicon:TV_sg>BFO_0000117s</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>BFO_0000117</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>BFO_0000117ed</ace_lexicon:TV_vbg>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000132 -->
+
+    <rdf:Description rdf:about="&obo;BFO_0000132">
+        <ace_lexicon:TV_pl>BFO_0000132</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>BFO_0000132s</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>BFO_0000132ed</ace_lexicon:TV_vbg>
+    </rdf:Description>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000167 -->
 
-    <owl:ObjectProperty rdf:about="&obo;BFO_0000167"/>
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000167">
+        <ace_lexicon:TV_sg>BFO_0000167s</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>BFO_0000167ed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>BFO_0000167</ace_lexicon:TV_pl>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000176 -->
+
+    <rdf:Description rdf:about="&obo;BFO_0000176">
+        <ace_lexicon:TV_vbg>BFO_0000176ed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>BFO_0000176</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>BFO_0000176s</ace_lexicon:TV_sg>
+    </rdf:Description>
     
 
 
@@ -143,6 +215,8 @@
 
     <owl:Class rdf:about="&obo;GO_0007600">
         <rdfs:subClassOf rdf:resource="&obo;MF_0000019"/>
+        <ace_lexicon:CN_pl>GO_0007600s</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>GO_0007600</ace_lexicon:CN_sg>
     </owl:Class>
     
 
@@ -151,6 +225,8 @@
 
     <owl:Class rdf:about="&obo;GO_0007612">
         <rdfs:subClassOf rdf:resource="&obo;MF_0000008"/>
+        <ace_lexicon:CN_sg>GO_0007612</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>GO_0007612s</ace_lexicon:CN_pl>
     </owl:Class>
     
 
@@ -159,30 +235,8 @@
 
     <owl:Class rdf:about="&obo;GO_0007613">
         <rdfs:subClassOf rdf:resource="&obo;MF_0000008"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MF_0000202 -->
-
-    <owl:Class rdf:about="&obo;MF_0000202">
-        <rdfs:label xml:lang="en">personality</rdfs:label>
-        <obo:IAO_0000115>A personality is a complex sum of dispositions and predispositions towards mental processes and behaviour. It inheres in a person. Personality is not the same as mood, although a person may have a personality that includes a predisposition to moods of certain types, moods may come and go but a personality stays relatively constant, not appearing and disappearing. Personality typically changes slowly over time. </obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MF_0000203 -->
-
-    <owl:Class rdf:about="&obo;MF_0000203">
-        <rdfs:label xml:lang="en">personality trait</rdfs:label>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000176"/>
-                <owl:someValuesFrom rdf:resource="&obo;MF_0000202"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>A personality trait is an individual disposition or predisposition that forms part of an overall personality and is realized in repeated occurrences of a specific mental process type or behavioural profile. </obo:IAO_0000115>
+        <ace_lexicon:CN_pl>GO_0007613s</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>GO_0007613</ace_lexicon:CN_sg>
     </owl:Class>
     
 
@@ -191,6 +245,8 @@
 
     <owl:Class rdf:about="&obo;MF_0000001">
         <rdfs:label rdf:datatype="&xsd;string">disposition to be agent of mental process</rdfs:label>
+        <ace_lexicon:CN_pl>MF_0000001s</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>MF_0000001</ace_lexicon:CN_sg>
     </owl:Class>
     
 
@@ -200,6 +256,8 @@
     <owl:Class rdf:about="&obo;MF_0000002">
         <rdfs:label xml:lang="en">remembering</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000008"/>
+        <ace_lexicon:CN_pl>MF_0000002s</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>MF_0000002</ace_lexicon:CN_sg>
         <obo:IAO_0000115>(for the case of remembering X, where X is an event in the organism’s history) a mental process that is a) about X, and b) made possible by the physical traces left by a causal process involving the organism during the event X</obo:IAO_0000115>
     </owl:Class>
     
@@ -210,7 +268,9 @@
     <owl:Class rdf:about="&obo;MF_0000003">
         <rdfs:label rdf:datatype="&xsd;string">behavior inducing state</rdfs:label>
         <obo:IAO_0000115>A bodily quality inhering in a mental functioning related anatomical structure which leads to behavior of some specific sort.</obo:IAO_0000115>
+        <ace_lexicon:CN_sg>MF_0000003</ace_lexicon:CN_sg>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <ace_lexicon:CN_pl>MF_0000003s</ace_lexicon:CN_pl>
     </owl:Class>
     
 
@@ -220,6 +280,8 @@
     <owl:Class rdf:about="&obo;MF_0000004">
         <rdfs:label xml:lang="en">counting</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000008"/>
+        <ace_lexicon:CN_pl>MF_0000004s</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>MF_0000004</ace_lexicon:CN_sg>
     </owl:Class>
     
 
@@ -229,6 +291,8 @@
     <owl:Class rdf:about="&obo;MF_0000005">
         <rdfs:label xml:lang="en">calculating</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000008"/>
+        <ace_lexicon:CN_pl>MF_0000005s</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>MF_0000005</ace_lexicon:CN_sg>
     </owl:Class>
     
 
@@ -238,6 +302,8 @@
     <owl:Class rdf:about="&obo;MF_0000006">
         <rdfs:label xml:lang="en">judging</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000008"/>
+        <ace_lexicon:CN_sg>MF_0000006</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>MF_0000006s</ace_lexicon:CN_pl>
     </owl:Class>
     
 
@@ -247,6 +313,8 @@
     <owl:Class rdf:about="&obo;MF_0000007">
         <rdfs:label xml:lang="en">determining gender</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000006"/>
+        <ace_lexicon:CN_pl>MF_0000007s</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>MF_0000007</ace_lexicon:CN_sg>
     </owl:Class>
     
 
@@ -263,6 +331,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:seeAlso>GO:0050890, cognition, defined as  `The operation of the mind by which an organism becomes aware of objects of thought or perception; it includes the mental activities associated with thinking, learning, and memory.&apos; </rdfs:seeAlso>
+        <ace_lexicon:CN_sg>MF_0000008</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>MF_0000008s</ace_lexicon:CN_pl>
         <obo:IAO_0000115>A mental process that creates, modifies or has as participant some cognitive representation.</obo:IAO_0000115>
     </owl:Class>
     
@@ -273,6 +343,8 @@
     <owl:Class rdf:about="&obo;MF_0000009">
         <rdfs:label xml:lang="en">determining orientation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000006"/>
+        <ace_lexicon:CN_pl>MF_0000009s</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>MF_0000009</ace_lexicon:CN_sg>
     </owl:Class>
     
 
@@ -282,6 +354,8 @@
     <owl:Class rdf:about="&obo;MF_0000010">
         <rdfs:label xml:lang="en">mathematical problem solving behavior</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NBO_0000297"/>
+        <ace_lexicon:CN_pl>MF_0000010s</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>MF_0000010</ace_lexicon:CN_sg>
     </owl:Class>
     
 
@@ -291,6 +365,8 @@
     <owl:Class rdf:about="&obo;MF_0000011">
         <rdfs:label xml:lang="en">visual problem solving behavior</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NBO_0000297"/>
+        <ace_lexicon:CN_pl>MF_0000011s</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>MF_0000011</ace_lexicon:CN_sg>
     </owl:Class>
     
 
@@ -301,7 +377,9 @@
         <rdfs:label rdf:datatype="&xsd;string">bodily component</rdfs:label>
         <obo:IAO_0000115>Material object within or on the surface of an organism, including anatomical structures, body flora, pathogens, toxins, and their combinations, potentially including also the organism as a whole.</obo:IAO_0000115>
         <rdfs:comment>From old version of OGMS, no longer in current version.</rdfs:comment>
+        <ace_lexicon:CN_pl>MF_0000012s</ace_lexicon:CN_pl>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <ace_lexicon:CN_sg>MF_0000012</ace_lexicon:CN_sg>
     </owl:Class>
     
 
@@ -311,7 +389,9 @@
     <owl:Class rdf:about="&obo;MF_0000013">
         <rdfs:label>thinking</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000008"/>
+        <ace_lexicon:CN_sg>MF_0000013</ace_lexicon:CN_sg>
         <obo:IAO_0000115>a mental process that involves the manipulation of mental language and/or mental images</obo:IAO_0000115>
+        <ace_lexicon:CN_pl>MF_0000013s</ace_lexicon:CN_pl>
     </owl:Class>
     
 
@@ -321,6 +401,8 @@
     <owl:Class rdf:about="&obo;MF_0000014">
         <rdfs:label xml:lang="en">language problem solving behavior</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NBO_0000297"/>
+        <ace_lexicon:CN_pl>MF_0000014s</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>MF_0000014</ace_lexicon:CN_sg>
     </owl:Class>
     
 
@@ -330,6 +412,8 @@
     <owl:Class rdf:about="&obo;MF_0000015">
         <rdfs:label xml:lang="en">imagining</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000008"/>
+        <ace_lexicon:CN_pl>MF_0000015s</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>MF_0000015</ace_lexicon:CN_sg>
     </owl:Class>
     
 
@@ -339,6 +423,8 @@
     <owl:Class rdf:about="&obo;MF_0000016">
         <rdfs:label rdf:datatype="&xsd;string">human being</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000087"/>
+        <ace_lexicon:CN_sg>MF_0000016</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>MF_0000016s</ace_lexicon:CN_pl>
     </owl:Class>
     
 
@@ -353,7 +439,9 @@
                 <owl:someValuesFrom rdf:resource="&obo;MF_0000020"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <ace_lexicon:CN_pl>MF_0000017s</ace_lexicon:CN_pl>
         <obo:IAO_0000115>a process profile that is a) part of a process of mental functioning and b) grants awareness of this process to the organism whose mental process it is</obo:IAO_0000115>
+        <ace_lexicon:CN_sg>MF_0000017</ace_lexicon:CN_sg>
     </owl:Class>
     
 
@@ -363,6 +451,8 @@
     <owl:Class rdf:about="&obo;MF_0000018">
         <rdfs:label xml:lang="en">attention</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000020"/>
+        <ace_lexicon:CN_sg>MF_0000018</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>MF_0000018s</ace_lexicon:CN_pl>
         <obo:IAO_0000115>the process whereby relevant aspects of our mental experience are focused on specific targets</obo:IAO_0000115>
     </owl:Class>
     
@@ -373,6 +463,8 @@
     <owl:Class rdf:about="&obo;MF_0000019">
         <rdfs:label>perception</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000008"/>
+        <ace_lexicon:CN_pl>MF_0000019s</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>MF_0000019</ace_lexicon:CN_sg>
         <obo:IAO_0000115>a mental process which is a) produced by a causal process (for example involving light rays or air vibrations) involving a part of the environment of the organism, and b) is experienced by the organism as being so caused, and c) in
 which the relevant part of the environment is thereby represented to the organism</obo:IAO_0000115>
     </owl:Class>
@@ -386,16 +478,18 @@ which the relevant part of the environment is thereby represented to the organis
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000060"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000057"/>
-                <owl:someValuesFrom rdf:resource="&obo;MF_0000003"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
                 <owl:someValuesFrom rdf:resource="&obo;MF_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000057"/>
+                <owl:someValuesFrom rdf:resource="&obo;MF_0000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <ace_lexicon:CN_pl>MF_0000020s</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>MF_0000020</ace_lexicon:CN_sg>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
         <obo:IAO_0000115>A bodily process which brings into being, sustains or modifies a cognitive representation or a beahvior inducing state.</obo:IAO_0000115>
     </owl:Class>
@@ -414,8 +508,10 @@ which the relevant part of the environment is thereby represented to the organis
                 <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minQualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <ace_lexicon:CN_pl>MF_0000021s</ace_lexicon:CN_pl>
         <obo:IAO_0000115>A process in which at least two human beings are agents.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <ace_lexicon:CN_sg>MF_0000021</ace_lexicon:CN_sg>
     </owl:Class>
     
 
@@ -435,7 +531,9 @@ which the relevant part of the environment is thereby represented to the organis
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <ace_lexicon:CN_sg>MF_0000022</ace_lexicon:CN_sg>
         <obo:IAO_0000115>a complex disposition inhering in a population by virtue of the fact that members thereof can communicate with each other through speech</obo:IAO_0000115>
+        <ace_lexicon:CN_pl>MF_0000022s</ace_lexicon:CN_pl>
     </owl:Class>
     
 
@@ -451,7 +549,9 @@ which the relevant part of the environment is thereby represented to the organis
                 <owl:someValuesFrom rdf:resource="&obo;MF_0000021"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <ace_lexicon:CN_pl>MF_0000023s</ace_lexicon:CN_pl>
         <obo:IAO_0000115>Behavior having interpersonal processes as parts, each involving the same instances of human being.</obo:IAO_0000115>
+        <ace_lexicon:CN_sg>MF_0000023</ace_lexicon:CN_sg>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
     </owl:Class>
     
@@ -463,6 +563,8 @@ which the relevant part of the environment is thereby represented to the organis
         <rdfs:label xml:lang="en">learning</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000020"/>
         <obo:IAO_0000115>a mental process that changes an organism’s capabilities</obo:IAO_0000115>
+        <ace_lexicon:CN_pl>MF_0000024s</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>MF_0000024</ace_lexicon:CN_sg>
     </owl:Class>
     
 
@@ -473,6 +575,8 @@ which the relevant part of the environment is thereby represented to the organis
         <rdfs:label xml:lang="en">intelligence</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000203"/>
         <obo:IAO_0000115>A mental disposition realised in processes involving understanding complex ideas, adapting effectively to the environment, learning from experience, engaging in various forms of reasoning, and overcome obstacles through the outcome of thinking processes.</obo:IAO_0000115>
+        <ace_lexicon:CN_pl>MF_0000025s</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>MF_0000025</ace_lexicon:CN_sg>
     </owl:Class>
     
 
@@ -482,6 +586,8 @@ which the relevant part of the environment is thereby represented to the organis
     <owl:Class rdf:about="&obo;MF_0000026">
         <rdfs:label xml:lang="en">introversion</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000203"/>
+        <ace_lexicon:CN_pl>MF_0000026s</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>MF_0000026</ace_lexicon:CN_sg>
     </owl:Class>
     
 
@@ -491,6 +597,8 @@ which the relevant part of the environment is thereby represented to the organis
     <owl:Class rdf:about="&obo;MF_0000027">
         <rdfs:label>planning</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000008"/>
+        <ace_lexicon:CN_sg>MF_0000027</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>MF_0000027s</ace_lexicon:CN_pl>
     </owl:Class>
     
 
@@ -500,6 +608,8 @@ which the relevant part of the environment is thereby represented to the organis
     <owl:Class rdf:about="&obo;MF_0000028">
         <rdfs:label xml:lang="en">extraversion</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000203"/>
+        <ace_lexicon:CN_sg>MF_0000028</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>MF_0000028s</ace_lexicon:CN_pl>
     </owl:Class>
     
 
@@ -510,6 +620,8 @@ which the relevant part of the environment is thereby represented to the organis
         <rdfs:label xml:lang="en">irascibility</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000203"/>
         <obo:IAO_0000115>A mental disposition to frequent or easily incited outbursts of anger. </obo:IAO_0000115>
+        <ace_lexicon:CN_sg>MF_0000029</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>MF_0000029s</ace_lexicon:CN_pl>
     </owl:Class>
     
 
@@ -519,7 +631,9 @@ which the relevant part of the environment is thereby represented to the organis
     <owl:Class rdf:about="&obo;MF_0000030">
         <rdfs:label rdf:datatype="&xsd;string">representation</rdfs:label>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <ace_lexicon:CN_pl>MF_0000030s</ace_lexicon:CN_pl>
         <obo:IAO_0000115>A dependent continuant which is about a portion of reality.</obo:IAO_0000115>
+        <ace_lexicon:CN_sg>MF_0000030</ace_lexicon:CN_sg>
     </owl:Class>
     
 
@@ -528,8 +642,10 @@ which the relevant part of the environment is thereby represented to the organis
 
     <owl:Class rdf:about="&obo;MF_0000031">
         <rdfs:label rdf:datatype="&xsd;string">cognitive representation</rdfs:label>
+        <ace_lexicon:CN_sg>MF_0000031</ace_lexicon:CN_sg>
         <obo:IAO_0000115>A representation which specifically depends on an anatomical structure in the cognitive system of an organism.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <ace_lexicon:CN_pl>MF_0000031s</ace_lexicon:CN_pl>
     </owl:Class>
     
 
@@ -541,6 +657,8 @@ which the relevant part of the environment is thereby represented to the organis
         <rdfs:subClassOf rdf:resource="&obo;MF_0000031"/>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
         <obo:IAO_0000115>A cognitive representation sustained by an organsim about its own emotions.</obo:IAO_0000115>
+        <ace_lexicon:CN_sg>MF_0000039</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>MF_0000039s</ace_lexicon:CN_pl>
     </owl:Class>
     
 
@@ -550,13 +668,46 @@ which the relevant part of the environment is thereby represented to the organis
     <owl:Class rdf:about="&obo;MF_0000045">
         <rdfs:label>wanting</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000008"/>
+        <ace_lexicon:CN_pl>MF_0000045s</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>MF_0000045</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000202 -->
+
+    <owl:Class rdf:about="&obo;MF_0000202">
+        <rdfs:label xml:lang="en">personality</rdfs:label>
+        <ace_lexicon:CN_pl>MF_0000202s</ace_lexicon:CN_pl>
+        <obo:IAO_0000115>A personality is a complex sum of dispositions and predispositions towards mental processes and behaviour. It inheres in a person. Personality is not the same as mood, although a person may have a personality that includes a predisposition to moods of certain types, moods may come and go but a personality stays relatively constant, not appearing and disappearing. Personality typically changes slowly over time. </obo:IAO_0000115>
+        <ace_lexicon:CN_sg>MF_0000202</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000203 -->
+
+    <owl:Class rdf:about="&obo;MF_0000203">
+        <rdfs:label xml:lang="en">personality trait</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000176"/>
+                <owl:someValuesFrom rdf:resource="&obo;MF_0000202"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <ace_lexicon:CN_pl>MF_0000203s</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>MF_0000203</ace_lexicon:CN_sg>
+        <obo:IAO_0000115>A personality trait is an individual disposition or predisposition that forms part of an overall personality and is realized in repeated occurrences of a specific mental process type or behavioural profile. </obo:IAO_0000115>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NBO_0000297 -->
 
-    <owl:Class rdf:about="&obo;NBO_0000297"/>
+    <owl:Class rdf:about="&obo;NBO_0000297">
+        <ace_lexicon:CN_pl>NBO_0000297s</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>NBO_0000297</ace_lexicon:CN_sg>
+    </owl:Class>
     
 
 
@@ -570,9 +721,11 @@ which the relevant part of the environment is thereby represented to the organis
                 <owl:someValuesFrom rdf:resource="&obo;MF_0000012"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <ace_lexicon:CN_sg>OGMS_0000060</ace_lexicon:CN_sg>
         <rdfs:comment>From OGMS: http://purl.obolibrary.org/obo/OGMS_0000060</rdfs:comment>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
         <obo:IAO_0000115>A process in which at least one bodily component of an organsim participates.</obo:IAO_0000115>
+        <ace_lexicon:CN_pl>OGMS_0000060s</ace_lexicon:CN_pl>
     </owl:Class>
     
 
@@ -581,7 +734,9 @@ which the relevant part of the environment is thereby represented to the organis
 
     <owl:Class rdf:about="&obo;OGMS_0000087">
         <rdfs:label rdf:datatype="&xsd;string">extended organism</rdfs:label>
+        <ace_lexicon:CN_sg>OGMS_0000087</ace_lexicon:CN_sg>
         <rdfs:comment>From OGMS: http://purl.obolibrary.org/obo/OGMS_0000087</rdfs:comment>
+        <ace_lexicon:CN_pl>OGMS_0000087s</ace_lexicon:CN_pl>
     </owl:Class>
 </rdf:RDF>
 

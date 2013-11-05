@@ -8,6 +8,7 @@
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY ace_lexicon "http://attempto.ifi.uzh.ch/ace_lexicon#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
 ]>
 
@@ -20,7 +21,8 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#">
     <owl:Ontology rdf:about="&obo;MF/external/bfo-properties-slim.owl">
         <rdfs:comment>A slim of BFO with only object selected properties. </rdfs:comment>
     </owl:Ontology>
@@ -38,14 +40,21 @@
     
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl -->
 
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;TV_pl"/>
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg -->
+
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;TV_sg"/>
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg -->
+
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;TV_vbg"/>
     
 
 
@@ -64,6 +73,9 @@
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0000052">
         <rdfs:label xml:lang="en">inheres in at all times</rdfs:label>
+        <ace_lexicon:TV_sg>BFO_0000052s</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>BFO_0000052</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>BFO_0000052ed</ace_lexicon:TV_vbg>
     </owl:ObjectProperty>
     
 
@@ -72,6 +84,9 @@
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0000054">
         <rdfs:label xml:lang="en">realized in</rdfs:label>
+        <ace_lexicon:TV_vbg>BFO_0000054ed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>BFO_0000054</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>BFO_0000054s</ace_lexicon:TV_sg>
     </owl:ObjectProperty>
     
 
@@ -80,6 +95,9 @@
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0000055">
         <rdfs:label xml:lang="en">realizes</rdfs:label>
+        <ace_lexicon:TV_sg>BFO_0000055s</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>BFO_0000055</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>BFO_0000055ed</ace_lexicon:TV_vbg>
     </owl:ObjectProperty>
     
 
@@ -88,6 +106,9 @@
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0000056">
         <rdfs:label xml:lang="en">participates in at some time</rdfs:label>
+        <ace_lexicon:TV_pl>BFO_0000056</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>BFO_0000056s</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>BFO_0000056ed</ace_lexicon:TV_vbg>
     </owl:ObjectProperty>
     
 
@@ -96,10 +117,24 @@
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0000057">
         <rdfs:label xml:lang="en">has participant at some time</rdfs:label>
+        <ace_lexicon:TV_sg>BFO_0000057s</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>BFO_0000057</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>BFO_0000057ed</ace_lexicon:TV_vbg>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="&obo;BFO_0000055"/>
             <rdf:Description rdf:about="&obo;BFO_0000052"/>
         </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000107 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000107">
+        <rdfs:label xml:lang="en">disposition of at all times</rdfs:label>
+        <ace_lexicon:TV_sg>BFO_0000107s</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>BFO_0000107ed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>BFO_0000107</ace_lexicon:TV_pl>
     </owl:ObjectProperty>
     
 
@@ -109,6 +144,9 @@
     <owl:ObjectProperty rdf:about="&obo;BFO_0000110">
         <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label xml:lang="en">has continuant part at all times</rdfs:label>
+        <ace_lexicon:TV_sg>BFO_0000110s</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>BFO_0000110</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>BFO_0000110ed</ace_lexicon:TV_vbg>
     </owl:ObjectProperty>
     
 
@@ -118,7 +156,21 @@
     <owl:ObjectProperty rdf:about="&obo;BFO_0000111">
         <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label xml:lang="en">has proper continuant part at all times</rdfs:label>
+        <ace_lexicon:TV_sg>BFO_0000111s</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>BFO_0000111</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>BFO_0000111ed</ace_lexicon:TV_vbg>
         <rdfs:subPropertyOf rdf:resource="&obo;BFO_0000110"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000112 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000112">
+        <rdfs:label xml:lang="en">has disposition at some time</rdfs:label>
+        <ace_lexicon:TV_pl>BFO_0000112</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>BFO_0000112ed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>BFO_0000112s</ace_lexicon:TV_sg>
     </owl:ObjectProperty>
     
 
@@ -128,6 +180,9 @@
     <owl:ObjectProperty rdf:about="&obo;BFO_0000117">
         <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label xml:lang="en">has occurrent part</rdfs:label>
+        <ace_lexicon:TV_sg>BFO_0000117s</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>BFO_0000117</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>BFO_0000117ed</ace_lexicon:TV_vbg>
     </owl:ObjectProperty>
     
 
@@ -137,6 +192,9 @@
     <owl:ObjectProperty rdf:about="&obo;BFO_0000118">
         <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label xml:lang="en">has proper occurrent part</rdfs:label>
+        <ace_lexicon:TV_sg>BFO_0000118s</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>BFO_0000118ed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>BFO_0000118</ace_lexicon:TV_pl>
         <rdfs:subPropertyOf rdf:resource="&obo;BFO_0000117"/>
     </owl:ObjectProperty>
     
@@ -147,6 +205,9 @@
     <owl:ObjectProperty rdf:about="&obo;BFO_0000132">
         <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label xml:lang="en">part of occurrent</rdfs:label>
+        <ace_lexicon:TV_pl>BFO_0000132</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>BFO_0000132s</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>BFO_0000132ed</ace_lexicon:TV_vbg>
         <owl:inverseOf rdf:resource="&obo;BFO_0000117"/>
     </owl:ObjectProperty>
     
@@ -156,35 +217,35 @@
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0000163">
         <rdfs:label xml:lang="en">material basis of at all times</rdfs:label>
+        <ace_lexicon:TV_vbg>BFO_0000163ed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>BFO_0000163s</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>BFO_0000163</ace_lexicon:TV_pl>
     </owl:ObjectProperty>
     
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000167 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000167"><!-- has participant at all times -->
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000167">
         <rdfs:label xml:lang="en">has participant at all times</rdfs:label>
+        <ace_lexicon:TV_sg>BFO_0000167s</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>BFO_0000167ed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>BFO_0000167</ace_lexicon:TV_pl>
     </owl:ObjectProperty>
+    
+
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000176 -->
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0000176">
         <rdfs:label xml:lang="en">part of continuant at some time</rdfs:label>
+        <ace_lexicon:TV_vbg>BFO_0000176ed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>BFO_0000176</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>BFO_0000176s</ace_lexicon:TV_sg>
     </owl:ObjectProperty>
-
-   <!-- http://purl.obolibrary.org/obo/BFO_0000107 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000107"><!-- disposition of at all times -->
-        <rdfs:label xml:lang="en">disposition of at all times</rdfs:label>
-    </owl:ObjectProperty>
-
-   <!-- http://purl.obolibrary.org/obo/BFO_0000112 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000112"><!-- has disposition at some time -->
-        <rdfs:label xml:lang="en">has disposition at some time</rdfs:label>
-    </owl:ObjectProperty>
-
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
 
