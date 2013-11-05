@@ -233,7 +233,7 @@
 
     <owl:Class rdf:about="&obo;MF_0000002">
         <rdfs:label xml:lang="en">remembering</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000008"/>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000020"/>
         <obo:IAO_0000115>(for the case of remembering X, where X is an event in the organism’s history) a mental process that is a) about X, and b) made possible by the physical traces left by a causal process involving the organism during the event X</obo:IAO_0000115>
     </owl:Class>
     
@@ -242,7 +242,7 @@
     <!-- http://purl.obolibrary.org/obo/MF_0000004 -->
 
     <owl:Class rdf:about="&obo;MF_0000004">
-        <rdfs:label xml:lang="en">counting</rdfs:label>
+        <rdfs:label xml:lang="en">mental counting</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000008"/>
     </owl:Class>
     
@@ -251,7 +251,7 @@
     <!-- http://purl.obolibrary.org/obo/MF_0000005 -->
 
     <owl:Class rdf:about="&obo;MF_0000005">
-        <rdfs:label xml:lang="en">calculating</rdfs:label>
+        <rdfs:label xml:lang="en">mental calculation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000008"/>
     </owl:Class>
     
@@ -261,7 +261,7 @@
 
     <owl:Class rdf:about="&obo;MF_0000006">
         <rdfs:label xml:lang="en">judging</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000008"/>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000020"/>
     </owl:Class>
     
 
@@ -323,7 +323,7 @@
 
     <owl:Class rdf:about="&obo;MF_0000013">
         <rdfs:label>thinking</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000008"/>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000020"/>
         <obo:IAO_0000115>a mental process that involves the manipulation of mental language and/or mental images</obo:IAO_0000115>
     </owl:Class>
     
@@ -341,8 +341,8 @@
     <!-- http://purl.obolibrary.org/obo/MF_0000015 -->
 
     <owl:Class rdf:about="&obo;MF_0000015">
-        <rdfs:label xml:lang="en">imagining</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000008"/>
+        <rdfs:label xml:lang="en">imagination</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000020"/>
     </owl:Class>
     
 
@@ -398,7 +398,7 @@ b) intends the object or event that the mental process is about, should such exi
 
     <owl:Class rdf:about="&obo;MF_0000019">
         <rdfs:label>perception</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000008"/>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000020"/>
         <obo:IAO_0000115>a mental process which is a) produced by a causal process (for example involving light rays or air vibrations) involving a part of the environment of the organism, and b) is experienced by the organism as being so caused, and c) in
 which the relevant part of the environment is thereby represented to the organism</obo:IAO_0000115>
     </owl:Class>
@@ -487,6 +487,16 @@ which the relevant part of the environment is thereby represented to the organis
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MF_0000024 -->
+
+    <owl:Class rdf:about="&obo;MF_0000024">
+        <rdfs:label xml:lang="en">seeing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000019"/>
+        <obo:IAO_0000118>visual perception</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MF_0000025 -->
 
     <owl:Class rdf:about="&obo;MF_0000025">
@@ -510,7 +520,7 @@ which the relevant part of the environment is thereby represented to the organis
 
     <owl:Class rdf:about="&obo;MF_0000027">
         <rdfs:label>planning</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000008"/>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000020"/>
     </owl:Class>
     
 
@@ -629,6 +639,16 @@ which the relevant part of the environment is thereby represented to the organis
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MF_0000038 -->
+
+    <owl:Class rdf:about="&obo;MF_0000038">
+        <rdfs:label xml:lang="en">hearing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000019"/>
+        <obo:IAO_0000118>auditory perception</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MF_0000039 -->
 
     <owl:Class rdf:about="&obo;MF_0000039">
@@ -640,11 +660,135 @@ which the relevant part of the environment is thereby represented to the organis
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MF_0000040 -->
+
+    <owl:Class rdf:about="&obo;MF_0000040">
+        <rdfs:label xml:lang="en">communication</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000021"/>
+        <obo:IAO_0000115>A communication process is an interpersonal process that:
+(a) involves as participant at least two linguistically capable organisms;
+(b) one of whom produces an utterance that is well-formed in a given language;
+(c) the other of whom perceives and understands that utterance by virtue of their
+recognition of the meaning of the utterance through their knowledge of the language.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000041 -->
+
+    <owl:Class rdf:about="&obo;MF_0000041">
+        <rdfs:label xml:lang="en">belief</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000033"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000042 -->
+
+    <owl:Class rdf:about="&obo;MF_0000042">
+        <rdfs:label xml:lang="en">preference</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000203"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000043 -->
+
+    <owl:Class rdf:about="&obo;MF_0000043">
+        <rdfs:label xml:lang="en">capability</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000032"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000044 -->
+
+    <owl:Class rdf:about="&obo;MF_0000044">
+        <rdfs:label xml:lang="en">musical capability</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000043"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MF_0000045 -->
 
     <owl:Class rdf:about="&obo;MF_0000045">
         <rdfs:label>wanting</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000008"/>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000020"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000046 -->
+
+    <owl:Class rdf:about="&obo;MF_0000046">
+        <rdfs:label xml:lang="en">capability to play piano</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000044"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000047 -->
+
+    <owl:Class rdf:about="&obo;MF_0000047">
+        <rdfs:label xml:lang="en">capability to play violin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000044"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000048 -->
+
+    <owl:Class rdf:about="&obo;MF_0000048">
+        <rdfs:label xml:lang="en">mental capability</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000033"/>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000043"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000049 -->
+
+    <owl:Class rdf:about="&obo;MF_0000049">
+        <rdfs:label xml:lang="en">capability to read</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000050"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000050 -->
+
+    <owl:Class rdf:about="&obo;MF_0000050">
+        <rdfs:label xml:lang="en">linguistic capability</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000051 -->
+
+    <owl:Class rdf:about="&obo;MF_0000051">
+        <rdfs:label xml:lang="en">capability to understand language</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000050"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000052 -->
+
+    <owl:Class rdf:about="&obo;MF_0000052">
+        <rdfs:label xml:lang="en">capability to speak</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000050"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000053 -->
+
+    <owl:Class rdf:about="&obo;MF_0000053">
+        <rdfs:label xml:lang="en">capability to read music</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000044"/>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000048"/>
     </owl:Class>
     
 
