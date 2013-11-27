@@ -412,14 +412,14 @@ which the relevant part of the environment is thereby represented to the organis
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000060"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
-                <owl:someValuesFrom rdf:resource="&obo;MF_0000017"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
+                <owl:someValuesFrom rdf:resource="&obo;MF_0000033"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
-                <owl:someValuesFrom rdf:resource="&obo;MF_0000033"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="&obo;MF_0000017"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:seeAlso>GO:0050890, cognition, defined as  `The operation of the mind by which an organism becomes aware of objects of thought or perception; it includes the mental activities associated with thinking, learning, and memory.&apos; </rdfs:seeAlso>
@@ -789,6 +789,34 @@ recognition of the meaning of the utterance through their knowledge of the langu
         <rdfs:label xml:lang="en">capability to read music</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000044"/>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000054 -->
+
+    <owl:Class rdf:about="&obo;MF_0000054">
+        <rdfs:label xml:lang="en">tasting</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000055 -->
+
+    <owl:Class rdf:about="&obo;MF_0000055">
+        <rdfs:label xml:lang="en">smelling</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000019"/>
+        <obo:IAO_0000118>olfactory perception</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000056 -->
+
+    <owl:Class rdf:about="&obo;MF_0000056">
+        <rdfs:label xml:lang="en">touching</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000019"/>
     </owl:Class>
     
 
