@@ -821,6 +821,15 @@ recognition of the meaning of the utterance through their knowledge of the langu
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MF_0000057 -->
+
+    <owl:Class rdf:about="&obo;MF_0000057">
+        <rdfs:label xml:lang="en">thinking with language</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000008"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MF_0000202 -->
 
     <owl:Class rdf:about="&obo;MF_0000202">
