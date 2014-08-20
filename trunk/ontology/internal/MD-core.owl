@@ -885,14 +885,14 @@ There is continuing evidence of two or more symptoms, such as marked social isol
         <rdfs:label rdf:datatype="&xsd;string">mental disease course</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
-                <owl:someValuesFrom rdf:resource="&obo;MD_0000001"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="&obo;MD_0000024"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
-                <owl:someValuesFrom rdf:resource="&obo;MD_0000024"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
+                <owl:someValuesFrom rdf:resource="&obo;MD_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A disease course of a mental disease.</obo:IAO_0000115>
@@ -2858,6 +2858,19 @@ http://www.apa.org/research/action/glossary.aspx</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MD_0000127 -->
+
+    <owl:Class rdf:about="&obo;MD_0000127">
+        <rdfs:label xml:lang="en">substance-related disorders</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000004"/>
+        <obo:IAO_0000115>The substance-related disorders include disorders related to taking of a drug of abuse (including alcohol), to the side effects of a medication, and to toxin exposure.
+
+DSM-IV-TR (american Psychiatric Association)
+</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MD_0000128 -->
 
     <owl:Class rdf:about="&obo;MD_0000128">
@@ -2900,6 +2913,31 @@ http://www.apa.org/research/action/glossary.aspx</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MD_0000131 -->
+
+    <owl:Class rdf:about="&obo;MD_0000131">
+        <rdfs:label xml:lang="en">anergia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000024"/>
+        <obo:IAO_0000115>Lack of energy.
+
+Psychopharmacology Drugs, the Brain, and Behavior (Jerrold S. Meyer, Linda F. Quenzer)</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000132 -->
+
+    <owl:Class rdf:about="&obo;MD_0000132">
+        <rdfs:label xml:lang="en">cocaine bugs</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000024"/>
+        <obo:IAO_0000115>The sensation of tiny creatures crawling over the cocaine user&apos;s skin.
+
+Psychopharmacology Drugs, the Brain, and Behavior (Jerrold S. Meyer, Linda F. Quenzer)
+</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MD_0000133 -->
 
     <owl:Class rdf:about="&obo;MD_0000133">
@@ -2909,6 +2947,18 @@ http://www.apa.org/research/action/glossary.aspx</obo:IAO_0000115>
 
 
 http://www.apa.org/research/action/glossary.aspx</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000134 -->
+
+    <owl:Class rdf:about="&obo;MD_0000134">
+        <rdfs:label xml:lang="en">conditioned response</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000024"/>
+        <obo:IAO_0000115>In classical conditioning, the learned response made to a previously neutral stimulus  that has acquired some of the properties of another stimulus with which it has been paired.
+
+&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -3174,6 +3224,34 @@ DSM-IV-TR (american Psychiatric Association)
 
 
 http://en.wikipedia.org/wiki/Chronic_stress</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000153 -->
+
+    <owl:Class rdf:about="&obo;MD_0000153">
+        <rdfs:label xml:lang="en">caffeine intoxication</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000127"/>
+        <obo:IAO_0000115>The essential feature of caffeine intoxication is recent consumption of caffeine and five or more symptoms that develop during, or shortly after caffeine use.
+
+DSM-IV-TR
+</obo:IAO_0000115>
+        <obo:MD_0000014>
+- Restlessness
+- Nervousness 
+- Excitement 
+- Insomnia
+- Flushed face
+- Diuresis
+- Gastrointestinal disturbance 
+- Muscle twitching
+- Rambling flow of thought and speech
+- Tachycardia or cardiac arrhythmia
+- Periods of inexhaustibility
+- Psychomot agitation</obo:MD_0000014>
+        <obo:IAO_0000118>caffeinism</obo:IAO_0000118>
+        <obo:MD_0000037>305.90</obo:MD_0000037>
     </owl:Class>
     
 
@@ -3494,12 +3572,9 @@ http://en.wikipedia.org/wiki/Hyperactivity</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MD_0000177 -->
 
     <owl:Class rdf:about="&obo;MD_0000177">
-        <rdfs:label xml:lang="en">confidence</rdfs:label>
+        <rdfs:label xml:lang="en">attachment</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000024"/>
-        <obo:IAO_0000115>A feeling of self-assurance arising from an appreciation of one’s own abilities or qualities.
-
-
-http://www.oxforddictionaries.com/definition/english/confidence</obo:IAO_0000115>
+        <obo:IAO_0000115>Aaffectional tie that one person or animal forms between himself and another specific one, a tie that binds them together in space and endures over time.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -3626,13 +3701,14 @@ http://en.wikipedia.org/wiki/Paranoia</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/MD_0000187 -->
 
     <owl:Class rdf:about="&obo;MD_0000187">
-        <rdfs:label xml:lang="en">withdrawal</rdfs:label>
+        <rdfs:label xml:lang="en">abstinence syndrom</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MD_0000024"/>
         <obo:IAO_0000115>Condition characterised by distress or impairment in social, occupational, or other areas of functioning, or physical or emotional symptoms such as shaking, irritability, and inability to concentrate after reducing or ceasing intake of a substance.
 
 
 &quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue
 </obo:IAO_0000115>
+        <obo:IAO_0000118>withdrawal</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -3750,6 +3826,257 @@ Depending on the substance involved, the dysfunction may involve impaired desire
         <obo:IAO_0000115>State of increased psychological and physiological tension marked by such effects as reduced pain tolerance, anxiety, exaggeration of startle responses, insomnia, fatigue and accentuation of personality traits. 
 
 Dorland&apos;s Medical Dictionary for Health Consumers. </obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000197 -->
+
+    <owl:Class rdf:about="&obo;MD_0000197">
+        <rdfs:label xml:lang="en">substance-induced anxiety disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000033"/>
+        <rdfs:comment>Depending on the nature of the substance and the context in which the symptoms occur, the disturbance may involve prominent anxiety, panic attacks, phobias or obsessions or compulsions.
+</rdfs:comment>
+        <obo:IAO_0000115>The essential features of this disorder are prominent anxiety symptoms that are judged to be due to the direct physiological effects of a substance. 
+
+DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000198 -->
+
+    <owl:Class rdf:about="&obo;MD_0000198">
+        <rdfs:label xml:lang="en">substance-induced sleep disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000087"/>
+        <obo:IAO_0000115>The essential feature of this disorder is a prominent disturbance in sleep that is sufficiently severe to warrant independent clinical attention., and is judged to be due to the direct physiological effects of a substance.
+
+DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000199 -->
+
+    <owl:Class rdf:about="&obo;MD_0000199">
+        <rdfs:label xml:lang="en">social dysfunction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000024"/>
+        <obo:IAO_0000115>The inability to perform in the interaction with other people. 
+</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000200 -->
+
+    <owl:Class rdf:about="&obo;MD_0000200">
+        <rdfs:label xml:lang="en">occupational dysfunction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000024"/>
+        <obo:IAO_0000115>The dysfunction in the pursuit of and engagement in meaningful occupation.
+
+Occupational dysfunction and eating disorders: theory and approach to treatment (Roann Barris, EdD, OTR)</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000201 -->
+
+    <owl:Class rdf:about="&obo;MD_0000201">
+        <rdfs:label xml:lang="en">orientation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000024"/>
+        <obo:IAO_0000115>function of the mind involving awareness of three dimensions: time, place and person.
+
+wikipedia</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000202 -->
+
+    <owl:Class rdf:about="&obo;MD_0000202">
+        <rdfs:label xml:lang="en">crave (withdrawal)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000024"/>
+        <obo:IAO_0000115>Psychological urge to administer a discontinued medication or recreational drug.
+
+http://en.wikipedia.org/wiki/Craving_%28withdrawal%29
+</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000203 -->
+
+    <owl:Class rdf:about="&obo;MD_0000203">
+        <rdfs:label xml:lang="en">disorientation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000024"/>
+        <obo:IAO_0000115> A state of mental confusion as to time, place, or identity.
+
+medical-dictionary</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000204 -->
+
+    <owl:Class rdf:about="&obo;MD_0000204">
+        <rdfs:label xml:lang="en">incoherence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000024"/>
+        <obo:IAO_0000115>The unability to think or express one&apos;s thoughts in a clear or orderly manner.
+</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000205 -->
+
+    <owl:Class rdf:about="&obo;MD_0000205">
+        <rdfs:label xml:lang="en">disorientation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000024"/>
+        <obo:IAO_0000115>Problems with orientation lead to disorientation.
+
+wikipedia</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000206 -->
+
+    <owl:Class rdf:about="&obo;MD_0000206">
+        <rdfs:label xml:lang="en">seasonal affective disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000030"/>
+        <obo:IAO_0000115>A mood disorder in which people who have normal mental health throughout most of the year experience depressive symptoms in the winter or summer.
+
+
+http://en.wikipedia.org/wiki/Seasonal_affective_disorder</obo:IAO_0000115>
+        <obo:IAO_0000118>winter depression
+winter blues
+summer depression
+summer blues
+seasonal depression
+major depressive disorder with seasonal pattern</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000207 -->
+
+    <owl:Class rdf:about="&obo;MD_0000207">
+        <rdfs:label xml:lang="en">orgasm</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000024"/>
+        <obo:IAO_0000118>sexual climax</obo:IAO_0000118>
+        <obo:IAO_0000115>Orgasm is the sudden discharge of accumulated sexual tension during the sexual response cycle, resulting in rhythmic muscular contractions in the pelvic region characterized by sexual pleasure.
+
+http://en.wikipedia.org/wiki/Orgasm</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000208 -->
+
+    <owl:Class rdf:about="&obo;MD_0000208">
+        <rdfs:label xml:lang="en">autism spectrum disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000001"/>
+        <obo:IAO_0000115>
+Disorders characterized by social deficits and communication difficulties, stereotyped or repetitive behaviors and interests, and in some cases, cognitive delays.
+
+http://en.wikipedia.org/wiki/Autism_spectrum</obo:IAO_0000115>
+        <rdfs:comment>The DSM-5 diagnosis encompasses previous diagnoses (from DSM_IV-TR) of autistic disorder, Asperger&apos;s disorder, childhood disintegrative disorder, and PDD-NOS. Rather than categorizing these diagnoses, the DSM-5 will adopt a dimensional approach to diagnosing disorders that fall underneath the autism spectrum umbrella. 
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000209 -->
+
+    <owl:Class rdf:about="&obo;MD_0000209">
+        <rdfs:label xml:lang="en">mood swing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000024"/>
+        <obo:IAO_0000115>extreme or rapid change in mood.
+
+wikipedia</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000210 -->
+
+    <owl:Class rdf:about="&obo;MD_0000210">
+        <rdfs:label xml:lang="en">somnolence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000024"/>
+        <obo:IAO_0000115>State of near-sleep, a strong desire for sleep, or sleeping for unusually long periods.
+
+wikipedia</obo:IAO_0000115>
+        <obo:IAO_0000118>sleepiness</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000211 -->
+
+    <owl:Class rdf:about="&obo;MD_0000211">
+        <rdfs:label xml:lang="en">thought disorder (TD)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000024"/>
+        <obo:IAO_0000118>formal thought disorder (FTD)</obo:IAO_0000118>
+        <obo:IAO_0000115>Refers to disorganized thinking as evidenced by disorganized speech.</obo:IAO_0000115>
+        <rdfs:comment>Specific thought disorders include derailment, poverty of speech, tangentiality, illogicality, perseveration, neologism, and thought blocking.
+
+
+http://en.wikipedia.org/wiki/Thought_disorder
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000212 -->
+
+    <owl:Class rdf:about="&obo;MD_0000212">
+        <rdfs:label xml:lang="en">derailment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000024"/>
+        <obo:IAO_0000115>Thought disorder characterized by discourse consisting of a sequence of unrelated or only remotely related ideas. The frame of reference often changes from one sentence to the next.
+
+http://en.wikipedia.org/wiki/Derailment_%28thought_disorder%29</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000213 -->
+
+    <owl:Class rdf:about="&obo;MD_0000213">
+        <rdfs:label xml:lang="en">tangentiality</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000024"/>
+        <obo:IAO_0000115>Thought disorder shown from speech with a lack of observance to the main subject of discourse, such that a person whilst speaking on a topic deviates from the topic.
+
+http://en.wikipedia.org/wiki/Tangentiality</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000214 -->
+
+    <owl:Class rdf:about="&obo;MD_0000214">
+        <rdfs:label xml:lang="en">perseveration</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000024"/>
+        <rdfs:comment>Symptoms include lacking ability to transition or switch ideas appropriately with the social context, as evidenced by the repetition of words or gestures after they have ceased to be socially relevant or appropriate.
+
+http://en.wikipedia.org/wiki/Perseveration</rdfs:comment>
+        <obo:IAO_0000115>The repetition of a particular response, such as a word, phrase, or gesture, despite the absence or cessation of a stimulus, usually caused by brain injury or other organic disorder.
+</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MD_0000215 -->
+
+    <owl:Class rdf:about="&obo;MD_0000215">
+        <rdfs:label xml:lang="en">thought blocking</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MD_0000024"/>
+        <rdfs:comment>When the person begins speaking again, after the block, they will often speak about a subject unrelated to what was being discussed when blocking occurred. It is described as being experienced as an unanticipated, quick and total emptying of the mind. People with schizophrenia commonly experience thought blocking and may comprehend the experience in peculiar ways.
+
+
+http://en.wikipedia.org/wiki/Thought_blocking
+</rdfs:comment>
+        <obo:IAO_0000115>Phenomenon that occurs occurs when a person&apos;s speech is suddenly interrupted by silences that may last a few seconds to a minute or longer. 
+</obo:IAO_0000115>
     </owl:Class>
 </rdf:RDF>
 
