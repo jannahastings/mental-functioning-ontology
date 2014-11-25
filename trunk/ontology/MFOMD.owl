@@ -1,0 +1,232 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY MF "http://purl.obolibrary.org/obo/MF#" >
+    <!ENTITY snap "http://www.ifomis.org/bfo/1.1/snap#" >
+    <!ENTITY span "http://www.ifomis.org/bfo/1.1/span#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="&obo;MFOMD.owl#"
+     xml:base="&obo;MFOMD.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:MF="&obo;MF#"
+     xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
+    <owl:Ontology rdf:about="&obo;MFOMD.owl">
+        <dc:description>The Mental Disease Ontology is developed to facillitate representation for all aspects of mental disease. It is an extension of the Ontology for General Medical Science (OGMS) and Mental Functioning Ontology (MF).</dc:description>
+        <dc:contributor>Barry Smith</dc:contributor>
+        <dc:contributor>Janna Hastings</dc:contributor>
+        <dc:contributor>Mark Jensen</dc:contributor>
+        <dc:title>The Mental Disease Ontology was first described in the publication &apos;Foundations for a realist ontology of mental disease&apos; (Barry Smith and Werner Ceusters) which is available at http://www.jbiomedsem.com/content/1/1/10 . </dc:title>
+        <dc:contributor>Jeanette Alicia Chacón Candia</dc:contributor>
+        <owl:imports rdf:resource="http://ogms.googlecode.com/svn/trunk/src/ontology/ogms.owl"/>
+        <owl:imports rdf:resource="&obo;MF.owl"/>
+        <owl:imports rdf:resource="&obo;MF/internal/MFOMD-core.owl"/>
+        <owl:imports rdf:resource="&obo;MF/internal/MF-core.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="&dc;contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="&dc;title"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF#hasAgent -->
+
+    <owl:ObjectProperty rdf:about="&obo;MF#hasAgent"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF#hasPart -->
+
+    <owl:ObjectProperty rdf:about="&obo;MF#hasPart"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF#hasParticipant -->
+
+    <owl:ObjectProperty rdf:about="&obo;MF#hasParticipant"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF#inhererOf -->
+
+    <owl:ObjectProperty rdf:about="&obo;MF#inhererOf"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF#inheresIn -->
+
+    <owl:ObjectProperty rdf:about="&obo;MF#inheresIn"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF#isAbout -->
+
+    <owl:ObjectProperty rdf:about="&obo;MF#isAbout"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF#manifestationOf -->
+
+    <owl:ObjectProperty rdf:about="&obo;MF#manifestationOf"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF#partOf -->
+
+    <owl:ObjectProperty rdf:about="&obo;MF#partOf"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF#participantOf -->
+
+    <owl:ObjectProperty rdf:about="&obo;MF#participantOf"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF#realizationOf -->
+
+    <owl:ObjectProperty rdf:about="&obo;MF#realizationOf"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF#specificallyDependsOn -->
+
+    <owl:ObjectProperty rdf:about="&obo;MF#specificallyDependsOn"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOMD_0000001 -->
+
+    <owl:Class rdf:about="&obo;MFOMD_0000001">
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000031"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOMD_0000004 -->
+
+    <owl:Class rdf:about="&obo;MFOMD_0000004">
+        <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000025"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOMD_0000024 -->
+
+    <rdf:Description rdf:about="&obo;MFOMD_0000024">
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000061"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOMD_0000025 -->
+
+    <owl:Class rdf:about="&obo;MFOMD_0000025">
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000063"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOMD_0000034 -->
+
+    <owl:Class rdf:about="&obo;MFOMD_0000034">
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOMD_0000038 -->
+
+    <owl:Class rdf:about="&obo;MFOMD_0000038">
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000030"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOMD_0000040 -->
+
+    <owl:Class rdf:about="&obo;MFOMD_0000040">
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000073"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MFOMD_0000041 -->
+
+    <owl:Class rdf:about="&obo;MFOMD_0000041">
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000022"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
