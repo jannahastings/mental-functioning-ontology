@@ -22,8 +22,8 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#">
     <owl:Ontology rdf:about="&obo;MF/internal/MF-core.owl">
-        <rdfs:comment>To be imported into the full MF.owl</rdfs:comment>
         <rdfs:comment>Core mental functioning ontology classes and properties. </rdfs:comment>
+        <rdfs:comment>To be imported into the full MF.owl</rdfs:comment>
         <owl:imports rdf:resource="&obo;MF/external/bfo-properties-slim.owl"/>
         <owl:imports rdf:resource="&obo;MF/external/ontology-metadata-slim.owl"/>
     </owl:Ontology>
@@ -121,9 +121,9 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000052 -->
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0000052">
-        <ace_lexicon:TV_sg>BFO_0000052s</ace_lexicon:TV_sg>
-        <ace_lexicon:TV_pl>BFO_0000052</ace_lexicon:TV_pl>
         <ace_lexicon:TV_vbg>BFO_0000052ed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>BFO_0000052</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>BFO_0000052s</ace_lexicon:TV_sg>
     </owl:ObjectProperty>
     
 
@@ -131,9 +131,9 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000055 -->
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0000055">
-        <ace_lexicon:TV_sg>BFO_0000055s</ace_lexicon:TV_sg>
-        <ace_lexicon:TV_pl>BFO_0000055</ace_lexicon:TV_pl>
         <ace_lexicon:TV_vbg>BFO_0000055ed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>BFO_0000055</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>BFO_0000055s</ace_lexicon:TV_sg>
     </owl:ObjectProperty>
     
 
@@ -141,9 +141,9 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000057 -->
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0000057">
-        <ace_lexicon:TV_sg>BFO_0000057s</ace_lexicon:TV_sg>
-        <ace_lexicon:TV_pl>BFO_0000057</ace_lexicon:TV_pl>
         <ace_lexicon:TV_vbg>BFO_0000057ed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>BFO_0000057</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>BFO_0000057s</ace_lexicon:TV_sg>
     </owl:ObjectProperty>
     
 
@@ -151,9 +151,9 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000107 -->
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0000107">
-        <ace_lexicon:TV_sg>BFO_0000107s</ace_lexicon:TV_sg>
-        <ace_lexicon:TV_vbg>BFO_0000107ed</ace_lexicon:TV_vbg>
         <ace_lexicon:TV_pl>BFO_0000107</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>BFO_0000107ed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>BFO_0000107s</ace_lexicon:TV_sg>
     </owl:ObjectProperty>
     
 
@@ -161,9 +161,9 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000110 -->
 
     <rdf:Description rdf:about="&obo;BFO_0000110">
-        <ace_lexicon:TV_sg>BFO_0000110s</ace_lexicon:TV_sg>
-        <ace_lexicon:TV_pl>BFO_0000110</ace_lexicon:TV_pl>
         <ace_lexicon:TV_vbg>BFO_0000110ed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>BFO_0000110</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>BFO_0000110s</ace_lexicon:TV_sg>
     </rdf:Description>
     
 
@@ -171,9 +171,9 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000112 -->
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0000112">
-        <ace_lexicon:TV_pl>BFO_0000112</ace_lexicon:TV_pl>
-        <ace_lexicon:TV_vbg>BFO_0000112ed</ace_lexicon:TV_vbg>
         <ace_lexicon:TV_sg>BFO_0000112s</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>BFO_0000112ed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>BFO_0000112</ace_lexicon:TV_pl>
     </owl:ObjectProperty>
     
 
@@ -181,9 +181,9 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000117 -->
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0000117">
-        <ace_lexicon:TV_sg>BFO_0000117s</ace_lexicon:TV_sg>
-        <ace_lexicon:TV_pl>BFO_0000117</ace_lexicon:TV_pl>
         <ace_lexicon:TV_vbg>BFO_0000117ed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>BFO_0000117</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>BFO_0000117s</ace_lexicon:TV_sg>
     </owl:ObjectProperty>
     
 
@@ -191,9 +191,9 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000132 -->
 
     <rdf:Description rdf:about="&obo;BFO_0000132">
-        <ace_lexicon:TV_pl>BFO_0000132</ace_lexicon:TV_pl>
-        <ace_lexicon:TV_sg>BFO_0000132s</ace_lexicon:TV_sg>
         <ace_lexicon:TV_vbg>BFO_0000132ed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>BFO_0000132s</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>BFO_0000132</ace_lexicon:TV_pl>
     </rdf:Description>
     
 
@@ -201,9 +201,9 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000167 -->
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0000167">
-        <ace_lexicon:TV_sg>BFO_0000167s</ace_lexicon:TV_sg>
-        <ace_lexicon:TV_vbg>BFO_0000167ed</ace_lexicon:TV_vbg>
         <ace_lexicon:TV_pl>BFO_0000167</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>BFO_0000167ed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>BFO_0000167s</ace_lexicon:TV_sg>
     </owl:ObjectProperty>
     
 
@@ -211,9 +211,9 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000176 -->
 
     <rdf:Description rdf:about="&obo;BFO_0000176">
-        <ace_lexicon:TV_vbg>BFO_0000176ed</ace_lexicon:TV_vbg>
-        <ace_lexicon:TV_pl>BFO_0000176</ace_lexicon:TV_pl>
         <ace_lexicon:TV_sg>BFO_0000176s</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>BFO_0000176</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>BFO_0000176ed</ace_lexicon:TV_vbg>
     </rdf:Description>
     
 
@@ -235,6 +235,19 @@
         <rdfs:label xml:lang="en">remembering</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000020"/>
         <obo:IAO_0000115>(for the case of remembering X, where X is an event in the organism’s history) a mental process that is a) about X, and b) made possible by the physical traces left by a causal process involving the organism during the event X</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000003 -->
+
+    <owl:Class rdf:about="&obo;MF_0000003">
+        <rdfs:label xml:lang="en">alertness</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000018"/>
+        <obo:IAO_0000115>State of active attention by high sensory awareness such as being watchful and prompt to meet danger or emergency, or being quick to perceive and act.
+
+ http://en.wikipedia.org/wiki/Alertness</obo:IAO_0000115>
+        <owl:priorVersion>MFOMD_0000176</owl:priorVersion>
     </owl:Class>
     
 
@@ -286,8 +299,8 @@
                 <owl:someValuesFrom rdf:resource="&obo;MF_0000031"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:seeAlso>GO:0050890, cognition, defined as  `The operation of the mind by which an organism becomes aware of objects of thought or perception; it includes the mental activities associated with thinking, learning, and memory.&apos; </rdfs:seeAlso>
         <obo:IAO_0000115>A mental process that creates, modifies or has as participant some cognitive representation.</obo:IAO_0000115>
+        <rdfs:seeAlso>GO:0050890, cognition, defined as  `The operation of the mind by which an organism becomes aware of objects of thought or perception; it includes the mental activities associated with thinking, learning, and memory.&apos; </rdfs:seeAlso>
     </owl:Class>
     
 
@@ -315,6 +328,20 @@
     <owl:Class rdf:about="&obo;MF_0000011">
         <rdfs:label xml:lang="en">visual problem solving behavior</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;NBO_0000297"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000012 -->
+
+    <owl:Class rdf:about="&obo;MF_0000012">
+        <rdfs:label xml:lang="en">arousal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000020"/>
+        <owl:priorVersion>MFOMD_0000146</owl:priorVersion>
+        <obo:IAO_0000115>Physiological and psychological state of being awake or reactive to stimuli.
+
+
+http://en.wikipedia.org/wiki/Arousal</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -376,10 +403,10 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Note that while there are different modes of consciousness corresponding to the different senses, the whole of conscious experience at any one time is largely experienced as a unity, that is, as a fused whole. Mental processes which are simultaneously ongoing are separable only in fiat, not in essence. </rdfs:comment>
         <obo:IAO_0000115>Consciousness is an inseparable part of all mental processes. It is that part of the mental process that:
 a) confers a subjective perspective, a phenomenology, an experience of the mental process of which it is a part; and
 b) intends the object or event that the mental process is about, should such exist; i.e., it confers intentionality on the mental process.</obo:IAO_0000115>
+        <rdfs:comment>Note that while there are different modes of consciousness corresponding to the different senses, the whole of conscious experience at any one time is largely experienced as a unity, that is, as a fused whole. Mental processes which are simultaneously ongoing are separable only in fiat, not in essence. </rdfs:comment>
     </owl:Class>
     
 
@@ -412,19 +439,19 @@ which the relevant part of the environment is thereby represented to the organis
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000060"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
-                <owl:someValuesFrom rdf:resource="&obo;MF_0000033"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
                 <owl:someValuesFrom rdf:resource="&obo;MF_0000017"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:seeAlso>GO:0050890, cognition, defined as  `The operation of the mind by which an organism becomes aware of objects of thought or perception; it includes the mental activities associated with thinking, learning, and memory.&apos; </rdfs:seeAlso>
-        <obo:IAO_0000115>A mental process is a bodily process that is of a type such that it can of itself be conscious. Examples include thinking, feeling pain, remembering and emotion as occurrent experiences. </obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
+                <owl:someValuesFrom rdf:resource="&obo;MF_0000033"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>A bodily process which brings into being, sustains or modifies a cognitive representation or a beahvior inducing state.</rdfs:comment>
+        <obo:IAO_0000115>A mental process is a bodily process that is of a type such that it can of itself be conscious. Examples include thinking, feeling pain, remembering and emotion as occurrent experiences. </obo:IAO_0000115>
+        <rdfs:seeAlso>GO:0050890, cognition, defined as  `The operation of the mind by which an organism becomes aware of objects of thought or perception; it includes the mental activities associated with thinking, learning, and memory.&apos; </rdfs:seeAlso>
     </owl:Class>
     
 
@@ -441,8 +468,8 @@ which the relevant part of the environment is thereby represented to the organis
                 <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minQualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A process in which at least two human beings are agents.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <obo:IAO_0000115>A process in which at least two human beings are agents.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -479,10 +506,10 @@ which the relevant part of the environment is thereby represented to the organis
                 <owl:someValuesFrom rdf:resource="&obo;MF_0000021"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Behavior having interpersonal processes as parts, each involving the same instances of human being.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
         <rdfs:seeAlso>GO:0051705, multi-organism behaviour, defined as: 
     &quot;Any process in which an organism has a behavioral effect on another organism of the same or different species&quot; (http://amigo.geneontology.org/cgi-bin/amigo/term_details?term=GO:0051705#lineage)</rdfs:seeAlso>
-        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <obo:IAO_0000115>Behavior having interpersonal processes as parts, each involving the same instances of human being.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -548,8 +575,8 @@ which the relevant part of the environment is thereby represented to the organis
 
     <owl:Class rdf:about="&obo;MF_0000030">
         <rdfs:label rdf:datatype="&xsd;string">representation</rdfs:label>
-        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
         <obo:IAO_0000115>A dependent continuant which is about a portion of reality.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -559,8 +586,8 @@ which the relevant part of the environment is thereby represented to the organis
     <owl:Class rdf:about="&obo;MF_0000031">
         <rdfs:label rdf:datatype="&xsd;string">cognitive representation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000030"/>
-        <obo:IAO_0000115>A representation which specifically depends on an anatomical structure in the cognitive system of an organism.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <obo:IAO_0000115>A representation which specifically depends on an anatomical structure in the cognitive system of an organism.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -654,8 +681,8 @@ which the relevant part of the environment is thereby represented to the organis
     <owl:Class rdf:about="&obo;MF_0000039">
         <rdfs:label rdf:datatype="&xsd;string">affective representation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MF_0000031"/>
-        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
         <obo:IAO_0000115>A cognitive representation sustained by an organsim about its own emotions.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -830,6 +857,74 @@ recognition of the meaning of the utterance through their knowledge of the langu
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MF_0000058 -->
+
+    <owl:Class rdf:about="&obo;MF_0000058">
+        <rdfs:label xml:lang="en">attachment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000021"/>
+        <obo:IAO_0000115>Affectional tie that one person or animal forms between himself and another specific one, a tie that binds them together emotionally and endures over time.</obo:IAO_0000115>
+        <owl:priorVersion>MFOMF_0000177</owl:priorVersion>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000059 -->
+
+    <owl:Class rdf:about="&obo;MF_0000059">
+        <rdfs:label xml:lang="en">daydreaming</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000020"/>
+        <obo:IAO_0000115>Short-term detachment from one&apos;s immediate surroundings, during which a person&apos;s contact with reality is blurred and partially substituted by a visionary fantasy, especially one of happy, pleasant thoughts, hopes or ambitions, imagined as coming to pass, and experienced while awake.
+
+
+http://en.wikipedia.org/wiki/Daydream</obo:IAO_0000115>
+        <owl:priorVersion>MFOMD_0000148</owl:priorVersion>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000060 -->
+
+    <owl:Class rdf:about="&obo;MF_0000060">
+        <rdfs:label xml:lang="en">vigilance</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000018"/>
+        <owl:priorVersion>MFOMD_0000140</owl:priorVersion>
+        <obo:IAO_0000115>The ability to maintain attention and alertness over prolonged periods of time.
+
+
+http://en.wikipedia.org/wiki/Vigilance_%28psychology%29</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000061 -->
+
+    <owl:Class rdf:about="&obo;MF_0000061">
+        <rdfs:label xml:lang="en">orgasm</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000020"/>
+        <obo:IAO_0000118>sexual climax</obo:IAO_0000118>
+        <obo:IAO_0000115>Orgasm is the sudden discharge of accumulated sexual tension during the sexual response cycle, resulting in rhythmic muscular contractions in the pelvic region characterized by sexual pleasure.
+
+http://en.wikipedia.org/wiki/Orgasm</obo:IAO_0000115>
+        <owl:priorVersion>MFOMD_0000207</owl:priorVersion>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000062 -->
+
+    <owl:Class rdf:about="&obo;MF_0000062">
+        <rdfs:label xml:lang="en">libido</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MF_0000020"/>
+        <obo:IAO_0000115>
+The psychic energy that drives individuals toward sensual pleasures of all types, especially sexual ones.
+
+
+http://www.apa.org/research/action/glossary.aspx</obo:IAO_0000115>
+        <owl:priorVersion>MFOMD_0000130</owl:priorVersion>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MF_0000202 -->
 
     <owl:Class rdf:about="&obo;MF_0000202">
@@ -875,9 +970,9 @@ recognition of the meaning of the utterance through their knowledge of the langu
                 <owl:someValuesFrom rdf:resource="&obo;OGMS_0000087"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>From OGMS: http://purl.obolibrary.org/obo/OGMS_0000060</rdfs:comment>
-        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
         <obo:IAO_0000115>A process in which at least one bodily component of an organsim participates.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <rdfs:comment>From OGMS: http://purl.obolibrary.org/obo/OGMS_0000060</rdfs:comment>
     </owl:Class>
     
 
