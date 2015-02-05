@@ -149,16 +149,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000054 -->
-
-    <rdf:Description rdf:about="&obo;BFO_0000054">
-        <ace_lexicon:TV_sg>BFO_0000054s</ace_lexicon:TV_sg>
-        <ace_lexicon:TV_pl>BFO_0000054</ace_lexicon:TV_pl>
-        <ace_lexicon:TV_vbg>BFO_0000054ed</ace_lexicon:TV_vbg>
-    </rdf:Description>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/BFO_0000055 -->
 
     <rdf:Description rdf:about="&obo;BFO_0000055">
@@ -324,7 +314,8 @@ A diagnosis of a mental disease is a clinician&apos;s statement that a patient h
 
     <owl:Class rdf:about="&obo;MFOMD_0000004">
         <rdfs:label rdf:datatype="&xsd;string">mental disorder</rdfs:label>
-        <rdfs:comment>The distinction between mental disease and mental disorder is still being developed. At the moment the ontology contains some of the DSM recognised conditions beneath mental disease and others beneath mental disorder. This will be clarified and fixed in a future release. </rdfs:comment>
+        <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000025"/>
+        <rdfs:comment>While the ontology subscribes to the widely accepted theory that there is a biomedical basis for mental diseases, the standard descriptions of mental disorders focus solely on symptomatic descriptions. Therefore, we have classified the mental disorders beneath OGMS&apos;s &apos;disease course&apos; via a parent class &apos;mental disease course&apos; rather than classifying them as diseases. </rdfs:comment>
         <obo:IAO_0000115>Clinically significant behavioural and/or cognitive pathology.</obo:IAO_0000115>
     </owl:Class>
     
@@ -340,62 +331,11 @@ A diagnosis of a mental disease is a clinician&apos;s statement that a patient h
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MFOMD_0000006 -->
-
-    <owl:Class rdf:about="&obo;MFOMD_0000006">
-        <rdfs:label xml:lang="en">addiction disease course</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000025"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOMD_0000046"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>An addiction disease course is the occurrent sum of the mental and behavioural processes that are caused by an addiction.</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MFOMD_0000007 -->
-
-    <owl:Class rdf:about="&obo;MFOMD_0000007">
-        <rdfs:label xml:lang="en">bipolar disease course</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000025"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;MFOMD_0000011"/>
-                            <rdf:Description rdf:about="&obo;MFOMD_0000012"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOMD_0000048"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>A bipolar disease course is the occurrent sum of the mental and behavioural processes that are caused by an underlying bipolar disease.</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MFOMD_0000008 -->
 
     <owl:Class rdf:about="&obo;MFOMD_0000008">
-        <rdfs:label xml:lang="en">attention deficit - hyperactivity disease</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000001"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
-                <owl:allValuesFrom rdf:resource="&obo;MFOMD_0000009"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">attention deficit - hyperactivity disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000004"/>
         <obo:IAO_0000115>Mental disease that causes difficulties in concentrating and performing tasks, particularly in children.</obo:IAO_0000115>
         <obo:IAO_0000118>314.01 [DSM-IV Code]</obo:IAO_0000118>
         <obo:IAO_0000118>ADHD</obo:IAO_0000118>
@@ -410,45 +350,6 @@ ADHD is diagnosed two to four times more frequently in boys than in girls, thoug
         <rdfs:comment>The onset criterion on this disorder has been changed from “symptoms that caused impairment were present before age 7 years” to “several inattentive or hyperactive-impulsive symptoms were present prior to age 12”.
 
 www.dsm5.org/Documents/changes from dsm-iv-tr to dsm-5.pdf</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MFOMD_0000009 -->
-
-    <owl:Class rdf:about="&obo;MFOMD_0000009">
-        <rdfs:label xml:lang="en">attention deficit - hyperactivity disease course</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000025"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOMD_0000008"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>
-An attention deficit - hyperactivity disease course is the occurrent sum of the mental and behavioural processes that are caused by an underlying attention deficit - hyperactivity disease.</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MFOMD_0000010 -->
-
-    <owl:Class rdf:about="&obo;MFOMD_0000010">
-        <rdfs:label xml:lang="en">depression disease course</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000025"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOMD_0000013"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOMD_0000049"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>A depression disease course is the occurrent sum of the mental and behavioural processes that are caused by an underlying depression disease.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -885,14 +786,14 @@ There is continuing evidence of two or more symptoms, such as marked social isol
         <rdfs:label rdf:datatype="&xsd;string">mental disease course</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOMD_0000024"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOMD_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOMD_0000001"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOMD_0000024"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A disease course of a mental disease.</obo:IAO_0000115>
@@ -1063,7 +964,7 @@ DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/MFOMD_0000030 -->
 
     <owl:Class rdf:about="&obo;MFOMD_0000030">
-        <rdfs:label xml:lang="en">mood Disorders</rdfs:label>
+        <rdfs:label xml:lang="en">mood disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000004"/>
         <obo:IAO_0000118>affective disorders</obo:IAO_0000118>
         <obo:IAO_0000115>Disorders that have a disturbance in mood as the predominant feature.
@@ -1162,7 +1063,7 @@ DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/MFOMD_0000033 -->
 
     <owl:Class rdf:about="&obo;MFOMD_0000033">
-        <rdfs:label xml:lang="en">anxiety disorders</rdfs:label>
+        <rdfs:label xml:lang="en">anxiety disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000004"/>
         <obo:IAO_0000118 xml:lang="es">trastornos de ansiedad</obo:IAO_0000118>
     </owl:Class>
@@ -1172,7 +1073,7 @@ DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/MFOMD_0000034 -->
 
     <owl:Class rdf:about="&obo;MFOMD_0000034">
-        <rdfs:label xml:lang="en">somatoform disorders</rdfs:label>
+        <rdfs:label xml:lang="en">somatoform disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000004"/>
         <obo:IAO_0000115>The common feature of this kind of disorders is the presence of physical symptoms that suggest a general medical condition and are not fully explained by a general medical condition, by the direct effects of a substance, or by another mental disorder.
 
@@ -1255,7 +1156,7 @@ Some several predisposing factors of hypocondriasis included a history of physic
     <!-- http://purl.obolibrary.org/obo/MFOMD_0000039 -->
 
     <owl:Class rdf:about="&obo;MFOMD_0000039">
-        <rdfs:label xml:lang="en">personality disorders</rdfs:label>
+        <rdfs:label xml:lang="en">personality disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000004"/>
         <obo:IAO_0000115>Personality disorder is an enduring pattern of inner experience and behaviour that deviates markedly from the expectations of the individual&apos;s culture, is pervasive and inflexible, has an onset in adolescence or early adulthood, is stable over the time, and leads to distress or impairment. 
 
@@ -1286,14 +1187,14 @@ DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
         <rdfs:label rdf:datatype="&xsd;string">manifestation of a mental disease</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOMD_0000025"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOMD_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOMD_0000001"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOMD_0000025"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
@@ -1415,14 +1316,9 @@ Antisocial personality disorder is more prevalent among men than women, and amon
     <!-- http://purl.obolibrary.org/obo/MFOMD_0000046 -->
 
     <owl:Class rdf:about="&obo;MFOMD_0000046">
-        <rdfs:label>addiction disease</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000001"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
-                <owl:allValuesFrom rdf:resource="&obo;MFOMD_0000006"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:label>addiction disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000127"/>
+        <owl:priorVersion>MFOMD_000126</owl:priorVersion>
         <rdfs:comment>Addictions can include, but are not limited to, alcohol abuse, drug abuse, exercise abuse, pornography and gambling. Classic hallmarks of addiction include: impaired control over substances/behavior, preoccupation with substance/behavior, continued use despite consequences, and denial. Habits and patterns associated with addiction are typically characterized by immediate gratification (short-term reward), coupled with delayed deleterious effects (long-term costs). Physiological dependence occurs when the body has to adjust to the substance by incorporating the substance into its &apos;normal&apos; functioning. This state creates the conditions of tolerance and withdrawal. Tolerance is the process by which the body continually adapts to the substance and requires increasingly larger amounts to achieve the original effects. Withdrawal refers to physical and psychological symptoms people experience when reducing or discontinuing a substance the body had become dependent on. Symptoms of withdrawal generally include but are not limited to anxiety, irritability, intense cravings for the substance, nausea, hallucinations, headaches, cold sweats, and tremors. [WIkipedia: http://en.wikipedia.org/wiki/Addiction]</rdfs:comment>
         <obo:IAO_0000115>Addiction is a mental disease in which a person persists in the use of a mood altering substance or in a behaviour despite adverse consequences.</obo:IAO_0000115>
     </owl:Class>
@@ -1451,14 +1347,8 @@ The individuals with this disorder can empathise with and nurture other people, 
     <!-- http://purl.obolibrary.org/obo/MFOMD_0000048 -->
 
     <owl:Class rdf:about="&obo;MFOMD_0000048">
-        <rdfs:label>bipolar disease</rdfs:label>
+        <rdfs:label>bipolar disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000030"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
-                <owl:allValuesFrom rdf:resource="&obo;MFOMD_0000007"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000118>Bipolar affective disorder [ICD-10]</obo:IAO_0000118>
         <rdfs:comment>DSM offers several different codes for bipolar, disambiguating the type of the most recent episode: 
 
@@ -1511,14 +1401,8 @@ The lifetime prevalence of all types of bipolar disorder is thought to be about 
     <!-- http://purl.obolibrary.org/obo/MFOMD_0000049 -->
 
     <owl:Class rdf:about="&obo;MFOMD_0000049">
-        <rdfs:label>depression disease</rdfs:label>
+        <rdfs:label>depressive disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000030"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
-                <owl:allValuesFrom rdf:resource="&obo;MFOMD_0000010"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115>The essential feature is a clinical course that is characterised by one or more Major Depressive Episodes without a history of Manic, Mixed, or Hypomanic episodes.</obo:IAO_0000115>
         <rdfs:comment>DSM-IV lists several codes for depression depending on the most recent episode: 
 
@@ -1537,6 +1421,22 @@ The lifetime prevalence of all types of bipolar disorder is thought to be about 
 296.23 	Major Depressive Disorder, Single Episode, Severe Without Psychotic Features
 296.2 	Major Depressive Disorder, Single Episode, Unspecified </rdfs:comment>
         <obo:IAO_0000118>major depressive disorder [DSM-IV]</obo:IAO_0000118>
+        <obo:IAO_0000118>depression</obo:IAO_0000118>
+        <owl:priorVersion>MFOMD_0000144</owl:priorVersion>
+        <obo:MFOMD_0000014>
+Symptoms of Depression 
+
+
+Affective domain.- Sadness, unhappiness, apathy, anxiety, brooding
+
+Cognitive domain.- Pessimism, guilt, inability to concentrate, negative thinking, loss of interest and motivation, suicidal thoughts.
+
+Behavioural domain.- Low energy, neglect of personal appearance, crying, psychomotor retardation, agitation.
+
+Physiological domain.- Poor or increased appetite, constipation, sleep disturbance, disruption of the menstrual cycle in women, loss of sex drive.
+
+
+&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</obo:MFOMD_0000014>
     </owl:Class>
     
 
@@ -1544,7 +1444,7 @@ The lifetime prevalence of all types of bipolar disorder is thought to be about 
     <!-- http://purl.obolibrary.org/obo/MFOMD_0000050 -->
 
     <owl:Class rdf:about="&obo;MFOMD_0000050">
-        <rdfs:label>bipolar I disease</rdfs:label>
+        <rdfs:label>bipolar I disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000048"/>
         <obo:IAO_0000118>bipolar I disorder [DSM-IV]</obo:IAO_0000118>
         <obo:IAO_0000115>Bipolar I disease is the more severe form of bipolar disease in which subjects have experienced a full-blown manic episode.        </obo:IAO_0000115>
@@ -1555,7 +1455,7 @@ The lifetime prevalence of all types of bipolar disorder is thought to be about 
     <!-- http://purl.obolibrary.org/obo/MFOMD_0000051 -->
 
     <owl:Class rdf:about="&obo;MFOMD_0000051">
-        <rdfs:label>bipolar II disease</rdfs:label>
+        <rdfs:label>bipolar II disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000048"/>
         <obo:IAO_0000118>bipolar II disorder [DSM-IV]</obo:IAO_0000118>
         <obo:IAO_0000115>Bipolar II is the less severe form of bipolar disease, in which subjects experience alternating depressive and hypomanic episodes.            </obo:IAO_0000115>
@@ -1816,7 +1716,7 @@ DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MFOMD_0000071 -->
 
     <owl:Class rdf:about="&obo;MFOMD_0000071">
-        <rdfs:label xml:lang="en">eating disorders</rdfs:label>
+        <rdfs:label xml:lang="en">eating disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000004"/>
         <rdfs:comment>This disorders are characterised by severe disturbances in eating behaviour, from which a perception of body shape and weight is an essential feature of them.
 
@@ -1875,7 +1775,7 @@ DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MFOMD_0000074 -->
 
     <owl:Class rdf:about="&obo;MFOMD_0000074">
-        <rdfs:label xml:lang="en">dissociative disorders</rdfs:label>
+        <rdfs:label xml:lang="en">dissociative disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000004"/>
         <obo:IAO_0000115>The essential feature of the Dissociative Disorders is a disruption in the usually integrated functions of consciousness, memory, identity, or perception. The disturbance may be sudden or gradual, transient or chronic.
 
@@ -1984,7 +1884,7 @@ DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MFOMD_0000079 -->
 
     <owl:Class rdf:about="&obo;MFOMD_0000079">
-        <rdfs:label xml:lang="en">sexual and gender identity disorders</rdfs:label>
+        <rdfs:label xml:lang="en">sexual and gender identity disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000004"/>
         <obo:IAO_0000115>Contains the Sexual Dysfunctions, the Paraphilias, and the Gender Identity Disorders. </obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="es">trastornos sexuales y de la identidad sexual:</obo:IAO_0000118>
@@ -2199,7 +2099,7 @@ F64.2  Gender Identity Disorder in Children</obo:MFOMD_0000069>
     <!-- http://purl.obolibrary.org/obo/MFOMD_0000087 -->
 
     <owl:Class rdf:about="&obo;MFOMD_0000087">
-        <rdfs:label xml:lang="en">sleep disorders</rdfs:label>
+        <rdfs:label xml:lang="en">sleep disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000004"/>
         <obo:IAO_0000115>Primary sleep disorders are those in which none of another mental disorder, a general medical condition or a substance is responsible. 
 
@@ -2332,7 +2232,7 @@ apartados</obo:IAO_0000118>
     <!-- http://purl.obolibrary.org/obo/MFOMD_0000091 -->
 
     <owl:Class rdf:about="&obo;MFOMD_0000091">
-        <rdfs:label xml:lang="en">psychotic disorders</rdfs:label>
+        <rdfs:label xml:lang="en">psychotic disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000004"/>
         <rdfs:comment>Should be understood that psychotic symptoms are not necessarily consider to be core or fundamental features of these disorders, nor do the disorders in this section necessarily have a common aetiology.</rdfs:comment>
         <obo:IAO_0000115>Disorders that include psychotic symptoms as a prominent aspect of their presentation.
@@ -2483,7 +2383,7 @@ http://www.medterms.com/script/main/art.asp?articlekey=26296</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MFOMD_0000101 -->
 
     <owl:Class rdf:about="&obo;MFOMD_0000101">
-        <rdfs:label xml:lang="en">delusions</rdfs:label>
+        <rdfs:label xml:lang="en">delusion</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000024"/>
         <obo:IAO_0000115>
 Erroneous beliefs that usually involve a misinterpretation of perceptions or experiences. (their content may include a variety of themes (e.g., persecutory, referential, somatic, religious, or grandiose).
@@ -2844,24 +2744,10 @@ R45.850 </obo:MFOMD_0000069>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MFOMD_0000126 -->
-
-    <owl:Class rdf:about="&obo;MFOMD_0000126">
-        <rdfs:label xml:lang="en">addiction</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000024"/>
-        <obo:IAO_0000115>
-A condition in which the body requires a drug in order to function without physical and psychological reactions to its absence; often the outcome of tolerance and dependence.
-
-
-http://www.apa.org/research/action/glossary.aspx</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MFOMD_0000127 -->
 
     <owl:Class rdf:about="&obo;MFOMD_0000127">
-        <rdfs:label xml:lang="en">substance-related disorders</rdfs:label>
+        <rdfs:label xml:lang="en">substance-related disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000004"/>
         <obo:IAO_0000115>The substance-related disorders include disorders related to taking of a drug of abuse (including alcohol), to the side effects of a medication, and to toxin exposure.
 
@@ -2892,20 +2778,6 @@ http://www.apa.org/research/action/glossary.aspx</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000024"/>
         <obo:IAO_0000115>
 A state in which a person remains attached to objects or activities more appropriate for an earlier stage of psychosexual development.
-
-
-http://www.apa.org/research/action/glossary.aspx</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MFOMD_0000130 -->
-
-    <owl:Class rdf:about="&obo;MFOMD_0000130">
-        <rdfs:label xml:lang="en">libido</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000024"/>
-        <obo:IAO_0000115>
-The psychic energy that drives individuals toward sensual pleasures of all types, especially sexual ones.
 
 
 http://www.apa.org/research/action/glossary.aspx</obo:IAO_0000115>
@@ -3026,19 +2898,6 @@ DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MFOMD_0000140 -->
-
-    <owl:Class rdf:about="&obo;MFOMD_0000140">
-        <rdfs:label xml:lang="en">vigilance</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000024"/>
-        <obo:IAO_0000115>The ability to maintain attention and alertness over prolonged periods of time.
-
-
-http://en.wikipedia.org/wiki/Vigilance_%28psychology%29</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MFOMD_0000141 -->
 
     <owl:Class rdf:about="&obo;MFOMD_0000141">
@@ -3084,32 +2943,6 @@ DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MFOMD_0000144 -->
-
-    <owl:Class rdf:about="&obo;MFOMD_0000144">
-        <rdfs:label xml:lang="en">depression</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000024"/>
-        <obo:IAO_0000115>An emotional state characterised by intense sadness, feelings of futility and worthlessness , and withdrawal from others.
-
-&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</obo:IAO_0000115>
-        <obo:MFOMD_0000014>
-Symptoms of Depression 
-
-
-Affective domain.- Sadness, unhappiness, apathy, anxiety, brooding
-
-Cognitive domain.- Pessimism, guilt, inability to concentrate, negative thinking, loss of interest and motivation, suicidal thoughts.
-
-Behavioural domain.- Low energy, neglect of personal appearance, crying, psychomotor retardation, agitation.
-
-Physiological domain.- Poor or increased appetite, constipation, sleep disturbance, disruption of the menstrual cycle in women, loss of sex drive.
-
-
-&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</obo:MFOMD_0000014>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MFOMD_0000145 -->
 
     <owl:Class rdf:about="&obo;MFOMD_0000145">
@@ -3126,20 +2959,6 @@ DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MFOMD_0000146 -->
-
-    <owl:Class rdf:about="&obo;MFOMD_0000146">
-        <rdfs:label xml:lang="en">arousal</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000024"/>
-        <obo:IAO_0000115>Physiological and psychological state of being awake or reactive to stimuli.
-
-
-http://en.wikipedia.org/wiki/Arousal
-</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MFOMD_0000147 -->
 
     <owl:Class rdf:about="&obo;MFOMD_0000147">
@@ -3150,20 +2969,6 @@ Nightmares can have physical causes such as sleeping in an uncomfortable or awkw
 
 http://en.wikipedia.org/wiki/Nightmare</rdfs:comment>
         <obo:IAO_0000115>Dream that can cause a strong emotional response from the mind, typically fear or horror, but also despair, anxiety and great sadness. The dream may contain situations of danger, discomfort, psychological or physical terror. </obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MFOMD_0000148 -->
-
-    <owl:Class rdf:about="&obo;MFOMD_0000148">
-        <rdfs:label xml:lang="en">daydreaming</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000024"/>
-        <obo:IAO_0000115>Short-term detachment from one&apos;s immediate surroundings, during which a person&apos;s contact with reality is blurred and partially substituted by a visionary fantasy, especially one of happy, pleasant thoughts, hopes or ambitions, imagined as coming to pass, and experienced while awake.
-
-
-http://en.wikipedia.org/wiki/Daydream
-</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -3352,7 +3157,7 @@ http://www.minddisorders.com/Br-Del/Catatonic-disorders.html</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MFOMD_0000161 -->
 
     <owl:Class rdf:about="&obo;MFOMD_0000161">
-        <rdfs:label xml:lang="en">waxy flexibility</rdfs:label>
+        <rdfs:label xml:lang="en">waxy flexibility (in catatonia)</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000024"/>
         <obo:IAO_0000115>Behavior in which the limb or other body part of a catatonic person can be moved into another position that is then maintained. The body part feels to an observer as if it were made of wax.
 
@@ -3436,7 +3241,7 @@ http://www.oxforddictionaries.com/definition/english/paramnesia</obo:IAO_0000115
     <!-- http://purl.obolibrary.org/obo/MFOMD_0000167 -->
 
     <owl:Class rdf:about="&obo;MFOMD_0000167">
-        <rdfs:label xml:lang="en">defense mechanisms</rdfs:label>
+        <rdfs:label xml:lang="en">defense mechanism</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000024"/>
         <obo:IAO_0000115>
 Automatic psychological process that protects the individual against anxiety and from awareness of internal or external stressors or dangers.
@@ -3557,28 +3362,6 @@ http://en.wikipedia.org/wiki/Hyperactivity</obo:IAO_0000115>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MFOMD_0000176 -->
-
-    <owl:Class rdf:about="&obo;MFOMD_0000176">
-        <rdfs:label xml:lang="en">alertness</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000024"/>
-        <obo:IAO_0000115>State of active attention by high sensory awareness such as being watchful and prompt to meet danger or emergency, or being quick to perceive and act.
-
- http://en.wikipedia.org/wiki/Alertness</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MFOMD_0000177 -->
-
-    <owl:Class rdf:about="&obo;MFOMD_0000177">
-        <rdfs:label xml:lang="en">attachment</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000024"/>
-        <obo:IAO_0000115>Aaffectional tie that one person or animal forms between himself and another specific one, a tie that binds them together in space and endures over time.</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MFOMD_0000178 -->
 
     <owl:Class rdf:about="&obo;MFOMD_0000178">
@@ -3608,8 +3391,8 @@ http://www.merckmanuals.com/home/mental_health_disorders/suicidal_behavior/suici
     <!-- http://purl.obolibrary.org/obo/MFOMD_0000180 -->
 
     <owl:Class rdf:about="&obo;MFOMD_0000180">
-        <rdfs:label xml:lang="en">delusions of persecution</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000024"/>
+        <rdfs:label xml:lang="en">delusion of persecution</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000101"/>
         <obo:IAO_0000115>Belief that others are out to get him or her.
 
 
@@ -3701,7 +3484,7 @@ http://en.wikipedia.org/wiki/Paranoia</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/MFOMD_0000187 -->
 
     <owl:Class rdf:about="&obo;MFOMD_0000187">
-        <rdfs:label xml:lang="en">abstinence syndrom</rdfs:label>
+        <rdfs:label xml:lang="en">abstinence syndrome</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000024"/>
         <obo:IAO_0000118>withdrawal</obo:IAO_0000118>
         <obo:IAO_0000115>Condition characterised by distress or impairment in social, occupational, or other areas of functioning, or physical or emotional symptoms such as shaking, irritability, and inability to concentrate after reducing or ceasing intake of a substance.
@@ -3894,7 +3677,7 @@ wikipedia</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MFOMD_0000202 -->
 
     <owl:Class rdf:about="&obo;MFOMD_0000202">
-        <rdfs:label xml:lang="en">crave (withdrawal)</rdfs:label>
+        <rdfs:label xml:lang="en">craving (withdrawal)</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000024"/>
         <obo:IAO_0000115>Psychological urge to administer a discontinued medication or recreational drug.
 
@@ -3958,24 +3741,11 @@ http://en.wikipedia.org/wiki/Seasonal_affective_disorder</obo:IAO_0000115>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MFOMD_0000207 -->
-
-    <owl:Class rdf:about="&obo;MFOMD_0000207">
-        <rdfs:label xml:lang="en">orgasm</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000024"/>
-        <obo:IAO_0000115>Orgasm is the sudden discharge of accumulated sexual tension during the sexual response cycle, resulting in rhythmic muscular contractions in the pelvic region characterized by sexual pleasure.
-
-http://en.wikipedia.org/wiki/Orgasm</obo:IAO_0000115>
-        <obo:IAO_0000118>sexual climax</obo:IAO_0000118>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MFOMD_0000208 -->
 
     <owl:Class rdf:about="&obo;MFOMD_0000208">
         <rdfs:label xml:lang="en">autism spectrum disorder</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000001"/>
+        <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000004"/>
         <rdfs:comment>The DSM-5 diagnosis encompasses previous diagnoses (from DSM_IV-TR) of autistic disorder, Asperger&apos;s disorder, childhood disintegrative disorder, and PDD-NOS. Rather than categorizing these diagnoses, the DSM-5 will adopt a dimensional approach to diagnosing disorders that fall underneath the autism spectrum umbrella. 
 </rdfs:comment>
         <obo:IAO_0000115>
@@ -4042,7 +3812,7 @@ http://en.wikipedia.org/wiki/Derailment_%28thought_disorder%29</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MFOMD_0000213 -->
 
     <owl:Class rdf:about="&obo;MFOMD_0000213">
-        <rdfs:label xml:lang="en">tangentiality</rdfs:label>
+        <rdfs:label xml:lang="en">tangentiality in speech</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000024"/>
         <obo:IAO_0000115>Thought disorder shown from speech with a lack of observance to the main subject of discourse, such that a person whilst speaking on a topic deviates from the topic.
 
@@ -4078,6 +3848,22 @@ http://en.wikipedia.org/wiki/Thought_blocking
         <obo:IAO_0000115>Phenomenon that occurs occurs when a person&apos;s speech is suddenly interrupted by silences that may last a few seconds to a minute or longer. 
 </obo:IAO_0000115>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="&obo;BFO_0000054">
+        <ace_lexicon:TV_sg>BFO_0000054s</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>BFO_0000054</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>BFO_0000054ed</ace_lexicon:TV_vbg>
+    </rdf:Description>
 </rdf:RDF>
 
 

@@ -28,6 +28,7 @@
         <rdfs:comment rdf:datatype="&xsd;string">This work is licensed under a Creative Commons Attribution 3.0 Unported License http://creativecommons.org/licenses/by/3.0/.</rdfs:comment>
         <oboInOwl:default-namespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:default-namespace>
         <oboInOwl:saved-by rdf:datatype="&xsd;string">emitraka</oboInOwl:saved-by>
+        <rdfs:comment>This SLIM (only diseases of mental health) was created automatically on 04.02.2014 from http://purl.obolibrary.org/obo/doid.owl by Janna Hastings for import into the Mental Functioning Ontology -- Mental Diseases (MFOMD). </rdfs:comment>
     </owl:Ontology>
     
 
@@ -1809,8 +1810,8 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCI2004_11_17:C35113</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Psychogenic Vaginismus</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Non-organic vaginismus</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:192469003</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_10131"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -1821,8 +1822,8 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Non-organic vaginismus</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:192469003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCI2004_11_17:C35113</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Psychogenic Vaginismus</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;DOID_10131"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -2009,6 +2010,12 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Alzheimers dementia</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCI2004_11_17:C2866</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="&obo;DOID_10652"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">A dementia and a tauopathy that results in progressive memory loss, impaired thinking, disorientation, and changes in personality and mood starting and leads in advanced cases to a profound decline in cognitive and physical functioning and is marked histologically by the degeneration of brain neurons especially in the cerebral cortex and by the presence of neurofibrillary tangles and plaques containing beta-amyloid. It is characterized by memory lapses, confusion, emotional instability and progressive loss of mental ability.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ls:IEDB</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://en.wikipedia.org/wiki/Alzheimer%27s_disease</oboInOwl:hasDbXref>
@@ -2016,12 +2023,6 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://www.nia.nih.gov/alzheimers/publication/alzheimers-disease-fact-sheet</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_10652"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Alzheimers dementia</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCI2004_11_17:C2866</oboInOwl:hasDbXref>
-        <owl:annotatedSource rdf:resource="&obo;DOID_10652"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">AD</owl:annotatedTarget>
@@ -2122,6 +2123,12 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Korsakoff&apos;s psychosis or syndrome</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MTHICD9_2006:294.0</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="&obo;DOID_10914"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">Amnestic syndrome</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCI2004_11_17:C35764</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_10914"/>
@@ -2133,12 +2140,6 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://www.minddisorders.com/A-Br/Amnestic-disorders.html</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_10914"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Korsakoff&apos;s psychosis or syndrome</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MTHICD9_2006:294.0</oboInOwl:hasDbXref>
-        <owl:annotatedSource rdf:resource="&obo;DOID_10914"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     
 
@@ -2275,16 +2276,16 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">obsessive compulsive disorder</oboInOwl:hasExactSynonym>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Anancastic neurosis</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MTHICD9_2006:300.3</oboInOwl:hasDbXref>
-        <owl:annotatedSource rdf:resource="&obo;DOID_10933"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">An anxiety disorder that involves unwanted and repeated thoughts, feelings, ideas, sensations (obsessions), or behaviors that make them feel driven to do something (compulsions).</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://www.ncbi.nlm.nih.gov/pubmedhealth/PMH0001926/</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_10933"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Anancastic neurosis</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MTHICD9_2006:300.3</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="&obo;DOID_10933"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     
 
@@ -2338,16 +2339,16 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">dissociative reaction</oboInOwl:hasExactSynonym>
     </owl:Class>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">CSP2005:2483-7018</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">dissociative reaction</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;DOID_10935"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">A disease of mental health in which the normally well-integrated functions of memory, identity, perception, or consciousness are separated (dissociated).</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://www.minddisorders.com/Del-Fi/Dissociative-amnesia.html</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_10935"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">CSP2005:2483-7018</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">dissociative reaction</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;DOID_10935"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     
 
@@ -2459,14 +2460,8 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">CSP2005:2483-7185</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">sociopathic personality</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;DOID_10939"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Psychopath.personality</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:268759009</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Asocial personality</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MTHICD9_2006:301.7</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_10939"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -2483,14 +2478,20 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Asocial personality</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MTHICD9_2006:301.7</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Dissocial personality disorder</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:192487000</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_10939"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Dissocial personality disorder</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:192487000</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Psychopath.personality</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:268759009</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="&obo;DOID_10939"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">CSP2005:2483-7185</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">sociopathic personality</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;DOID_10939"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -2583,16 +2584,16 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">A dissociative disorder in which the sufferer is affected by persistent or recurrent feelings of depersonalization and/or derealization.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://en.wikipedia.org/wiki/Depersonalization_disorder</oboInOwl:hasDbXref>
-        <owl:annotatedSource rdf:resource="&obo;DOID_11038"/>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MTHICD9_2006:300.6</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">Neurotic derealization</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;DOID_11038"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">A dissociative disorder in which the sufferer is affected by persistent or recurrent feelings of depersonalization and/or derealization.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://en.wikipedia.org/wiki/Depersonalization_disorder</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="&obo;DOID_11038"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
     
 
@@ -2623,12 +2624,6 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">motor-verbal tic disorder</oboInOwl:hasExactSynonym>
     </owl:Class>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MTHICD9_2006:307.23</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">motor-verbal tic disorder</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;DOID_11119"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">A tic disorder that is characterized by multiple physical (motor) tics and at least one vocal (phonic) tic present for more than a year.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://emedicine.medscape.com/article/1182258-overview</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://en.wikipedia.org/wiki/Tic_disorder</oboInOwl:hasDbXref>
@@ -2637,14 +2632,20 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
     <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Psychogenic tics</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:268778009</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="&obo;DOID_11119"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">CSP2005:2042-5068</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">Guinon&apos;s disease</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;DOID_11119"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Psychogenic tics</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:268778009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MTHICD9_2006:307.23</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">motor-verbal tic disorder</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;DOID_11119"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -2675,14 +2676,14 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Psychologic dyspareunia (disorder)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:41021005</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Non-organic dyspareunia</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:192470002</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_11120"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Non-organic dyspareunia</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:192470002</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Psychologic dyspareunia (disorder)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:41021005</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_11120"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -2842,14 +2843,21 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Da Costa&apos;s syndrome</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:46219009</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Cardiovascular neurosis</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MTHICD9_2006:306.2</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_11569"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Cardiovascular neurosis</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MTHICD9_2006:306.2</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">A somatoform disorder that involves heart disease symptoms without any identifiable physiological abnormatlities.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://en.wikipedia.org/wiki/Da_Costa%27s_syndrome</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1277260/</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="&obo;DOID_11569"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Cardiovascular malfunction arising from mental factors</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM_2006:306.2</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_11569"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -2860,17 +2868,10 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Cardiovascular malfunction arising from mental factors</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM_2006:306.2</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Da Costa&apos;s syndrome</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:46219009</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_11569"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">A somatoform disorder that involves heart disease symptoms without any identifiable physiological abnormatlities.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://en.wikipedia.org/wiki/Da_Costa%27s_syndrome</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1277260/</oboInOwl:hasDbXref>
-        <owl:annotatedSource rdf:resource="&obo;DOID_11569"/>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
     
 
@@ -2930,12 +2931,6 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">CSP2005:4001-0114</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">cerebroatrophic hyperammonemia</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;DOID_1206"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">A pervasive developmental disease that is a neurological and developmental disorder that mostly occurs in females and is caused_by a mutation on the MECP2 gene on the X chromosome. Infants with Rett syndrome seem to grow and develop normally at first, but then stop developing and even lose skills and abilities.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://www.nichd.nih.gov/health/topics/rett_syndrome.cfm</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_1206"/>
@@ -2944,6 +2939,12 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
     <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">Rett&apos;s disorder</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:68618008</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="&obo;DOID_1206"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">CSP2005:4001-0114</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">cerebroatrophic hyperammonemia</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;DOID_1206"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -3027,16 +3028,16 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">dysthymia</oboInOwl:hasExactSynonym>
     </owl:Class>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">CSP2005:2483-6681</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">dysthymia</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;DOID_12139"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">A mood disorder that involves the presence of a low mood almost daily over a span of at least two years.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://en.wikipedia.org/wiki/Mood_disorder</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_12139"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">CSP2005:2483-6681</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">dysthymia</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;DOID_12139"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     
 
@@ -3067,8 +3068,8 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Diffuse Lewy body disease (disorder)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:80098002</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Lewy body disease</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:230277007</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_12217"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -3079,8 +3080,15 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Lewy body disease</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:230277007</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">A dementia and a synucleinopathy that is characterized by the development of abnormal proteinaceous (alpha-synuclein) cytoplasmic inclusions, called Lewy bodies, throughout the brain that results in progressive decline in mental abilities.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://en.wikipedia.org/wiki/Dementia_with_Lewy_bodies</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://www.mayoclinic.org/diseases-conditions/lewy-body-dementia/basics/definition/CON-20025038</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="&obo;DOID_12217"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Diffuse Lewy body disease (disorder)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:80098002</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_12217"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -3089,13 +3097,6 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <owl:annotatedTarget rdf:datatype="&xsd;string">Senile dementia of the Lewy body type (disorder)</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;DOID_12217"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">A dementia and a synucleinopathy that is characterized by the development of abnormal proteinaceous (alpha-synuclein) cytoplasmic inclusions, called Lewy bodies, throughout the brain that results in progressive decline in mental abilities.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://en.wikipedia.org/wiki/Dementia_with_Lewy_bodies</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://www.mayoclinic.org/diseases-conditions/lewy-body-dementia/basics/definition/CON-20025038</oboInOwl:hasDbXref>
-        <owl:annotatedSource rdf:resource="&obo;DOID_12217"/>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
     
 
@@ -3137,18 +3138,6 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">paranoid type schizophrenia subchronic state</oboInOwl:hasExactSynonym>
     </owl:Class>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MTHICD9_2006:295.3</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Paraphrenic schizophrenia</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;DOID_1229"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Paraphrenia - late</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:192330005</oboInOwl:hasDbXref>
-        <owl:annotatedSource rdf:resource="&obo;DOID_1229"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM_2006:295.3</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">Paranoid type schizophrenia</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;DOID_1229"/>
@@ -3160,6 +3149,18 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://www.nlm.nih.gov/medlineplus/ency/article/000936.htm</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_1229"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Paraphrenia - late</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:192330005</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="&obo;DOID_1229"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MTHICD9_2006:295.3</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Paraphrenic schizophrenia</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;DOID_1229"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     
 
@@ -3180,16 +3181,16 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Atypical depression</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:192371004</oboInOwl:hasDbXref>
-        <owl:annotatedSource rdf:resource="&obo;DOID_12294"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">A mood disorder that is characterized by mood reactivity (paradoxical anhedonia) and positivity, significant weight gain or increased appetite (&quot;comfort eating&quot;), excessive sleep or somnolence (hypersomnia), a sensation of heaviness in limbs known as leaden paralysis, and significant social impairment as a consequence of hypersensitivity to perceived interpersonal rejection.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://en.wikipedia.org/wiki/Mood_disorder</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_12294"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Atypical depression</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:192371004</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="&obo;DOID_12294"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     
 
@@ -3216,12 +3217,6 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Dual-role transvestism</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:248108005</oboInOwl:hasDbXref>
-        <owl:annotatedSource rdf:resource="&obo;DOID_1233"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">Fetishistic transvestism (disorder)</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:63495002</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_1233"/>
@@ -3230,6 +3225,12 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">CSP2005:4008-0087</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">cross dresser</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;DOID_1233"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Dual-role transvestism</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:248108005</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_1233"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -3304,16 +3305,16 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">An impulse control disorder that involves the uncontrollable impulse to gamble, irrespective of the interference the behaviour has on the individual&apos;s life.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://www.forensicpsychiatry.ca/impulse/gambling.htm</oboInOwl:hasDbXref>
-        <owl:annotatedSource rdf:resource="&obo;DOID_12399"/>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">Pathological gambling</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:192501004</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_12399"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">An impulse control disorder that involves the uncontrollable impulse to gamble, irrespective of the interference the behaviour has on the individual&apos;s life.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://www.forensicpsychiatry.ca/impulse/gambling.htm</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="&obo;DOID_12399"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">Compulsive gambling</owl:annotatedTarget>
@@ -3431,14 +3432,14 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">disorder of arithmetical skills</oboInOwl:hasExactSynonym>
     </owl:Class>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:47916000</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">disorder of arithmetical skills</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM_2006:315.1</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Mathematics disorder</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;DOID_12568"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM_2006:315.1</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Mathematics disorder</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:47916000</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">disorder of arithmetical skills</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;DOID_12568"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -3591,6 +3592,12 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">hypochondriacal neurosis</oboInOwl:hasExactSynonym>
     </owl:Class>
     <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Hypochondria</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCI2004_11_17:C9493</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="&obo;DOID_12883"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">A somatoform disorder that involves an excessive preoccupation or worry about having a serious illness.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://en.wikipedia.org/wiki/Hypochondriasis</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_12883"/>
@@ -3599,12 +3606,6 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">CSP2005:2483-6952</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">hypochondriacal neurosis</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;DOID_12883"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Hypochondria</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCI2004_11_17:C9493</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_12883"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -3816,14 +3817,14 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Disintegrative psychosis NOS (disorder)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:191694008</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:192584009</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Symbiotic psychosis</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;DOID_13487"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:192584009</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Symbiotic psychosis</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Disintegrative psychosis NOS (disorder)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:191694008</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_13487"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -3916,16 +3917,16 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:192431008</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Somatisation disorder</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;DOID_13918"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">A somatoform disorder that involves persistently complaints of varied physical symptoms that have no identifiable physical origin.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://en.wikipedia.org/wiki/Somatization_disorder</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_13918"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:192431008</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Somatisation disorder</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;DOID_13918"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     
 
@@ -4149,16 +4150,16 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Ethanol abuse</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:304606004</oboInOwl:hasDbXref>
-        <owl:annotatedSource rdf:resource="&obo;DOID_1574"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">A substance abuse that involves the recurring use of alcoholic beverages despite negative consequences.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://en.wikipedia.org/wiki/Alcohol_abuse</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_1574"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Ethanol abuse</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:304606004</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="&obo;DOID_1574"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     
 
@@ -4188,16 +4189,16 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">unipolar depression</oboInOwl:hasExactSynonym>
     </owl:Class>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">CSP2005:2483-6681</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">clinical depression</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;DOID_1595"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">A mental depression that is characterized by a dysregulation of the endogenous opioid system and not of the monaminergic system.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://en.wikipedia.org/wiki/Endogenous_depression</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_1595"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">CSP2005:2483-6681</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">clinical depression</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;DOID_1595"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     
 
@@ -4237,14 +4238,14 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Drug-induced psychosis</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:154855001</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Drug-induced psychotic disorder</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM_2006:292.1</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_1742"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Drug-induced psychotic disorder</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM_2006:292.1</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Drug-induced psychosis</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:154855001</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_1742"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -4294,6 +4295,12 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Conversion Hysterical Neurosis</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MTH:NOCODE</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="&obo;DOID_1768"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">Conversion hysteria or reaction</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MTHICD9_2006:300.11</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_1768"/>
@@ -4308,12 +4315,6 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
     <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">Hysterical neurosis, conversion type</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:89239005</oboInOwl:hasDbXref>
-        <owl:annotatedSource rdf:resource="&obo;DOID_1768"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Conversion Hysterical Neurosis</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MTH:NOCODE</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_1768"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -4498,12 +4499,6 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">A specific developmental disorder that is characterized by repeated, rhythmic, purposeless movements or activities such as head banging, nail biting, or body rocking.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://www.minddisorders.com/Py-Z/Stereotypic-movement-disorder.html</oboInOwl:hasDbXref>
-        <owl:annotatedSource rdf:resource="&obo;DOID_2303"/>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:191993004</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">Stereotyped repetitive movements NOS (finding)</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;DOID_2303"/>
@@ -4514,6 +4509,12 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <owl:annotatedTarget rdf:datatype="&xsd;string">Stereotypy habit disorder</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;DOID_2303"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">A specific developmental disorder that is characterized by repeated, rhythmic, purposeless movements or activities such as head banging, nail biting, or body rocking.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://www.minddisorders.com/Py-Z/Stereotypic-movement-disorder.html</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="&obo;DOID_2303"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
     
 
@@ -4796,14 +4797,8 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">sleep related bruxism</oboInOwl:hasExactSynonym>
     </owl:Class>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MTHICD9_2006:306.8</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Teeth grinding</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;DOID_2846"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Grinding teeth</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:367105000</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Bruxism - teeth grinding</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:268774006</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_2846"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -4814,8 +4809,14 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Bruxism - teeth grinding</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:268774006</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Grinding teeth</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:367105000</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="&obo;DOID_2846"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MTHICD9_2006:306.8</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Teeth grinding</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;DOID_2846"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -4926,8 +4927,14 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">mixed bipolar disorder</oboInOwl:hasExactSynonym>
     </owl:Class>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">CSP2005:2483-6691</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">bipolar disorder manic phase</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Depressive-manic psych.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:154871001</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="&obo;DOID_3312"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Manic Bipolar Affective disorder</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCI2004_11_17:C34805</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_3312"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -4938,22 +4945,16 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Depressive-manic psych.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:154871001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">CSP2005:2483-6691</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">bipolar disorder manic phase</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;DOID_3312"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">A mood disorder that involves alternating periods of mania and depression.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://en.wikipedia.org/wiki/Mood_disorder</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_3312"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Manic Bipolar Affective disorder</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCI2004_11_17:C34805</oboInOwl:hasDbXref>
-        <owl:annotatedSource rdf:resource="&obo;DOID_3312"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">Manic Depressive disorder</owl:annotatedTarget>
@@ -5049,6 +5050,13 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Dyspraxia syndrome</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MTHICD9_2006:315.4</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:192146008</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="&obo;DOID_4090"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">Dyspraxia (finding)</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:6950007</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_4090"/>
@@ -5059,13 +5067,6 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://en.wikipedia.org/wiki/Agnosia</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_4090"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Dyspraxia syndrome</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MTHICD9_2006:315.4</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:192146008</oboInOwl:hasDbXref>
-        <owl:annotatedSource rdf:resource="&obo;DOID_4090"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     
 
@@ -5087,12 +5088,6 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Articulation impairment</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:8187005</oboInOwl:hasDbXref>
-        <owl:annotatedSource rdf:resource="&obo;DOID_4186"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MTHICD9_2006:315.39</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">Phonological disorder</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;DOID_4186"/>
@@ -5103,6 +5098,12 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://www.psllcnj.com/articulation_disorders.htm</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_4186"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Articulation impairment</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:8187005</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="&obo;DOID_4186"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     
 
@@ -5251,8 +5252,8 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Anomic aphasia (finding)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:10325006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">CSP2005:1579-3166</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">anomia</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;DOID_4541"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -5263,8 +5264,8 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">CSP2005:1579-3166</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">anomia</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Anomic aphasia (finding)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:10325006</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_4541"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -5314,6 +5315,12 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:333633007</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Transcortical apraxia (finding)</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;DOID_4627"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">Limb-kinetic apraxia (finding)</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:334621009</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_4627"/>
@@ -5322,12 +5329,6 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
     <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">Classic apraxia (finding) [Ambiguous]</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:39746003</oboInOwl:hasDbXref>
-        <owl:annotatedSource rdf:resource="&obo;DOID_4627"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:333633007</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Transcortical apraxia (finding)</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;DOID_4627"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -5441,18 +5442,6 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">reactive depression</oboInOwl:hasExactSynonym>
     </owl:Class>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MTHICD9_2006:300.9</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Psychoneurosis NOS</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;DOID_4964"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">An anxiety disorder that involves discress but neither delusions nor hallucinations.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://en.wikipedia.org/wiki/Neurosis</oboInOwl:hasDbXref>
-        <owl:annotatedSource rdf:resource="&obo;DOID_4964"/>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MTHICD9_2006:300.4</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">Neurotic depressive state</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;DOID_4964"/>
@@ -5461,6 +5450,12 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MTH:NOCODE</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">depressive neurosis</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;DOID_4964"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MTHICD9_2006:300.9</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Psychoneurosis NOS</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;DOID_4964"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -5475,6 +5470,12 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:191740008</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_4964"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">An anxiety disorder that involves discress but neither delusions nor hallucinations.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://en.wikipedia.org/wiki/Neurosis</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="&obo;DOID_4964"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
     
 
@@ -5516,16 +5517,16 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">A substance abuse that involves the recurring use of phencyclidine (PCP) drugs despite negative consequences.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://en.wikipedia.org/wiki/Phencyclidine</oboInOwl:hasDbXref>
-        <owl:annotatedSource rdf:resource="&obo;DOID_5062"/>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">PCP abuse (disorder)</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:7071007</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_5062"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">A substance abuse that involves the recurring use of phencyclidine (PCP) drugs despite negative consequences.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://en.wikipedia.org/wiki/Phencyclidine</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="&obo;DOID_5062"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MTHICD9_2006:305.9</oboInOwl:hasDbXref>
@@ -5725,16 +5726,16 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Fear of open spaces (finding)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:247830007</oboInOwl:hasDbXref>
-        <owl:annotatedSource rdf:resource="&obo;DOID_593"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">A phobic disorder involving the specific anxiety about being in a place or situation where escape is difficult or embarrassing or where help may be unavailable.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://en.wikipedia.org/wiki/Anxiety_disorder</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_593"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Fear of open spaces (finding)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:247830007</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="&obo;DOID_593"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     
 
@@ -5986,16 +5987,16 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">An acute stress disorder that involves neurotic reactions to unusual, severe, or overwhelming military stress.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://neurolex.org/wiki/Category:Combat_Disorder</oboInOwl:hasDbXref>
-        <owl:annotatedSource rdf:resource="&obo;DOID_6950"/>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">Combat Neurosis</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCI2004_11_17:C34498</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_6950"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">An acute stress disorder that involves neurotic reactions to unusual, severe, or overwhelming military stress.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://neurolex.org/wiki/Category:Combat_Disorder</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="&obo;DOID_6950"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
     
 
@@ -6075,14 +6076,14 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">A bipolar disorder that involves recurrent hypomanic and dysthymic episodes, but no full manic episodes or full major depressive episodes.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://en.wikipedia.org/wiki/Mood_disorder</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Affective personality disorder</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM_2006:301.1</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_845"/>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Cyclothymic personality</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:268756002</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Cycloid personality</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MTHICD9_2006:301.13</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_845"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -6093,14 +6094,14 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Affective personality disorder</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM_2006:301.1</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">A bipolar disorder that involves recurrent hypomanic and dysthymic episodes, but no full manic episodes or full major depressive episodes.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://en.wikipedia.org/wiki/Mood_disorder</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_845"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Cycloid personality</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MTHICD9_2006:301.13</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Cyclothymic personality</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:268756002</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_845"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -6259,6 +6260,12 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">multifocal dementia</oboInOwl:hasExactSynonym>
     </owl:Class>
     <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">CSP2005:0485-6862</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">multifocal dementia</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;DOID_8725"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MTH:NOCODE</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">Multi Infarct Dementia</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCI2004_11_17:C34522</oboInOwl:hasDbXref>
@@ -6271,12 +6278,6 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://www.nlm.nih.gov/medlineplus/ency/article/000739.htm</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_8725"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">CSP2005:0485-6862</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">multifocal dementia</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="&obo;DOID_8725"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     
 
@@ -6304,13 +6305,6 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">learning disorder</oboInOwl:hasExactSynonym>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">A specific developmental disorder that involves difficulty in scholastic skills such as reading, writing, spelling, reasoning, recalling and/or organizing information resulting from the brain&apos;s inability to receive and process information.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://en.wikipedia.org/wiki/Learning_disability</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://www.ldonline.org/ldbasics/whatisld</oboInOwl:hasDbXref>
-        <owl:annotatedSource rdf:resource="&obo;DOID_8927"/>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">CSP2005:2483-6402</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">learning disorder</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;DOID_8927"/>
@@ -6321,6 +6315,13 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:1855002</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_8927"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">A specific developmental disorder that involves difficulty in scholastic skills such as reading, writing, spelling, reasoning, recalling and/or organizing information resulting from the brain&apos;s inability to receive and process information.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://en.wikipedia.org/wiki/Learning_disability</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://www.ldonline.org/ldbasics/whatisld</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="&obo;DOID_8927"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
     
 
@@ -6534,6 +6535,12 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">postnatal depression</oboInOwl:hasExactSynonym>
     </owl:Class>
     <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Maternity blues (disorder)</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:279225001</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="&obo;DOID_9478"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">CSP2005:5003-0032</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">postnatal depression</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;DOID_9478"/>
@@ -6544,12 +6551,6 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://en.wikipedia.org/wiki/Mood_disorder</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_9478"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Maternity blues (disorder)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:279225001</oboInOwl:hasDbXref>
-        <owl:annotatedSource rdf:resource="&obo;DOID_9478"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     
 
@@ -6572,16 +6573,16 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">marijuana abuse</oboInOwl:hasExactSynonym>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">A substance abuse that involves the recurring use of cannabis despite negative consequences.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://en.wikipedia.org/wiki/Cannabis_%28drug%29</oboInOwl:hasDbXref>
-        <owl:annotatedSource rdf:resource="&obo;DOID_9505"/>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">CSP2005:0962-7919</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="&xsd;string">marijuana abuse</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;DOID_9505"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">A substance abuse that involves the recurring use of cannabis despite negative consequences.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://en.wikipedia.org/wiki/Cannabis_%28drug%29</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="&obo;DOID_9505"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
     
 
@@ -6605,17 +6606,17 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Drug withdrawal syndrome in newborn</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:61628006</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="&obo;DOID_9828"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">A withdrawal disorder that is characterized by a group of problems that occur in a newborn who was exposed to addictive illegal or prescription drugs while in the mother&apos;s womb or postnatally following the discontinuance of drug treatment.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://en.wikipedia.org/wiki/Neonatal_abstinence_syndrome</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://www.ncbi.nlm.nih.gov/pubmedhealth/PMH0004566/</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="&obo;DOID_9828"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">Drug withdrawal syndrome in newborn</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2005_07_31:61628006</oboInOwl:hasDbXref>
-        <owl:annotatedSource rdf:resource="&obo;DOID_9828"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     
 

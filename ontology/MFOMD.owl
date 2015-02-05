@@ -26,15 +26,15 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
     <owl:Ontology rdf:about="&obo;MFOMD.owl">
-        <dc:description>The Mental Disease Ontology is developed to facillitate representation for all aspects of mental disease. It is an extension of the Ontology for General Medical Science (OGMS) and Mental Functioning Ontology (MF).</dc:description>
-        <dc:contributor>Barry Smith</dc:contributor>
-        <dc:contributor>Janna Hastings</dc:contributor>
         <dc:contributor>Mark Jensen</dc:contributor>
-        <dc:title>The Mental Disease Ontology was first described in the publication &apos;Foundations for a realist ontology of mental disease&apos; (Barry Smith and Werner Ceusters) which is available at http://www.jbiomedsem.com/content/1/1/10 . </dc:title>
+        <dc:contributor>Barry Smith</dc:contributor>
         <dc:contributor>Jeanette Alicia Chacón Candia</dc:contributor>
+        <dc:description>The Mental Disease Ontology is developed to facillitate representation for all aspects of mental disease. It is an extension of the Ontology for General Medical Science (OGMS) and Mental Functioning Ontology (MF).</dc:description>
+        <dc:contributor>Janna Hastings</dc:contributor>
+        <dc:title>The Mental Disease Ontology was first described in the publication &apos;Foundations for a realist ontology of mental disease&apos; (Barry Smith and Werner Ceusters) which is available at http://www.jbiomedsem.com/content/1/1/10 . </dc:title>
         <owl:imports rdf:resource="http://ogms.googlecode.com/svn/trunk/src/ontology/ogms.owl"/>
         <owl:imports rdf:resource="&obo;MF.owl"/>
-        <owl:imports rdf:resource="&obo;MF/internal/MFOMD-core.owl"/>
+        <owl:imports rdf:resource="&obo;MF/internal/MD-core.owl"/>
         <owl:imports rdf:resource="&obo;MF/internal/MF-core.owl"/>
     </owl:Ontology>
     
@@ -181,9 +181,9 @@
 
     <!-- http://purl.obolibrary.org/obo/MFOMD_0000024 -->
 
-    <rdf:Description rdf:about="&obo;MFOMD_0000024">
+    <owl:Class rdf:about="&obo;MFOMD_0000024">
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000061"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -197,9 +197,7 @@
 
     <!-- http://purl.obolibrary.org/obo/MFOMD_0000034 -->
 
-    <owl:Class rdf:about="&obo;MFOMD_0000034">
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
-    </owl:Class>
+    <owl:Class rdf:about="&obo;MFOMD_0000034"/>
     
 
 
