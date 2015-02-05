@@ -216,7 +216,6 @@
     <!-- http://purl.obolibrary.org/obo/DOID_0050741 -->
 
     <owl:Class rdf:about="&obo;DOID_0050741">
-        <rdfs:subClassOf rdf:resource="&obo;DOID_9973"/>
         <obo:IAO_0000118>alcohol addiction</obo:IAO_0000118>
         <obo:IAO_0000118>Mental and behavioural disorders due to use of alcohol [ICD-10]</obo:IAO_0000118>
         <obo:IAO_0000118>F10 [ICD-10 Code]</obo:IAO_0000118>
@@ -231,7 +230,6 @@
     <!-- http://purl.obolibrary.org/obo/DOID_0050742 -->
 
     <owl:Class rdf:about="&obo;DOID_0050742">
-        <rdfs:subClassOf rdf:resource="&obo;DOID_9973"/>
         <obo:IAO_0000118>Mental and behavioural disorders due to use of tobacco [ICD-10]</obo:IAO_0000118>
         <obo:IAO_0000118>nicotine dependence [DSM-IV]</obo:IAO_0000118>
         <obo:IAO_0000118>F17 [ICD-10 Code]</obo:IAO_0000118>
@@ -298,7 +296,6 @@ The Paraphilias include:
 
 http://www.psychologytoday.com/conditions/paraphilias
 </rdfs:comment>
-        <owl:priorVersion>MFOMD_0000085</owl:priorVersion>
         <obo:MFOMD_0000037>302.4    Exhibitionism
 302.81  Fetishism
 302.89  Frotteurism
@@ -308,6 +305,7 @@ http://www.psychologytoday.com/conditions/paraphilias
 302.3    Transvestic Fetishism
 302.82  Voyeurism
 302.9    Paraphilia Not Otherwise Specified</obo:MFOMD_0000037>
+        <owl:priorVersion>MFOMD_0000085</owl:priorVersion>
         <obo:IAO_0000118 xml:lang="en">paraphilia</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="es">parafilia</obo:IAO_0000118>
     </owl:Class>
@@ -352,7 +350,6 @@ DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/DOID_0060166 -->
 
     <owl:Class rdf:about="&obo;DOID_0060166">
-        <rdfs:subClassOf rdf:resource="&obo;DOID_3312"/>
         <owl:priorVersion>MFOMD_0000051</owl:priorVersion>
     </owl:Class>
     
@@ -361,7 +358,6 @@ DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/DOID_0060167 -->
 
     <owl:Class rdf:about="&obo;DOID_0060167">
-        <rdfs:subClassOf rdf:resource="&obo;DOID_3324"/>
         <owl:priorVersion>MFOMD_0000206</owl:priorVersion>
         <obo:IAO_0000115>A mood disorder in which people who have normal mental health throughout most of the year experience depressive symptoms in the winter or summer.
 
@@ -377,6 +373,30 @@ major depressive disorder with seasonal pattern</obo:IAO_0000118>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DOID_10646 -->
+
+    <owl:Class rdf:about="&obo;DOID_10646">
+        <rdfs:comment>People with this personality disorder manifest peculiar thoughts and behaviours and have poor interpersonal relationships. Many believe they posses magical thinking abilities or special powers, and some are subject to recurrent illusions. Speech oddities, such as frequent digression or vagueness in conversation, are often present.
+
+The evaluation of individuals must take into account their cultural milieu. The people with this disorder seem to have problems in thinking and perceiving; and often show social isolation, hypersensitivity, and inappropriate affect (emotions); they seem to lack pleasure from social interactions.
+
+Research has demonstrated some cognitive processing abnormalities in individuals with schizotypal personality disorder that help to explain many of the symptoms, and is more prevalent among the first-degree biological relatives of individuals with Schizophrenia than the general population.
+
+&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.
+ 
+DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
+        <obo:MFOMD_0000037>301.22</obo:MFOMD_0000037>
+        <owl:priorVersion>MFOMD_0000044</owl:priorVersion>
+        <obo:MFOMD_0000069>F21</obo:MFOMD_0000069>
+        <obo:IAO_0000115>Personality disorder that is a pattern of acute discomfort in close relationships, cognitive or perceptual distortions, and eccentricities of behaviour.
+
+DSM-IV-TR (american Psychiatric Association)
+</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="es">Trastorno esquizotípico de la personalidad</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DOID_10914 -->
 
     <owl:Class rdf:about="&obo;DOID_10914">
@@ -385,10 +405,67 @@ major depressive disorder with seasonal pattern</obo:IAO_0000118>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DOID_10930 -->
+
+    <owl:Class rdf:about="&obo;DOID_10930">
+        <obo:IAO_0000115>Personality disorder that is a pattern of inestability in interpersonal relationships, self-image, and affects, and marked impulsivity. 
+
+DSM-IV-TR (american Psychiatric Association) </obo:IAO_0000115>
+        <owl:priorVersion>MFOMD_0000047</owl:priorVersion>
+        <obo:MFOMD_0000069>F60.31</obo:MFOMD_0000069>
+        <rdfs:comment>Persons with this disorder are impulsive, have chronic feelings of emptiness, and form unstable and intense interpersonal relationships. They may be quite friendly one day and quiet hostile the next. females are three times more likely than males to receive the diagnosis.
+
+The individuals with this disorder can empathise with and nurture other people, but only with the expectation that the other person will &quot;be there&quot; in return to meet their own needs on demand. this individuals are prone to sudden and dramatic shifts in their view of others, who may alternately be seen as beneficent supports or as cruelly punitive.
+</rdfs:comment>
+        <obo:MFOMD_0000037>301.83</obo:MFOMD_0000037>
+        <obo:IAO_0000118 xml:lang="es">Trastorno límite de la personalidad</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_10931 -->
+
+    <owl:Class rdf:about="&obo;DOID_10931">
+        <obo:MFOMD_0000069>F60.7</obo:MFOMD_0000069>
+        <obo:MFOMD_0000037>301.6</obo:MFOMD_0000037>
+        <owl:priorVersion>MFOMD_0000066</owl:priorVersion>
+        <obo:IAO_0000115>This disorder is a pattern of submissive and clinging behaviour related to and excessive need to be taking care of. 
+
+DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
+        <rdfs:comment>
+Individuals with this personality disorder have great difficulty making everyday decisions without an excessive amount of advice and reassurance from others, they tend to be passive and allow other people to take the initiative and assume responsibility for most major areas of their lives. This need for others goes beyond age-appropriate and situation-appropriate requests for assistance.
+
+These individuals feel so unable to function alone that they will agree with things that they feel are wrong rather than risk losing the help of those to whom they look for guidance.
+
+http://www.psychologytoday.com/conditions/dependent-personality-disorder</rdfs:comment>
+        <obo:IAO_0000118>trastorno de la personalidad por dependencia</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_10932 -->
+
+    <owl:Class rdf:about="&obo;DOID_10932">
+        <obo:MFOMD_0000037>301.4</obo:MFOMD_0000037>
+        <obo:MFOMD_0000069>F60.5</obo:MFOMD_0000069>
+        <owl:priorVersion>MFOMD_0000070</owl:priorVersion>
+        <obo:IAO_0000115>The essential feature of this disorder is a preoccupation with orderliness, perfectionism, and mental and interpersonal control, at the expense of flexibility, openness, and efficiency.
+
+DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
+        <obo:IAO_0000118>trastorno obsesivo-compulsivo de la personalidad</obo:IAO_0000118>
+        <rdfs:comment>
+Individuals with this personality disorder attempt to maintain a sense of control through painstaking attention rules, trivial details, procedures, lists, schedules, or form to the extent that the major point of the activity is lost. They are excessively careful and prone to repetition, paying extraordinary attention to detail and repeatedly checking for possible mistakes; they display excessive devotion to work and productivity to the exclusion of leisure activities and friendships because they have often the feeling of not having time for that.
+
+These individuals plan ahead in meticulous detail and are unwilling to consider changes. Totally wrapped up in their own perspective, they have difficulty acknowledging the viewpoints of others. 
+
+DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DOID_10933 -->
 
     <owl:Class rdf:about="&obo;DOID_10933">
-        <rdfs:subClassOf rdf:resource="&obo;DOID_2030"/>
         <rdfs:comment>
 Is characterized by obsessions (intrusive, repetitive thoughts or images that produces anxiety) or compulsions (the need to perform acts or to dwell on thoughts to reduce anxiety). Frequently this two occur together, although is possible to occur separately.
 
@@ -426,7 +503,6 @@ Additional subgroups has been shown such as a cluster of symptoms of symmetry co
     <!-- http://purl.obolibrary.org/obo/DOID_10934 -->
 
     <owl:Class rdf:about="&obo;DOID_10934">
-        <rdfs:subClassOf rdf:resource="&obo;DOID_10935"/>
         <obo:MFOMD_0000069>F44.81</obo:MFOMD_0000069>
         <obo:MFOMD_0000037>300.14</obo:MFOMD_0000037>
         <rdfs:comment>
@@ -456,6 +532,30 @@ Understanding abnormal behavior. David Sue, Derald Wing Sue, Stanley Su</obo:IAO
 
 DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="es">trastornos disociativos</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_10936 -->
+
+    <owl:Class rdf:about="&obo;DOID_10936">
+        <rdfs:comment>
+Individuals with this personality disorder appear to lack a desire for intimacy, seem indifferent to opportunities to develop close relationships, and do not seem to derive much satisfaction from being part of a family or other social group. They prefer expending time by themselves, rather than been with other people, and often appear to be socially isolated or &quot;loners&quot; and almost always choose solitary activities or hobbies that do not include interaction with others. 
+
+ DSM-IV-TR (american Psychiatric Association)
+
+Some studies have shown that schizoid personality disorder is associated with a cold, unempathic, and emotionally impoverished childhood. Whether there is a genetic predisposition to the disorder is not clear.
+
+&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</rdfs:comment>
+        <obo:MFOMD_0000037 xml:lang="es">301.20</obo:MFOMD_0000037>
+        <owl:priorVersion>MFOMD_0000043</owl:priorVersion>
+        <obo:IAO_0000115>Personality disorder where the essential feature is a pervasive pattern of detachment from social relationships and a restricted range of expression of emotions in interpersonal settings. 
+
+
+DSM-IV-TR (american Psychiatric Association)
+</obo:IAO_0000115>
+        <obo:MFOMD_0000069>F60.1</obo:MFOMD_0000069>
+        <obo:IAO_0000118 xml:lang="es">Trastorno esquizoide de la personalidad</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -499,6 +599,63 @@ apartados</obo:IAO_0000118>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DOID_10938 -->
+
+    <owl:Class rdf:about="&obo;DOID_10938">
+        <obo:IAO_0000115>Pattern of distrust and suspiciousness such that others&amp;apos; motives are interpreted as malevolent.
+
+DSM-IV-TR (american Psychiatric Association)
+</obo:IAO_0000115>
+        <owl:priorVersion>MFOMD_0000042</owl:priorVersion>
+        <obo:MFOMD_0000037>301.0</obo:MFOMD_0000037>
+        <obo:MFOMD_0000069>F60.0</obo:MFOMD_0000069>
+        <rdfs:comment>
+People with this disorder show unwarranted suspiciousness, hypersensitivity, and reluctant to trust others. They interpret others&apos; motives as being malevolent, question their loyalty or trustworthiness, persistently bear grudges, or are suspicious of the fidelity of their spouses.
+
+Many persons with this disorder fail to go for treatment because of their guardedness and mistrust.
+
+&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.
+
+This disorder may be first apparent in childhood and adolescence with solitariness, poor peer relationships, social anxiety, underachievement in school, hypersensitivity, peculiar thoughts and language, and idiosyncratic fantasies. These children may appear to be &quot;odd: or &quot;eccentric&quot; and attract teasing.
+
+DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
+        <obo:IAO_0000118 xml:lang="es">trastorno paranoide de la personalidad</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_10939 -->
+
+    <owl:Class rdf:about="&obo;DOID_10939">
+        <rdfs:comment>The indicators of this disorder are chronic antisocial behavioural patterns, such as a failure to conform to social or legal codes, a lack of anxiety and guilt, and irresponsible behaviours.
+
+People with this disorder show little guilt for their wrongdoing, which may include lying, using other people, and aggressive sexual acts. Their relationship with others are superficial and fleeting and involve little loyalty.
+
+Antisocial personality disorder is more prevalent among men than women, and among the first-degree biological relatives of those with the disorder than the general population. The risk to biological relatives of females with the disorder tends to be higher than the risk to biological relatives of males with the disorder. Both adopted and biological children of parents with this disorder have and increased risk of developing it.
+
+ DSM-IV-TR (american Psychiatric Association)
+&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</rdfs:comment>
+        <owl:priorVersion>MFOMD_0000045</owl:priorVersion>
+        <obo:IAO_0000115>Personality disorder that is a pattern of disregard for, and violation of, the rights of others.
+
+
+DSM-IV-TR (american Psychiatric Association)         
+</obo:IAO_0000115>
+        <obo:MFOMD_0000069>F60.2</obo:MFOMD_0000069>
+        <obo:MFOMD_0000037>301.7</obo:MFOMD_0000037>
+        <obo:MFOMD_0000014>
+1.- superficial charm and good intelligence
+2.- shallow emotions and lack of empathy, guilt, or remorse
+3.- behaviours indicative of little life plan or order
+4.- failure to learn from experiences and absence of anxiety
+5.- unreliability, insincerity, and untruthfulness
+
+&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</obo:MFOMD_0000014>
+        <obo:IAO_0000118 xml:lang="es">trastorno antisocial de la personalidad</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DOID_1094 -->
 
     <owl:Class rdf:about="&obo;DOID_1094">
@@ -524,7 +681,6 @@ www.dsm5.org/Documents/changes from dsm-iv-tr to dsm-5.pdf</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/DOID_11037 -->
 
     <owl:Class rdf:about="&obo;DOID_11037">
-        <rdfs:subClassOf rdf:resource="&obo;DOID_10935"/>
         <obo:MFOMD_0000037>300.12</obo:MFOMD_0000037>
         <owl:priorVersion>MFOMD_0000075</owl:priorVersion>
         <obo:MFOMD_0000069>F44.0</obo:MFOMD_0000069>
@@ -554,12 +710,12 @@ DSM-IV-TR (american Psychiatric Association)
     <!-- http://purl.obolibrary.org/obo/DOID_11038 -->
 
     <owl:Class rdf:about="&obo;DOID_11038">
-        <rdfs:subClassOf rdf:resource="&obo;DOID_10935"/>
         <obo:IAO_0000118>trastorno de despersonalización</obo:IAO_0000118>
         <obo:IAO_0000115>Disorder characterized by a persistent or recurrent feeling of being detached from one’s mental processes or body that is accompanied by interact reality testing.
 
 DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
         <obo:MFOMD_0000069>F48.1</obo:MFOMD_0000069>
+        <owl:priorVersion>MFOMD_0000078</owl:priorVersion>
         <rdfs:comment>The individual with this disorder may feel like an automaton or as if he or she is leaving in a dream or a movie. There may be a sensation of being an outside observer of one&apos;s mental processes, one&apos;s body, or parts of one&apos;s body. Various types of sensory anaesthesia, lack of affective response, and sensation of lacking control of one&apos;s actions, including speech, are often present.
 
 Like other dissociative disorders, this one can be precipitated by physical or psychological stress. There is some evidence that emotional abuse, especially by parents, may be related to this disorder.
@@ -567,7 +723,6 @@ Like other dissociative disorders, this one can be precipitated by physical or p
 DSM-IV-TR (american Psychiatric Association)
 &quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.
 </rdfs:comment>
-        <owl:priorVersion>MFOMD_0000078</owl:priorVersion>
         <obo:MFOMD_0000037>300.6</obo:MFOMD_0000037>
     </owl:Class>
     
@@ -576,7 +731,6 @@ DSM-IV-TR (american Psychiatric Association)
     <!-- http://purl.obolibrary.org/obo/DOID_11257 -->
 
     <owl:Class rdf:about="&obo;DOID_11257">
-        <rdfs:subClassOf rdf:resource="&obo;DOID_2030"/>
         <obo:MFOMD_0000069>F40.1</obo:MFOMD_0000069>
         <rdfs:comment>
 An individual with this phobia avoids or endures these situations, which often lead to intense anxiety reactions or panic attacks. The person&apos;s fear stems foam anxiety that, when in the company of others, he or she will perform one or more activities in a way that is embarrassing or humiliating. There is no such a fear when the person engages in any of these activities in private.
@@ -620,7 +774,6 @@ http://books.google.co.uk/books?hl=en&amp;lr=&amp;id=w_HajjMnjxwC&amp;oi=fnd&amp
     <!-- http://purl.obolibrary.org/obo/DOID_11328 -->
 
     <owl:Class rdf:about="&obo;DOID_11328">
-        <rdfs:subClassOf rdf:resource="&obo;DOID_2468"/>
         <obo:IAO_0000115>Is characterised by a symptomatic presentation that is equivalent to schizophrenia except for its duration (i.e., the disturbance last from 1 to 6 months) and the absence of requirement that there be a decline in functioning.
 
 DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
@@ -634,7 +787,6 @@ DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/DOID_12129 -->
 
     <owl:Class rdf:about="&obo;DOID_12129">
-        <rdfs:subClassOf rdf:resource="&obo;DOID_8670"/>
         <obo:MFOMD_0000069>F50.2</obo:MFOMD_0000069>
         <owl:priorVersion>MFOMD_0000073</owl:priorVersion>
         <obo:IAO_0000115>This eating disorder is characterised by repeated episodes of binge eating followed by inappropriate compensatory behaviours such as self-induced vomiting; misuse of laxatives, diuretics, or other medications; fasting; or excessive exercise.
@@ -659,7 +811,6 @@ DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/DOID_12139 -->
 
     <owl:Class rdf:about="&obo;DOID_12139">
-        <rdfs:subClassOf rdf:resource="&obo;DOID_3324"/>
         <rdfs:comment>Dysthymic disorder must have the precedes, while depressed, of two (or more) of the following:
 
 (1) poor appetite or overeating
@@ -681,7 +832,6 @@ DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/DOID_1229 -->
 
     <owl:Class rdf:about="&obo;DOID_1229">
-        <rdfs:subClassOf rdf:resource="&obo;DOID_5419"/>
         <obo:MFOMD_0000069>F20.0x</obo:MFOMD_0000069>
         <obo:MFOMD_0000037>295.30</obo:MFOMD_0000037>
         <rdfs:comment>
@@ -812,7 +962,6 @@ DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/DOID_14042 -->
 
     <owl:Class rdf:about="&obo;DOID_14042">
-        <rdfs:subClassOf rdf:resource="&obo;DOID_3312"/>
         <owl:priorVersion>MFOMD_0000050</owl:priorVersion>
     </owl:Class>
     
@@ -821,7 +970,6 @@ DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/DOID_14320 -->
 
     <owl:Class rdf:about="&obo;DOID_14320">
-        <rdfs:subClassOf rdf:resource="&obo;DOID_2030"/>
         <rdfs:comment>
 This disorder is characterized by persistent high levels of anxiety and excessive worry over many life circumstances, the disorder is chronic, and it produces social and functional impairment.
 
@@ -864,7 +1012,6 @@ Other symptoms can be headaches, changes in appetite, nausea, vomiting and diarr
     <!-- http://purl.obolibrary.org/obo/DOID_1470 -->
 
     <owl:Class rdf:about="&obo;DOID_1470">
-        <rdfs:subClassOf rdf:resource="&obo;DOID_3324"/>
         <owl:priorVersion>MFOMD_0000144</owl:priorVersion>
         <obo:IAO_0000115>The essential feature is a clinical course that is characterised by one or more Major Depressive Episodes without a history of Manic, Mixed, or Hypomanic episodes.</obo:IAO_0000115>
         <obo:IAO_0000118>depression</obo:IAO_0000118>
@@ -901,6 +1048,41 @@ Physiological domain.- Poor or increased appetite, constipation, sleep disturban
 296.23 	Major Depressive Disorder, Single Episode, Severe Without Psychotic Features
 296.2 	Major Depressive Disorder, Single Episode, Unspecified </rdfs:comment>
         <obo:IAO_0000118>depressive disorder</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_1509 -->
+
+    <owl:Class rdf:about="&obo;DOID_1509">
+        <rdfs:comment>Persons with this disorder tend to have low self-esteem and to avoid social relationships without a guarantee of uncritical acceptance by others, although they do not desire to be alone, on the contrary, they crave affection and active social life, but they are caught in a vicious cycle been preoccupied with rejection, they are constantly alert to signs of derogation or ridicule leading to many perceived instances of rejection, which at the same time cause them to avoid others. 
+
+&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</rdfs:comment>
+        <obo:IAO_0000115>This disorder is a pattern of social inhibition, feelings of inadequacy, and hypersensitivity to negative evaluation.
+
+DSM-IV-TR (american Psychiatric Association)
+
+</obo:IAO_0000115>
+        <owl:priorVersion>MFOMD_0000065</owl:priorVersion>
+        <obo:MFOMD_0000069>F60.6</obo:MFOMD_0000069>
+        <obo:MFOMD_0000037>301.82</obo:MFOMD_0000037>
+        <obo:IAO_0000118>trastorno de la personalidad por evitación</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_1510 -->
+
+    <owl:Class rdf:about="&obo;DOID_1510">
+        <rdfs:comment xml:lang="es">
+Only when personality traits are inflexible and maladaptive and cause significant functional impairment or subjective distress do they constitute Personality Disorders.
+
+DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
+        <owl:priorVersion>MFOMD_0000039</owl:priorVersion>
+        <obo:IAO_0000115>Personality disorder is an enduring pattern of inner experience and behaviour that deviates markedly from the expectations of the individual&apos;s culture, is pervasive and inflexible, has an onset in adolescence or early adulthood, is stable over the time, and leads to distress or impairment. 
+
+                                                                                                                           DSM-IV-TR</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="es">trastornos de la personalidad</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -966,7 +1148,6 @@ Understanding abnormal behavior. David Sue, Derald Wing Sue, Stanley Sue.
     <!-- http://purl.obolibrary.org/obo/DOID_1849 -->
 
     <owl:Class rdf:about="&obo;DOID_1849">
-        <rdfs:subClassOf rdf:resource="&obo;DOID_9973"/>
         <obo:IAO_0000118>cannabis dependence [DSM-IV]</obo:IAO_0000118>
         <obo:IAO_0000118>Mental and behavioural disorders due to use of cannabinoids [ICD-10]</obo:IAO_0000118>
         <owl:priorVersion>MFOMD_0000061</owl:priorVersion>
@@ -1013,7 +1194,6 @@ DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/DOID_2055 -->
 
     <owl:Class rdf:about="&obo;DOID_2055">
-        <rdfs:subClassOf rdf:resource="&obo;DOID_2030"/>
         <obo:IAO_0000115>Mental condition in which a person suffers severe anxiety and depression after a very frightening or shocking experience, such as an accident or a war.
 
 http://dictionary.cambridge.org/dictionary/british/post-traumatic-stress-disorder</obo:IAO_0000115>
@@ -1069,6 +1249,23 @@ DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DOID_2745 -->
+
+    <owl:Class rdf:about="&obo;DOID_2745">
+        <obo:IAO_0000115>Personality disorder in which the essential feature is a pervasive pattern of grandiosity, need for admiration, and lack of empathy.
+
+DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
+        <owl:priorVersion>MFOMD_0000064</owl:priorVersion>
+        <rdfs:comment>People with this disorder require attention and admiration and have difficulty accepting personal criticism. In conversations they talk mainly about themselves and show a lack of interest in others. Many have fantasies about power or influence, and they constantly overestimate their talents and importance, how reflective responses and idealisation involving unlimited success, a sense of entitlement, and sense of self-importance.
+
+&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</rdfs:comment>
+        <obo:MFOMD_0000069>F60.8</obo:MFOMD_0000069>
+        <obo:MFOMD_0000037>301.81</obo:MFOMD_0000037>
+        <obo:IAO_0000118 xml:lang="es">trastorno narcisista de la personalidad</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DOID_303 -->
 
     <owl:Class rdf:about="&obo;DOID_303">
@@ -1084,7 +1281,6 @@ DSM-IV-TR (american Psychiatric Association)
     <!-- http://purl.obolibrary.org/obo/DOID_3312 -->
 
     <owl:Class rdf:about="&obo;DOID_3312">
-        <rdfs:subClassOf rdf:resource="&obo;DOID_3324"/>
         <obo:IAO_0000118>Bipolar affective disorder [ICD-10]</obo:IAO_0000118>
         <obo:IAO_0000115>Bipolar disease is a mental disease that leads to disruptive mood swings encompassing manic and depressive moods.             </obo:IAO_0000115>
         <obo:IAO_0000118>F31 [ICD-10 Code]</obo:IAO_0000118>
@@ -1149,6 +1345,26 @@ DSM-IV-TR (american Psychiatric Association)
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DOID_334 -->
+
+    <owl:Class rdf:about="&obo;DOID_334">
+        <rdfs:comment>
+Individuals with this personality disorder are uncomfortable or feel unappreciated when they are not the centre of attention; they tend to draw attention to themselves and may initially charm new acquaintances by their enthusiasm, apparent openness, or flirtatiousness.
+
+If they are not the centre of attention they may do something dramatic, as make up stories or create a scene in order to draw attention to themselves. they also can be inappropriately sexually provocative or seductive, not only toward persons in whom the individual has a sexual or romantic interest, but occurs in a wide variety of social, occupational, and professional relationship beyond what is appropriate for the social context; also they are overly concerned with impressing others by their appearance and their emotions often seem to be turned on and off too quickly to be deeply felt, which may lead others to accuse the individual of faking these feelings.
+
+ DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
+        <obo:MFOMD_0000037>301.50</obo:MFOMD_0000037>
+        <owl:priorVersion>MFOMD_0000056</owl:priorVersion>
+        <obo:MFOMD_0000069>F60.4</obo:MFOMD_0000069>
+        <obo:IAO_0000115>This disorder is a pattern of excessive emotionality and attention seeking. 
+
+DSM-IV-TR (American Psychiatric Association)</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="es">trastorno histriónico de la personalidad</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DOID_4737 -->
 
     <owl:Class rdf:about="&obo;DOID_4737">
@@ -1178,7 +1394,6 @@ DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/DOID_5418 -->
 
     <owl:Class rdf:about="&obo;DOID_5418">
-        <rdfs:subClassOf rdf:resource="&obo;DOID_2468"/>
         <obo:MFOMD_0000037>295.70</obo:MFOMD_0000037>
         <obo:MFOMD_0000069>F25.x
       .0   bipolar type
@@ -1194,7 +1409,6 @@ DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/DOID_5419 -->
 
     <owl:Class rdf:about="&obo;DOID_5419">
-        <rdfs:subClassOf rdf:resource="&obo;DOID_2468"/>
         <obo:MFOMD_0000037>295.xx</obo:MFOMD_0000037>
         <rdfs:comment>People with schizophrenia typically hear voices (auditory hallucinations), which often criticise or abuse them. The voices may speak directly to the patient, comment on their actions, or discuss the patients among themselves. Often this people try to make some sense of these hallucinations, and this can lead to the development of strange beliefs or delusions (mild symptoms can occur in healthy people and are not associated with illness).
 Schizophrenia typically presents in early adulthood or late adolescence. Men have an earlier age of onset than women, and also tend to experience a more serious form of the illness with more negative symptoms, less chance of a full recovery, and a generally worse outcome. 
@@ -1247,7 +1461,6 @@ Or at least two present most of the time for a month
     <!-- http://purl.obolibrary.org/obo/DOID_593 -->
 
     <owl:Class rdf:about="&obo;DOID_593">
-        <rdfs:subClassOf rdf:resource="&obo;DOID_2030"/>
         <obo:MFOMD_0000014>
 Some of the following patterns have been found in patients with Agoraphobia.
 
@@ -1276,7 +1489,6 @@ DSM-IV-TR (american Psychiatric Association)
     <!-- http://purl.obolibrary.org/obo/DOID_594 -->
 
     <owl:Class rdf:about="&obo;DOID_594">
-        <rdfs:subClassOf rdf:resource="&obo;DOID_2030"/>
         <rdfs:comment>Anxiety itself is the major disturbance in this disorder, which is characterized by severe frightening episodes of apprehension and feelings of impending doom. These episodes are often described as horrible and can last from a few minutes to several hours. 
 
 According to DSM-IV-TR, a diagnosis of panic disorder includes recurrent unexpected panic attacks and at least one month of apprehension over having another attack or worrying about the consequences of an attack. The attacks are especially fared because they often occur unpredictably and without warning. 
@@ -1312,7 +1524,6 @@ An example of a patient describing her feelings is this:
     <!-- http://purl.obolibrary.org/obo/DOID_599 -->
 
     <owl:Class rdf:about="&obo;DOID_599">
-        <rdfs:subClassOf rdf:resource="&obo;DOID_2030"/>
         <rdfs:comment>
 Exposure to the stimulus nearly always produces intense anxiety or a panic attack. Specific phobias are about twice as prevalent in women as in men and are rearely incapacitating. 
 
@@ -1360,7 +1571,6 @@ http://www.webmd.com/anxiety-panic/specific-phobias</obo:MFOMD_0000014>
     <!-- http://purl.obolibrary.org/obo/DOID_6088 -->
 
     <owl:Class rdf:about="&obo;DOID_6088">
-        <rdfs:subClassOf rdf:resource="&obo;DOID_2030"/>
         <obo:IAO_0000115>Disorder that results from exposure to a traumatic stressor that results in dissociation, reliving the experience, and attempts to avoid reminders events.
 
 Understanding abnormal behavior&amp;quot;. David Sue, Derald Wing Sue, Stanley Sue.
@@ -1405,7 +1615,6 @@ DSM-IV-TR (american Psychiatric Association)
     <!-- http://purl.obolibrary.org/obo/DOID_778 -->
 
     <owl:Class rdf:about="&obo;DOID_778">
-        <rdfs:subClassOf rdf:resource="&obo;DOID_2468"/>
         <rdfs:comment>
 Criterion A for delusional disorder no longer has the requirement that the delusions must be nonbizarre. DSM-5 no longer separates delusional disorder from shared delusional disorder. If criteria are met for delusional disorder then that diagnosis is made. 
 
@@ -1423,7 +1632,6 @@ DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/DOID_8646 -->
 
     <owl:Class rdf:about="&obo;DOID_8646">
-        <rdfs:subClassOf rdf:resource="&obo;DOID_2468"/>
         <obo:IAO_0000115>In this disorder the psychotic symptoms are judged to be a direct physiological consequence of a drug of abuse, a medication, or toxin exposure.
 
 DSM-IV-TR (American Psychiatric Association)</obo:IAO_0000115>
@@ -1448,7 +1656,6 @@ DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/DOID_8689 -->
 
     <owl:Class rdf:about="&obo;DOID_8689">
-        <rdfs:subClassOf rdf:resource="&obo;DOID_8670"/>
         <owl:priorVersion>MFOMD_0000072</owl:priorVersion>
         <obo:MFOMD_0000037>307.1</obo:MFOMD_0000037>
         <obo:MFOMD_0000069>F50.0</obo:MFOMD_0000069>
@@ -1498,7 +1705,6 @@ DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/DOID_9975 -->
 
     <owl:Class rdf:about="&obo;DOID_9975">
-        <rdfs:subClassOf rdf:resource="&obo;DOID_9973"/>
         <owl:priorVersion>MFOMD_0000058</owl:priorVersion>
         <obo:IAO_0000118>304.20 [DSM-IV Code]</obo:IAO_0000118>
         <obo:IAO_0000115> A substance addiction in which the substance compulsively consumed is cocaine (CHEBI:27958)          </obo:IAO_0000115>
@@ -1513,7 +1719,6 @@ DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/DOID_9976 -->
 
     <owl:Class rdf:about="&obo;DOID_9976">
-        <rdfs:subClassOf rdf:resource="&obo;DOID_9973"/>
         <obo:IAO_0000118>heroin addiction</obo:IAO_0000118>
         <obo:IAO_0000115>A substance addiction in which the substance compulsively consumed is heroin (CHEBI:27808)</obo:IAO_0000115>
         <owl:priorVersion>MFOMD_0000059</owl:priorVersion>
@@ -1814,35 +2019,18 @@ There is continuing evidence of two or more symptoms, such as marked social isol
         <rdfs:label rdf:datatype="&xsd;string">mental disease course</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOMD_0000024"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
                 <owl:someValuesFrom rdf:resource="&obo;MFOMD_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOMD_0000024"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A disease course of a mental disease.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MFOMD_0000039 -->
-
-    <owl:Class rdf:about="&obo;MFOMD_0000039">
-        <rdfs:label xml:lang="en">personality disorder</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000004"/>
-        <obo:IAO_0000115>Personality disorder is an enduring pattern of inner experience and behaviour that deviates markedly from the expectations of the individual&apos;s culture, is pervasive and inflexible, has an onset in adolescence or early adulthood, is stable over the time, and leads to distress or impairment. 
-
-                                                                                                                           DSM-IV-TR</obo:IAO_0000115>
-        <rdfs:comment xml:lang="es">
-Only when personality traits are inflexible and maladaptive and cause significant functional impairment or subjective distress do they constitute Personality Disorders.
-
-DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
-        <obo:IAO_0000118 xml:lang="es">trastornos de la personalidad</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1864,128 +2052,19 @@ DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
         <rdfs:label rdf:datatype="&xsd;string">manifestation of a mental disease</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOMD_0000025"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOMD_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOMD_0000001"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOMD_0000025"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
         <obo:IAO_0000115>A bodily feature of an organism that is (a) a deviation from clinical normality that is the realization of a mental disease and is (b) observable.
 </obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MFOMD_0000042 -->
-
-    <owl:Class rdf:about="&obo;MFOMD_0000042">
-        <rdfs:label xml:lang="en">paranoid personality disorder</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000039"/>
-        <obo:MFOMD_0000069>F60.0</obo:MFOMD_0000069>
-        <obo:MFOMD_0000037>301.0</obo:MFOMD_0000037>
-        <obo:IAO_0000115>Pattern of distrust and suspiciousness such that others&amp;apos; motives are interpreted as malevolent.
-
-DSM-IV-TR (american Psychiatric Association)
-</obo:IAO_0000115>
-        <rdfs:comment>
-People with this disorder show unwarranted suspiciousness, hypersensitivity, and reluctant to trust others. They interpret others&apos; motives as being malevolent, question their loyalty or trustworthiness, persistently bear grudges, or are suspicious of the fidelity of their spouses.
-
-Many persons with this disorder fail to go for treatment because of their guardedness and mistrust.
-
-&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.
-
-This disorder may be first apparent in childhood and adolescence with solitariness, poor peer relationships, social anxiety, underachievement in school, hypersensitivity, peculiar thoughts and language, and idiosyncratic fantasies. These children may appear to be &quot;odd: or &quot;eccentric&quot; and attract teasing.
-
-DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
-        <obo:IAO_0000118 xml:lang="es">trastorno paranoide de la personalidad</obo:IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MFOMD_0000043 -->
-
-    <owl:Class rdf:about="&obo;MFOMD_0000043">
-        <rdfs:label xml:lang="en">schizoid personality disorder</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000039"/>
-        <obo:MFOMD_0000069>F60.1</obo:MFOMD_0000069>
-        <obo:MFOMD_0000037 xml:lang="es">301.20</obo:MFOMD_0000037>
-        <obo:IAO_0000115>Personality disorder where the essential feature is a pervasive pattern of detachment from social relationships and a restricted range of expression of emotions in interpersonal settings. 
-
-
-DSM-IV-TR (american Psychiatric Association)
-</obo:IAO_0000115>
-        <rdfs:comment>
-Individuals with this personality disorder appear to lack a desire for intimacy, seem indifferent to opportunities to develop close relationships, and do not seem to derive much satisfaction from being part of a family or other social group. They prefer expending time by themselves, rather than been with other people, and often appear to be socially isolated or &quot;loners&quot; and almost always choose solitary activities or hobbies that do not include interaction with others. 
-
- DSM-IV-TR (american Psychiatric Association)
-
-Some studies have shown that schizoid personality disorder is associated with a cold, unempathic, and emotionally impoverished childhood. Whether there is a genetic predisposition to the disorder is not clear.
-
-&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</rdfs:comment>
-        <obo:IAO_0000118 xml:lang="es">Trastorno esquizoide de la personalidad</obo:IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MFOMD_0000044 -->
-
-    <owl:Class rdf:about="&obo;MFOMD_0000044">
-        <rdfs:label xml:lang="en">schizotypal personality disorder</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000039"/>
-        <rdfs:comment>People with this personality disorder manifest peculiar thoughts and behaviours and have poor interpersonal relationships. Many believe they posses magical thinking abilities or special powers, and some are subject to recurrent illusions. Speech oddities, such as frequent digression or vagueness in conversation, are often present.
-
-The evaluation of individuals must take into account their cultural milieu. The people with this disorder seem to have problems in thinking and perceiving; and often show social isolation, hypersensitivity, and inappropriate affect (emotions); they seem to lack pleasure from social interactions.
-
-Research has demonstrated some cognitive processing abnormalities in individuals with schizotypal personality disorder that help to explain many of the symptoms, and is more prevalent among the first-degree biological relatives of individuals with Schizophrenia than the general population.
-
-&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.
- 
-DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
-        <obo:IAO_0000115>Personality disorder that is a pattern of acute discomfort in close relationships, cognitive or perceptual distortions, and eccentricities of behaviour.
-
-DSM-IV-TR (american Psychiatric Association)
-</obo:IAO_0000115>
-        <obo:MFOMD_0000037>301.22</obo:MFOMD_0000037>
-        <obo:MFOMD_0000069>F21</obo:MFOMD_0000069>
-        <obo:IAO_0000118 xml:lang="es">Trastorno esquizotípico de la personalidad</obo:IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MFOMD_0000045 -->
-
-    <owl:Class rdf:about="&obo;MFOMD_0000045">
-        <rdfs:label xml:lang="en">antisocial personality disorder</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000039"/>
-        <obo:MFOMD_0000037>301.7</obo:MFOMD_0000037>
-        <obo:IAO_0000115>Personality disorder that is a pattern of disregard for, and violation of, the rights of others.
-
-
-DSM-IV-TR (american Psychiatric Association)         
-</obo:IAO_0000115>
-        <obo:MFOMD_0000014>
-1.- superficial charm and good intelligence
-2.- shallow emotions and lack of empathy, guilt, or remorse
-3.- behaviours indicative of little life plan or order
-4.- failure to learn from experiences and absence of anxiety
-5.- unreliability, insincerity, and untruthfulness
-
-&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</obo:MFOMD_0000014>
-        <rdfs:comment>The indicators of this disorder are chronic antisocial behavioural patterns, such as a failure to conform to social or legal codes, a lack of anxiety and guilt, and irresponsible behaviours.
-
-People with this disorder show little guilt for their wrongdoing, which may include lying, using other people, and aggressive sexual acts. Their relationship with others are superficial and fleeting and involve little loyalty.
-
-Antisocial personality disorder is more prevalent among men than women, and among the first-degree biological relatives of those with the disorder than the general population. The risk to biological relatives of females with the disorder tends to be higher than the risk to biological relatives of males with the disorder. Both adopted and biological children of parents with this disorder have and increased risk of developing it.
-
- DSM-IV-TR (american Psychiatric Association)
-&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</rdfs:comment>
-        <obo:MFOMD_0000069>F60.2</obo:MFOMD_0000069>
-        <obo:IAO_0000118 xml:lang="es">trastorno antisocial de la personalidad</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1997,25 +2076,6 @@ Antisocial personality disorder is more prevalent among men than women, and amon
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000004"/>
         <rdfs:comment>Addictions can include, but are not limited to, alcohol abuse, drug abuse, exercise abuse, pornography and gambling. Classic hallmarks of addiction include: impaired control over substances/behavior, preoccupation with substance/behavior, continued use despite consequences, and denial. Habits and patterns associated with addiction are typically characterized by immediate gratification (short-term reward), coupled with delayed deleterious effects (long-term costs). Physiological dependence occurs when the body has to adjust to the substance by incorporating the substance into its &apos;normal&apos; functioning. This state creates the conditions of tolerance and withdrawal. Tolerance is the process by which the body continually adapts to the substance and requires increasingly larger amounts to achieve the original effects. Withdrawal refers to physical and psychological symptoms people experience when reducing or discontinuing a substance the body had become dependent on. Symptoms of withdrawal generally include but are not limited to anxiety, irritability, intense cravings for the substance, nausea, hallucinations, headaches, cold sweats, and tremors. [WIkipedia: http://en.wikipedia.org/wiki/Addiction]</rdfs:comment>
         <obo:IAO_0000115>Addiction is a mental disease in which a person persists in the use of a mood altering substance or in a behaviour despite adverse consequences.</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MFOMD_0000047 -->
-
-    <owl:Class rdf:about="&obo;MFOMD_0000047">
-        <rdfs:label xml:lang="en">borderline personality disorder</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000039"/>
-        <obo:IAO_0000115>Personality disorder that is a pattern of inestability in interpersonal relationships, self-image, and affects, and marked impulsivity. 
-
-DSM-IV-TR (american Psychiatric Association) </obo:IAO_0000115>
-        <obo:MFOMD_0000037>301.83</obo:MFOMD_0000037>
-        <rdfs:comment>Persons with this disorder are impulsive, have chronic feelings of emptiness, and form unstable and intense interpersonal relationships. They may be quite friendly one day and quiet hostile the next. females are three times more likely than males to receive the diagnosis.
-
-The individuals with this disorder can empathise with and nurture other people, but only with the expectation that the other person will &quot;be there&quot; in return to meet their own needs on demand. this individuals are prone to sudden and dramatic shifts in their view of others, who may alternately be seen as beneficent supports or as cruelly punitive.
-</rdfs:comment>
-        <obo:MFOMD_0000069>F60.31</obo:MFOMD_0000069>
-        <obo:IAO_0000118 xml:lang="es">Trastorno límite de la personalidad</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -2053,27 +2113,6 @@ The individuals with this disorder can empathise with and nurture other people, 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MFOMD_0000056 -->
-
-    <owl:Class rdf:about="&obo;MFOMD_0000056">
-        <rdfs:label xml:lang="en">histrionic personality disorder</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000039"/>
-        <obo:MFOMD_0000037>301.50</obo:MFOMD_0000037>
-        <rdfs:comment>
-Individuals with this personality disorder are uncomfortable or feel unappreciated when they are not the centre of attention; they tend to draw attention to themselves and may initially charm new acquaintances by their enthusiasm, apparent openness, or flirtatiousness.
-
-If they are not the centre of attention they may do something dramatic, as make up stories or create a scene in order to draw attention to themselves. they also can be inappropriately sexually provocative or seductive, not only toward persons in whom the individual has a sexual or romantic interest, but occurs in a wide variety of social, occupational, and professional relationship beyond what is appropriate for the social context; also they are overly concerned with impressing others by their appearance and their emotions often seem to be turned on and off too quickly to be deeply felt, which may lead others to accuse the individual of faking these feelings.
-
- DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
-        <obo:MFOMD_0000069>F60.4</obo:MFOMD_0000069>
-        <obo:IAO_0000115>This disorder is a pattern of excessive emotionality and attention seeking. 
-
-DSM-IV-TR (American Psychiatric Association)</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="es">trastorno histriónico de la personalidad</obo:IAO_0000118>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MFOMD_0000057 -->
 
     <owl:Class rdf:about="&obo;MFOMD_0000057">
@@ -2090,86 +2129,6 @@ DSM-IV-TR (American Psychiatric Association)</obo:IAO_0000115>
         <rdfs:label>addiction to use of a sunbed</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000053"/>
         <obo:IAO_0000115> A process addiction in which the subject compulsively makes use of a sunbed.</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MFOMD_0000064 -->
-
-    <owl:Class rdf:about="&obo;MFOMD_0000064">
-        <rdfs:label xml:lang="en">narcissistic personality disorder</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000039"/>
-        <obo:MFOMD_0000037>301.81</obo:MFOMD_0000037>
-        <obo:MFOMD_0000069>F60.8</obo:MFOMD_0000069>
-        <rdfs:comment>People with this disorder require attention and admiration and have difficulty accepting personal criticism. In conversations they talk mainly about themselves and show a lack of interest in others. Many have fantasies about power or influence, and they constantly overestimate their talents and importance, how reflective responses and idealisation involving unlimited success, a sense of entitlement, and sense of self-importance.
-
-&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</rdfs:comment>
-        <obo:IAO_0000115>Personality disorder in which the essential feature is a pervasive pattern of grandiosity, need for admiration, and lack of empathy.
-
-DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="es">trastorno narcisista de la personalidad</obo:IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MFOMD_0000065 -->
-
-    <owl:Class rdf:about="&obo;MFOMD_0000065">
-        <rdfs:label xml:lang="en">avoidant personality disorder</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000039"/>
-        <rdfs:comment>Persons with this disorder tend to have low self-esteem and to avoid social relationships without a guarantee of uncritical acceptance by others, although they do not desire to be alone, on the contrary, they crave affection and active social life, but they are caught in a vicious cycle been preoccupied with rejection, they are constantly alert to signs of derogation or ridicule leading to many perceived instances of rejection, which at the same time cause them to avoid others. 
-
-&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</rdfs:comment>
-        <obo:IAO_0000118>trastorno de la personalidad por evitación</obo:IAO_0000118>
-        <obo:IAO_0000115>This disorder is a pattern of social inhibition, feelings of inadequacy, and hypersensitivity to negative evaluation.
-
-DSM-IV-TR (american Psychiatric Association)
-
-</obo:IAO_0000115>
-        <obo:MFOMD_0000037>301.82</obo:MFOMD_0000037>
-        <obo:MFOMD_0000069>F60.6</obo:MFOMD_0000069>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MFOMD_0000066 -->
-
-    <owl:Class rdf:about="&obo;MFOMD_0000066">
-        <rdfs:label xml:lang="en">dependent personality disorder</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000039"/>
-        <obo:IAO_0000118>trastorno de la personalidad por dependencia</obo:IAO_0000118>
-        <rdfs:comment>
-Individuals with this personality disorder have great difficulty making everyday decisions without an excessive amount of advice and reassurance from others, they tend to be passive and allow other people to take the initiative and assume responsibility for most major areas of their lives. This need for others goes beyond age-appropriate and situation-appropriate requests for assistance.
-
-These individuals feel so unable to function alone that they will agree with things that they feel are wrong rather than risk losing the help of those to whom they look for guidance.
-
-http://www.psychologytoday.com/conditions/dependent-personality-disorder</rdfs:comment>
-        <obo:MFOMD_0000037>301.6</obo:MFOMD_0000037>
-        <obo:IAO_0000115>This disorder is a pattern of submissive and clinging behaviour related to and excessive need to be taking care of. 
-
-DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
-        <obo:MFOMD_0000069>F60.7</obo:MFOMD_0000069>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MFOMD_0000070 -->
-
-    <owl:Class rdf:about="&obo;MFOMD_0000070">
-        <rdfs:label xml:lang="en">obsessive-compulsive personality disorder</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000039"/>
-        <obo:MFOMD_0000037>301.4</obo:MFOMD_0000037>
-        <rdfs:comment>
-Individuals with this personality disorder attempt to maintain a sense of control through painstaking attention rules, trivial details, procedures, lists, schedules, or form to the extent that the major point of the activity is lost. They are excessively careful and prone to repetition, paying extraordinary attention to detail and repeatedly checking for possible mistakes; they display excessive devotion to work and productivity to the exclusion of leisure activities and friendships because they have often the feeling of not having time for that.
-
-These individuals plan ahead in meticulous detail and are unwilling to consider changes. Totally wrapped up in their own perspective, they have difficulty acknowledging the viewpoints of others. 
-
-DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
-        <obo:IAO_0000118>trastorno obsesivo-compulsivo de la personalidad</obo:IAO_0000118>
-        <obo:MFOMD_0000069>F60.5</obo:MFOMD_0000069>
-        <obo:IAO_0000115>The essential feature of this disorder is a preoccupation with orderliness, perfectionism, and mental and interpersonal control, at the expense of flexibility, openness, and efficiency.
-
-DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
     </owl:Class>
     
 
