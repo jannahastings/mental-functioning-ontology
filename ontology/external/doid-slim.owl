@@ -12,8 +12,8 @@
 ]>
 
 
-<rdf:RDF xmlns="http://purl.obolibrary.org/MFOMD/internal/doid-slim.owl#"
-     xml:base="http://purl.obolibrary.org/MFOMD/internal/doid-slim.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/MF/external/doid-slim.owl#"
+     xml:base="http://purl.obolibrary.org/MF/external/doid-slim.owl"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:doid="&obo;doid#"
