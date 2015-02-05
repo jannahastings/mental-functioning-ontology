@@ -67,7 +67,7 @@
     <!-- http://purl.obolibrary.org/obo/MFOMD_0000014 -->
 
     <owl:AnnotationProperty rdf:about="&obo;MFOMD_0000014">
-        <rdfs:label xml:lang="en">Symptoms</rdfs:label>
+        <rdfs:label xml:lang="en">symptoms</rdfs:label>
     </owl:AnnotationProperty>
     
 
