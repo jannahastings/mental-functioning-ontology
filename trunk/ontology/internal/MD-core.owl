@@ -27,7 +27,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#"
      xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
-    <owl:Ontology rdf:about="&obo;MF/internal/MFOMD-core.owl">
+    <owl:Ontology rdf:about="&obo;MF/internal/MD-core.owl">
         <rdfs:comment>MFOMD-core.owl -- the core content of the Mental Disease ontology branch of the Mental Functioning ontology project. To be imported into the full ontology project.</rdfs:comment>
         <owl:imports rdf:resource="&obo;MF/external/bfo-properties-slim.owl"/>
         <owl:imports rdf:resource="&obo;MF/external/ontology-metadata-slim.owl"/>
@@ -152,9 +152,9 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000054 -->
 
     <rdf:Description rdf:about="&obo;BFO_0000054">
-        <ace_lexicon:TV_vbg>BFO_0000054ed</ace_lexicon:TV_vbg>
-        <ace_lexicon:TV_pl>BFO_0000054</ace_lexicon:TV_pl>
         <ace_lexicon:TV_sg>BFO_0000054s</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>BFO_0000054</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>BFO_0000054ed</ace_lexicon:TV_vbg>
     </rdf:Description>
     
 
@@ -162,9 +162,9 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000055 -->
 
     <rdf:Description rdf:about="&obo;BFO_0000055">
-        <ace_lexicon:TV_sg>BFO_0000055s</ace_lexicon:TV_sg>
-        <ace_lexicon:TV_pl>BFO_0000055</ace_lexicon:TV_pl>
         <ace_lexicon:TV_vbg>BFO_0000055ed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>BFO_0000055</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>BFO_0000055s</ace_lexicon:TV_sg>
     </rdf:Description>
     
 
@@ -172,9 +172,9 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000117 -->
 
     <rdf:Description rdf:about="&obo;BFO_0000117">
-        <ace_lexicon:TV_sg>BFO_0000117s</ace_lexicon:TV_sg>
-        <ace_lexicon:TV_pl>BFO_0000117</ace_lexicon:TV_pl>
         <ace_lexicon:TV_vbg>BFO_0000117ed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>BFO_0000117</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>BFO_0000117s</ace_lexicon:TV_sg>
     </rdf:Description>
     
 
@@ -182,9 +182,9 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000132 -->
 
     <rdf:Description rdf:about="&obo;BFO_0000132">
-        <ace_lexicon:TV_pl>BFO_0000132</ace_lexicon:TV_pl>
-        <ace_lexicon:TV_sg>BFO_0000132s</ace_lexicon:TV_sg>
         <ace_lexicon:TV_vbg>BFO_0000132ed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>BFO_0000132s</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>BFO_0000132</ace_lexicon:TV_pl>
     </rdf:Description>
     
 
@@ -192,9 +192,9 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000163 -->
 
     <rdf:Description rdf:about="&obo;BFO_0000163">
-        <ace_lexicon:TV_vbg>BFO_0000163ed</ace_lexicon:TV_vbg>
-        <ace_lexicon:TV_sg>BFO_0000163s</ace_lexicon:TV_sg>
         <ace_lexicon:TV_pl>BFO_0000163</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>BFO_0000163s</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>BFO_0000163ed</ace_lexicon:TV_vbg>
     </rdf:Description>
     
 
@@ -202,9 +202,9 @@
     <!-- http://purl.obolibrary.org/obo/MF#manifestationOf -->
 
     <owl:ObjectProperty rdf:about="&obo;MF#manifestationOf">
-        <ace_lexicon:TV_sg>manifestationOfs</ace_lexicon:TV_sg>
-        <ace_lexicon:TV_pl>manifestationOf</ace_lexicon:TV_pl>
         <ace_lexicon:TV_vbg>manifestationOfed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>manifestationOf</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>manifestationOfs</ace_lexicon:TV_sg>
         <owl:inverseOf rdf:resource="&obo;BFO_0000163"/>
     </owl:ObjectProperty>
     
@@ -227,7 +227,7 @@
         <rdfs:label xml:lang="en">schizophrenia</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000091"/>
         <obo:MFOMD_0000037>295.xx</obo:MFOMD_0000037>
-        <obo:MFOMD_0000069>F20.xx</obo:MFOMD_0000069>
+        <obo:IAO_0000115>A long-term mental disorder of a type involving a breakdown in the relation between thought, emotion, and behaviour, leading to faulty perception, inappropriate actions and feelings, withdrawal from reality and personal relationships into fantasy and delusion, and a sense of mental fragmentation.</obo:IAO_0000115>
         <obo:MFOMD_0000014> 
 - Lack of insight 
 - Auditory hallucinations 
@@ -257,7 +257,7 @@ Or at least two present most of the time for a month
  - Incoherent or irrelevant speech
  - Catatonic behaviour such as stupor or posturing
  - Negative symptoms such as marked apathy, blunted or incongruous mood</obo:MFOMD_0000014>
-        <obo:IAO_0000115>A long-term mental disorder of a type involving a breakdown in the relation between thought, emotion, and behaviour, leading to faulty perception, inappropriate actions and feelings, withdrawal from reality and personal relationships into fantasy and delusion, and a sense of mental fragmentation.</obo:IAO_0000115>
+        <obo:MFOMD_0000069>F20.xx</obo:MFOMD_0000069>
         <rdfs:comment>People with schizophrenia typically hear voices (auditory hallucinations), which often criticise or abuse them. The voices may speak directly to the patient, comment on their actions, or discuss the patients among themselves. Often this people try to make some sense of these hallucinations, and this can lead to the development of strange beliefs or delusions (mild symptoms can occur in healthy people and are not associated with illness).
 Schizophrenia typically presents in early adulthood or late adolescence. Men have an earlier age of onset than women, and also tend to experience a more serious form of the illness with more negative symptoms, less chance of a full recovery, and a generally worse outcome. 
 
@@ -278,7 +278,6 @@ http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1914490/pdf/bmj-335-7610-cr-00091.pd
 
     <owl:Class rdf:about="&obo;MFOMD_0000001">
         <rdfs:label rdf:datatype="&xsd;string">mental disease</rdfs:label>
-        <obo:IAO_0000115>A disease which is a disposition to undergo pathological mental processess.</obo:IAO_0000115>
         <rdfs:comment>The Mental Disease ontology follows the strategy of the Ontology of General Medical Science in distinguishing mental disease, mental disorder, diagnosis of mental disease, mental disease course and pathological mental process as separately distinguishable entities. Here is a quick guide to how these terms are used in this ontology. 
 
 A mental disease is an underlying disposition to pathological mental processes. 
@@ -296,6 +295,7 @@ A diagnosis of a mental disease is a clinician&apos;s statement that a patient h
 
 </rdfs:comment>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <obo:IAO_0000115>A disease which is a disposition to undergo pathological mental processess.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -363,12 +363,6 @@ A diagnosis of a mental disease is a clinician&apos;s statement that a patient h
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000025"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOMD_0000048"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -378,6 +372,12 @@ A diagnosis of a mental disease is a clinician&apos;s statement that a patient h
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOMD_0000048"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A bipolar disease course is the occurrent sum of the mental and behavioural processes that are caused by an underlying bipolar disease.</obo:IAO_0000115>
@@ -396,10 +396,9 @@ A diagnosis of a mental disease is a clinician&apos;s statement that a patient h
                 <owl:allValuesFrom rdf:resource="&obo;MFOMD_0000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000118>ADHD</obo:IAO_0000118>
         <obo:IAO_0000115>Mental disease that causes difficulties in concentrating and performing tasks, particularly in children.</obo:IAO_0000115>
         <obo:IAO_0000118>314.01 [DSM-IV Code]</obo:IAO_0000118>
-        <obo:IAO_0000118>attention deficit - hyperactivity disorder [DSM-IV]</obo:IAO_0000118>
+        <obo:IAO_0000118>ADHD</obo:IAO_0000118>
         <rdfs:comment>Attention deficit-hyperactivity disorder (ADHD) is a psychiatric and a neurobehavioral disorder. It is characterized by either significant difficulties of inattention or hyperactivity and impulsiveness or a combination of the two. According to the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV-TR), symptoms emerge before seven years of age. There are three subtypes of the disorder which consist of it being predominantly inattentive (ADHD-PI or ADHD-I), predominately hyperactive-impulsive (ADHD-HI or ADHD-H), or the two combined (ADHD-C). Oftentimes people refer to ADHD-PI as &quot;Attention deficit disorder&quot; (ADD), however, the term was revised in the 1994 version of the DSM.
 
 ADHD impacts school-aged children and results in restlessness, acting impulsively, and lack of focus which impairs their ability to learn properly. It is the most commonly studied and diagnosed psychiatric disorder in children, affecting about 3 to 5 percent of children globally and diagnosed in about 2 to 16 percent of school-aged children. It is a chronic disorder with 30 to 50 percent of those individuals diagnosed in childhood continuing to have symptoms into adulthood. Adolescents and adults with ADHD tend to develop coping mechanisms to compensate for some or all of their impairments. It is estimated that 4.7 percent of American adults live with ADHD. Standardized rating scales such as the World Health Organization&apos;s Adult ADHD Self-Report Scale can be used for ADHD screening and assessment of the disorder&apos;s symptoms&apos; severity.
@@ -407,6 +406,7 @@ ADHD impacts school-aged children and results in restlessness, acting impulsivel
 ADHD is diagnosed two to four times more frequently in boys than in girls, though studies suggest this discrepancy may be partially due to subjective bias of referring teachers. ADHD management usually involves some combination of medications, applied behavior analysis (ABA, previously known as behavior modification), lifestyle changes, and counseling. Its symptoms can be difficult to differentiate from other disorders, increasing the likelihood that the diagnosis of ADHD will be missed. In addition, most clinicians have not received formal training in the assessment and treatment of ADHD, in particular in adult patients.
 
 [Wikipedia: http://en.wikipedia.org/wiki/Attention-Deficit_Hyperactivity_Disorder]</rdfs:comment>
+        <obo:IAO_0000118>attention deficit - hyperactivity disorder [DSM-IV]</obo:IAO_0000118>
         <rdfs:comment>The onset criterion on this disorder has been changed from “symptoms that caused impairment were present before age 7 years” to “several inattentive or hyperactive-impulsive symptoms were present prior to age 12”.
 
 www.dsm5.org/Documents/changes from dsm-iv-tr to dsm-5.pdf</rdfs:comment>
@@ -438,14 +438,14 @@ An attention deficit - hyperactivity disease course is the occurrent sum of the 
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000025"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOMD_0000049"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOMD_0000013"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOMD_0000013"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOMD_0000049"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A depression disease course is the occurrent sum of the mental and behavioural processes that are caused by an underlying depression disease.</obo:IAO_0000115>
@@ -460,12 +460,12 @@ An attention deficit - hyperactivity disease course is the occurrent sum of the 
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000024"/>
         <owl:disjointWith rdf:resource="&obo;MFOMD_0000012"/>
         <owl:disjointWith rdf:resource="&obo;MFOMD_0000013"/>
-        <obo:IAO_0000118>F30.1 (mania without psychotic symptoms), F30.2 (mania with psychotic symptoms)
- [ICD-10]</obo:IAO_0000118>
-        <obo:IAO_0000118>manic episode [ICD-10]</obo:IAO_0000118>
         <rdfs:comment>Mood is elevated out of keeping with the patient&apos;s circumstances and may vary from carefree joviality to almost uncontrollable excitement. Elation is accompanied by increased energy, resulting in overactivity, pressure of speech, and a decreased need for sleep. Attention cannot be sustained, and there is often marked distractibility. Self-esteem is often inflated with grandiose ideas and overconfidence. Loss of normal social inhibitions may result in behaviour that is reckless, foolhardy, or inappropriate to the circumstances, and out of character.
 
 [ICD-10]</rdfs:comment>
+        <obo:IAO_0000118>F30.1 (mania without psychotic symptoms), F30.2 (mania with psychotic symptoms)
+ [ICD-10]</obo:IAO_0000118>
+        <obo:IAO_0000118>manic episode [ICD-10]</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -579,6 +579,9 @@ In diagnosing the symptoms a trained therapist must take the following into acco
  http://www.minddisorders.com/Ob-Ps/Post-traumatic-stress-disorder.html#ixzz2h8VzYrwc
 
 </obo:MFOMD_0000014>
+        <obo:IAO_0000115>Mental condition in which a person suffers severe anxiety and depression after a very frightening or shocking experience, such as an accident or a war.
+
+http://dictionary.cambridge.org/dictionary/british/post-traumatic-stress-disorder</obo:IAO_0000115>
         <obo:MFOMD_0000069>F43.1</obo:MFOMD_0000069>
         <rdfs:comment>Post traumatic stress disorder (PTSD) can be summarized as a &quot;a normal reaction to abnormal events.&quot;
  
@@ -599,9 +602,6 @@ http://www.minddisorders.com/Ob-Ps/Post-traumatic-stress-disorder.html
 
 
 </rdfs:comment>
-        <obo:IAO_0000115>Mental condition in which a person suffers severe anxiety and depression after a very frightening or shocking experience, such as an accident or a war.
-
-http://dictionary.cambridge.org/dictionary/british/post-traumatic-stress-disorder</obo:IAO_0000115>
         <obo:MFOMD_0000037>309.81</obo:MFOMD_0000037>
         <obo:IAO_0000118 xml:lang="es">trastorno por estrés postraumático
 </obo:IAO_0000118>
@@ -615,10 +615,6 @@ http://dictionary.cambridge.org/dictionary/british/post-traumatic-stress-disorde
         <rdfs:label xml:lang="en">specific phobia</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000033"/>
         <obo:MFOMD_0000069>F40.2</obo:MFOMD_0000069>
-        <obo:IAO_0000115>Extreme fear of a specific object or situation. 
-
-
-Understanding abnormal behavior&amp;quot;. David Sue, Derald Wing Sue, Stanley Sue.</obo:IAO_0000115>
         <rdfs:comment>
 Exposure to the stimulus nearly always produces intense anxiety or a panic attack. Specific phobias are about twice as prevalent in women as in men and are rearely incapacitating. 
 
@@ -651,6 +647,10 @@ DSM-IV-TR divides specific phobias into five types:
 Children with a specific phobia may express their anxiety by crying, clinging to a parent, or throwing a tantrum.
 
 http://www.webmd.com/anxiety-panic/specific-phobias</obo:MFOMD_0000014>
+        <obo:IAO_0000115>Extreme fear of a specific object or situation. 
+
+
+Understanding abnormal behavior&amp;quot;. David Sue, Derald Wing Sue, Stanley Sue.</obo:IAO_0000115>
         <obo:MFOMD_0000037>300.29</obo:MFOMD_0000037>
         <obo:IAO_0000118 xml:lang="es">fobia específica</obo:IAO_0000118>
     </owl:Class>
@@ -662,12 +662,12 @@ http://www.webmd.com/anxiety-panic/specific-phobias</obo:MFOMD_0000014>
     <owl:Class rdf:about="&obo;MFOMD_0000017">
         <rdfs:label xml:lang="en">paranoid schizophrenia</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000000"/>
+        <obo:MFOMD_0000069>F20.0x</obo:MFOMD_0000069>
         <rdfs:comment>
 At the DSM-5, the DSM-IV subtypes of schizophrenia (i.e., paranoid, disorganized, catatonic, undifferentiated, and residual types) are eliminated due to their limited diagnostic stability, low reliability, and poor validity. These subtypes also have not been shown to exhibit distinctive patterns of treatment response or longitudinal course. 
 
 (Highlights of Changes from DSM-IV-TR to DSM-5, American Psychiatric Publishing)</rdfs:comment>
         <obo:MFOMD_0000037>295.30</obo:MFOMD_0000037>
-        <obo:MFOMD_0000069>F20.0x</obo:MFOMD_0000069>
         <rdfs:comment xml:lang="en">
 Is the most common form of schizophrenia, and is characterized by the preoccupations with one or more systematized delusions or auditory hallucinations and by the absence of such symptoms as disorganized speech and behaviour or flat affect. 
 
@@ -684,7 +684,6 @@ The deluded individuals believe that others are plotting against them, are talki
     <owl:Class rdf:about="&obo;MFOMD_0000018">
         <rdfs:label xml:lang="en">social phobia</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000033"/>
-        <obo:MFOMD_0000037>300.23</obo:MFOMD_0000037>
         <obo:MFOMD_0000014>
 Individuals with Social Phobia almost always experience symptoms of anxiety , such as:
 
@@ -713,11 +712,12 @@ Social phobias can be divided into three types:
 
 
 &quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</rdfs:comment>
-        <obo:MFOMD_0000069>F40.1</obo:MFOMD_0000069>
+        <obo:MFOMD_0000037>300.23</obo:MFOMD_0000037>
         <obo:IAO_0000115>Is characterised by clinically significant anxiety provoked by exposure to certain types of social or performance situations, often leading to avoidance behaviour.
 
 DSM-IV-TR (american Psychiatric Association)
 </obo:IAO_0000115>
+        <obo:MFOMD_0000069>F40.1</obo:MFOMD_0000069>
         <obo:IAO_0000118 xml:lang="es">fobia social</obo:IAO_0000118>
     </owl:Class>
     
@@ -729,22 +729,6 @@ DSM-IV-TR (american Psychiatric Association)
         <rdfs:label xml:lang="en">acute stress disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000033"/>
         <obo:MFOMD_0000037>308.3</obo:MFOMD_0000037>
-        <obo:IAO_0000115>Disorder that results from exposure to a traumatic stressor that results in dissociation, reliving the experience, and attempts to avoid reminders events.
-
-Understanding abnormal behavior&amp;quot;. David Sue, Derald Wing Sue, Stanley Sue.
-</obo:IAO_0000115>
-        <rdfs:comment>
-In this disorder, following the trauma, the traumatic event is persistently reexperienced, and the individual displays marked avoidance of stimuli that may arouse recollections of the trauma and has marked symptoms of anxiety or increased arousal. The disturbance lasts for a minimum of 2 days and a maximum of 4 weeks after the traumatic event; if symptoms persist beyond 4 weeks, the diagnosis of posttraumatic stress disorder may be applied.
-
-Individuals with this disorder may have a decrease in emotional responsiveness, often finding it difficult or impossible to experience pleasure in previously enjoyable activities, and frequently feel guilty about pursuing usual life tasks. 
-
-If the trauma led to another&apos;s death or to serious injury, survivors may feel guilt about having remanded intact or about not providing enough help to others. Individuals with this disorder often perceived themselves to have greater responsibility for the consequences of the trauma than is warranted.
-
-There is some evidence that social supports, family history, childhood experiences, personality variables, and preexisting mental disorders may influence the development of Acute Stress Disorder. This disorder can develop in individuals without any predisposing conditions, particularly if the stressor is especially extreme.
-
-DSM-IV-TR (american Psychiatric Association)
-</rdfs:comment>
-        <obo:MFOMD_0000069>F43.0</obo:MFOMD_0000069>
         <obo:MFOMD_0000014>Either while experiencing the traumatic event or after the event, the individual has at least three of the following dissociative symptoms:
 
 - A subjective sense of numbing, detachment or absence of emotional responsiveness
@@ -763,6 +747,22 @@ At list one of the symptoms from each of the symptoms clusters required for post
 
 DSM-IV-TR (American Psychiatric Association)
 </obo:MFOMD_0000014>
+        <obo:IAO_0000115>Disorder that results from exposure to a traumatic stressor that results in dissociation, reliving the experience, and attempts to avoid reminders events.
+
+Understanding abnormal behavior&amp;quot;. David Sue, Derald Wing Sue, Stanley Sue.
+</obo:IAO_0000115>
+        <obo:MFOMD_0000069>F43.0</obo:MFOMD_0000069>
+        <rdfs:comment>
+In this disorder, following the trauma, the traumatic event is persistently reexperienced, and the individual displays marked avoidance of stimuli that may arouse recollections of the trauma and has marked symptoms of anxiety or increased arousal. The disturbance lasts for a minimum of 2 days and a maximum of 4 weeks after the traumatic event; if symptoms persist beyond 4 weeks, the diagnosis of posttraumatic stress disorder may be applied.
+
+Individuals with this disorder may have a decrease in emotional responsiveness, often finding it difficult or impossible to experience pleasure in previously enjoyable activities, and frequently feel guilty about pursuing usual life tasks. 
+
+If the trauma led to another&apos;s death or to serious injury, survivors may feel guilt about having remanded intact or about not providing enough help to others. Individuals with this disorder often perceived themselves to have greater responsibility for the consequences of the trauma than is warranted.
+
+There is some evidence that social supports, family history, childhood experiences, personality variables, and preexisting mental disorders may influence the development of Acute Stress Disorder. This disorder can develop in individuals without any predisposing conditions, particularly if the stressor is especially extreme.
+
+DSM-IV-TR (american Psychiatric Association)
+</rdfs:comment>
         <obo:IAO_0000118 xml:lang="es">trastorno por estrés agudo</obo:IAO_0000118>
     </owl:Class>
     
@@ -773,12 +773,6 @@ DSM-IV-TR (American Psychiatric Association)
     <owl:Class rdf:about="&obo;MFOMD_0000020">
         <rdfs:label xml:lang="en">disorganized schizophrenia</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000000"/>
-        <obo:MFOMD_0000037>295.10</obo:MFOMD_0000037>
-        <rdfs:comment>
-At the DSM-5, the DSM-IV subtypes of schizophrenia (i.e., paranoid, disorganized, catatonic, undifferentiated, and residual types) are eliminated due to their limited diagnostic stability, low reliability, and poor validity. These subtypes also have not been shown to exhibit distinctive patterns of treatment response or longitudinal course. 
-
-(Highlights of Changes from DSM-IV-TR to DSM-5, American Psychiatric Publishing)</rdfs:comment>
-        <obo:MFOMD_0000069>F20.1x</obo:MFOMD_0000069>
         <rdfs:comment xml:lang="en">(Formerly called hebephrenic schizophrenia) is characterized by grossly disorganized behaviours manifested in disorganized speech and behaviour and flat or grossly inappropriate affect.
 
 People with this disorder act in an absurd, incoherent, or very odd manner that conforms to the stereotype of “crazy” behaviour. Their emotional responses to real-life situations are typically flat, the hallucinations and delusions of patients with this form of schizophrenia tend to shift from theme to theme rather than remain centered on a single idea. 
@@ -787,6 +781,12 @@ People with this disorder usually exhibit extremely bizarre and seemingly childi
 
 
 &quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</rdfs:comment>
+        <obo:MFOMD_0000037>295.10</obo:MFOMD_0000037>
+        <obo:MFOMD_0000069>F20.1x</obo:MFOMD_0000069>
+        <rdfs:comment>
+At the DSM-5, the DSM-IV subtypes of schizophrenia (i.e., paranoid, disorganized, catatonic, undifferentiated, and residual types) are eliminated due to their limited diagnostic stability, low reliability, and poor validity. These subtypes also have not been shown to exhibit distinctive patterns of treatment response or longitudinal course. 
+
+(Highlights of Changes from DSM-IV-TR to DSM-5, American Psychiatric Publishing)</rdfs:comment>
         <obo:IAO_0000118 xml:lang="es">esquizofrenia tipo desorganizado</obo:IAO_0000118>
     </owl:Class>
     
@@ -802,6 +802,8 @@ At the DSM-5, the DSM-IV subtypes of schizophrenia (i.e., paranoid, disorganized
 
 (Highlights of Changes from DSM-IV-TR to DSM-5, American Psychiatric Publishing)</rdfs:comment>
         <obo:MFOMD_0000037>295.20</obo:MFOMD_0000037>
+        <obo:IAO_0000118>esquizofrenia tipo catatónico</obo:IAO_0000118>
+        <obo:MFOMD_0000069>F20.2x</obo:MFOMD_0000069>
         <rdfs:comment xml:lang="en">The prime characteristic of this form of schizophrenia is a marked disturbance in motor activity, either extreme excitement or motoric immobility.
 
 Diagnostic criteria include two or more of the following symptoms:
@@ -815,8 +817,6 @@ During periods of extreme withdrawal, people with this form of schizophrenia may
 
 
 &quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</rdfs:comment>
-        <obo:IAO_0000118>esquizofrenia tipo catatónico</obo:IAO_0000118>
-        <obo:MFOMD_0000069>F20.2x</obo:MFOMD_0000069>
     </owl:Class>
     
 
@@ -826,6 +826,7 @@ During periods of extreme withdrawal, people with this form of schizophrenia may
     <owl:Class rdf:about="&obo;MFOMD_0000022">
         <rdfs:label xml:lang="en">undifferentiated schizophrenia</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000000"/>
+        <obo:MFOMD_0000069>F20.3x</obo:MFOMD_0000069>
         <rdfs:comment>
 At the DSM-5, the DSM-IV subtypes of schizophrenia (i.e., paranoid, disorganized, catatonic, undifferentiated, and residual types) are eliminated due to their limited diagnostic stability, low reliability, and poor validity. These subtypes also have not been shown to exhibit distinctive patterns of treatment response or longitudinal course. 
 
@@ -837,7 +838,6 @@ Some time undifferentiated schizophrenia turns out to be an early stage of anoth
 
 &quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</rdfs:comment>
         <obo:MFOMD_0000037>295.90</obo:MFOMD_0000037>
-        <obo:MFOMD_0000069>F20.3x</obo:MFOMD_0000069>
         <obo:IAO_0000118 xml:lang="es">esquizofrenia tipo indiferenciado</obo:IAO_0000118>
     </owl:Class>
     
@@ -906,9 +906,6 @@ There is continuing evidence of two or more symptoms, such as marked social isol
     <owl:Class rdf:about="&obo;MFOMD_0000026">
         <rdfs:label xml:lang="en">panic disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000033"/>
-        <obo:IAO_0000115>Psychiatric disorder in which debilitating anxiety and fear arise frequently and without reasonable cause.
-
-</obo:IAO_0000115>
         <obo:MFOMD_0000014>
 Individuals with panic disorder report intense panic attacks alternating with periods of somewhat low anxiety, during which they may be apprehensive about having another panic attack. 
 
@@ -932,6 +929,9 @@ Many patients report a disturbed childhood environment that involved anxiety ove
 
 
 &quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</rdfs:comment>
+        <obo:IAO_0000115>Psychiatric disorder in which debilitating anxiety and fear arise frequently and without reasonable cause.
+
+</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="es">trastorno de pánico </obo:IAO_0000118>
     </owl:Class>
     
@@ -942,14 +942,13 @@ Many patients report a disturbed childhood environment that involved anxiety ove
     <owl:Class rdf:about="&obo;MFOMD_0000027">
         <rdfs:label xml:lang="en">generalized anxiety disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000033"/>
-        <obo:MFOMD_0000069>F41.1</obo:MFOMD_0000069>
+        <obo:MFOMD_0000037>300.02</obo:MFOMD_0000037>
         <rdfs:comment>
 This disorder is characterized by persistent high levels of anxiety and excessive worry over many life circumstances, the disorder is chronic, and it produces social and functional impairment.
 
 Because the people with this disorder are unable to discover the “real” source of their fears, they remain anxious and occasionally experience even more acute attacks of anxiety. They appear to have lower threshold for uncertainty, which leads worrying; to have erroneous beliefs such as “worry is an effective way to deal with problems”.
 
 &quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</rdfs:comment>
-        <obo:MFOMD_0000037>300.02</obo:MFOMD_0000037>
         <obo:IAO_0000115>Disorder where anxiety (worry, fear, apprehension, or unease) happens over otherwise common things or events, is difficult for the individual to control, is excessive, and lasts at least 6 months.
 
 
@@ -975,6 +974,7 @@ Other symptoms can be headaches, changes in appetite, nausea, vomiting and diarr
 &quot;Generalized Anxiety Disorder&quot; Janet M. Torpy, MD; Alison E. Burke, MA; Robert M. Golub, MD.
 
 </obo:MFOMD_0000014>
+        <obo:MFOMD_0000069>F41.1</obo:MFOMD_0000069>
         <obo:IAO_0000118 xml:lang="es">trastorno de ansiedad generalizada</obo:IAO_0000118>
     </owl:Class>
     
@@ -985,7 +985,21 @@ Other symptoms can be headaches, changes in appetite, nausea, vomiting and diarr
     <owl:Class rdf:about="&obo;MFOMD_0000028">
         <rdfs:label xml:lang="en">obsessive-compulsive disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000033"/>
+        <obo:IAO_0000115>Anxiety disorder characterized by recurrent and persistent thoughts and feelings and repetitive, ritualized behaviors.
+
+</obo:IAO_0000115>
         <obo:MFOMD_0000037>301.4</obo:MFOMD_0000037>
+        <obo:MFOMD_0000069>F42.8</obo:MFOMD_0000069>
+        <rdfs:comment>
+Is characterized by obsessions (intrusive, repetitive thoughts or images that produces anxiety) or compulsions (the need to perform acts or to dwell on thoughts to reduce anxiety). Frequently this two occur together, although is possible to occur separately.
+
+In this disorder are described the inability to resist or rid oneself of uncontrollable, alien, and often unacceptable thoughts or to keep from performing ritualistic acts over and over again arouses intense anxiety.
+
+&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.
+
+The obsessions or compulsions in this disorder Cause marked distress, are time consuming (take longer than 1 h a day), or greatly interfere with the person&apos;s normal routine, occupational (or academic) functioning, or usual social activities or relationships.
+
+&quot;Obsessive-compulsive disorder&quot; Dan J Stein</rdfs:comment>
         <obo:MFOMD_0000014 xml:lang="es">
 The characteristics of Obsessive-compulsive disorder are: 
 - Intrusive thoughts or images (obsessions)
@@ -999,20 +1013,6 @@ Additional subgroups has been shown such as a cluster of symptoms of symmetry co
 
 
 &quot;Obsessive-compulsive disorder&quot;. Dan J Stein</obo:MFOMD_0000014>
-        <obo:IAO_0000115>Anxiety disorder characterized by recurrent and persistent thoughts and feelings and repetitive, ritualized behaviors.
-
-</obo:IAO_0000115>
-        <obo:MFOMD_0000069>F42.8</obo:MFOMD_0000069>
-        <rdfs:comment>
-Is characterized by obsessions (intrusive, repetitive thoughts or images that produces anxiety) or compulsions (the need to perform acts or to dwell on thoughts to reduce anxiety). Frequently this two occur together, although is possible to occur separately.
-
-In this disorder are described the inability to resist or rid oneself of uncontrollable, alien, and often unacceptable thoughts or to keep from performing ritualistic acts over and over again arouses intense anxiety.
-
-&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.
-
-The obsessions or compulsions in this disorder Cause marked distress, are time consuming (take longer than 1 h a day), or greatly interfere with the person&apos;s normal routine, occupational (or academic) functioning, or usual social activities or relationships.
-
-&quot;Obsessive-compulsive disorder&quot; Dan J Stein</rdfs:comment>
         <obo:IAO_0000118 xml:lang="es">trastorno obsesivo compulsivo</obo:IAO_0000118>
     </owl:Class>
     
@@ -1023,6 +1023,7 @@ The obsessions or compulsions in this disorder Cause marked distress, are time c
     <owl:Class rdf:about="&obo;MFOMD_0000029">
         <rdfs:label xml:lang="en">somatization disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000034"/>
+        <obo:MFOMD_0000069>F45.0</obo:MFOMD_0000069>
         <obo:IAO_0000115>Disorder in which the individual with it chronically complains of bodily symptoms that have no physical basis.
 
 
@@ -1041,6 +1042,7 @@ Each of the following criteria must have been met, with individual symptoms occu
 
 DSM-IV-TR (american Psychiatric Association)
 </obo:MFOMD_0000014>
+        <obo:MFOMD_0000037>300.81</obo:MFOMD_0000037>
         <rdfs:comment>The essential feature of Somatization disorder is a pattern of recurring, multiple, clinically significant somatic complaints. A somatic complaint is considered to be clinically significant if it results in medical treatment (e. g., the taking of medication) or causes significant impairment in social, occupational, or other important areas of functioning.
 
 Individuals with this disorder usually describe their complaints in colourful, exaggerated terms, but specific factual information is often lacking. They often seek treatment from several physicians concurrently, which may lead to complicated and sometimes hazardous combinations of treatments.  Adoption studies indicate that both genetic and environmental factors contribute to the risk for this disorder; having a biological or adoptive parent with this disorder increase the risk of developing it.
@@ -1053,8 +1055,6 @@ Three features that suggest a diagnosis of Somatization disorder  rather than a 
 Somatization disorder does nor protect individuals from having other independent general medical conditions. The onset of multiple physical symptoms late in life is almost always due to a general medical condition.
 
 DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
-        <obo:MFOMD_0000069>F45.0</obo:MFOMD_0000069>
-        <obo:MFOMD_0000037>300.81</obo:MFOMD_0000037>
         <obo:IAO_0000118 xml:lang="es">trastorno de somatización</obo:IAO_0000118>
     </owl:Class>
     
@@ -1065,12 +1065,12 @@ DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
     <owl:Class rdf:about="&obo;MFOMD_0000030">
         <rdfs:label xml:lang="en">mood Disorders</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000004"/>
+        <obo:IAO_0000118>affective disorders</obo:IAO_0000118>
         <obo:IAO_0000115>Disorders that have a disturbance in mood as the predominant feature.
 
 
 DSM-IV-TR (american Psychiatric Association)
 </obo:IAO_0000115>
-        <obo:IAO_0000118>affective disorders</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1080,34 +1080,6 @@ DSM-IV-TR (american Psychiatric Association)
     <owl:Class rdf:about="&obo;MFOMD_0000031">
         <rdfs:label xml:lang="en">conversion disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000034"/>
-        <obo:MFOMD_0000037>300.11</obo:MFOMD_0000037>
-        <obo:IAO_0000115>Disorder in which the individual will complain of physical problems or impairments of sensory or motor functions controlled by the voluntary nervous system, all suggesting a neurological disorder but with no underlying organic cause.
-
-
-Understanding abnormal behavior. David Sue, Derald Wing Sue, Stanley Sue.
-</obo:IAO_0000115>
-        <rdfs:comment>
-The symptoms of this disorder are not intentionally produced or feigned, and is not diagnosed if the symptoms or deficits are fully explained by a neurological or general medical condition, by the direct effects of a substance, or as a culturally sanctioned behaviour or experience.
-
-A person with this disorder actually believes that there is a genuine physical problem, and it produces notable distress or impairment in social or occupational functioning.
-the most common conversion symptoms seen in neurological clinics involve psychogenic pain, disturbances of stance and gait, sensory symptoms, dizziness, and psychogenic seizures.
- 
-The occurrence of symptoms is often related to stress. Nearly 75 percent of respondents in one sample reported that their conversion symptoms developed after they had experienced a stressor.
-
-Some symptoms may require extensive neurological and physical examinations to rule out a true medical disorder before a diagnosis of conversion disorder can be made. Discriminating between people who are faking and those with this disorder is difficult.
-
-                  &quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.
-
-Conversion symptoms typically do not conform to known anatomical pathways and physiological mechanisms, but instead follow the individual&apos;s conceptualization of a condition. A&quot;paralyzed&quot; extremity will be moved inadvertently while dressing or when attention is directed elsewhere. If placed above the head and released, a &quot;paralyzed&quot; arm will be briefly retain its position, then fall to the side, rather than striking the head.
-
-this disorder has been reported to be more common in rural populations, individuals of lower socioeconomic status, and individuals less knowledgeable about medical and psychological concepts. As many as one-third of individuals with conversion symptoms have a current or prior neurological condition. This disorder appears to be more frequent in women than in men. 
-
-                                                                   DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
-        <obo:MFOMD_0000069>F44.x
-      .4 With Motor Symptom or Deficit
-      .5 With Seizures or Convulsions
-      .6 With Sensory Symptom or Deficit
-      .7 With Mixed Presentation</obo:MFOMD_0000069>
         <obo:MFOMD_0000014>
 Motor symptoms or deficits include: 
 
@@ -1129,6 +1101,34 @@ Symptoms may also include seizures or convulsions.
 
 DSM-IV-TR (american Psychiatric Association)
 </obo:MFOMD_0000014>
+        <obo:MFOMD_0000069>F44.x
+      .4 With Motor Symptom or Deficit
+      .5 With Seizures or Convulsions
+      .6 With Sensory Symptom or Deficit
+      .7 With Mixed Presentation</obo:MFOMD_0000069>
+        <obo:IAO_0000115>Disorder in which the individual will complain of physical problems or impairments of sensory or motor functions controlled by the voluntary nervous system, all suggesting a neurological disorder but with no underlying organic cause.
+
+
+Understanding abnormal behavior. David Sue, Derald Wing Sue, Stanley Sue.
+</obo:IAO_0000115>
+        <obo:MFOMD_0000037>300.11</obo:MFOMD_0000037>
+        <rdfs:comment>
+The symptoms of this disorder are not intentionally produced or feigned, and is not diagnosed if the symptoms or deficits are fully explained by a neurological or general medical condition, by the direct effects of a substance, or as a culturally sanctioned behaviour or experience.
+
+A person with this disorder actually believes that there is a genuine physical problem, and it produces notable distress or impairment in social or occupational functioning.
+the most common conversion symptoms seen in neurological clinics involve psychogenic pain, disturbances of stance and gait, sensory symptoms, dizziness, and psychogenic seizures.
+ 
+The occurrence of symptoms is often related to stress. Nearly 75 percent of respondents in one sample reported that their conversion symptoms developed after they had experienced a stressor.
+
+Some symptoms may require extensive neurological and physical examinations to rule out a true medical disorder before a diagnosis of conversion disorder can be made. Discriminating between people who are faking and those with this disorder is difficult.
+
+                  &quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.
+
+Conversion symptoms typically do not conform to known anatomical pathways and physiological mechanisms, but instead follow the individual&apos;s conceptualization of a condition. A&quot;paralyzed&quot; extremity will be moved inadvertently while dressing or when attention is directed elsewhere. If placed above the head and released, a &quot;paralyzed&quot; arm will be briefly retain its position, then fall to the side, rather than striking the head.
+
+this disorder has been reported to be more common in rural populations, individuals of lower socioeconomic status, and individuals less knowledgeable about medical and psychological concepts. As many as one-third of individuals with conversion symptoms have a current or prior neurological condition. This disorder appears to be more frequent in women than in men. 
+
+                                                                   DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
         <obo:IAO_0000118 xml:lang="es">trastorno de conversión</obo:IAO_0000118>
     </owl:Class>
     
@@ -1139,9 +1139,11 @@ DSM-IV-TR (american Psychiatric Association)
     <owl:Class rdf:about="&obo;MFOMD_0000032">
         <rdfs:label xml:lang="en">pain disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000034"/>
+        <obo:MFOMD_0000037>307.89</obo:MFOMD_0000037>
         <obo:IAO_0000115>A somatoform disorder characterized by a chief complaint of severe chronic pain which is neither feigned nor intentionally produced, but in which psychological factors appear to play a major role in onset, severity, exacerbation, or maintenance.
 
 </obo:IAO_0000115>
+        <obo:MFOMD_0000069>F45.4</obo:MFOMD_0000069>
         <rdfs:comment>
 The pain cannot be fully attributed to a known medical disorder, and causes clinically significant distress, impairment, or both in social, academic, occupational, or other areas of functioning.
 
@@ -1152,8 +1154,6 @@ http://emedicine.medscape.com/article/914594-overview
 In most cases the pain has persisted for many years by the time the individual comes to the attention of the mental health profession. Important factors that appear to influence recovery from pain disorder are the individual&apos;s acknowledgment of pain.
 
 DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
-        <obo:MFOMD_0000069>F45.4</obo:MFOMD_0000069>
-        <obo:MFOMD_0000037>307.89</obo:MFOMD_0000037>
         <obo:IAO_0000118 xml:lang="es">trastorno por dolor</obo:IAO_0000118>
     </owl:Class>
     
@@ -1191,12 +1191,6 @@ DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
 
 DSM-IV-TR (american Psychiatric Association)
 </obo:IAO_0000115>
-        <rdfs:comment>
-The anxiety typically leads to a pervasive avoidance of a variety of situations that may include being alone outside the home or being home alone; being in a crowd of people; travelling in automobile, bus, or airplane; or being on a bridge or in an elevator.
-
-The differential diagnosis to distinguish agoraphobia from social and specific phobia and from severe separation anxiety disorder can be difficult because all of this conditions are characterised by avoidance of specific situations.
-
-DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
         <obo:MFOMD_0000014>
 Some of the following patterns have been found in patients with Agoraphobia.
 
@@ -1206,6 +1200,12 @@ Some of the following patterns have been found in patients with Agoraphobia.
 - Avoidance of the situation associated with the fear. the attack were described as highly aversive, and the patients&apos; belief that they represented a pathological outcome intensified the fear. this lead to avoidance. 
 
 DSM-IV-TR (american Psychiatric Association)</obo:MFOMD_0000014>
+        <rdfs:comment>
+The anxiety typically leads to a pervasive avoidance of a variety of situations that may include being alone outside the home or being home alone; being in a crowd of people; travelling in automobile, bus, or airplane; or being on a bridge or in an elevator.
+
+The differential diagnosis to distinguish agoraphobia from social and specific phobia and from severe separation anxiety disorder can be difficult because all of this conditions are characterised by avoidance of specific situations.
+
+DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
         <obo:IAO_0000118 xml:lang="es">agorafobia</obo:IAO_0000118>
     </owl:Class>
     
@@ -1233,6 +1233,8 @@ DSM-IV-TR (american Psychiatric Association)
 - Thinking you have a disease after reading or hearing about it
 
 http://www.mayoclinic.com/health/hypochondria/DS00841/DSECTION=symptoms</obo:MFOMD_0000014>
+        <obo:MFOMD_0000037>300.7</obo:MFOMD_0000037>
+        <obo:MFOMD_0000069>F45.2</obo:MFOMD_0000069>
         <rdfs:comment>
 The preoccupation in Hypochondriasis may be with bodily functions; minor physical abnormalities; or with vague and ambiguous physical sensations. The person attributes this symptoms or signs to the suspected disease and is very concerned with their meaning, authenticity, and aetiology. Repeated physical examinations, diagnostic test, and reassurance from the physician do little to allay the concern about bodily disease or affliction. 
 
@@ -1245,8 +1247,6 @@ DSM-IV-TR (american Psychiatric Association)
 Some several predisposing factors of hypocondriasis included a history of physical illness, parental attention to somatic symptoms, low pain threshold, or greater sensitivity to somatic cues.
 
 &quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</rdfs:comment>
-        <obo:MFOMD_0000069>F45.2</obo:MFOMD_0000069>
-        <obo:MFOMD_0000037>300.7</obo:MFOMD_0000037>
         <obo:IAO_0000118 xml:lang="es">hipocondría</obo:IAO_0000118>
     </owl:Class>
     
@@ -1286,19 +1286,19 @@ DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
         <rdfs:label rdf:datatype="&xsd;string">manifestation of a mental disease</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
-                <owl:someValuesFrom rdf:resource="&obo;MFOMD_0000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
                 <owl:someValuesFrom rdf:resource="&obo;MFOMD_0000025"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
+                <owl:someValuesFrom rdf:resource="&obo;MFOMD_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
         <obo:IAO_0000115>A bodily feature of an organism that is (a) a deviation from clinical normality that is the realization of a mental disease and is (b) observable.
 </obo:IAO_0000115>
-        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1308,8 +1308,8 @@ DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
     <owl:Class rdf:about="&obo;MFOMD_0000042">
         <rdfs:label xml:lang="en">paranoid personality disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000039"/>
-        <obo:MFOMD_0000037>301.0</obo:MFOMD_0000037>
         <obo:MFOMD_0000069>F60.0</obo:MFOMD_0000069>
+        <obo:MFOMD_0000037>301.0</obo:MFOMD_0000037>
         <obo:IAO_0000115>Pattern of distrust and suspiciousness such that others&amp;apos; motives are interpreted as malevolent.
 
 DSM-IV-TR (american Psychiatric Association)
@@ -1368,12 +1368,12 @@ Research has demonstrated some cognitive processing abnormalities in individuals
 &quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.
  
 DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
-        <obo:MFOMD_0000037>301.22</obo:MFOMD_0000037>
-        <obo:MFOMD_0000069>F21</obo:MFOMD_0000069>
         <obo:IAO_0000115>Personality disorder that is a pattern of acute discomfort in close relationships, cognitive or perceptual distortions, and eccentricities of behaviour.
 
 DSM-IV-TR (american Psychiatric Association)
 </obo:IAO_0000115>
+        <obo:MFOMD_0000037>301.22</obo:MFOMD_0000037>
+        <obo:MFOMD_0000069>F21</obo:MFOMD_0000069>
         <obo:IAO_0000118 xml:lang="es">Trastorno esquizotípico de la personalidad</obo:IAO_0000118>
     </owl:Class>
     
@@ -1385,6 +1385,11 @@ DSM-IV-TR (american Psychiatric Association)
         <rdfs:label xml:lang="en">antisocial personality disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000039"/>
         <obo:MFOMD_0000037>301.7</obo:MFOMD_0000037>
+        <obo:IAO_0000115>Personality disorder that is a pattern of disregard for, and violation of, the rights of others.
+
+
+DSM-IV-TR (american Psychiatric Association)         
+</obo:IAO_0000115>
         <obo:MFOMD_0000014>
 1.- superficial charm and good intelligence
 2.- shallow emotions and lack of empathy, guilt, or remorse
@@ -1393,11 +1398,6 @@ DSM-IV-TR (american Psychiatric Association)
 5.- unreliability, insincerity, and untruthfulness
 
 &quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</obo:MFOMD_0000014>
-        <obo:IAO_0000115>Personality disorder that is a pattern of disregard for, and violation of, the rights of others.
-
-
-DSM-IV-TR (american Psychiatric Association)         
-</obo:IAO_0000115>
         <rdfs:comment>The indicators of this disorder are chronic antisocial behavioural patterns, such as a failure to conform to social or legal codes, a lack of anxiety and guilt, and irresponsible behaviours.
 
 People with this disorder show little guilt for their wrongdoing, which may include lying, using other people, and aggressive sexual acts. Their relationship with others are superficial and fleeting and involve little loyalty.
@@ -1423,8 +1423,8 @@ Antisocial personality disorder is more prevalent among men than women, and amon
                 <owl:allValuesFrom rdf:resource="&obo;MFOMD_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Addiction is a mental disease in which a person persists in the use of a mood altering substance or in a behaviour despite adverse consequences.</obo:IAO_0000115>
         <rdfs:comment>Addictions can include, but are not limited to, alcohol abuse, drug abuse, exercise abuse, pornography and gambling. Classic hallmarks of addiction include: impaired control over substances/behavior, preoccupation with substance/behavior, continued use despite consequences, and denial. Habits and patterns associated with addiction are typically characterized by immediate gratification (short-term reward), coupled with delayed deleterious effects (long-term costs). Physiological dependence occurs when the body has to adjust to the substance by incorporating the substance into its &apos;normal&apos; functioning. This state creates the conditions of tolerance and withdrawal. Tolerance is the process by which the body continually adapts to the substance and requires increasingly larger amounts to achieve the original effects. Withdrawal refers to physical and psychological symptoms people experience when reducing or discontinuing a substance the body had become dependent on. Symptoms of withdrawal generally include but are not limited to anxiety, irritability, intense cravings for the substance, nausea, hallucinations, headaches, cold sweats, and tremors. [WIkipedia: http://en.wikipedia.org/wiki/Addiction]</rdfs:comment>
+        <obo:IAO_0000115>Addiction is a mental disease in which a person persists in the use of a mood altering substance or in a behaviour despite adverse consequences.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1434,15 +1434,15 @@ Antisocial personality disorder is more prevalent among men than women, and amon
     <owl:Class rdf:about="&obo;MFOMD_0000047">
         <rdfs:label xml:lang="en">borderline personality disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000039"/>
+        <obo:IAO_0000115>Personality disorder that is a pattern of inestability in interpersonal relationships, self-image, and affects, and marked impulsivity. 
+
+DSM-IV-TR (american Psychiatric Association) </obo:IAO_0000115>
+        <obo:MFOMD_0000037>301.83</obo:MFOMD_0000037>
         <rdfs:comment>Persons with this disorder are impulsive, have chronic feelings of emptiness, and form unstable and intense interpersonal relationships. They may be quite friendly one day and quiet hostile the next. females are three times more likely than males to receive the diagnosis.
 
 The individuals with this disorder can empathise with and nurture other people, but only with the expectation that the other person will &quot;be there&quot; in return to meet their own needs on demand. this individuals are prone to sudden and dramatic shifts in their view of others, who may alternately be seen as beneficent supports or as cruelly punitive.
 </rdfs:comment>
-        <obo:MFOMD_0000037>301.83</obo:MFOMD_0000037>
         <obo:MFOMD_0000069>F60.31</obo:MFOMD_0000069>
-        <obo:IAO_0000115>Personality disorder that is a pattern of inestability in interpersonal relationships, self-image, and affects, and marked impulsivity. 
-
-DSM-IV-TR (american Psychiatric Association) </obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="es">Trastorno límite de la personalidad</obo:IAO_0000118>
     </owl:Class>
     
@@ -1459,7 +1459,7 @@ DSM-IV-TR (american Psychiatric Association) </obo:IAO_0000115>
                 <owl:allValuesFrom rdf:resource="&obo;MFOMD_0000007"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>Bipolar disease is a mental disease that leads to disruptive mood swings encompassing manic and depressive moods.             </obo:IAO_0000115>
+        <obo:IAO_0000118>Bipolar affective disorder [ICD-10]</obo:IAO_0000118>
         <rdfs:comment>DSM offers several different codes for bipolar, disambiguating the type of the most recent episode: 
 
 296.8 	Bipolar Disorder NOS
@@ -1494,6 +1494,7 @@ DSM-IV-TR (american Psychiatric Association) </obo:IAO_0000115>
 296.03 	Bipolar I Disorder, Single Manic Episode, Severe Without Psychotic Features
 296 	Bipolar I Disorder, Single Manic Episode, Unspecified
 296.89 	Bipolar II Disorder </rdfs:comment>
+        <obo:IAO_0000118>F31 [ICD-10 Code]</obo:IAO_0000118>
         <rdfs:comment>Bipolar disorder or bipolar affective disorder (historically known as manic-depressive disorder) is a psychiatric diagnosis for a mood disorder in which people experience disruptive mood swings that encompass a frenzied state known as mania (or hypomania) and, usually, symptoms of depression. Bipolar disorder is defined by the presence of one or more episodes of abnormally elevated energy levels, cognition, and mood with or without one or more depressive episodes.
 
 At the lower levels of mania, such as hypomania, individuals may appear energetic and excitable. At a higher level, individuals may behave erratically and impulsively, often making poor decisions due to unrealistic ideas about the future, and may have great difficulty with sleep. At the highest level, individuals can show psychotic behavior, including violence. Individuals who experience manic episodes also commonly experience depressive episodes, or symptoms, or a mixed state in which features of both mania and depression are present at the same time. These events are usually separated by periods of &quot;normal&quot; mood; but, in some individuals, depression and mania may rapidly alternate, which is known as rapid cycling. Severe manic episodes can sometimes lead to such psychotic symptoms as delusions and hallucinations.
@@ -1501,9 +1502,8 @@ At the lower levels of mania, such as hypomania, individuals may appear energeti
 The lifetime prevalence of all types of bipolar disorder is thought to be about 4% (meaning that about 4% of people experience some of the characteristic symptoms at some point in their life). Prevalence is similar in men and women and, broadly, across different cultures and ethnic groups. Genetic factors contribute substantially to the likelihood of developing bipolar disorder, and environmental factors are also implicated. Bipolar disorder is often treated with mood stabilizing medications and psychotherapy. In serious cases, in which there is a risk of harm to oneself or others, involuntary commitment may be used. These cases generally involve severe manic episodes with dangerous behavior or depressive episodes with suicidal ideation. There are widespread problems with social stigma, stereotypes, and prejudice against individuals with a diagnosis of bipolar disorder. People with bipolar disorder exhibiting psychotic symptoms can sometimes be misdiagnosed as having schizophrenia.
 
 [Wikipedia: http://en.wikipedia.org/wiki/Bipolar_disorder]</rdfs:comment>
-        <obo:IAO_0000118>Bipolar affective disorder [ICD-10]</obo:IAO_0000118>
         <obo:IAO_0000118>bipolar disorder [DSM-IV]</obo:IAO_0000118>
-        <obo:IAO_0000118>F31 [ICD-10 Code]</obo:IAO_0000118>
+        <obo:IAO_0000115>Bipolar disease is a mental disease that leads to disruptive mood swings encompassing manic and depressive moods.             </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1519,6 +1519,7 @@ The lifetime prevalence of all types of bipolar disorder is thought to be about 
                 <owl:allValuesFrom rdf:resource="&obo;MFOMD_0000010"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>The essential feature is a clinical course that is characterised by one or more Major Depressive Episodes without a history of Manic, Mixed, or Hypomanic episodes.</obo:IAO_0000115>
         <rdfs:comment>DSM-IV lists several codes for depression depending on the most recent episode: 
 
 296.36 	Major Depressive Disorder, Recurrent, In Full Remission
@@ -1535,7 +1536,6 @@ The lifetime prevalence of all types of bipolar disorder is thought to be about 
 296.24 	Major Depressive Disorder, Single Episode, Severe With Psychotic Features
 296.23 	Major Depressive Disorder, Single Episode, Severe Without Psychotic Features
 296.2 	Major Depressive Disorder, Single Episode, Unspecified </rdfs:comment>
-        <obo:IAO_0000115>The essential feature is a clinical course that is characterised by one or more Major Depressive Episodes without a history of Manic, Mixed, or Hypomanic episodes.</obo:IAO_0000115>
         <obo:IAO_0000118>major depressive disorder [DSM-IV]</obo:IAO_0000118>
     </owl:Class>
     
@@ -1546,8 +1546,8 @@ The lifetime prevalence of all types of bipolar disorder is thought to be about 
     <owl:Class rdf:about="&obo;MFOMD_0000050">
         <rdfs:label>bipolar I disease</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000048"/>
-        <obo:IAO_0000115>Bipolar I disease is the more severe form of bipolar disease in which subjects have experienced a full-blown manic episode.        </obo:IAO_0000115>
         <obo:IAO_0000118>bipolar I disorder [DSM-IV]</obo:IAO_0000118>
+        <obo:IAO_0000115>Bipolar I disease is the more severe form of bipolar disease in which subjects have experienced a full-blown manic episode.        </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1557,8 +1557,8 @@ The lifetime prevalence of all types of bipolar disorder is thought to be about 
     <owl:Class rdf:about="&obo;MFOMD_0000051">
         <rdfs:label>bipolar II disease</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000048"/>
-        <obo:IAO_0000115>Bipolar II is the less severe form of bipolar disease, in which subjects experience alternating depressive and hypomanic episodes.            </obo:IAO_0000115>
         <obo:IAO_0000118>bipolar II disorder [DSM-IV]</obo:IAO_0000118>
+        <obo:IAO_0000115>Bipolar II is the less severe form of bipolar disease, in which subjects experience alternating depressive and hypomanic episodes.            </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1597,9 +1597,9 @@ The lifetime prevalence of all types of bipolar disorder is thought to be about 
     <owl:Class rdf:about="&obo;MFOMD_0000053">
         <rdfs:label>process addiction</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000046"/>
-        <rdfs:comment>Process or behaviour addiction is not included in DSM-IV. Behavioral addiction has been proposed as a new class in DSM-5, but the only category included is gambling addiction. Internet addiction and sex addiction are included in the appendix. [Wikipedia:http://en.wikipedia.org/wiki/Behavioral_addiction]</rdfs:comment>
         <obo:IAO_0000118>behavioural addiction [DSM-IV]</obo:IAO_0000118>
         <obo:IAO_0000115>  An addiction to a process, which might be a behaviour, such as gambling, or procrastination.           </obo:IAO_0000115>
+        <rdfs:comment>Process or behaviour addiction is not included in DSM-IV. Behavioral addiction has been proposed as a new class in DSM-5, but the only category included is gambling addiction. Internet addiction and sex addiction are included in the appendix. [Wikipedia:http://en.wikipedia.org/wiki/Behavioral_addiction]</rdfs:comment>
         <rdfs:comment>Increasingly referred to as process addiction or non-substance-related addiction, behavioral addiction includes a compulsion to repeatedly engage in an action until said action causes serious negative consequences to the person&apos;s physical, mental, social, and/or financial well-being. One sign that a behavior has become addictive is if it persists despite these consequences. [Wikipedia: http://en.wikipedia.org/wiki/Behavioral_addiction]</rdfs:comment>
     </owl:Class>
     
@@ -1630,10 +1630,6 @@ The lifetime prevalence of all types of bipolar disorder is thought to be about 
     <owl:Class rdf:about="&obo;MFOMD_0000056">
         <rdfs:label xml:lang="en">histrionic personality disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000039"/>
-        <obo:MFOMD_0000069>F60.4</obo:MFOMD_0000069>
-        <obo:IAO_0000115>This disorder is a pattern of excessive emotionality and attention seeking. 
-
-DSM-IV-TR (American Psychiatric Association)</obo:IAO_0000115>
         <obo:MFOMD_0000037>301.50</obo:MFOMD_0000037>
         <rdfs:comment>
 Individuals with this personality disorder are uncomfortable or feel unappreciated when they are not the centre of attention; they tend to draw attention to themselves and may initially charm new acquaintances by their enthusiasm, apparent openness, or flirtatiousness.
@@ -1641,6 +1637,10 @@ Individuals with this personality disorder are uncomfortable or feel unappreciat
 If they are not the centre of attention they may do something dramatic, as make up stories or create a scene in order to draw attention to themselves. they also can be inappropriately sexually provocative or seductive, not only toward persons in whom the individual has a sexual or romantic interest, but occurs in a wide variety of social, occupational, and professional relationship beyond what is appropriate for the social context; also they are overly concerned with impressing others by their appearance and their emotions often seem to be turned on and off too quickly to be deeply felt, which may lead others to accuse the individual of faking these feelings.
 
  DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
+        <obo:MFOMD_0000069>F60.4</obo:MFOMD_0000069>
+        <obo:IAO_0000115>This disorder is a pattern of excessive emotionality and attention seeking. 
+
+DSM-IV-TR (American Psychiatric Association)</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="es">trastorno histriónico de la personalidad</obo:IAO_0000118>
     </owl:Class>
     
@@ -1662,10 +1662,10 @@ If they are not the centre of attention they may do something dramatic, as make 
         <rdfs:label>cocaine addiction</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000052"/>
         <obo:IAO_0000115> A substance addiction in which the substance compulsively consumed is cocaine (CHEBI:27958)          </obo:IAO_0000115>
-        <obo:IAO_0000118>cocaine dependence [DSM-IV]</obo:IAO_0000118>
+        <obo:IAO_0000118>F14 [ICD-10 Code]</obo:IAO_0000118>
         <obo:IAO_0000118>304.20 [DSM-IV Code]</obo:IAO_0000118>
         <obo:IAO_0000118>Mental and behavioural disorders due to use of cocaine [ICD-10]</obo:IAO_0000118>
-        <obo:IAO_0000118>F14 [ICD-10 Code]</obo:IAO_0000118>
+        <obo:IAO_0000118>cocaine dependence [DSM-IV]</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1685,11 +1685,11 @@ If they are not the centre of attention they may do something dramatic, as make 
     <owl:Class rdf:about="&obo;MFOMD_0000060">
         <rdfs:label>alcohol addiction</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000052"/>
-        <obo:IAO_0000118>alcohol dependence [DSM-IV]</obo:IAO_0000118>
+        <obo:IAO_0000118>F10 [ICD-10 Code]</obo:IAO_0000118>
         <obo:IAO_0000118>309.90 [DSM-IV code]</obo:IAO_0000118>
         <obo:IAO_0000115>  A substance addiction in which the substance that is compulsively consumed is alcohol (CHEBI:30879).           </obo:IAO_0000115>
+        <obo:IAO_0000118>alcohol dependence [DSM-IV]</obo:IAO_0000118>
         <obo:IAO_0000118>Mental and behavioural disorders due to use of alcohol [ICD-10]</obo:IAO_0000118>
-        <obo:IAO_0000118>F10 [ICD-10 Code]</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1699,11 +1699,11 @@ If they are not the centre of attention they may do something dramatic, as make 
     <owl:Class rdf:about="&obo;MFOMD_0000061">
         <rdfs:label>marijuana addiction</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000052"/>
-        <obo:IAO_0000115>  A substance addiction in which the substance compulsively consumed is marijuana.           </obo:IAO_0000115>
         <obo:IAO_0000118>Mental and behavioural disorders due to use of cannabinoids [ICD-10]</obo:IAO_0000118>
-        <obo:IAO_0000118>F12 [ICD-10 Code]</obo:IAO_0000118>
-        <obo:IAO_0000118>304.30 [DSM-IV Code]</obo:IAO_0000118>
         <obo:IAO_0000118>cannabis dependence [DSM-IV]</obo:IAO_0000118>
+        <obo:IAO_0000118>F12 [ICD-10 Code]</obo:IAO_0000118>
+        <obo:IAO_0000115>  A substance addiction in which the substance compulsively consumed is marijuana.           </obo:IAO_0000115>
+        <obo:IAO_0000118>304.30 [DSM-IV Code]</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1713,12 +1713,12 @@ If they are not the centre of attention they may do something dramatic, as make 
     <owl:Class rdf:about="&obo;MFOMD_0000062">
         <rdfs:label>nicotine addiction</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000052"/>
-        <obo:IAO_0000115> A substance addiction in which the substance compulsively consumed is nicotine (CHEBI:18723).           </obo:IAO_0000115>
-        <obo:IAO_0000118>305.1 [DSM-IV Code]
-</obo:IAO_0000118>
+        <obo:IAO_0000118>F17 [ICD-10 Code]</obo:IAO_0000118>
         <obo:IAO_0000118>nicotine dependence [DSM-IV]</obo:IAO_0000118>
         <obo:IAO_0000118>Mental and behavioural disorders due to use of tobacco [ICD-10]</obo:IAO_0000118>
-        <obo:IAO_0000118>F17 [ICD-10 Code]</obo:IAO_0000118>
+        <obo:IAO_0000118>305.1 [DSM-IV Code]
+</obo:IAO_0000118>
+        <obo:IAO_0000115> A substance addiction in which the substance compulsively consumed is nicotine (CHEBI:18723).           </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1740,12 +1740,12 @@ If they are not the centre of attention they may do something dramatic, as make 
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000039"/>
         <obo:MFOMD_0000037>301.81</obo:MFOMD_0000037>
         <obo:MFOMD_0000069>F60.8</obo:MFOMD_0000069>
-        <obo:IAO_0000115>Personality disorder in which the essential feature is a pervasive pattern of grandiosity, need for admiration, and lack of empathy.
-
-DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
         <rdfs:comment>People with this disorder require attention and admiration and have difficulty accepting personal criticism. In conversations they talk mainly about themselves and show a lack of interest in others. Many have fantasies about power or influence, and they constantly overestimate their talents and importance, how reflective responses and idealisation involving unlimited success, a sense of entitlement, and sense of self-importance.
 
 &quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</rdfs:comment>
+        <obo:IAO_0000115>Personality disorder in which the essential feature is a pervasive pattern of grandiosity, need for admiration, and lack of empathy.
+
+DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="es">trastorno narcisista de la personalidad</obo:IAO_0000118>
     </owl:Class>
     
@@ -1756,17 +1756,17 @@ DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;MFOMD_0000065">
         <rdfs:label xml:lang="en">avoidant personality disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000039"/>
-        <obo:MFOMD_0000037>301.82</obo:MFOMD_0000037>
-        <obo:MFOMD_0000069>F60.6</obo:MFOMD_0000069>
+        <rdfs:comment>Persons with this disorder tend to have low self-esteem and to avoid social relationships without a guarantee of uncritical acceptance by others, although they do not desire to be alone, on the contrary, they crave affection and active social life, but they are caught in a vicious cycle been preoccupied with rejection, they are constantly alert to signs of derogation or ridicule leading to many perceived instances of rejection, which at the same time cause them to avoid others. 
+
+&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</rdfs:comment>
+        <obo:IAO_0000118>trastorno de la personalidad por evitación</obo:IAO_0000118>
         <obo:IAO_0000115>This disorder is a pattern of social inhibition, feelings of inadequacy, and hypersensitivity to negative evaluation.
 
 DSM-IV-TR (american Psychiatric Association)
 
 </obo:IAO_0000115>
-        <obo:IAO_0000118>trastorno de la personalidad por evitación</obo:IAO_0000118>
-        <rdfs:comment>Persons with this disorder tend to have low self-esteem and to avoid social relationships without a guarantee of uncritical acceptance by others, although they do not desire to be alone, on the contrary, they crave affection and active social life, but they are caught in a vicious cycle been preoccupied with rejection, they are constantly alert to signs of derogation or ridicule leading to many perceived instances of rejection, which at the same time cause them to avoid others. 
-
-&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</rdfs:comment>
+        <obo:MFOMD_0000037>301.82</obo:MFOMD_0000037>
+        <obo:MFOMD_0000069>F60.6</obo:MFOMD_0000069>
     </owl:Class>
     
 
@@ -1776,18 +1776,18 @@ DSM-IV-TR (american Psychiatric Association)
     <owl:Class rdf:about="&obo;MFOMD_0000066">
         <rdfs:label xml:lang="en">dependent personality disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000039"/>
-        <obo:MFOMD_0000069>F60.7</obo:MFOMD_0000069>
-        <obo:MFOMD_0000037>301.6</obo:MFOMD_0000037>
+        <obo:IAO_0000118>trastorno de la personalidad por dependencia</obo:IAO_0000118>
         <rdfs:comment>
 Individuals with this personality disorder have great difficulty making everyday decisions without an excessive amount of advice and reassurance from others, they tend to be passive and allow other people to take the initiative and assume responsibility for most major areas of their lives. This need for others goes beyond age-appropriate and situation-appropriate requests for assistance.
 
 These individuals feel so unable to function alone that they will agree with things that they feel are wrong rather than risk losing the help of those to whom they look for guidance.
 
 http://www.psychologytoday.com/conditions/dependent-personality-disorder</rdfs:comment>
+        <obo:MFOMD_0000037>301.6</obo:MFOMD_0000037>
         <obo:IAO_0000115>This disorder is a pattern of submissive and clinging behaviour related to and excessive need to be taking care of. 
 
 DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
-        <obo:IAO_0000118>trastorno de la personalidad por dependencia</obo:IAO_0000118>
+        <obo:MFOMD_0000069>F60.7</obo:MFOMD_0000069>
     </owl:Class>
     
 
@@ -1798,17 +1798,17 @@ DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
         <rdfs:label xml:lang="en">obsessive-compulsive personality disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000039"/>
         <obo:MFOMD_0000037>301.4</obo:MFOMD_0000037>
-        <obo:IAO_0000115>The essential feature of this disorder is a preoccupation with orderliness, perfectionism, and mental and interpersonal control, at the expense of flexibility, openness, and efficiency.
-
-DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
         <rdfs:comment>
 Individuals with this personality disorder attempt to maintain a sense of control through painstaking attention rules, trivial details, procedures, lists, schedules, or form to the extent that the major point of the activity is lost. They are excessively careful and prone to repetition, paying extraordinary attention to detail and repeatedly checking for possible mistakes; they display excessive devotion to work and productivity to the exclusion of leisure activities and friendships because they have often the feeling of not having time for that.
 
 These individuals plan ahead in meticulous detail and are unwilling to consider changes. Totally wrapped up in their own perspective, they have difficulty acknowledging the viewpoints of others. 
 
 DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
-        <obo:MFOMD_0000069>F60.5</obo:MFOMD_0000069>
         <obo:IAO_0000118>trastorno obsesivo-compulsivo de la personalidad</obo:IAO_0000118>
+        <obo:MFOMD_0000069>F60.5</obo:MFOMD_0000069>
+        <obo:IAO_0000115>The essential feature of this disorder is a preoccupation with orderliness, perfectionism, and mental and interpersonal control, at the expense of flexibility, openness, and efficiency.
+
+DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1831,17 +1831,17 @@ DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
     <owl:Class rdf:about="&obo;MFOMD_0000072">
         <rdfs:label xml:lang="en">anorexia nervosa</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000071"/>
+        <obo:IAO_0000115>Disorder characterised by a refusal to maintain a minimally normal body weight, the individual is intensely afraid of gaining weight, and exhibits a significant disturbance in the perception of the shape or size of his or her body.
+
+DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
+        <obo:MFOMD_0000069>F50.0</obo:MFOMD_0000069>
+        <obo:MFOMD_0000037>307.1</obo:MFOMD_0000037>
         <rdfs:comment>
 People with anorexia see themselves as overweight even though they are dangerously thin. The process of eating becomes an obsession to them. Unusual eating habits develop, such as avoiding what they perceive as high caloric food and meals, picking out a few foods and eating only these in small quantities, or carefully weighing and portioning food. 
 
 People with anorexia may repeatedly check their body weight and many engage in other techniques to control their weight, such as intense and compulsive exercise or purging by means of vomiting and abuse of laxatives, enemas, and diuretics. 
 
 http://www.psychologytoday.com/conditions/anorexia-nervosa</rdfs:comment>
-        <obo:IAO_0000115>Disorder characterised by a refusal to maintain a minimally normal body weight, the individual is intensely afraid of gaining weight, and exhibits a significant disturbance in the perception of the shape or size of his or her body.
-
-DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
-        <obo:MFOMD_0000037>307.1</obo:MFOMD_0000037>
-        <obo:MFOMD_0000069>F50.0</obo:MFOMD_0000069>
         <obo:IAO_0000118 xml:lang="es">anorexia nerviosa</obo:IAO_0000118>
     </owl:Class>
     
@@ -1852,21 +1852,21 @@ DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;MFOMD_0000073">
         <rdfs:label xml:lang="en">bulimia nervosa</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000071"/>
-        <obo:MFOMD_0000069>F50.2</obo:MFOMD_0000069>
-        <obo:IAO_0000115>This eating disorder is characterised by repeated episodes of binge eating followed by inappropriate compensatory behaviours such as self-induced vomiting; misuse of laxatives, diuretics, or other medications; fasting; or excessive exercise.
-
-
-DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
         <rdfs:comment>
 Bulimia Nervosa is characterized by recurrent and frequent episodes of binge eating—i.e., unusually large amounts of food consumed in a short time— and a feeling that one lacks control over eating. Binging and purging are often performed in secret, with feelings of shame alternating with relief, and this behaviours both occur, on average, at least twice a week for 3 months.
 
 http://www.psychologytoday.com/conditions/bulimia-nervosa
 
 DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
-        <obo:MFOMD_0000037>307.51</obo:MFOMD_0000037>
         <rdfs:comment>The only change that have been made from the DSM-IV-TR to DSM-V criteria for bulimia nervosa, is a reduction in the required minimum average frequency of binge eating and inappropriate compensatory behaviour frequency from twice to once weekly.
 
 http://www.dsm5.org/Documents/changes%20from%20dsm-iv-tr%20to%20dsm-5.pdf</rdfs:comment>
+        <obo:IAO_0000115>This eating disorder is characterised by repeated episodes of binge eating followed by inappropriate compensatory behaviours such as self-induced vomiting; misuse of laxatives, diuretics, or other medications; fasting; or excessive exercise.
+
+
+DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
+        <obo:MFOMD_0000069>F50.2</obo:MFOMD_0000069>
+        <obo:MFOMD_0000037>307.51</obo:MFOMD_0000037>
         <obo:IAO_0000118 xml:lang="es">bulimia</obo:IAO_0000118>
     </owl:Class>
     
@@ -1890,6 +1890,13 @@ DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;MFOMD_0000075">
         <rdfs:label xml:lang="en">dissociative amnesia</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000074"/>
+        <obo:MFOMD_0000037>300.12</obo:MFOMD_0000037>
+        <obo:IAO_0000115>Is the partial or total loss of important information, sometimes occurring suddenly after stressful or traumatic event.
+
+
+Understanding abnormal behavior. David Sue, Derald Wing Sue, Stanley Sue.
+
+</obo:IAO_0000115>
         <rdfs:comment>The disturb person may be unable to recall information such as his or her name, address, friends, and relatives but does remember the necessities of daily life. This disorder most commonly presents as a retrospectively reported gap or series of gaps in recall for aspects of the individual&apos;s life history. These gaps are usually related to traumatic or extremely stressful events.
 
 There are five types of memory disturbances in dissociative amnesia that vary in terms of the degree and type of memory that is lost: 
@@ -1903,13 +1910,6 @@ There are five types of memory disturbances in dissociative amnesia that vary in
 DSM-IV-TR (american Psychiatric Association)
 </rdfs:comment>
         <obo:MFOMD_0000069>F44.0</obo:MFOMD_0000069>
-        <obo:MFOMD_0000037>300.12</obo:MFOMD_0000037>
-        <obo:IAO_0000115>Is the partial or total loss of important information, sometimes occurring suddenly after stressful or traumatic event.
-
-
-Understanding abnormal behavior. David Sue, Derald Wing Sue, Stanley Sue.
-
-</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="es">amnesia disociativa</obo:IAO_0000118>
     </owl:Class>
     
@@ -1920,17 +1920,17 @@ Understanding abnormal behavior. David Sue, Derald Wing Sue, Stanley Sue.
     <owl:Class rdf:about="&obo;MFOMD_0000076">
         <rdfs:label xml:lang="en">dissociative fugue</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000074"/>
+        <obo:IAO_0000115>Is a confusion over personal identity (or even the assumption of a new identity), accompanied by unexpected travel away from home. 
+
+
+Understanding abnormal behavior.David Sue, Derald Wing Sue, Stanley Sue.DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
+        <obo:MFOMD_0000069>F44.1</obo:MFOMD_0000069>
         <obo:IAO_0000118>fuga disociativa </obo:IAO_0000118>
         <obo:MFOMD_0000037>300.13</obo:MFOMD_0000037>
         <rdfs:comment>
 The onset of this disorder is usually related to traumatic, stressful, or overwhelming life events. Most cases are described in adults. Single episodes are most commonly reported and may last from hours to months.
 
 DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
-        <obo:MFOMD_0000069>F44.1</obo:MFOMD_0000069>
-        <obo:IAO_0000115>Is a confusion over personal identity (or even the assumption of a new identity), accompanied by unexpected travel away from home. 
-
-
-Understanding abnormal behavior.David Sue, Derald Wing Sue, Stanley Sue.DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1940,11 +1940,6 @@ Understanding abnormal behavior.David Sue, Derald Wing Sue, Stanley Sue.DSM-IV-T
     <owl:Class rdf:about="&obo;MFOMD_0000077">
         <rdfs:label xml:lang="en">dissociative identity disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000074"/>
-        <obo:MFOMD_0000069>F44.81</obo:MFOMD_0000069>
-        <obo:IAO_0000115>Dissociative identity disorder(Formerly Multiple personality disorder) Is a dramatic condition in which two or more relatively independent personalities appear to exist in one person.
-
-
-Understanding abnormal behavior. David Sue, Derald Wing Sue, Stanley Su</obo:IAO_0000115>
         <rdfs:comment>
 The relationship among the multiple personalities in the individual are often complex. Only one personality is evident at any one time, and the alternation of personalities usually produces periods of amnesia in the personality that has been displaces. However, one or several personalities may be aware of the existence of the others. The personalities usually differ from one another and sometimes are direct opposite.
 
@@ -1953,6 +1948,11 @@ The disturbance is not due to the direct physiological effects of a substance or
 &quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.
 DSM-IV-TR (american Psychiatric Association)
 </rdfs:comment>
+        <obo:IAO_0000115>Dissociative identity disorder(Formerly Multiple personality disorder) Is a dramatic condition in which two or more relatively independent personalities appear to exist in one person.
+
+
+Understanding abnormal behavior. David Sue, Derald Wing Sue, Stanley Su</obo:IAO_0000115>
+        <obo:MFOMD_0000069>F44.81</obo:MFOMD_0000069>
         <obo:MFOMD_0000037>300.14</obo:MFOMD_0000037>
         <obo:IAO_0000118 xml:lang="es">trastorno de identidad disociativo </obo:IAO_0000118>
     </owl:Class>
@@ -1964,6 +1964,7 @@ DSM-IV-TR (american Psychiatric Association)
     <owl:Class rdf:about="&obo;MFOMD_0000078">
         <rdfs:label xml:lang="en">despersonalization disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000074"/>
+        <obo:MFOMD_0000069>F48.1</obo:MFOMD_0000069>
         <rdfs:comment>The individual with this disorder may feel like an automaton or as if he or she is leaving in a dream or a movie. There may be a sensation of being an outside observer of one&apos;s mental processes, one&apos;s body, or parts of one&apos;s body. Various types of sensory anaesthesia, lack of affective response, and sensation of lacking control of one&apos;s actions, including speech, are often present.
 
 Like other dissociative disorders, this one can be precipitated by physical or psychological stress. There is some evidence that emotional abuse, especially by parents, may be related to this disorder.
@@ -1976,7 +1977,6 @@ DSM-IV-TR (american Psychiatric Association)
 
 DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
         <obo:IAO_0000118>trastorno de despersonalización</obo:IAO_0000118>
-        <obo:MFOMD_0000069>F48.1</obo:MFOMD_0000069>
     </owl:Class>
     
 
@@ -1997,9 +1997,6 @@ DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;MFOMD_0000080">
         <rdfs:label xml:lang="en">sexual dysfunctions</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000079"/>
-        <obo:IAO_0000115>A sexual dyisfunction is a disruption of any part of the normal sexual response cycle.
-
-&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</obo:IAO_0000115>
         <rdfs:comment>
 The sexual response cycle can be divides into the following phases:
 1.- Desire: This phase consist of fantasies about sexual activity and the desire to have sexual activity.
@@ -2012,6 +2009,9 @@ Disorders of sexual response may occur at one or more of this phases.
 Clinical judgments about the presence of a sexual dysfunction should take into account the individual&apos;s ethnic, cultural, religious, and social background, which may influence sexual desire, expectations, and attitudes about performance.
 
 DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
+        <obo:IAO_0000115>A sexual dyisfunction is a disruption of any part of the normal sexual response cycle.
+
+&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2021,9 +2021,6 @@ DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
     <owl:Class rdf:about="&obo;MFOMD_0000081">
         <rdfs:label xml:lang="en">sexual desire disorders</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000080"/>
-        <obo:MFOMD_0000069>
-F52.0 ( Hypoactive Sexual Desire Disorder)
-F52.10 ( Sexual Aversion Disorder)</obo:MFOMD_0000069>
         <rdfs:comment>There are two types of sexual desire disorders:
 
 - Hypoactive sexual desire disorder; where the essential feature is a deficiency or absence of sexual fantasies and desire for sexual activity. More frequently, the disorder develops in adulthood, after period of adequate sexual interest, in association with psychological distress, stressful life events, or interpersonal difficulties. The loss of sexual desire may be continuous or episodic, depending on psychosocial or relationship factors.
@@ -2031,11 +2028,14 @@ F52.10 ( Sexual Aversion Disorder)</obo:MFOMD_0000069>
 - Sexual aversion disorder; where the essential feature is the aversion to and active avoidance of genital sexual contact with a sexual partner. The individual reports anxiety, fear, or disgust when confronted by a sexual opportunity with a partner. The intensity of the individual&apos;s reaction when exposed to the aversive stimulus may range from moderate anxiety and lack of pleasure to extreme psychological distress.
 
 DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
+        <obo:MFOMD_0000037>302.71 ( Hypoactive Sexual Desire Disorder)
+302.79 ( Sexual Aversion Disorder)</obo:MFOMD_0000037>
         <obo:IAO_0000115>This disorders are related to the appetitive phase and are characterized by a lack of sexual desire. 
 
 ”Understanding abnormal behavior”. David Sue, Derald Wing Sue, Stanley Sue.</obo:IAO_0000115>
-        <obo:MFOMD_0000037>302.71 ( Hypoactive Sexual Desire Disorder)
-302.79 ( Sexual Aversion Disorder)</obo:MFOMD_0000037>
+        <obo:MFOMD_0000069>
+F52.0 ( Hypoactive Sexual Desire Disorder)
+F52.10 ( Sexual Aversion Disorder)</obo:MFOMD_0000069>
         <obo:IAO_0000118 xml:lang="es">trastornos del deseo sexual</obo:IAO_0000118>
     </owl:Class>
     
@@ -2050,7 +2050,6 @@ DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
         <obo:IAO_0000115>This disorders are problems that occur during the excitement phase and that relate to difficulties with feelings of sexual pleasure or with the physiological changes associated with sexual excitement.
 
 &quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</obo:IAO_0000115>
-        <obo:MFOMD_0000037>302.72 (Both Female Sexual Arousal Disorder and Male Erectile Disorder)</obo:MFOMD_0000037>
         <rdfs:comment>
 The sexual arousal disorders are divided in two:
 
@@ -2060,6 +2059,7 @@ The sexual arousal disorders are divided in two:
 
 
 &quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</rdfs:comment>
+        <obo:MFOMD_0000037>302.72 (Both Female Sexual Arousal Disorder and Male Erectile Disorder)</obo:MFOMD_0000037>
         <obo:IAO_0000118 xml:lang="es">trastornos de la excitación sexual</obo:IAO_0000118>
     </owl:Class>
     
@@ -2070,9 +2070,6 @@ The sexual arousal disorders are divided in two:
     <owl:Class rdf:about="&obo;MFOMD_0000083">
         <rdfs:label xml:lang="en">orgasmic disorders</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000080"/>
-        <obo:IAO_0000115>Inability to achieve an orgasm after entering the excitement phase and receiving adequate sexual stimulation. 
-
-”Understanding abnormal behavior”. David Sue, Derald Wing Sue, Stanley Sue.</obo:IAO_0000115>
         <rdfs:comment>The orgasmic disorders are divided in three:
 
 - Female orgasmic disorder (formerly inhibited Female Orgasm), in which the essential feature is a persistent or recurrent delay in, or absence of, orgasm following a normal sexual excitement phase. Primary orgasmic dysfunction is considered relatively common in women: approximately 10 percent of all women have never achieved and orgasm.
@@ -2085,11 +2082,14 @@ The sexual arousal disorders are divided in two:
 DSM-IV-TR (american Psychiatric Association)
 
 &quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</rdfs:comment>
-        <obo:MFOMD_0000069>F52.3 (Both, Female Orgasmic Disorder and Male Orgasmic Disorder)
-F52.4 (Premature Ejaculation)</obo:MFOMD_0000069>
+        <obo:IAO_0000115>Inability to achieve an orgasm after entering the excitement phase and receiving adequate sexual stimulation. 
+
+”Understanding abnormal behavior”. David Sue, Derald Wing Sue, Stanley Sue.</obo:IAO_0000115>
         <obo:MFOMD_0000037>302.73 (Female Orgasmic Disorder) 
 302.74 (Male Orgasmic Disorder)
 302.75 (Premature Ejaculation)</obo:MFOMD_0000037>
+        <obo:MFOMD_0000069>F52.3 (Both, Female Orgasmic Disorder and Male Orgasmic Disorder)
+F52.4 (Premature Ejaculation)</obo:MFOMD_0000069>
         <obo:IAO_0000118 xml:lang="es">trastornos del orgasmo</obo:IAO_0000118>
     </owl:Class>
     
@@ -2100,6 +2100,10 @@ F52.4 (Premature Ejaculation)</obo:MFOMD_0000069>
     <owl:Class rdf:about="&obo;MFOMD_0000084">
         <rdfs:label xml:lang="en">sexual pain disorders</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000080"/>
+        <obo:MFOMD_0000069>F52.6 (Dyspareunia)
+F52.5 (Vaginismus)
+
+(Both not due to a general medical condition)</obo:MFOMD_0000069>
         <obo:MFOMD_0000037>302.76 (Dyspareunia)
 306.51 (Vaginismus)
 
@@ -2111,10 +2115,6 @@ Dyspareunia.- is a recurrent or persistent pain in the genitals before, during, 
 Vaginismus.- the essential feature of this disorder is the recurrent or persistent involuntary contraction of the perineal muscles surrounding the outer third of the vagina when vaginal penetration with penis, finger, tampon, or speculum is attempted. In some females, even the anticipation of vaginal insertion may result in muscle spam. Once the disorder is established, the course is usually chronic unless ameliorated by treatment. 
 
 Acquired Vaginismus also may occur suddenly in response to a sexual trauma or a general medical condition.</obo:IAO_0000115>
-        <obo:MFOMD_0000069>F52.6 (Dyspareunia)
-F52.5 (Vaginismus)
-
-(Both not due to a general medical condition)</obo:MFOMD_0000069>
         <obo:IAO_0000118 xml:lang="es">trastornos sexuales por dolor</obo:IAO_0000118>
     </owl:Class>
     
@@ -2134,15 +2134,6 @@ F52.5 (Vaginismus)
 302.3    Transvestic Fetishism
 302.82  Voyeurism
 302.9    Paraphilia Not Otherwise Specified</obo:MFOMD_0000037>
-        <obo:MFOMD_0000069>F65.2  Exhibitionism
-F65.0  Fetishism
-F65.8  Frotteurism
-F65.4  Pedophilia
-F65.5  Sexual Masochism
-F65.5  Sexual Sadism 
-F65.1  Transvestic Fetishism
-F65.3  Voyeurism
-F65.9  Paraphilia Not Otherwise Specified</obo:MFOMD_0000069>
         <rdfs:comment>
 
 The Paraphilias include:
@@ -2159,6 +2150,15 @@ The Paraphilias include:
 
 http://www.psychologytoday.com/conditions/paraphilias
 </rdfs:comment>
+        <obo:MFOMD_0000069>F65.2  Exhibitionism
+F65.0  Fetishism
+F65.8  Frotteurism
+F65.4  Pedophilia
+F65.5  Sexual Masochism
+F65.5  Sexual Sadism 
+F65.1  Transvestic Fetishism
+F65.3  Voyeurism
+F65.9  Paraphilia Not Otherwise Specified</obo:MFOMD_0000069>
         <obo:IAO_0000115>Disorder that is characterised by recurrent, intense sexual urges, fantasies, or behaviours that involve unusual objects, activities, or situations.
 
 DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
@@ -2172,14 +2172,9 @@ DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;MFOMD_0000086">
         <rdfs:label xml:lang="en">gender identity disorders</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000079"/>
+        <obo:IAO_0000118>trastornos de la identidad sexual</obo:IAO_0000118>
         <obo:MFOMD_0000037>302.85  Gender Identity Disorder in Adolescents or Adults
 302.6    Gender Identity Disorder in Children</obo:MFOMD_0000037>
-        <obo:IAO_0000118>trastornos de la identidad sexual</obo:IAO_0000118>
-        <obo:MFOMD_0000069>F64.0  Gender Identity Disorder in Adolescents or Adults
-F64.2  Gender Identity Disorder in Children</obo:MFOMD_0000069>
-        <obo:IAO_0000115>This disorders are characterized by conflict between a person&apos;s anatomical sex and his or her gender identity, or self-identification as male or female. 
-
-&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</obo:IAO_0000115>
         <rdfs:comment>
 There must be evidence of a strong and persistent cross-gender identification, which is the desire to be, or the insistence that one is, of the other sex. This cross-gender identification must not merely be a desire for any perceived cultural advantages of being the other sex. There must also be evidence of persistent discomfort about one&apos;s assigned sex or a sense of inappropriateness in the gender role of that sex.
 
@@ -2192,6 +2187,11 @@ Adults whit this disorder are preoccupied with their wish to live as a member of
 In Adolescents, the clinical features may resemble either those of children or those of adults, depending on the individual&apos;s developmental level, and the criteria should be applied accordingly.
 
 DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
+        <obo:IAO_0000115>This disorders are characterized by conflict between a person&apos;s anatomical sex and his or her gender identity, or self-identification as male or female. 
+
+&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</obo:IAO_0000115>
+        <obo:MFOMD_0000069>F64.0  Gender Identity Disorder in Adolescents or Adults
+F64.2  Gender Identity Disorder in Children</obo:MFOMD_0000069>
     </owl:Class>
     
 
@@ -2216,22 +2216,6 @@ DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;MFOMD_0000088">
         <rdfs:label xml:lang="en">primary sleep disorders: dyssomnias</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000087"/>
-        <obo:IAO_0000115>Primary disorders of initiating or maintaining sleep or of excessive sleepiness and are characterized by abnormalities in the amount, quality or timing of sleep.
-
-DSM-IV-TR (american Psychiatric Association)
-</obo:IAO_0000115>
-        <obo:MFOMD_0000069>F51.0  Primary Insomnia
-F51.1  Primary Hypersomnia
-G47.4  Narcolepsy
-G47.3  Breathing-Related Sleep Disorder
-F51.2  Circadian Rhythm Sleep Disorder
-F51.9  Dyssomnia Not Otherwise Specified</obo:MFOMD_0000069>
-        <obo:MFOMD_0000037>307.42  Primary Insomnia
-307.44  Primary Hypersomnia
-347.00  Narcolepsy
-780.57  Breathing-Related Sleep Disorder
-327.3x  Circadian Rhythm Sleep Disorder
-307.47  Dyssomnia Not Otherwise Specified</obo:MFOMD_0000037>
         <rdfs:comment>
 This section includes:
 
@@ -2249,6 +2233,22 @@ This section includes:
 
 DSM-IV-TR (american Psychiatric Association)
 </rdfs:comment>
+        <obo:MFOMD_0000037>307.42  Primary Insomnia
+307.44  Primary Hypersomnia
+347.00  Narcolepsy
+780.57  Breathing-Related Sleep Disorder
+327.3x  Circadian Rhythm Sleep Disorder
+307.47  Dyssomnia Not Otherwise Specified</obo:MFOMD_0000037>
+        <obo:MFOMD_0000069>F51.0  Primary Insomnia
+F51.1  Primary Hypersomnia
+G47.4  Narcolepsy
+G47.3  Breathing-Related Sleep Disorder
+F51.2  Circadian Rhythm Sleep Disorder
+F51.9  Dyssomnia Not Otherwise Specified</obo:MFOMD_0000069>
+        <obo:IAO_0000115>Primary disorders of initiating or maintaining sleep or of excessive sleepiness and are characterized by abnormalities in the amount, quality or timing of sleep.
+
+DSM-IV-TR (american Psychiatric Association)
+</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="es">disomnias</obo:IAO_0000118>
     </owl:Class>
     
@@ -2263,10 +2263,6 @@ DSM-IV-TR (american Psychiatric Association)
 307.46  Sleep Terror Disorder
 307.46  Sleepwalking Disorder
 307.47  Parasomnia Not Otherwise Specified</obo:MFOMD_0000037>
-        <obo:IAO_0000115>Disorders characterised by abnormal behavioural or physiological events occurring in association with sleep, specific sleep stages, or sleep-wake transitions.
-
-DSM-IV-TR (american Psychiatric Association)
-</obo:IAO_0000115>
         <rdfs:comment>This section includes:
 
 - Nightmare Disorder.- The essential feature of this disorder is the repeated occurrence of frightening dreams that lead to awakenings from sleep.
@@ -2284,6 +2280,10 @@ DSM-IV-TR (american Psychiatric Association)
 F51.4  Sleep Terror Disorder
 F51.3  Sleepwalking Disorder
 F51.8  Parasomnia Not Otherwise Specified</obo:MFOMD_0000069>
+        <obo:IAO_0000115>Disorders characterised by abnormal behavioural or physiological events occurring in association with sleep, specific sleep stages, or sleep-wake transitions.
+
+DSM-IV-TR (american Psychiatric Association)
+</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="es">parasomnias</obo:IAO_0000118>
     </owl:Class>
     
@@ -2310,18 +2310,18 @@ F51.8  Parasomnia Not Otherwise Specified</obo:MFOMD_0000069>
 
 
 DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
-        <obo:MFOMD_0000037>312.34  Intermittent explosive disorder
-312.32  Kleptomania 
-312.33  Pyromania
-312.31  Pathological gambling 
-312.39  Trichotillomania 
-312.30  Impulse-control disorder not otherwise specified</obo:MFOMD_0000037>
         <obo:MFOMD_0000069>F63.8  Intermittent explosive disorder
 F63.2  Kleptomania 
 F63.1  Pyromania
 F63.0  Pathological gambling 
 F63.3  Trichotillomania 
 F63.9  Impulse-control disorder not otherwise specified</obo:MFOMD_0000069>
+        <obo:MFOMD_0000037>312.34  Intermittent explosive disorder
+312.32  Kleptomania 
+312.33  Pyromania
+312.31  Pathological gambling 
+312.39  Trichotillomania 
+312.30  Impulse-control disorder not otherwise specified</obo:MFOMD_0000037>
         <obo:IAO_0000115>This section include disorders of impulse control that are not classified as part of the presentation of disorders in other sections of the DSM-IV-TR.DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="es">trastornos del control de los impulsos no clasificados en otros
 apartados</obo:IAO_0000118>
@@ -2334,10 +2334,10 @@ apartados</obo:IAO_0000118>
     <owl:Class rdf:about="&obo;MFOMD_0000091">
         <rdfs:label xml:lang="en">psychotic disorders</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000004"/>
+        <rdfs:comment>Should be understood that psychotic symptoms are not necessarily consider to be core or fundamental features of these disorders, nor do the disorders in this section necessarily have a common aetiology.</rdfs:comment>
         <obo:IAO_0000115>Disorders that include psychotic symptoms as a prominent aspect of their presentation.
 
 DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
-        <rdfs:comment>Should be understood that psychotic symptoms are not necessarily consider to be core or fundamental features of these disorders, nor do the disorders in this section necessarily have a common aetiology.</rdfs:comment>
     </owl:Class>
     
 
@@ -2361,13 +2361,13 @@ DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;MFOMD_0000093">
         <rdfs:label xml:lang="en">schizoaffective disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000091"/>
+        <obo:MFOMD_0000069>F25.x
+      .0   bipolar type
+      .1   depressive type</obo:MFOMD_0000069>
         <obo:MFOMD_0000037>295.70</obo:MFOMD_0000037>
         <obo:IAO_0000115>Is a disorder in which a mood episode and the active-phase symptoms of schizophrenia occur together and were preceded or are followed by at least two weeks of delusions or hallucinations without prominent mood symptoms.
 
 DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
-        <obo:MFOMD_0000069>F25.x
-      .0   bipolar type
-      .1   depressive type</obo:MFOMD_0000069>
     </owl:Class>
     
 
@@ -2377,14 +2377,14 @@ DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;MFOMD_0000094">
         <rdfs:label xml:lang="en">delusional disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000091"/>
-        <obo:MFOMD_0000037>297.1</obo:MFOMD_0000037>
-        <obo:IAO_0000115>Is characterised by at least one month of nonbizarre delusions without other active-phase symptoms of schizophrenia.
-
-DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
         <rdfs:comment>
 Criterion A for delusional disorder no longer has the requirement that the delusions must be nonbizarre. DSM-5 no longer separates delusional disorder from shared delusional disorder. If criteria are met for delusional disorder then that diagnosis is made. 
 
 (Highlights of Changes from DSM-IV-TR to DSM-5, American Psychiatric Publishing)</rdfs:comment>
+        <obo:MFOMD_0000037>297.1</obo:MFOMD_0000037>
+        <obo:IAO_0000115>Is characterised by at least one month of nonbizarre delusions without other active-phase symptoms of schizophrenia.
+
+DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
         <obo:MFOMD_0000069>F22.0</obo:MFOMD_0000069>
     </owl:Class>
     
@@ -2395,13 +2395,13 @@ Criterion A for delusional disorder no longer has the requirement that the delus
     <owl:Class rdf:about="&obo;MFOMD_0000095">
         <rdfs:label xml:lang="en">brief psychotic disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000091"/>
-        <obo:MFOMD_0000037>298.8</obo:MFOMD_0000037>
         <obo:IAO_0000115>Is a disorder that lasts more than one day and remits by one month.
 
 DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
         <obo:MFOMD_0000069>F23.xx
       .81   with marked stressor(s)
       .80   without marked stressor(s)</obo:MFOMD_0000069>
+        <obo:MFOMD_0000037>298.8</obo:MFOMD_0000037>
     </owl:Class>
     
 
@@ -2411,15 +2411,15 @@ DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;MFOMD_0000096">
         <rdfs:label xml:lang="en">shared psychotic disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000091"/>
+        <obo:MFOMD_0000069>F24</obo:MFOMD_0000069>
+        <obo:MFOMD_0000037>297.3</obo:MFOMD_0000037>
         <obo:IAO_0000115>Is characterised by the presence of a delusion in an individual who is influenced by someone else who has a longer-standing delusion with similar content.
 
 DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
-        <obo:MFOMD_0000037>297.3</obo:MFOMD_0000037>
         <rdfs:comment>
 Criterion A for delusional disorder no longer has the requirement that the delusions must be nonbizarre. DSM-5 no longer separates delusional disorder from shared delusional disorder. If criteria are met for delusional disorder then that diagnosis is made. 
 
 (Highlights of Changes from DSM-IV-TR to DSM-5, American Psychiatric Publishing)</rdfs:comment>
-        <obo:MFOMD_0000069>F24</obo:MFOMD_0000069>
     </owl:Class>
     
 
@@ -2429,13 +2429,13 @@ Criterion A for delusional disorder no longer has the requirement that the delus
     <owl:Class rdf:about="&obo;MFOMD_0000097">
         <rdfs:label xml:lang="en">psychotic disorder due to a general medical condition</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000091"/>
+        <obo:IAO_0000115>In this disorder the psychotic symptoms are judged to be a direct physiological consequence of a general medical condition. 
+
+DSM-IV-TR (American Psychiatric Association)</obo:IAO_0000115>
         <obo:MFOMD_0000069>F06.x
       .2   with delusions
       .0   with hallucinations
 </obo:MFOMD_0000069>
-        <obo:IAO_0000115>In this disorder the psychotic symptoms are judged to be a direct physiological consequence of a general medical condition. 
-
-DSM-IV-TR (American Psychiatric Association)</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2511,11 +2511,11 @@ Anxiety or fear that something bad or unpleasant will happen.
     <owl:Class rdf:about="&obo;MFOMD_0000103">
         <rdfs:label xml:lang="en">speech disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000024"/>
-        <obo:IAO_0000115>When a person is unable to produce speech sounds correctly or fluently, or has problems with his or her voice.</obo:IAO_0000115>
         <rdfs:comment>
 Difficulties pronouncing sounds, or articulation disorders, and stuttering are examples of this disorder.
 
 American Speech-Language-Hearing Association</rdfs:comment>
+        <obo:IAO_0000115>When a person is unable to produce speech sounds correctly or fluently, or has problems with his or her voice.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2542,14 +2542,14 @@ The patient often shows a reduced ability to focus, sustain or shift attention a
     <owl:Class rdf:about="&obo;MFOMD_0000105">
         <rdfs:label xml:lang="en">enuresis</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000024"/>
-        <rdfs:comment>
-The child must be at least five years old and must void inappropriately at least twice per week for at least three months</rdfs:comment>
         <obo:IAO_0000115>
 The habitual voiding of urine during the day or night into one&apos;s clothes, bed, or floor. The behaviour is generally involuntary, but in rare situations it may be intentional.
 
 
 &quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.
 </obo:IAO_0000115>
+        <rdfs:comment>
+The child must be at least five years old and must void inappropriately at least twice per week for at least three months</rdfs:comment>
     </owl:Class>
     
 
@@ -2691,12 +2691,12 @@ DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;MFOMD_0000115">
         <rdfs:label xml:lang="en">magical thinking</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000024"/>
+        <rdfs:comment>Magical thinking may be a part of normal child development.</rdfs:comment>
         <obo:IAO_0000115>
 The erroneous belief that one&apos;s thoughts, words, or actions will cause or prevent a specific outcome in some way that defies commonly understood laws of cause and effect.
 
 
 DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
-        <rdfs:comment>Magical thinking may be a part of normal child development.</rdfs:comment>
     </owl:Class>
     
 
@@ -2791,13 +2791,13 @@ DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;MFOMD_0000122">
         <rdfs:label xml:lang="en">phobia</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000024"/>
-        <rdfs:comment>
-This often leads either to avoidance of the phobic stimulus or to enduring it with dread.</rdfs:comment>
         <obo:IAO_0000115>
 A persistent, irrational fear of a specific object, activity, or situation (the phobic stimulus) that results in a compelling desire to avoid it. 
 
 
 DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
+        <rdfs:comment>
+This often leads either to avoidance of the phobic stimulus or to enduring it with dread.</rdfs:comment>
     </owl:Class>
     
 
@@ -2822,11 +2822,11 @@ DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000024"/>
         <obo:IAO_0000118>
  homicidal thoughts</obo:IAO_0000118>
-        <obo:MFOMD_0000069>
-R45.850 </obo:MFOMD_0000069>
         <obo:IAO_0000115>Is a common medical term for thoughts about homicide. There is a range of homicidal thoughts which spans from vague ideas of revenge to detailed and fully formulated plans without the act itself.
 
 http://en.wikipedia.org/wiki/Homicidal_ideation</obo:IAO_0000115>
+        <obo:MFOMD_0000069>
+R45.850 </obo:MFOMD_0000069>
     </owl:Class>
     
 
@@ -3044,11 +3044,11 @@ http://en.wikipedia.org/wiki/Vigilance_%28psychology%29</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;MFOMD_0000141">
         <rdfs:label xml:lang="en">REM sleep behaviour disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000089"/>
-        <obo:IAO_0000118>RBD</obo:IAO_0000118>
         <obo:IAO_0000115>Parasomnia characterized by the loss of normal skeletal muscle atonia during REM sleep with prominent motor activity accompanying dreaming. 
 
 
 http://brain.oxfordjournals.org/content/130/11/2770.short</obo:IAO_0000115>
+        <obo:IAO_0000118>RBD</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -3073,13 +3073,13 @@ The International Classification of Sleep Disorders, Revised. Diagnostic and Cod
     <owl:Class rdf:about="&obo;MFOMD_0000143">
         <rdfs:label xml:lang="en">major depressive episode</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000024"/>
-        <obo:IAO_0000115>The essential feature is a period of at least 2 weeks during which there is either depressed mood or the loss of interest or pleasure in nearly all activities. In children and adolescents, the mood may be irritable rather than sad.
-
-DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
         <rdfs:comment>
 The individuals must also experience at least four additional symptoms drawn from a list that includes changes in appetite or weight, sleep, and psychomotor activity; decreased energy; feelings of worthlessness or guilt; difficulty thinking, concentrating, or making decisions; or recurrent thoughts of death or suicidal ideation, plans, or attempts.
 
 DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
+        <obo:IAO_0000115>The essential feature is a period of at least 2 weeks during which there is either depressed mood or the loss of interest or pleasure in nearly all activities. In children and adolescents, the mood may be irritable rather than sad.
+
+DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -3089,6 +3089,9 @@ DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
     <owl:Class rdf:about="&obo;MFOMD_0000144">
         <rdfs:label xml:lang="en">depression</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000024"/>
+        <obo:IAO_0000115>An emotional state characterised by intense sadness, feelings of futility and worthlessness , and withdrawal from others.
+
+&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</obo:IAO_0000115>
         <obo:MFOMD_0000014>
 Symptoms of Depression 
 
@@ -3103,9 +3106,6 @@ Physiological domain.- Poor or increased appetite, constipation, sleep disturban
 
 
 &quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</obo:MFOMD_0000014>
-        <obo:IAO_0000115>An emotional state characterised by intense sadness, feelings of futility and worthlessness , and withdrawal from others.
-
-&quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -3173,11 +3173,11 @@ http://en.wikipedia.org/wiki/Daydream
     <owl:Class rdf:about="&obo;MFOMD_0000149">
         <rdfs:label xml:lang="en">mixed episode</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000024"/>
-        <obo:IAO_0000115>Is characterised by a period of time (lasting at least 1 week) in which the criteria are met both for a Manic episode and for a Major depressive episode nearly every day.</obo:IAO_0000115>
         <rdfs:comment>
 The individual experiences rapidly alternating moods (sadness, irritability, euphoria) accompanied by symptoms of a Manic episode and a Major depressive episode.
 
 DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
+        <obo:IAO_0000115>Is characterised by a period of time (lasting at least 1 week) in which the criteria are met both for a Manic episode and for a Major depressive episode nearly every day.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -3187,12 +3187,12 @@ DSM-IV-TR (american Psychiatric Association)</rdfs:comment>
     <owl:Class rdf:about="&obo;MFOMD_0000150">
         <rdfs:label xml:lang="en">binge eating</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000024"/>
+        <obo:IAO_0000118>compulsive overeating</obo:IAO_0000118>
         <rdfs:comment>
 During such binges, a person rapidly consumes an excessive amount of food. Most people who have eating binges try to hide this behavior from others, and often feel ashamed about being overweight or depressed about their overeating. Although people who do not have any eating disorder may occasionally experience episodes of overeating, frequent binge eating is often a symptom of an eating disorder.
 
 http://en.wikipedia.org/wiki/Binge_eating</rdfs:comment>
         <obo:IAO_0000115>Consists of episodes of uncontrollable eating.</obo:IAO_0000115>
-        <obo:IAO_0000118>compulsive overeating</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -3202,7 +3202,6 @@ http://en.wikipedia.org/wiki/Binge_eating</rdfs:comment>
     <owl:Class rdf:about="&obo;MFOMD_0000151">
         <rdfs:label xml:lang="en">binge-eating disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000071"/>
-        <obo:IAO_0000115>The essential features are recurrent episodes of being eating associated with subjective and behavioural indicators of impaired control over, and significant distress about, the binge eating and the absence of the regular use of inappropriate compensatory behaviours (such as self-induced vomiting, misuse of laxatives and other medications, fasting, and excessive exercise) that are characteristic of Bulimia Nervosa. </obo:IAO_0000115>
         <rdfs:comment>
 Indicators of impaired control include eating very rapidly, eating until feeling uncomfortably full, eating large amounts of food when not hungry, eating alone because of embarrassment over how much one is eating, and feeling disgust, guilt, or depression after overeating. The marked distress required for the diagnosis includes unpleasant feelings during and after the binge episode, as well as concerns about the long-term effect of the recurrent binge episodes on body weight and shape.
 
@@ -3211,6 +3210,7 @@ Binge episodes must occur, on average, at least 2 days a week for a period of at
 
 DSM-IV-TR (american Psychiatric Association)
 </rdfs:comment>
+        <obo:IAO_0000115>The essential features are recurrent episodes of being eating associated with subjective and behavioural indicators of impaired control over, and significant distress about, the binge eating and the absence of the regular use of inappropriate compensatory behaviours (such as self-induced vomiting, misuse of laxatives and other medications, fasting, and excessive exercise) that are characteristic of Bulimia Nervosa. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -3233,6 +3233,7 @@ http://en.wikipedia.org/wiki/Chronic_stress</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;MFOMD_0000153">
         <rdfs:label xml:lang="en">caffeine intoxication</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000127"/>
+        <obo:MFOMD_0000037>305.90</obo:MFOMD_0000037>
         <obo:IAO_0000115>The essential feature of caffeine intoxication is recent consumption of caffeine and five or more symptoms that develop during, or shortly after caffeine use.
 
 DSM-IV-TR
@@ -3251,7 +3252,6 @@ DSM-IV-TR
 - Periods of inexhaustibility
 - Psychomot agitation</obo:MFOMD_0000014>
         <obo:IAO_0000118>caffeinism</obo:IAO_0000118>
-        <obo:MFOMD_0000037>305.90</obo:MFOMD_0000037>
     </owl:Class>
     
 
@@ -3274,10 +3274,10 @@ http://en.wikipedia.org/wiki/Anhedonia</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;MFOMD_0000155">
         <rdfs:label xml:lang="en">grossly disorganized behavior</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000024"/>
-        <obo:IAO_0000115>Behavior that may manifest itself in a variety of ways, ranging from childlike silliness to unpredictable agitation.
-</obo:IAO_0000115>
         <rdfs:comment>
 The person may appear markedly disheveled, may dress in an unusual manner (i.e., wearing multiple overcoats, scarves, and gloves on a hot day), or may display clearly inappropriate sexual behavior (e.g., public masturbation) or unpredictable and untriggered agitation (e.g., shouting or swearing).</rdfs:comment>
+        <obo:IAO_0000115>Behavior that may manifest itself in a variety of ways, ranging from childlike silliness to unpredictable agitation.
+</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -3287,13 +3287,13 @@ The person may appear markedly disheveled, may dress in an unusual manner (i.e.,
     <owl:Class rdf:about="&obo;MFOMD_0000156">
         <rdfs:label xml:lang="en">suicidal ideations</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000024"/>
+        <obo:MFOMD_0000069>
+R45.851</obo:MFOMD_0000069>
         <obo:IAO_0000118>
 suicidal thoughts</obo:IAO_0000118>
         <obo:IAO_0000115>Is a medical term for thoughts about or an unusual preoccupation with suicide. 
 
 http://en.wikipedia.org/wiki/Suicidal_ideation</obo:IAO_0000115>
-        <obo:MFOMD_0000069>
-R45.851</obo:MFOMD_0000069>
     </owl:Class>
     
 
@@ -3380,14 +3380,14 @@ http://medical-dictionary.thefreedictionary.com/akinesia</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;MFOMD_0000163">
         <rdfs:label xml:lang="en">affective flattening</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000024"/>
+        <obo:IAO_0000115>Is characterized by the person&apos;s face appearing immobile and unresponsive, with poor eye contact and reduced body language.
+
+</obo:IAO_0000115>
         <rdfs:comment>
 Although a person with affective flattening may smile and warm up occasionally, his or her range of emotional expressiveness is clearly diminished most of the time.
 
 
 http://www.biopsychinstitute.com/psychiatric-disorders/schizophrenia</rdfs:comment>
-        <obo:IAO_0000115>Is characterized by the person&apos;s face appearing immobile and unresponsive, with poor eye contact and reduced body language.
-
-</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -3398,11 +3398,11 @@ http://www.biopsychinstitute.com/psychiatric-disorders/schizophrenia</rdfs:comme
         <rdfs:label xml:lang="en">alogia</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000024"/>
         <obo:IAO_0000115>Is manifested  by brief, laconic, empty replies.  </obo:IAO_0000115>
-        <obo:IAO_0000118>poverty of speech</obo:IAO_0000118>
         <rdfs:comment>
 The individual with alogia appears to have a diminution of thoughts that is reflected in decreased fluency and productivity of speech. 
 
 http://www.biopsychinstitute.com/psychiatric-disorders/schizophrenia</rdfs:comment>
+        <obo:IAO_0000118>poverty of speech</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -3649,10 +3649,10 @@ http://dictionary.cambridge.org/es/diccionario/britanico/rambling_4</obo:IAO_000
     <owl:Class rdf:about="&obo;MFOMD_0000183">
         <rdfs:label xml:lang="en">drowsiness</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000024"/>
+        <obo:IAO_0000118>somnolence</obo:IAO_0000118>
         <obo:IAO_0000115>State of near-sleep, a strong desire for sleep, or sleeping for unusually long periods.
 
 http://en.wikipedia.org/wiki/Somnolence</obo:IAO_0000115>
-        <obo:IAO_0000118>somnolence</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -3675,12 +3675,12 @@ http://dictionary.cambridge.org/dictionary/british/nervousness</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;MFOMD_0000185">
         <rdfs:label xml:lang="en">paranoia</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000024"/>
-        <obo:IAO_0000115>Thought process believed to be heavily influenced by anxiety or fear, often to the point of irrationality and delusion. </obo:IAO_0000115>
         <rdfs:comment>
 Paranoid thinking typically includes persecutory beliefs, or beliefs of conspiracy concerning a perceived threat towards oneself.
 
 
 http://en.wikipedia.org/wiki/Paranoia</rdfs:comment>
+        <obo:IAO_0000115>Thought process believed to be heavily influenced by anxiety or fear, often to the point of irrationality and delusion. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -3703,12 +3703,12 @@ http://en.wikipedia.org/wiki/Paranoia</rdfs:comment>
     <owl:Class rdf:about="&obo;MFOMD_0000187">
         <rdfs:label xml:lang="en">abstinence syndrom</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000024"/>
+        <obo:IAO_0000118>withdrawal</obo:IAO_0000118>
         <obo:IAO_0000115>Condition characterised by distress or impairment in social, occupational, or other areas of functioning, or physical or emotional symptoms such as shaking, irritability, and inability to concentrate after reducing or ceasing intake of a substance.
 
 
 &quot;Understanding abnormal behavior&quot;. David Sue, Derald Wing Sue, Stanley Sue
 </obo:IAO_0000115>
-        <obo:IAO_0000118>withdrawal</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -3731,11 +3731,11 @@ http://en.wikipedia.org/wiki/Dysphoria </obo:IAO_0000115>
     <owl:Class rdf:about="&obo;MFOMD_0000189">
         <rdfs:label xml:lang="en">premenstrual dysphoric disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000004"/>
+        <obo:IAO_0000118>PMDD</obo:IAO_0000118>
         <obo:IAO_0000115>Disorder where symptoms (e.g., markedly depressed mood, marked anxiety, marked affective lability, decreased interest in activities) regularly occurred during the last week of the luteal phase (and remitted within a few days of the onset of menses). 
 These symptoms must be severe enough to markedly interfere with work, school, or unusual activities and be entirely absent for at least 1 week post menses.
  
 American Psychiatric Association, DSM-IV-TR</obo:IAO_0000115>
-        <obo:IAO_0000118>PMDD</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -3790,6 +3790,7 @@ DSM-IV-TR</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;MFOMD_0000194">
         <rdfs:label xml:lang="en">dysthymic disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000030"/>
+        <obo:MFOMD_0000037>300.4</obo:MFOMD_0000037>
         <rdfs:comment>Dysthymic disorder must have the precedes, while depressed, of two (or more) of the following:
 
 (1) poor appetite or overeating
@@ -3799,7 +3800,6 @@ DSM-IV-TR</obo:IAO_0000115>
 (5) poor concentration or difficulty making decisions
 (6) feelings of hopelessness</rdfs:comment>
         <obo:MFOMD_0000069>F34.1</obo:MFOMD_0000069>
-        <obo:MFOMD_0000037>300.4</obo:MFOMD_0000037>
         <obo:IAO_0000115>Is characterised by at least 2 years of depressed mood for more days than not, accompanied by additional depressive symptoms that do not meet the criteria for a major depressive episode.
 
 DSM-IV-TR (american Psychiatric Association)</obo:IAO_0000115>
@@ -3944,16 +3944,16 @@ wikipedia</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;MFOMD_0000206">
         <rdfs:label xml:lang="en">seasonal affective disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000030"/>
-        <obo:IAO_0000115>A mood disorder in which people who have normal mental health throughout most of the year experience depressive symptoms in the winter or summer.
-
-
-http://en.wikipedia.org/wiki/Seasonal_affective_disorder</obo:IAO_0000115>
         <obo:IAO_0000118>winter depression
 winter blues
 summer depression
 summer blues
 seasonal depression
 major depressive disorder with seasonal pattern</obo:IAO_0000118>
+        <obo:IAO_0000115>A mood disorder in which people who have normal mental health throughout most of the year experience depressive symptoms in the winter or summer.
+
+
+http://en.wikipedia.org/wiki/Seasonal_affective_disorder</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -3963,10 +3963,10 @@ major depressive disorder with seasonal pattern</obo:IAO_0000118>
     <owl:Class rdf:about="&obo;MFOMD_0000207">
         <rdfs:label xml:lang="en">orgasm</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000024"/>
-        <obo:IAO_0000118>sexual climax</obo:IAO_0000118>
         <obo:IAO_0000115>Orgasm is the sudden discharge of accumulated sexual tension during the sexual response cycle, resulting in rhythmic muscular contractions in the pelvic region characterized by sexual pleasure.
 
 http://en.wikipedia.org/wiki/Orgasm</obo:IAO_0000115>
+        <obo:IAO_0000118>sexual climax</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -3976,12 +3976,12 @@ http://en.wikipedia.org/wiki/Orgasm</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;MFOMD_0000208">
         <rdfs:label xml:lang="en">autism spectrum disorder</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000001"/>
+        <rdfs:comment>The DSM-5 diagnosis encompasses previous diagnoses (from DSM_IV-TR) of autistic disorder, Asperger&apos;s disorder, childhood disintegrative disorder, and PDD-NOS. Rather than categorizing these diagnoses, the DSM-5 will adopt a dimensional approach to diagnosing disorders that fall underneath the autism spectrum umbrella. 
+</rdfs:comment>
         <obo:IAO_0000115>
 Disorders characterized by social deficits and communication difficulties, stereotyped or repetitive behaviors and interests, and in some cases, cognitive delays.
 
 http://en.wikipedia.org/wiki/Autism_spectrum</obo:IAO_0000115>
-        <rdfs:comment>The DSM-5 diagnosis encompasses previous diagnoses (from DSM_IV-TR) of autistic disorder, Asperger&apos;s disorder, childhood disintegrative disorder, and PDD-NOS. Rather than categorizing these diagnoses, the DSM-5 will adopt a dimensional approach to diagnosing disorders that fall underneath the autism spectrum umbrella. 
-</rdfs:comment>
     </owl:Class>
     
 
@@ -4003,10 +4003,10 @@ wikipedia</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;MFOMD_0000210">
         <rdfs:label xml:lang="en">somnolence</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000024"/>
+        <obo:IAO_0000118>sleepiness</obo:IAO_0000118>
         <obo:IAO_0000115>State of near-sleep, a strong desire for sleep, or sleeping for unusually long periods.
 
 wikipedia</obo:IAO_0000115>
-        <obo:IAO_0000118>sleepiness</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -4056,11 +4056,11 @@ http://en.wikipedia.org/wiki/Tangentiality</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;MFOMD_0000214">
         <rdfs:label xml:lang="en">perseveration</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000024"/>
+        <obo:IAO_0000115>The repetition of a particular response, such as a word, phrase, or gesture, despite the absence or cessation of a stimulus, usually caused by brain injury or other organic disorder.
+</obo:IAO_0000115>
         <rdfs:comment>Symptoms include lacking ability to transition or switch ideas appropriately with the social context, as evidenced by the repetition of words or gestures after they have ceased to be socially relevant or appropriate.
 
 http://en.wikipedia.org/wiki/Perseveration</rdfs:comment>
-        <obo:IAO_0000115>The repetition of a particular response, such as a word, phrase, or gesture, despite the absence or cessation of a stimulus, usually caused by brain injury or other organic disorder.
-</obo:IAO_0000115>
     </owl:Class>
     
 
