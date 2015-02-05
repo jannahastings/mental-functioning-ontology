@@ -173,9 +173,7 @@
 
     <!-- http://purl.obolibrary.org/obo/MFOMD_0000004 -->
 
-    <owl:Class rdf:about="&obo;MFOMD_0000004">
-        <rdfs:subClassOf rdf:resource="&obo;MFOMD_0000025"/>
-    </owl:Class>
+    <owl:Class rdf:about="&obo;MFOMD_0000004"/>
     
 
 
