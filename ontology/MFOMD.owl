@@ -193,12 +193,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MFOMD_0000034 -->
-
-    <owl:Class rdf:about="&obo;MFOMD_0000034"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MFOMD_0000038 -->
 
     <owl:Class rdf:about="&obo;MFOMD_0000038">
