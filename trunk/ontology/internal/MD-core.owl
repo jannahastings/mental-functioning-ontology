@@ -28,7 +28,7 @@
      xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#"
      xmlns:span="http://www.ifomis.org/bfo/1.1/span#">
     <owl:Ontology rdf:about="&obo;MF/internal/MD-core.owl">
-        <rdfs:comment>MFOMD-core.owl -- the core content of the Mental Disease ontology branch of the Mental Functioning ontology project. To be imported into the full ontology project.</rdfs:comment>
+        <rdfs:comment>MD-core.owl -- the core content of the Mental Disease ontology branch of the Mental Functioning ontology project. To be imported into the full ontology project.</rdfs:comment>
         <owl:imports rdf:resource="&obo;MF/external/bfo-properties-slim.owl"/>
         <owl:imports rdf:resource="&obo;MF/external/ontology-metadata-slim.owl"/>
     </owl:Ontology>
