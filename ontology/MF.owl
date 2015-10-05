@@ -20,13 +20,14 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about="&obo;MF.owl">
+        <dc:title>Mental Functioning Ontology</dc:title>
         <rdfs:comment>This OWL version of the MF ontology was originally created by Janna Hastings and is maintained by all committers to the MF ontology project. </rdfs:comment>
         <rdfs:comment>The OWL representaions of MF and MD were split on 22 May 2012.</rdfs:comment>
+        <rdfs:comment>The Mental Functioning Ontology (MF) was first described in the publication available at http://www.jbiomedsem.com/content/1/1/10 entitled &apos;Foundations for a realist ontology of mental disease&apos; (Barry Smith and Werner Ceusters). </rdfs:comment>
         <dc:contributor>Barry Smith</dc:contributor>
         <dc:contributor>Mark Jensen</dc:contributor>
         <rdfs:comment>The Mental Functioning Ontology is an overarching ontology for all aspects of mental functioning, founded on the Basic Formal Ontology (BFO) and related to the Ontology for General Medical Science (OGMS).</rdfs:comment>
         <dc:contributor>Jeanette Alicia Chacón Candia</dc:contributor>
-        <dc:title>The Mental Functioning Ontology (MF) was first described in the publication available at http://www.jbiomedsem.com/content/1/1/10 entitled &apos;Foundations for a realist ontology of mental disease&apos; (Barry Smith and Werner Ceusters). </dc:title>
         <dc:contributor>Janna Hastings</dc:contributor>
         <owl:versionInfo>beta 2013-11-05</owl:versionInfo>
         <owl:imports rdf:resource="&obo;bfo.owl"/>
@@ -98,6 +99,48 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000002 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000002"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000015"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000016 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000016"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000019"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000020"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000040"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000144 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000144"/>
     
 
 
