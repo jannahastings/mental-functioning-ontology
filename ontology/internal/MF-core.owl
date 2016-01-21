@@ -486,7 +486,7 @@ which the relevant part of the environment is thereby represented to the organis
     <!-- http://purl.obolibrary.org/obo/MF_0000025 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000025">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000203"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000048"/>
         <obo:IAO_0000115>A mental disposition realised in processes involving understanding complex ideas, adapting effectively to the environment, learning from experience, engaging in various forms of reasoning, and overcome obstacles through the outcome of thinking processes.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">intelligence</rdfs:label>
     </owl:Class>
@@ -758,7 +758,6 @@ recognition of the meaning of the utterance through their knowledge of the langu
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000053">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000044"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000048"/>
         <rdfs:label xml:lang="en">capability to read music</rdfs:label>
     </owl:Class>
     
@@ -873,7 +872,8 @@ http://www.apa.org/research/action/glossary.aspx</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000202">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
-        <obo:IAO_0000115>A personality is a complex sum of dispositions and predispositions towards mental processes and behaviour. It inheres in a person. Personality is not the same as mood, although a person may have a personality that includes a predisposition to moods of certain types, moods may come and go but a personality stays relatively constant, not appearing and disappearing. Personality typically changes slowly over time. </obo:IAO_0000115>
+        <obo:IAO_0000115>A personality is a complex sum of dispositions and predispositions towards mental processes and behaviour. It inheres in a person.</obo:IAO_0000115>
+        <rdfs:comment>Personality is not the same as mood, although a person may have a personality that includes a predisposition to moods of certain types, moods may come and go but a personality stays relatively constant, not appearing and disappearing. Personality typically changes slowly over time.</rdfs:comment>
         <rdfs:label xml:lang="en">personality</rdfs:label>
     </owl:Class>
     
@@ -899,7 +899,6 @@ http://www.apa.org/research/action/glossary.aspx</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NBO_0000297">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
-        <rdfs:label>behaviour</rdfs:label>
     </owl:Class>
     
 
