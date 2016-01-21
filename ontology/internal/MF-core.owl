@@ -1,31 +1,21 @@
 <?xml version="1.0"?>
-
-
-<!DOCTYPE rdf:RDF [
-    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
-    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
-    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
-    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
-    <!ENTITY ace_lexicon "http://attempto.ifi.uzh.ch/ace_lexicon#" >
-    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-]>
-
-
-<rdf:RDF xmlns="&obo;MF.owl#"
-     xml:base="&obo;MF.owl"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/MF.owl#"
+     xml:base="http://purl.obolibrary.org/obo/MF.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#">
-    <owl:Ontology rdf:about="&obo;MF/internal/MF-core.owl">
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:iao="http://purl.obolibrary.org/obo/iao/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/MF/internal/MF-core.owl">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MF/external/ontology-metadata-slim.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MF/external/bfo-properties-slim.owl"/>
         <rdfs:comment>Core mental functioning ontology classes and properties. </rdfs:comment>
         <rdfs:comment>To be imported into the full MF.owl</rdfs:comment>
-        <owl:imports rdf:resource="&obo;MF/external/bfo-properties-slim.owl"/>
-        <owl:imports rdf:resource="&obo;MF/external/ontology-metadata-slim.owl"/>
     </owl:Ontology>
     
 
@@ -43,67 +33,67 @@
 
     <!-- http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl -->
 
-    <owl:AnnotationProperty rdf:about="&ace_lexicon;CN_pl"/>
+    <owl:AnnotationProperty rdf:about="http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl"/>
     
 
 
     <!-- http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg -->
 
-    <owl:AnnotationProperty rdf:about="&ace_lexicon;CN_sg"/>
+    <owl:AnnotationProperty rdf:about="http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg"/>
     
 
 
     <!-- http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl -->
 
-    <owl:AnnotationProperty rdf:about="&ace_lexicon;TV_pl"/>
+    <owl:AnnotationProperty rdf:about="http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl"/>
     
 
 
     <!-- http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg -->
 
-    <owl:AnnotationProperty rdf:about="&ace_lexicon;TV_sg"/>
+    <owl:AnnotationProperty rdf:about="http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg"/>
     
 
 
     <!-- http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg -->
 
-    <owl:AnnotationProperty rdf:about="&ace_lexicon;TV_vbg"/>
+    <owl:AnnotationProperty rdf:about="http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
 
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
     
 
 
     <!-- http://purl.org/dc/elements/1.1/contributor -->
 
-    <owl:AnnotationProperty rdf:about="&dc;contributor"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
     
 
 
     <!-- http://purl.org/dc/elements/1.1/title -->
 
-    <owl:AnnotationProperty rdf:about="&dc;title"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
     
 
 
     <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
 
-    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
     
 
 
     <!-- http://www.w3.org/2000/01/rdf-schema#label -->
 
-    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
     
 
 
@@ -120,99 +110,89 @@
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000052 -->
 
-    <owl:ObjectProperty rdf:about="&obo;BFO_0000052">
-        <ace_lexicon:TV_vbg>BFO_0000052ed</ace_lexicon:TV_vbg>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000052">
         <ace_lexicon:TV_pl>BFO_0000052</ace_lexicon:TV_pl>
         <ace_lexicon:TV_sg>BFO_0000052s</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>BFO_0000052ed</ace_lexicon:TV_vbg>
     </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000055 -->
 
-    <owl:ObjectProperty rdf:about="&obo;BFO_0000055">
-        <ace_lexicon:TV_vbg>BFO_0000055ed</ace_lexicon:TV_vbg>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000055">
         <ace_lexicon:TV_pl>BFO_0000055</ace_lexicon:TV_pl>
         <ace_lexicon:TV_sg>BFO_0000055s</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>BFO_0000055ed</ace_lexicon:TV_vbg>
     </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000057 -->
 
-    <owl:ObjectProperty rdf:about="&obo;BFO_0000057">
-        <ace_lexicon:TV_vbg>BFO_0000057ed</ace_lexicon:TV_vbg>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000057">
         <ace_lexicon:TV_pl>BFO_0000057</ace_lexicon:TV_pl>
         <ace_lexicon:TV_sg>BFO_0000057s</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>BFO_0000057ed</ace_lexicon:TV_vbg>
     </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000107 -->
 
-    <owl:ObjectProperty rdf:about="&obo;BFO_0000107">
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000107">
         <ace_lexicon:TV_pl>BFO_0000107</ace_lexicon:TV_pl>
-        <ace_lexicon:TV_vbg>BFO_0000107ed</ace_lexicon:TV_vbg>
         <ace_lexicon:TV_sg>BFO_0000107s</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>BFO_0000107ed</ace_lexicon:TV_vbg>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000110 -->
-
-    <rdf:Description rdf:about="&obo;BFO_0000110">
-        <ace_lexicon:TV_vbg>BFO_0000110ed</ace_lexicon:TV_vbg>
-        <ace_lexicon:TV_pl>BFO_0000110</ace_lexicon:TV_pl>
-        <ace_lexicon:TV_sg>BFO_0000110s</ace_lexicon:TV_sg>
-    </rdf:Description>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000112 -->
 
-    <owl:ObjectProperty rdf:about="&obo;BFO_0000112">
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000112">
+        <ace_lexicon:TV_pl>BFO_0000112</ace_lexicon:TV_pl>
         <ace_lexicon:TV_sg>BFO_0000112s</ace_lexicon:TV_sg>
         <ace_lexicon:TV_vbg>BFO_0000112ed</ace_lexicon:TV_vbg>
-        <ace_lexicon:TV_pl>BFO_0000112</ace_lexicon:TV_pl>
     </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000117 -->
 
-    <owl:ObjectProperty rdf:about="&obo;BFO_0000117">
-        <ace_lexicon:TV_vbg>BFO_0000117ed</ace_lexicon:TV_vbg>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000117">
         <ace_lexicon:TV_pl>BFO_0000117</ace_lexicon:TV_pl>
         <ace_lexicon:TV_sg>BFO_0000117s</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>BFO_0000117ed</ace_lexicon:TV_vbg>
     </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000132 -->
 
-    <rdf:Description rdf:about="&obo;BFO_0000132">
-        <ace_lexicon:TV_vbg>BFO_0000132ed</ace_lexicon:TV_vbg>
-        <ace_lexicon:TV_sg>BFO_0000132s</ace_lexicon:TV_sg>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000132">
         <ace_lexicon:TV_pl>BFO_0000132</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>BFO_0000132s</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>BFO_0000132ed</ace_lexicon:TV_vbg>
     </rdf:Description>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000167 -->
 
-    <owl:ObjectProperty rdf:about="&obo;BFO_0000167">
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000167">
         <ace_lexicon:TV_pl>BFO_0000167</ace_lexicon:TV_pl>
-        <ace_lexicon:TV_vbg>BFO_0000167ed</ace_lexicon:TV_vbg>
         <ace_lexicon:TV_sg>BFO_0000167s</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>BFO_0000167ed</ace_lexicon:TV_vbg>
     </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000176 -->
 
-    <rdf:Description rdf:about="&obo;BFO_0000176">
-        <ace_lexicon:TV_sg>BFO_0000176s</ace_lexicon:TV_sg>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000176">
         <ace_lexicon:TV_pl>BFO_0000176</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>BFO_0000176s</ace_lexicon:TV_sg>
         <ace_lexicon:TV_vbg>BFO_0000176ed</ace_lexicon:TV_vbg>
     </rdf:Description>
     
@@ -231,22 +211,22 @@
 
     <!-- http://purl.obolibrary.org/obo/MF_0000002 -->
 
-    <owl:Class rdf:about="&obo;MF_0000002">
-        <rdfs:label xml:lang="en">remembering</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000020"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
         <obo:IAO_0000115>(for the case of remembering X, where X is an event in the organism’s history) a mental process that is a) about X, and b) made possible by the physical traces left by a causal process involving the organism during the event X</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">remembering</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000003 -->
 
-    <owl:Class rdf:about="&obo;MF_0000003">
-        <rdfs:label xml:lang="en">alertness</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000018"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000018"/>
         <obo:IAO_0000115>State of active attention by high sensory awareness such as being watchful and prompt to meet danger or emergency, or being quick to perceive and act.
 
  http://en.wikipedia.org/wiki/Alertness</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">alertness</rdfs:label>
         <owl:priorVersion>MFOMD_0000176</owl:priorVersion>
     </owl:Class>
     
@@ -254,52 +234,52 @@
 
     <!-- http://purl.obolibrary.org/obo/MF_0000004 -->
 
-    <owl:Class rdf:about="&obo;MF_0000004">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000008"/>
         <rdfs:label xml:lang="en">mental counting</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000008"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000005 -->
 
-    <owl:Class rdf:about="&obo;MF_0000005">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000008"/>
         <rdfs:label xml:lang="en">mental calculation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000008"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000006 -->
 
-    <owl:Class rdf:about="&obo;MF_0000006">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
         <rdfs:label xml:lang="en">judging</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000020"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000007 -->
 
-    <owl:Class rdf:about="&obo;MF_0000007">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000006"/>
         <rdfs:label xml:lang="en">determining gender</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000006"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000008 -->
 
-    <owl:Class rdf:about="&obo;MF_0000008">
-        <rdfs:label>cognitive process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000020"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000167"/>
-                <owl:someValuesFrom rdf:resource="&obo;MF_0000031"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000167"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MF_0000031"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A mental process that creates, modifies or has as participant some cognitive representation.</obo:IAO_0000115>
+        <rdfs:label>cognitive process</rdfs:label>
         <rdfs:seeAlso>GO:0050890, cognition, defined as  `The operation of the mind by which an organism becomes aware of objects of thought or perception; it includes the mental activities associated with thinking, learning, and memory.&apos; </rdfs:seeAlso>
     </owl:Class>
     
@@ -307,96 +287,95 @@
 
     <!-- http://purl.obolibrary.org/obo/MF_0000009 -->
 
-    <owl:Class rdf:about="&obo;MF_0000009">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000006"/>
         <rdfs:label xml:lang="en">determining orientation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000006"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000010 -->
 
-    <owl:Class rdf:about="&obo;MF_0000010">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000297"/>
         <rdfs:label xml:lang="en">mathematical problem solving behavior</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NBO_0000297"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000011 -->
 
-    <owl:Class rdf:about="&obo;MF_0000011">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000297"/>
         <rdfs:label xml:lang="en">visual problem solving behavior</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NBO_0000297"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000012 -->
 
-    <owl:Class rdf:about="&obo;MF_0000012">
-        <rdfs:label xml:lang="en">arousal</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000020"/>
-        <owl:priorVersion>MFOMD_0000146</owl:priorVersion>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
         <obo:IAO_0000115>Physiological and psychological state of being awake or reactive to stimuli.
 
 
 http://en.wikipedia.org/wiki/Arousal</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">arousal</rdfs:label>
+        <owl:priorVersion>MFOMD_0000146</owl:priorVersion>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000013 -->
 
-    <owl:Class rdf:about="&obo;MF_0000013">
-        <rdfs:label>thinking</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000020"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
         <obo:IAO_0000115>a mental process that involves the manipulation of mental language and/or mental images</obo:IAO_0000115>
+        <rdfs:label>thinking</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000014 -->
 
-    <owl:Class rdf:about="&obo;MF_0000014">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000297"/>
         <rdfs:label xml:lang="en">language problem solving behavior</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;NBO_0000297"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000015 -->
 
-    <owl:Class rdf:about="&obo;MF_0000015">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
         <rdfs:label xml:lang="en">imagination</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000020"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000016 -->
 
-    <owl:Class rdf:about="&obo;MF_0000016">
-        <rdfs:label rdf:datatype="&xsd;string">human being</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000087"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000087"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">human being</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000017 -->
 
-    <owl:Class rdf:about="&obo;MF_0000017">
-        <rdfs:label xml:lang="en">consciousness</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000020"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000132"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000132"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;MF_0000020"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000020"/>
                             <owl:Class>
-                                <owl:complementOf rdf:resource="&obo;MF_0000017"/>
+                                <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000017"/>
                             </owl:Class>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -407,50 +386,51 @@ http://en.wikipedia.org/wiki/Arousal</obo:IAO_0000115>
 a) confers a subjective perspective, a phenomenology, an experience of the mental process of which it is a part; and
 b) intends the object or event that the mental process is about, should such exist; i.e., it confers intentionality on the mental process.</obo:IAO_0000115>
         <rdfs:comment>Note that while there are different modes of consciousness corresponding to the different senses, the whole of conscious experience at any one time is largely experienced as a unity, that is, as a fused whole. Mental processes which are simultaneously ongoing are separable only in fiat, not in essence. </rdfs:comment>
+        <rdfs:label xml:lang="en">consciousness</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000018 -->
 
-    <owl:Class rdf:about="&obo;MF_0000018">
-        <rdfs:label xml:lang="en">attention</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000020"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
         <obo:IAO_0000115>the process whereby relevant aspects of our mental experience are focused on specific targets</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">attention</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000019 -->
 
-    <owl:Class rdf:about="&obo;MF_0000019">
-        <rdfs:label>perception</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000020"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
         <obo:IAO_0000115>a mental process which is a) produced by a causal process (for example involving light rays or air vibrations) involving a part of the environment of the organism, and b) is experienced by the organism as being so caused, and c) in
 which the relevant part of the environment is thereby represented to the organism</obo:IAO_0000115>
+        <rdfs:label>perception</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000020 -->
 
-    <owl:Class rdf:about="&obo;MF_0000020">
-        <rdfs:label rdf:datatype="&xsd;string">mental process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000060"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
-                <owl:someValuesFrom rdf:resource="&obo;MF_0000017"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
-                <owl:someValuesFrom rdf:resource="&obo;MF_0000033"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MF_0000017"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>A bodily process which brings into being, sustains or modifies a cognitive representation or a beahvior inducing state.</rdfs:comment>
         <obo:IAO_0000115>A mental process is a bodily process that is of a type such that it can of itself be conscious. Examples include thinking, feeling pain, remembering and emotion as occurrent experiences. </obo:IAO_0000115>
+        <rdfs:comment>A bodily process which brings into being, sustains or modifies a cognitive representation or a beahvior inducing state.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mental process</rdfs:label>
         <rdfs:seeAlso>GO:0050890, cognition, defined as  `The operation of the mind by which an organism becomes aware of objects of thought or perception; it includes the mental activities associated with thinking, learning, and memory.&apos; </rdfs:seeAlso>
     </owl:Class>
     
@@ -458,411 +438,375 @@ which the relevant part of the environment is thereby represented to the organis
 
     <!-- http://purl.obolibrary.org/obo/MF_0000021 -->
 
-    <owl:Class rdf:about="&obo;MF_0000021">
-        <rdfs:label rdf:datatype="&xsd;string">interpersonal process</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000060"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000167"/>
-                <owl:onClass rdf:resource="&obo;MF_0000016"/>
-                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000167"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/MF_0000016"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
         <obo:IAO_0000115>A process in which at least two human beings are agents.</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MF_0000022 -->
-
-    <owl:Class rdf:about="&obo;MF_0000022">
-        <rdfs:label xml:lang="en">language</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000037"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000052"/>
-                <owl:someValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;BFO_0000110"/>
-                        <owl:someValuesFrom rdf:resource="&obo;MF_0000016"/>
-                    </owl:Restriction>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>a complex disposition inhering in a population by virtue of the fact that members thereof can communicate with each other through speech</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interpersonal process</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000023 -->
 
-    <owl:Class rdf:about="&obo;MF_0000023">
-        <rdfs:label rdf:datatype="&xsd;string">interpersonal behavior</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000060"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000117"/>
-                <owl:someValuesFrom rdf:resource="&obo;MF_0000021"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MF_0000021"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>Behavior having interpersonal processes as parts, each involving the same instances of human being.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interpersonal behavior</rdfs:label>
         <rdfs:seeAlso>GO:0051705, multi-organism behaviour, defined as: 
     &quot;Any process in which an organism has a behavioral effect on another organism of the same or different species&quot; (http://amigo.geneontology.org/cgi-bin/amigo/term_details?term=GO:0051705#lineage)</rdfs:seeAlso>
-        <obo:IAO_0000115>Behavior having interpersonal processes as parts, each involving the same instances of human being.</obo:IAO_0000115>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000024 -->
 
-    <owl:Class rdf:about="&obo;MF_0000024">
-        <rdfs:label xml:lang="en">seeing</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000019"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000019"/>
         <obo:IAO_0000118>visual perception</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">seeing</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000025 -->
 
-    <owl:Class rdf:about="&obo;MF_0000025">
-        <rdfs:label xml:lang="en">intelligence</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000203"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000203"/>
         <obo:IAO_0000115>A mental disposition realised in processes involving understanding complex ideas, adapting effectively to the environment, learning from experience, engaging in various forms of reasoning, and overcome obstacles through the outcome of thinking processes.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">intelligence</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000026 -->
 
-    <owl:Class rdf:about="&obo;MF_0000026">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000203"/>
         <rdfs:label xml:lang="en">introversion</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000203"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000027 -->
 
-    <owl:Class rdf:about="&obo;MF_0000027">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
         <rdfs:label>planning</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000020"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000028 -->
 
-    <owl:Class rdf:about="&obo;MF_0000028">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000203"/>
         <rdfs:label xml:lang="en">extraversion</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000203"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000029 -->
 
-    <owl:Class rdf:about="&obo;MF_0000029">
-        <rdfs:label xml:lang="en">irascibility</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000203"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000203"/>
         <obo:IAO_0000115>A mental disposition to frequent or easily incited outbursts of anger. </obo:IAO_0000115>
+        <rdfs:label xml:lang="en">irascibility</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000030 -->
 
-    <owl:Class rdf:about="&obo;MF_0000030">
-        <rdfs:label rdf:datatype="&xsd;string">representation</rdfs:label>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000030">
         <obo:IAO_0000115>A dependent continuant which is about a portion of reality.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">representation</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000031 -->
 
-    <owl:Class rdf:about="&obo;MF_0000031">
-        <rdfs:label rdf:datatype="&xsd;string">cognitive representation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000030"/>
-        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000030"/>
         <obo:IAO_0000115>A representation which specifically depends on an anatomical structure in the cognitive system of an organism.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cognitive representation</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000032 -->
 
-    <owl:Class rdf:about="&obo;MF_0000032">
-        <rdfs:label xml:lang="en">bodily disposition</rdfs:label>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000032">
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000052"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGMS_0000087"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000087"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <obo:IAO_0000115>A bodily disposition is a disposition that inheres in some extended organism. Examples are: my disposition to catch a cold when exposed to a virus, my ability to speak the English language.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">bodily disposition</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000033 -->
 
-    <owl:Class rdf:about="&obo;MF_0000033">
-        <rdfs:label xml:lang="en">mental disposition</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000032"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000032"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
-                <owl:allValuesFrom rdf:resource="&obo;MF_0000020"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A mental disposition is a bodily disposition that is realized in a mental process. </obo:IAO_0000115>
+        <rdfs:label xml:lang="en">mental disposition</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000034 -->
 
-    <owl:Class rdf:about="&obo;MF_0000034">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000034">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000017"/>
         <rdfs:label xml:lang="en">visual consciousness</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000017"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000035 -->
 
-    <owl:Class rdf:about="&obo;MF_0000035">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000017"/>
         <rdfs:label xml:lang="en">auditory consciousness</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000017"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000036 -->
 
-    <owl:Class rdf:about="&obo;MF_0000036">
-        <rdfs:label xml:lang="en">tactile consciousness</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000017"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000017"/>
         <obo:IAO_0000115>Tactile consciousness is consciousness that is experienced in the tactile sensory medium, through the sensory medium of touch and pressure sensation.</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MF_0000037 -->
-
-    <owl:Class rdf:about="&obo;MF_0000037">
-        <rdfs:label xml:lang="en">population disposition</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000111"/>
-                <owl:someValuesFrom rdf:resource="&obo;MF_0000032"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <obo:IAO_0000115>A population disposition is a disposition inhering in a population of individual organisms. It is a complex aggregate of individual bodily dispositions.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">tactile consciousness</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000038 -->
 
-    <owl:Class rdf:about="&obo;MF_0000038">
-        <rdfs:label xml:lang="en">hearing</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000019"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000019"/>
         <obo:IAO_0000118>auditory perception</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">hearing</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000039 -->
 
-    <owl:Class rdf:about="&obo;MF_0000039">
-        <rdfs:label rdf:datatype="&xsd;string">affective representation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000031"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000039">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000031"/>
         <obo:IAO_0000115>A cognitive representation sustained by an organsim about its own emotions.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">affective representation</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000040 -->
 
-    <owl:Class rdf:about="&obo;MF_0000040">
-        <rdfs:label xml:lang="en">communication</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000021"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000021"/>
         <obo:IAO_0000115>A communication process is an interpersonal process that:
 (a) involves as participant at least two linguistically capable organisms;
 (b) one of whom produces an utterance that is well-formed in a given language;
 (c) the other of whom perceives and understands that utterance by virtue of their
 recognition of the meaning of the utterance through their knowledge of the language.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">communication</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000041 -->
 
-    <owl:Class rdf:about="&obo;MF_0000041">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000041">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
         <rdfs:label xml:lang="en">belief</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000033"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000042 -->
 
-    <owl:Class rdf:about="&obo;MF_0000042">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000042">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000203"/>
         <rdfs:label xml:lang="en">preference</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000203"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000043 -->
 
-    <owl:Class rdf:about="&obo;MF_0000043">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000043">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000032"/>
         <rdfs:label xml:lang="en">capability</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000032"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000044 -->
 
-    <owl:Class rdf:about="&obo;MF_0000044">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000044">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000043"/>
         <rdfs:label xml:lang="en">musical capability</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000043"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000045 -->
 
-    <owl:Class rdf:about="&obo;MF_0000045">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000045">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
         <rdfs:label>wanting</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000020"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000046 -->
 
-    <owl:Class rdf:about="&obo;MF_0000046">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000046">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000044"/>
         <rdfs:label xml:lang="en">capability to play piano</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000044"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000047 -->
 
-    <owl:Class rdf:about="&obo;MF_0000047">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000047">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000044"/>
         <rdfs:label xml:lang="en">capability to play violin</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000044"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000048 -->
 
-    <owl:Class rdf:about="&obo;MF_0000048">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000048">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000043"/>
         <rdfs:label xml:lang="en">mental capability</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000033"/>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000043"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000049 -->
 
-    <owl:Class rdf:about="&obo;MF_0000049">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000050"/>
         <rdfs:label xml:lang="en">capability to read</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000050"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000050 -->
 
-    <owl:Class rdf:about="&obo;MF_0000050">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000048"/>
         <rdfs:label xml:lang="en">linguistic capability</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000048"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000051 -->
 
-    <owl:Class rdf:about="&obo;MF_0000051">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000050"/>
         <rdfs:label xml:lang="en">capability to understand language</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000050"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000052 -->
 
-    <owl:Class rdf:about="&obo;MF_0000052">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000050"/>
         <rdfs:label xml:lang="en">capability to speak</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000050"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000053 -->
 
-    <owl:Class rdf:about="&obo;MF_0000053">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000053">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000044"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000048"/>
         <rdfs:label xml:lang="en">capability to read music</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000044"/>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000048"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000054 -->
 
-    <owl:Class rdf:about="&obo;MF_0000054">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000019"/>
         <rdfs:label xml:lang="en">tasting</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000019"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000055 -->
 
-    <owl:Class rdf:about="&obo;MF_0000055">
-        <rdfs:label xml:lang="en">smelling</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000019"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000019"/>
         <obo:IAO_0000118>olfactory perception</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">smelling</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000056 -->
 
-    <owl:Class rdf:about="&obo;MF_0000056">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000056">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000019"/>
         <rdfs:label xml:lang="en">touching</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000019"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000057 -->
 
-    <owl:Class rdf:about="&obo;MF_0000057">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000057">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000008"/>
         <rdfs:label xml:lang="en">thinking with language</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000008"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000058 -->
 
-    <owl:Class rdf:about="&obo;MF_0000058">
-        <rdfs:label xml:lang="en">attachment</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000021"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000058">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000021"/>
         <obo:IAO_0000115>Affectional tie that one person or animal forms between himself and another specific one, a tie that binds them together emotionally and endures over time.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">attachment</rdfs:label>
         <owl:priorVersion>MFOMF_0000177</owl:priorVersion>
     </owl:Class>
     
@@ -870,13 +814,13 @@ recognition of the meaning of the utterance through their knowledge of the langu
 
     <!-- http://purl.obolibrary.org/obo/MF_0000059 -->
 
-    <owl:Class rdf:about="&obo;MF_0000059">
-        <rdfs:label xml:lang="en">daydreaming</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000020"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000059">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
         <obo:IAO_0000115>Short-term detachment from one&apos;s immediate surroundings, during which a person&apos;s contact with reality is blurred and partially substituted by a visionary fantasy, especially one of happy, pleasant thoughts, hopes or ambitions, imagined as coming to pass, and experienced while awake.
 
 
 http://en.wikipedia.org/wiki/Daydream</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">daydreaming</rdfs:label>
         <owl:priorVersion>MFOMD_0000148</owl:priorVersion>
     </owl:Class>
     
@@ -884,27 +828,27 @@ http://en.wikipedia.org/wiki/Daydream</obo:IAO_0000115>
 
     <!-- http://purl.obolibrary.org/obo/MF_0000060 -->
 
-    <owl:Class rdf:about="&obo;MF_0000060">
-        <rdfs:label xml:lang="en">vigilance</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000018"/>
-        <owl:priorVersion>MFOMD_0000140</owl:priorVersion>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000018"/>
         <obo:IAO_0000115>The ability to maintain attention and alertness over prolonged periods of time.
 
 
 http://en.wikipedia.org/wiki/Vigilance_%28psychology%29</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">vigilance</rdfs:label>
+        <owl:priorVersion>MFOMD_0000140</owl:priorVersion>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000061 -->
 
-    <owl:Class rdf:about="&obo;MF_0000061">
-        <rdfs:label xml:lang="en">orgasm</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000020"/>
-        <obo:IAO_0000118>sexual climax</obo:IAO_0000118>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
         <obo:IAO_0000115>Orgasm is the sudden discharge of accumulated sexual tension during the sexual response cycle, resulting in rhythmic muscular contractions in the pelvic region characterized by sexual pleasure.
 
 http://en.wikipedia.org/wiki/Orgasm</obo:IAO_0000115>
+        <obo:IAO_0000118>sexual climax</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">orgasm</rdfs:label>
         <owl:priorVersion>MFOMD_0000207</owl:priorVersion>
     </owl:Class>
     
@@ -912,14 +856,14 @@ http://en.wikipedia.org/wiki/Orgasm</obo:IAO_0000115>
 
     <!-- http://purl.obolibrary.org/obo/MF_0000062 -->
 
-    <owl:Class rdf:about="&obo;MF_0000062">
-        <rdfs:label xml:lang="en">libido</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000020"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
         <obo:IAO_0000115>
 The psychic energy that drives individuals toward sensual pleasures of all types, especially sexual ones.
 
 
 http://www.apa.org/research/action/glossary.aspx</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">libido</rdfs:label>
         <owl:priorVersion>MFOMD_0000130</owl:priorVersion>
     </owl:Class>
     
@@ -927,65 +871,81 @@ http://www.apa.org/research/action/glossary.aspx</obo:IAO_0000115>
 
     <!-- http://purl.obolibrary.org/obo/MF_0000202 -->
 
-    <owl:Class rdf:about="&obo;MF_0000202">
-        <rdfs:label xml:lang="en">personality</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000033"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000202">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
         <obo:IAO_0000115>A personality is a complex sum of dispositions and predispositions towards mental processes and behaviour. It inheres in a person. Personality is not the same as mood, although a person may have a personality that includes a predisposition to moods of certain types, moods may come and go but a personality stays relatively constant, not appearing and disappearing. Personality typically changes slowly over time. </obo:IAO_0000115>
+        <rdfs:label xml:lang="en">personality</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/MF_0000203 -->
 
-    <owl:Class rdf:about="&obo;MF_0000203">
-        <rdfs:label xml:lang="en">personality trait</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;MF_0000033"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000203">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000176"/>
-                <owl:someValuesFrom rdf:resource="&obo;MF_0000202"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MF_0000202"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A personality trait is an individual disposition or predisposition that forms part of an overall personality and is realized in repeated occurrences of a specific mental process type or behavioural profile. </obo:IAO_0000115>
+        <rdfs:label xml:lang="en">personality trait</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NBO_0000297 -->
 
-    <owl:Class rdf:about="&obo;NBO_0000297">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NBO_0000297">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
         <rdfs:label>behaviour</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000060"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OGMS_0000060 -->
 
-    <owl:Class rdf:about="&obo;OGMS_0000060">
-        <rdfs:label rdf:datatype="&xsd;string">bodily process</rdfs:label>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000060">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000167"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGMS_0000087"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000167"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000087"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A process in which at least one bodily component of an organsim participates.</obo:IAO_0000115>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
         <rdfs:comment>From OGMS: http://purl.obolibrary.org/obo/OGMS_0000060</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bodily process</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OGMS_0000087 -->
 
-    <owl:Class rdf:about="&obo;OGMS_0000087">
-        <rdfs:label rdf:datatype="&xsd;string">extended organism</rdfs:label>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000087">
         <rdfs:comment>From OGMS: http://purl.obolibrary.org/obo/OGMS_0000087</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">extended organism</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000110">
+        <ace_lexicon:TV_vbg>BFO_0000110ed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>BFO_0000110s</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>BFO_0000110</ace_lexicon:TV_pl>
+    </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
 
