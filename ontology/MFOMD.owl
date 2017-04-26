@@ -33,7 +33,7 @@
         <dc:contributor>Janna Hastings</dc:contributor>
         <rdfs:comment>The Mental Disease Ontology was first described in the publication &apos;Foundations for a realist ontology of mental disease&apos; (Barry Smith and Werner Ceusters) which is available at http://www.jbiomedsem.com/content/1/1/10 . </rdfs:comment>
         <dc:title>Mental Disease Ontology</dc:title>
-        <owl:imports rdf:resource="http://ogms.googlecode.com/svn/trunk/src/ontology/ogms.owl"/>
+        <owl:imports rdf:resource="&obo;ogms.owl"/>
         <owl:imports rdf:resource="&obo;MF.owl"/>
         <owl:imports rdf:resource="&obo;MF/internal/MD-core.owl"/>
         <owl:imports rdf:resource="&obo;MF/internal/MF-core.owl"/>
