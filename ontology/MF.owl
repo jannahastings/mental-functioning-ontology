@@ -23,13 +23,14 @@
         <dc:contributor>Janna Hastings</dc:contributor>
         <rdfs:comment>The Mental Functioning Ontology is an overarching ontology for all aspects of mental functioning, founded on the Basic Formal Ontology (BFO) and related to the Ontology for General Medical Science (OGMS).</rdfs:comment>
         <dc:contributor>Jeanette Alicia Chacón Candia</dc:contributor>
-        <owl:versionInfo>beta 2013-11-05</owl:versionInfo>
         <dc:contributor>Barry Smith</dc:contributor>
         <dc:contributor>Mark Jensen</dc:contributor>
+        <dc:contributor>Neil Otte</dc:contributor>
         <rdfs:comment>The Mental Functioning Ontology (MF) was first described in the publication available at http://www.jbiomedsem.com/content/1/1/10 entitled &apos;Foundations for a realist ontology of mental disease&apos; (Barry Smith and Werner Ceusters). </rdfs:comment>
         <rdfs:comment>This OWL version of the MF ontology was originally created by Janna Hastings and is maintained by all committers to the MF ontology project. </rdfs:comment>
         <dc:title>Mental Functioning Ontology</dc:title>
         <rdfs:comment>The OWL representaions of MF and MD were split on 22 May 2012.</rdfs:comment>
+        <owl:versionInfo>beta 2017-08-21</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -175,7 +176,7 @@
     <!-- http://purl.obolibrary.org/obo/MF_0000000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000024"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000112"/>
@@ -206,15 +207,7 @@
 
     <!-- http://purl.obolibrary.org/obo/MF_0000003 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000003">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000052"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MF_0000000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000003"/>
     
 
 
@@ -276,9 +269,9 @@
 
     <!-- http://purl.obolibrary.org/obo/MF_0000037 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000037">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000037">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
