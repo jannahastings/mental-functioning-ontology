@@ -396,7 +396,7 @@ b) intends the object or event that the mental process is about, should such exi
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000018">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
         <obo:IAO_0000115>the process whereby relevant aspects of our mental experience are focused on specific targets</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">attention</rdfs:label>
+        <rdfs:label xml:lang="en">attending</rdfs:label>
     </owl:Class>
     
 
