@@ -1,8 +1,8 @@
 # Overview
 
-The Mental Functioning Ontology is an ontology for mental functioning, including mental processes such as cognition and traits such as intelligence. There is a module which covers mental disorders, within which the IDs are reused from the Disease Ontology as far as is possible. It is developed in the context of the Ontology for General Medical Science and the Basic Formal Ontology. The project is being developed in collaboration between the University of Geneva, Switzerland, and the University at Buffalo, USA.
+The Mental Functioning Ontology is an ontology for mental functioning, including mental processes such as cognition and traits such as intelligence. There is a module which covers mental disorders, within which the IDs are reused from the Disease Ontology as far as is possible. It is developed in the context of the Ontology for General Medical Science and the Basic Formal Ontology. The project is being developed collaboratively by a community of users.
 
-The project is being developed with full involvement of all relevant communities, following best practices laid out by the OBO Foundry. Efforts are currently underway to align with related projects including the Behaviour Ontology, the Cognitive Atlas, the Cognitive Paradigm Ontology and the Neural Electro Magnetic Ontologies.
+The project is being developed following best practices as set out by the OBO Foundry. Efforts are currently underway to align with related projects including the Behaviour Ontology, the Cognitive Atlas, the Cognitive Paradigm Ontology and the Neural Electro Magnetic Ontologies.
 
 The latest version of the ontology is available at http://purl.obolibrary.org/obo/MF.owl and is best viewed using Protege version 4.2 or above.
 
@@ -14,7 +14,9 @@ Werner Ceusters, National Center for Ontological Research and Department of Psyc
 
 Kevin Mulligan, Department of Philosophy and Swiss Center for Affective Sciences, University of Geneva, Switzerland
 
-Janna Hastings, Chemoinformatics and Metabolism, European Bioinformatics Institute
+Janna Hastings, University of Cambridge
+
+With additional contributions from Mark Jensen, Jeanette Chacón, Neil Otte and others. 
 
 
 # Publications
