@@ -1,8 +1,8 @@
 # Overview
 
-The Mental Functioning Ontology is an ontology for mental functioning, including mental processes such as cognition and traits such as intelligence. There is a module which covers mental disorders, within which the IDs are reused from the Disease Ontology as far as is possible. It is developed in the context of the Ontology for General Medical Science and the Basic Formal Ontology. The project is being developed collaboratively by a community of users. To discuss any aspect of the ontology, send a message to mfo-discuss@googlegroups.com.
+The Mental Functioning Ontology (MF) is an ontology for mental functioning, including mental processes such as cognition and traits such as intelligence. There is a module (MFO-MD) which covers mental disorders, within which the IDs are reused from the Disease Ontology as far as is possible. It is developed in the context of the Ontology for General Medical Science (OGMS) and the Basic Formal Ontology (BFO). The project is being developed collaboratively by a community of users. To discuss any aspect of the ontology, send a message to mfo-discuss@googlegroups.com. 
 
-The project is being developed following best practices as set out by the OBO Foundry. Efforts are currently underway to align with related projects including the Behaviour Ontology, the Cognitive Atlas, the Cognitive Paradigm Ontology and the Neural Electro Magnetic Ontologies.
+The project is being developed following best practices as set out by the [OBO Foundry](http://www.obofoundry.org/). Efforts are currently underway to align with related projects including the [Cognitive Atlas](http://www.cognitiveatlas.org/) and the [Cognitive Paradigm Ontology](http://www.cogpo.org/).
 
 The latest version of the ontology is available at http://purl.obolibrary.org/obo/MF.owl and is best viewed using Protege version 4.2 or above.
 
@@ -10,7 +10,7 @@ The latest version of the ontology is available at http://purl.obolibrary.org/ob
 
 The primary maintainer of the ontology is Janna Hastings (University of Cambridge).  
 
-Other current and historical contributors include: Barry Smith, (Buffalo, USA), Werner Ceusters (Buffalo, USA), Kevin Mulligan (Geneva, Switzerland), Mark Jensen (Buffalo, USA), Jeanette Chacón (Cambridge, UK), and Neil Otte (Buffalo, USA). 
+Other current and historical contributors include: Barry Smith, (Buffalo, USA), Neil Otte (Buffalo, USA), Werner Ceusters (Buffalo, USA), Kevin Mulligan (Geneva, Switzerland), Mark Jensen (Buffalo, USA), and Jeanette Chacón (Cambridge, UK). 
 
 # Publications
 
@@ -26,6 +26,6 @@ The mental functioning ontology is based on the foundations laid out in the pape
 
 # Related Projects
 
-The Emotion Ontology is a fully contained domain specialisation of the Mental Functioning Ontology for the domain of emotions and affective phenomena.
+The Emotion Ontology (MFO-EM) is a fully contained domain specialisation of the Mental Functioning Ontology for the domain of emotions and affective phenomena.
 
 
