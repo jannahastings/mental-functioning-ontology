@@ -268,30 +268,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MF_0000037 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000037">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MF_0000202 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000202">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MF_0000203 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000203">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-    </rdf:Description>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NBO_0000313 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NBO_0000313">
@@ -339,11 +315,26 @@
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000015">
         <obo:IAO_0000115>A mental process that manipulates mental images and words that go beyond mere memory and thoughts about the objects and entities that the person has encountered, to visualise or consider entities and states of affairs that the person has never encountered and which may not yet exist or obtain in the world.</obo:IAO_0000115>
     </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000022">
+        <oboInOwl:hasAlternativeId>http://www.github.com/no/ontologies/2017/PAO/Agreeableness</oboInOwl:hasAlternativeId>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000027">
         <obo:IAO_0000115>A mental process that involves mentally manipulating representations of steps in an imagined process which has some objective, e.g. to bring about a desired state of affairs. The outcome of this mental process is a plan which has the potential to be followed to bring about the desired outcome.</obo:IAO_0000115>
     </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000028">
+        <oboInOwl:hasAlternativeId>http://www.github.com/no/ontologies/2017/PAO/Conscientiousness</oboInOwl:hasAlternativeId>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000045">
         <obo:IAO_0000115>A mental process that involves thinking about a state of affairs that does not yet obtain together with a desire for that state of affairs to obtain.</obo:IAO_0000115>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000063">
+        <oboInOwl:hasAlternativeId>http://www.github.com/no/ontologies/2017/PAO/Extraversion</oboInOwl:hasAlternativeId>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000064">
+        <oboInOwl:hasAlternativeId>http://www.github.com/no/ontologies/2017/PAO/Neuroticism</oboInOwl:hasAlternativeId>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000065">
+        <oboInOwl:hasAlternativeId>http://www.github.com/no/ontologies/2017/PAO/OpennessToExperience</oboInOwl:hasAlternativeId>
     </rdf:Description>
 </rdf:RDF>
 
