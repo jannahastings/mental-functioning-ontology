@@ -26,11 +26,12 @@
         <dc:contributor>Barry Smith</dc:contributor>
         <dc:contributor>Mark Jensen</dc:contributor>
         <dc:contributor>Neil Otte</dc:contributor>
+        <dc:license>https://creativecommons.org/licenses/by/3.0/</dc:license>
         <rdfs:comment>The Mental Functioning Ontology (MF) was first described in the publication available at http://www.jbiomedsem.com/content/1/1/10 entitled &apos;Foundations for a realist ontology of mental disease&apos; (Barry Smith and Werner Ceusters). </rdfs:comment>
         <rdfs:comment>This OWL version of the MF ontology was originally created by Janna Hastings and is maintained by all committers to the MF ontology project. </rdfs:comment>
         <dc:title>Mental Functioning Ontology</dc:title>
         <rdfs:comment>The OWL representaions of MF and MD were split on 22 May 2012.</rdfs:comment>
-        <owl:versionInfo>beta 2017-08-21</owl:versionInfo>
+        <owl:versionInfo>2017-10-26</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -318,6 +319,32 @@
         <rdfs:comment>From OGMS: http://purl.obolibrary.org/obo/OGMS_0000087</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">extended organism</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000006">
+        <obo:IAO_0000115>A mental process during which a decision is made and the outcome of which is a belief or opinion.</obo:IAO_0000115>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000007">
+        <obo:IAO_0000115>A judging process during which an opinion about the gender of a person is determined.</obo:IAO_0000115>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000015">
+        <obo:IAO_0000115>A mental process that manipulates mental images and words that go beyond mere memory and thoughts about the objects and entities that the person has encountered, to visualise or consider entities and states of affairs that the person has never encountered and which may not yet exist or obtain in the world.</obo:IAO_0000115>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000027">
+        <obo:IAO_0000115>A mental process that involves mentally manipulating representations of steps in an imagined process which has some objective, e.g. to bring about a desired state of affairs. The outcome of this mental process is a plan which has the potential to be followed to bring about the desired outcome.</obo:IAO_0000115>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000045">
+        <obo:IAO_0000115>A mental process that involves thinking about a state of affairs that does not yet obtain together with a desire for that state of affairs to obtain.</obo:IAO_0000115>
+    </rdf:Description>
 </rdf:RDF>
 
 
