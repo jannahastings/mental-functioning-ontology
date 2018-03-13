@@ -5,3 +5,5 @@ The relationship types are listed as text only, they have not yet been formalise
 
 Accompanying notes include references for the annotation. 
 
+These annotations were manually assembled by Jeanette Chacon Candia during her internship at EMBL-EBI in 2014
+
