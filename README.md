@@ -10,7 +10,7 @@ The latest version of the ontology is available at http://purl.obolibrary.org/ob
 
 The primary maintainer of the ontology is Janna Hastings (University of Cambridge, UK).  
 
-Other current and historical contributors include: Barry Smith, (Buffalo, USA), Neil Otte (Buffalo, USA), Werner Ceusters (Buffalo, USA), Kevin Mulligan (Geneva, Switzerland), Mark Jensen (Buffalo, USA), and Jeanette Chacón (Cambridge, UK). 
+Other current and historical contributors include: Barry Smith, (Buffalo, USA), Neil Otte (Buffalo, USA), Werner Ceusters (Buffalo, USA), Kevin Mulligan (Geneva, Switzerland), Mark Jensen (Buffalo, USA), Jeanette Chacón (Cambridge, UK) and Rasmus Rosenberg Larsen (Toronto, Canada).
 
 # Publications
 
