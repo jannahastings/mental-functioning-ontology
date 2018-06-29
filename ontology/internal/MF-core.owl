@@ -209,6 +209,16 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MF_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000017"/>
+        <obo:IAO_0000115>Higher order consciousness is consciousness of one&apos;s own mental states, a self-reflexive consciousness of the experience of being conscious, of having mental processes ongoing.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">higher order consciousness</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MF_0000002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000002">
@@ -599,7 +609,8 @@ which the relevant part of the environment is thereby represented to the organis
     <!-- http://purl.obolibrary.org/obo/MF_0000034 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000034">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000017"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000037"/>
+        <obo:IAO_0000115>Visual consciousness is consciousness of a visual stimulus, as experienced through the visual sensory medium as a part of a process of seeing.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">visual consciousness</rdfs:label>
     </owl:Class>
     
@@ -608,7 +619,8 @@ which the relevant part of the environment is thereby represented to the organis
     <!-- http://purl.obolibrary.org/obo/MF_0000035 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000035">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000017"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000037"/>
+        <obo:IAO_0000115>Auditory consciousness is consciousness of an auditory stimulus, as a part of a conscious process of hearing.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">auditory consciousness</rdfs:label>
     </owl:Class>
     
@@ -617,9 +629,19 @@ which the relevant part of the environment is thereby represented to the organis
     <!-- http://purl.obolibrary.org/obo/MF_0000036 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000036">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000017"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000037"/>
         <obo:IAO_0000115>Tactile consciousness is consciousness that is experienced in the tactile sensory medium, through the sensory medium of touch and pressure sensation.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">tactile consciousness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000017"/>
+        <obo:IAO_0000115>Direct consciousness is consciousness of phenomenal experience, it is the given experience in consciousness of (for example) sounds, tastes, emotions and bodily feelings.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">direct consciousness</rdfs:label>
     </owl:Class>
     
 
