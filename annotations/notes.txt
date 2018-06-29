@@ -1,5 +1,5 @@
 
-The annotations file is a spreadsheet where each row contains a "triple" consisting of two ontology IDs (wherever possible) and a relationship type. Ontology IDs are not always available, and in those cases, a name is given without an accompanying ID. 
+The chebi annotations file is a spreadsheet where each row contains a "triple" consisting of two ontology IDs (wherever possible) and a relationship type. Ontology IDs are not always available, and in those cases, a name is given without an accompanying ID. 
 
 The relationship types are listed as text only, they have not yet been formalised and mapped to RO relations. 
 
