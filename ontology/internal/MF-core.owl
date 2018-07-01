@@ -499,6 +499,16 @@ which the relevant part of the environment is thereby represented to the organis
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000024">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000019"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MF_0000034"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Seeing (visual perception) is a mental process that is
+a) produced by a causal process involving light rays from a part of the environment of the subject being absorbed by photoreceptors in the retina, and
+b) is experienced by the subject as being so caused, and
+c) in which the relevant part of the environment is thereby represented to the subject</obo:IAO_0000115>
         <obo:IAO_0000118>visual perception</obo:IAO_0000118>
         <rdfs:label xml:lang="en">seeing</rdfs:label>
     </owl:Class>
@@ -528,6 +538,8 @@ which the relevant part of the environment is thereby represented to the organis
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000027">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
+        <obo:IAO_0000115>Planning is the process of thinking about the activities required to achieve a desired goal. It involves the creation and maintenance of a plan, such as psychological aspects that require conceptual skills.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Planning</obo:IAO_0000119>
         <rdfs:label>planning</rdfs:label>
     </owl:Class>
     
@@ -650,6 +662,16 @@ which the relevant part of the environment is thereby represented to the organis
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000038">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000019"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MF_0000035"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Hearing (auditory perception) is a mental process that is
+a) produced by a causal process involving sound waves from a part of the environment of the subject being absorbed by detectors in the ear, and
+b) is experienced by the subject as being so caused, and
+c) in which the relevant part of the environment is thereby represented to the subject</obo:IAO_0000115>
         <obo:IAO_0000118>auditory perception</obo:IAO_0000118>
         <rdfs:label xml:lang="en">hearing</rdfs:label>
     </owl:Class>
@@ -803,6 +825,10 @@ recognition of the meaning of the utterance through their knowledge of the langu
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000054">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000019"/>
+        <obo:IAO_0000115>Taste perception is a mental process which is
+a) produced by a causal process involving xenobiotic molecules from a part of the environment of the subject binding with specialized sensory cells in the tongue and nasal cavity, and
+b) is experienced by the subject as being so caused, and
+c) in which the relevant part of the environment is thereby represented to the subject</obo:IAO_0000115>
         <rdfs:label xml:lang="en">tasting</rdfs:label>
     </owl:Class>
     
@@ -812,6 +838,16 @@ recognition of the meaning of the utterance through their knowledge of the langu
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000055">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000019"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MF_0000066"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Smelling (olfactory perception) is a mental process which is
+a) produced by a causal process involving xenobiotic molecules from a part of the environment of the subject binding with specialized sensory cells in the nasal cavity, and
+b) is experienced by the subject as being so caused, and
+c) in which the relevant part of the environment is thereby represented to the subject</obo:IAO_0000115>
         <obo:IAO_0000118>olfactory perception</obo:IAO_0000118>
         <rdfs:label xml:lang="en">smelling</rdfs:label>
     </owl:Class>
@@ -822,6 +858,16 @@ recognition of the meaning of the utterance through their knowledge of the langu
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000056">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000019"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MF_0000036"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Touching (tactile perception) is a mental process which is
+a) produced by a causal process involving pressure on the organism’s skin from a part of the environment of the subject, and
+b) is experienced by the subject as being so caused, and
+c) in which the relevant part of the environment is thereby represented to the subject</obo:IAO_0000115>
         <rdfs:label xml:lang="en">touching</rdfs:label>
     </owl:Class>
     
@@ -851,10 +897,8 @@ recognition of the meaning of the utterance through their knowledge of the langu
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000059">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
-        <obo:IAO_0000115>Short-term detachment from one&apos;s immediate surroundings, during which a person&apos;s contact with reality is blurred and partially substituted by a visionary fantasy, especially one of happy, pleasant thoughts, hopes or ambitions, imagined as coming to pass, and experienced while awake.
-
-
-http://en.wikipedia.org/wiki/Daydream</obo:IAO_0000115>
+        <obo:IAO_0000115>Short-term detachment from one&apos;s immediate surroundings, during which a person&apos;s contact with reality is blurred and partially substituted by a visionary fantasy, especially one of happy, pleasant thoughts, hopes or ambitions, imagined as coming to pass, and experienced while awake.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Daydream</obo:IAO_0000119>
         <rdfs:label xml:lang="en">daydreaming</rdfs:label>
         <owl:priorVersion>MFOMD_0000148</owl:priorVersion>
     </owl:Class>
@@ -933,6 +977,65 @@ http://www.apa.org/research/action/glossary.aspx</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">A personality trait manifesting itself in individual behavioral characteristics that are perceived as revealing, curiosity, an appreciation of novelty and variety of experiences and ideas, invention, and unpredictability.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Associated adjectives: artistic, curious, imaginative, insightful, original, and wide interests.</rdfs:comment>
         <rdfs:label xml:lang="en">openness to experience</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000066">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000037"/>
+        <obo:IAO_0000115>Olfactory consciousness is consciousness of an olfactory stimulus (scent), as experienced through the olfactory sensory medium as a part of a process of smelling.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">olfactory consciousness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000067 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000067">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000001"/>
+        <obo:IAO_0000115>Consciousness of self is the higher order consciousness that reflexively includes the awareness that the organism that is the subject of the conscious experience exists.</obo:IAO_0000115>
+        <obo:IAO_0000118>consciousness of the existence of the self</obo:IAO_0000118>
+        <obo:IAO_0000118>self-consciousness</obo:IAO_0000118>
+        <rdfs:comment>The implication of Descartes&apos; famous &quot;Cogito ergo sum&quot; is that awareness of one&apos;s own existence entails that one exists. This is because consciousness creates a perspective, and awareness of this is a self-reflexive perspective of oneself. This is one aspect of intentionality that cannot fail. Intentionality can fail at all levels of content, but not at the level of intending through awareness the existence of the self that is consciously intending.</rdfs:comment>
+        <rdfs:label xml:lang="en">consciousness of self</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000068 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000068">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000019"/>
+        <obo:IAO_0000115>Proprioception is a mental process which is
+a) produced by a causal process specialized internal sensory cells in, for example, skin, muscles and joints, and
+b) by which their location and state of motion and/or balance are represented to the organism, and
+c) which is experienced by the subject as being so caused</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">proprioception</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000069 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000069">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000019"/>
+        <obo:IAO_0000115>Nociception is a mental process which is
+a) produced by a causal process specialized internal sensory cells in, for example, skin, muscles and joints, and
+b) by which actual or immanent tissue damage are reported to the organism, and
+c) which is experienced by the subject as being so caused</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">nociception</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000070">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
+        <obo:IAO_0000115>A memory is a disposition that is realized in a process of remembering, i.e. a memory of X is a disposition realized in the process of remembering X.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">memory</rdfs:label>
     </owl:Class>
     
 
