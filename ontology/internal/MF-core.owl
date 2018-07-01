@@ -264,6 +264,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
+        <obo:IAO_0000115>Judging is the evaluation of evidence to make a decision or form a belief.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">judging</rdfs:label>
     </owl:Class>
     
@@ -359,6 +360,8 @@ http://en.wikipedia.org/wiki/Arousal</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000015">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
+        <obo:IAO_0000115>Imagination is the capacity to produce images, ideas and sensations in the mind without any immediate input of the senses (such as seeing or hearing).</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Imagination</obo:IAO_0000119>
         <rdfs:label xml:lang="en">imagination</rdfs:label>
     </owl:Class>
     
@@ -368,6 +371,7 @@ http://en.wikipedia.org/wiki/Arousal</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000016">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000087"/>
+        <obo:IAO_0000115>A member of the species Homo Sapiens.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">human being</rdfs:label>
     </owl:Class>
     
@@ -707,6 +711,12 @@ recognition of the meaning of the utterance through their knowledge of the langu
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000041">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
+        <obo:IAO_0000115>A belief is a disposition to mental processes that represent some proposition X to be true.</obo:IAO_0000115>
+        <rdfs:comment>Judging is a mental process that brings a belief into existence. Judging differently may also bring that belief out of existence.
+
+An act of believing is just thinking about a belief.
+
+Beliefs typically cause us to behave in ways that are characteristic with the content of that belief. However, this is not a necessary feature for the existence of the belief.</rdfs:comment>
         <rdfs:label xml:lang="en">belief</rdfs:label>
     </owl:Class>
     
@@ -743,6 +753,7 @@ recognition of the meaning of the utterance through their knowledge of the langu
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000045">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
+        <obo:IAO_0000115>Wanting is a mental process that includes a feeling of longing towards some future state of affairs.</obo:IAO_0000115>
         <rdfs:label>wanting</rdfs:label>
     </owl:Class>
     
@@ -1034,7 +1045,7 @@ c) which is experienced by the subject as being so caused</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000070">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
-        <obo:IAO_0000115>A memory is a disposition that is realized in a process of remembering, i.e. a memory of X is a disposition realized in the process of remembering X.</obo:IAO_0000115>
+        <obo:IAO_0000115>A memory is a mental disposition that is realized in a process of remembering, i.e. a memory of X is a disposition realized in the process of remembering X.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">memory</rdfs:label>
     </owl:Class>
     
