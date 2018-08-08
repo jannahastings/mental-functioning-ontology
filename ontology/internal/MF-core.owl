@@ -209,16 +209,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MF_0000001 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000017"/>
-        <obo:IAO_0000115>Higher order consciousness is consciousness of one&apos;s own mental states, a self-reflexive consciousness of the experience of being conscious, of having mental processes ongoing.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">higher order consciousness</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MF_0000002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000002">
@@ -1005,7 +995,7 @@ http://www.apa.org/research/action/glossary.aspx</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MF_0000067 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000067">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000101"/>
         <obo:IAO_0000115>Consciousness of self is the higher order consciousness that reflexively includes the awareness that the organism that is the subject of the conscious experience exists.</obo:IAO_0000115>
         <obo:IAO_0000118>consciousness of the existence of the self</obo:IAO_0000118>
         <obo:IAO_0000118>self-consciousness</obo:IAO_0000118>
@@ -1047,6 +1037,16 @@ c) which is experienced by the subject as being so caused</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
         <obo:IAO_0000115>A memory is a mental disposition that is realized in a process of remembering, i.e. a memory of X is a disposition realized in the process of remembering X.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">memory</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000101 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000101">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000017"/>
+        <obo:IAO_0000115>Higher order consciousness is consciousness of one&apos;s own mental states, a self-reflexive consciousness of the experience of being conscious, of having mental processes ongoing.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">higher order consciousness</rdfs:label>
     </owl:Class>
     
 
