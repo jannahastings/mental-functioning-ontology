@@ -59,9 +59,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0002118">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0051705"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behavioral interaction between organisms in which one organism has the intention of inflicting physical damage on another individual.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/nbo.owl"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aggressive behavior</rdfs:label>
     </owl:Class>
     
 
@@ -70,20 +67,13 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0002120">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0002118"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aggressive behavior involving attack on prey by a predator.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/nbo.owl"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">predatory behavior</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0007610 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0007610">
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The internally coordinated responses (actions or inactions) of animals (individuals or groups) to internal or external stimuli, via a mechanism that involves nervous system activity.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/nbo.owl"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">behavior</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0007610"/>
     
 
 
@@ -91,10 +81,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0007622">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007610"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0044708"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The specific behavior of an organism that recur with measured regularity.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/nbo.owl"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rhythmic behavior</rdfs:label>
     </owl:Class>
     
 
@@ -103,9 +89,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0022410">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0048512"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A behavioral process involved in the cycle from wakefulness through an orderly succession of sleep states and stages that occurs on an approximately 24 hour rhythm.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/nbo.owl"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">circadian sleep/wake cycle process</rdfs:label>
     </owl:Class>
     
 
@@ -114,9 +97,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0042747">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0022410"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A stage in the circadian sleep cycle during which dreams occur and the body undergoes marked changes including rapid eye movement, loss of reflexes, and increased pulse rate and brain activity.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/nbo.owl"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">circadian sleep/wake cycle, REM sleep</rdfs:label>
     </owl:Class>
     
 
@@ -125,18 +105,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0042748">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0022410"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">All sleep stages in the circadian sleep/wake cycle other than REM sleep. These stages are characterized by a slowing of brain waves and other physiological functions.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/nbo.owl"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">circadian sleep/wake cycle, non-REM sleep</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0044708 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0044708">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007610"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/nbo.owl"/>
     </owl:Class>
     
 
@@ -145,9 +113,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0048512">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007622"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The specific behavior of an organism that recurs with a regularity of approximately 24 hours.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/nbo.owl"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">circadian behavior</rdfs:label>
     </owl:Class>
     
 
@@ -156,9 +121,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0050802">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0022410"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The part of the circadian sleep/wake cycle where the organism is asleep.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/nbo.owl"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">circadian sleep/wake cycle, sleep</rdfs:label>
     </owl:Class>
     
 
@@ -167,20 +129,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0051705">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007610"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any process in which an organism has a behavioral effect on another organism of the same or different species.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/nbo.owl"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multi-organism behavior</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NBO_0000084 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NBO_0000084">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007622"/>
-        <obo:IAO_0000115>&quot;Behavior related to any biological process in an organism that recurs with a regularity of approximately 24 hours.&quot; [NBO:GVG]</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/nbo.owl"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">circadian behavior</rdfs:label>
     </owl:Class>
     
 
@@ -189,8 +137,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NBO_0000159">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0042747"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0048512"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050802"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000084"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/nbo.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rapid eye movement sleep</rdfs:label>
     </owl:Class>
@@ -201,8 +149,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NBO_0000161">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0042748"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0048512"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0050802"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000084"/>
         <obo:IAO_0000115>&quot;Behavior related to all sleep stages in the circadian sleep/wake cycle other than REM sleep.&quot; [NBO:GVG]</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/nbo.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-rapid eye movement sleep behavior</rdfs:label>
@@ -213,7 +161,7 @@
     <!-- http://purl.obolibrary.org/obo/NBO_0000166 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NBO_0000166">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000084"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0048512"/>
         <obo:IAO_0000115>&quot;Endogenously driven roughly 24-hour cycle in biochemical, physiological, or behavioral processes.&quot; [GOC:bf]</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/nbo.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">circadian rhythm</rdfs:label>
@@ -254,7 +202,7 @@
     <!-- http://purl.obolibrary.org/obo/NBO_0000536 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NBO_0000536">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000084"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0048512"/>
         <obo:IAO_0000115>&quot;Any process in which an organism modulates its heart rate at different values with a regularity of approximately 24 hours.&quot; [GOC:rl]</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/nbo.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">circadian regulation of heart rate</rdfs:label>
@@ -265,7 +213,7 @@
     <!-- http://purl.obolibrary.org/obo/NBO_0000537 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NBO_0000537">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000084"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0048512"/>
         <obo:IAO_0000115>&quot;Any process in which an organism modulates its blood pressure at different values with a regularity of approximately 24 hours.&quot; [GO:GO\:0003052]</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/nbo.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">circadian regulation of systemic arterial blood pressure</rdfs:label>
@@ -276,7 +224,7 @@
     <!-- http://purl.obolibrary.org/obo/NBO_0000538 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NBO_0000538">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000084"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0048512"/>
         <obo:IAO_0000115>&quot;Any homeostatic process in which an organism modulates its internal body temperature at different values with a regularity of approximately 24 hours.&quot; [GOC:dbh]</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/nbo.owl"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">circadian temperature homeostasis</rdfs:label>
