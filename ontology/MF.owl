@@ -59,6 +59,12 @@
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
+    
+
+
     <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
@@ -143,16 +149,15 @@
 
     <!-- http://purl.obolibrary.org/obo/GO_0007600 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0007600">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0007600">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000019"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/GO_0007610 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0007610">
-        <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/NBO_0000313"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
     </rdf:Description>
     
@@ -240,7 +245,9 @@
 
     <!-- http://purl.obolibrary.org/obo/MF_0000023 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000023"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007610"/>
+    </owl:Class>
     
 
 
@@ -265,14 +272,6 @@
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000032">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
     </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NBO_0000313 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NBO_0000313">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
-    </owl:Class>
     
 
 

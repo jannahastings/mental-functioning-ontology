@@ -298,7 +298,6 @@
     <!-- http://purl.obolibrary.org/obo/MF_0000010 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000010">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000297"/>
         <rdfs:label xml:lang="en">mathematical problem solving behavior</rdfs:label>
     </owl:Class>
     
@@ -307,7 +306,6 @@
     <!-- http://purl.obolibrary.org/obo/MF_0000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000011">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000297"/>
         <rdfs:label xml:lang="en">visual problem solving behavior</rdfs:label>
     </owl:Class>
     
@@ -340,7 +338,6 @@ http://en.wikipedia.org/wiki/Arousal</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MF_0000014 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000014">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000297"/>
         <rdfs:label xml:lang="en">language problem solving behavior</rdfs:label>
     </owl:Class>
     
@@ -443,7 +440,6 @@ which the relevant part of the environment is thereby represented to the organis
     <!-- http://purl.obolibrary.org/obo/MF_0000021 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000021">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000167"/>
@@ -473,7 +469,6 @@ which the relevant part of the environment is thereby represented to the organis
     <!-- http://purl.obolibrary.org/obo/MF_0000023 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000023">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
@@ -1073,14 +1068,6 @@ c) which is experienced by the subject as being so caused</obo:IAO_0000115>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A personality trait is an individual disposition or predisposition that forms part of an overall personality and is realized in repeated occurrences of a specific mental process type or behavioural profile. </obo:IAO_0000115>
         <rdfs:label xml:lang="en">personality trait</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NBO_0000297 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NBO_0000297">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
     </owl:Class>
     
 
