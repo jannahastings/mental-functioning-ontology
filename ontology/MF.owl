@@ -279,9 +279,7 @@
 
     <!-- http://purl.obolibrary.org/obo/MF_0000031 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000031">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-    </owl:Class>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000031"/>
     
 
 
