@@ -371,7 +371,6 @@ http://en.wikipedia.org/wiki/Arousal</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MF_0000017 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000017">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000132"/>
@@ -1043,7 +1042,7 @@ c) which is experienced by the subject as being so caused</obo:IAO_0000115>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000070">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
         <obo:IAO_0000115>A memory is a mental disposition that is realized in a process of remembering, i.e. a memory of X is a disposition realized in the process of remembering X.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">memory</rdfs:label>
+        <rdfs:label xml:lang="en">a memory</rdfs:label>
     </owl:Class>
     
 
@@ -1120,8 +1119,8 @@ c) which is experienced by the subject as being so caused</obo:IAO_0000115>
      -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000110">
-        <ace_lexicon:TV_vbg>BFO_0000110ed</ace_lexicon:TV_vbg>
         <ace_lexicon:TV_sg>BFO_0000110s</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>BFO_0000110ed</ace_lexicon:TV_vbg>
         <ace_lexicon:TV_pl>BFO_0000110</ace_lexicon:TV_pl>
     </rdf:Description>
 </rdf:RDF>
