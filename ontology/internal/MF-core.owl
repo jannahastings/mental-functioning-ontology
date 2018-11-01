@@ -214,6 +214,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000002">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
         <obo:IAO_0000115>(for the case of remembering X, where X is an event in the organism’s history) a mental process that is a) about X, and b) made possible by the physical traces left by a causal process involving the organism during the event X</obo:IAO_0000115>
+        <obo:IAO_0000118>act of remembering</obo:IAO_0000118>
         <rdfs:label xml:lang="en">remembering</rdfs:label>
     </owl:Class>
     
@@ -226,6 +227,7 @@
         <obo:IAO_0000115>State of active attention by high sensory awareness such as being watchful and prompt to meet danger or emergency, or being quick to perceive and act.
 
  http://en.wikipedia.org/wiki/Alertness</obo:IAO_0000115>
+        <obo:IAO_0000118>state of alertness</obo:IAO_0000118>
         <rdfs:label xml:lang="en">alertness</rdfs:label>
         <owl:priorVersion>MFOMD_0000176</owl:priorVersion>
     </owl:Class>
@@ -255,6 +257,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
         <obo:IAO_0000115>Judging is the evaluation of evidence to make a decision or form a belief.</obo:IAO_0000115>
+        <obo:IAO_0000118>act of judging</obo:IAO_0000118>
         <rdfs:label xml:lang="en">judging</rdfs:label>
     </owl:Class>
     
@@ -330,6 +333,7 @@ http://en.wikipedia.org/wiki/Arousal</obo:IAO_0000115>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000013">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
         <obo:IAO_0000115>a mental process that involves the manipulation of mental language and/or mental images</obo:IAO_0000115>
+        <obo:IAO_0000118>act of thinking</obo:IAO_0000118>
         <rdfs:label>thinking</rdfs:label>
     </owl:Class>
     
@@ -498,6 +502,7 @@ which the relevant part of the environment is thereby represented to the organis
 a) produced by a causal process involving light rays from a part of the environment of the subject being absorbed by photoreceptors in the retina, and
 b) is experienced by the subject as being so caused, and
 c) in which the relevant part of the environment is thereby represented to the subject</obo:IAO_0000115>
+        <obo:IAO_0000118>act of seeing</obo:IAO_0000118>
         <obo:IAO_0000118>visual perception</obo:IAO_0000118>
         <rdfs:label xml:lang="en">seeing</rdfs:label>
     </owl:Class>
@@ -528,6 +533,7 @@ c) in which the relevant part of the environment is thereby represented to the s
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000027">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
         <obo:IAO_0000115>Planning is the process of thinking about the activities required to achieve a desired goal. It involves the creation and maintenance of a plan, such as psychological aspects that require conceptual skills.</obo:IAO_0000115>
+        <obo:IAO_0000118>act of planning</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Planning</obo:IAO_0000119>
         <rdfs:label>planning</rdfs:label>
     </owl:Class>
@@ -661,6 +667,7 @@ c) in which the relevant part of the environment is thereby represented to the s
 a) produced by a causal process involving sound waves from a part of the environment of the subject being absorbed by detectors in the ear, and
 b) is experienced by the subject as being so caused, and
 c) in which the relevant part of the environment is thereby represented to the subject</obo:IAO_0000115>
+        <obo:IAO_0000118>act of hearing</obo:IAO_0000118>
         <obo:IAO_0000118>auditory perception</obo:IAO_0000118>
         <rdfs:label xml:lang="en">hearing</rdfs:label>
     </owl:Class>
@@ -739,6 +746,7 @@ Beliefs typically cause us to behave in ways that are characteristic with the co
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000045">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
         <obo:IAO_0000115>Wanting is a mental process that includes a feeling of longing towards some future state of affairs.</obo:IAO_0000115>
+        <obo:IAO_0000118>act of wanting</obo:IAO_0000118>
         <rdfs:label>wanting</rdfs:label>
     </owl:Class>
     
@@ -824,6 +832,7 @@ Beliefs typically cause us to behave in ways that are characteristic with the co
 a) produced by a causal process involving xenobiotic molecules from a part of the environment of the subject binding with specialized sensory cells in the tongue and nasal cavity, and
 b) is experienced by the subject as being so caused, and
 c) in which the relevant part of the environment is thereby represented to the subject</obo:IAO_0000115>
+        <obo:IAO_0000118>act of tasting</obo:IAO_0000118>
         <rdfs:label xml:lang="en">tasting</rdfs:label>
     </owl:Class>
     
@@ -843,6 +852,7 @@ c) in which the relevant part of the environment is thereby represented to the s
 a) produced by a causal process involving xenobiotic molecules from a part of the environment of the subject binding with specialized sensory cells in the nasal cavity, and
 b) is experienced by the subject as being so caused, and
 c) in which the relevant part of the environment is thereby represented to the subject</obo:IAO_0000115>
+        <obo:IAO_0000118>act of smelling</obo:IAO_0000118>
         <obo:IAO_0000118>olfactory perception</obo:IAO_0000118>
         <rdfs:label xml:lang="en">smelling</rdfs:label>
     </owl:Class>
@@ -863,6 +873,7 @@ c) in which the relevant part of the environment is thereby represented to the s
 a) produced by a causal process involving pressure on the organism’s skin from a part of the environment of the subject, and
 b) is experienced by the subject as being so caused, and
 c) in which the relevant part of the environment is thereby represented to the subject</obo:IAO_0000115>
+        <obo:IAO_0000118>act of touching</obo:IAO_0000118>
         <rdfs:label xml:lang="en">touching</rdfs:label>
     </owl:Class>
     
@@ -893,6 +904,7 @@ c) in which the relevant part of the environment is thereby represented to the s
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000059">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
         <obo:IAO_0000115>Short-term detachment from one&apos;s immediate surroundings, during which a person&apos;s contact with reality is blurred and partially substituted by a visionary fantasy, especially one of happy, pleasant thoughts, hopes or ambitions, imagined as coming to pass, and experienced while awake.</obo:IAO_0000115>
+        <obo:IAO_0000118>act of daydreaming</obo:IAO_0000118>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Daydream</obo:IAO_0000119>
         <rdfs:label xml:lang="en">daydreaming</rdfs:label>
         <owl:priorVersion>MFOMD_0000148</owl:priorVersion>
@@ -908,6 +920,7 @@ c) in which the relevant part of the environment is thereby represented to the s
 
 
 http://en.wikipedia.org/wiki/Vigilance_%28psychology%29</obo:IAO_0000115>
+        <obo:IAO_0000118>state of vigilance</obo:IAO_0000118>
         <rdfs:label xml:lang="en">vigilance</rdfs:label>
         <owl:priorVersion>MFOMD_0000140</owl:priorVersion>
     </owl:Class>
