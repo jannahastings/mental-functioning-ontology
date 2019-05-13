@@ -2,13 +2,13 @@
 
 The Mental Functioning Ontology (MF) is an ontology for mental functioning, including mental processes such as cognition and traits such as intelligence. There is a module (MFO-MD) which covers mental disorders, within which the IDs are reused from the Disease Ontology as far as is possible. It is developed in the context of the Ontology for General Medical Science (OGMS) and the Basic Formal Ontology (BFO). The project is being developed collaboratively by a community of users. To discuss any aspect of the ontology, send a message to mfo-discuss@googlegroups.com. 
 
-The project is being developed following best practices as set out by the [OBO Foundry](http://www.obofoundry.org/). Efforts are currently underway to align with related projects including the [Cognitive Atlas](http://www.cognitiveatlas.org/) and the [Cognitive Paradigm Ontology](http://www.cogpo.org/).
+The project is being developed following best practices as set out by the [OBO Foundry](http://www.obofoundry.org/). The ontology has been partially aligned with the related projects [Cognitive Atlas](http://www.cognitiveatlas.org/) and the [Cognitive Paradigm Ontology](http://www.cogpo.org/).
 
 The latest version of the ontology is available at http://purl.obolibrary.org/obo/MF.owl and is best viewed using Protege version 4.2 or above.
 
 # Persons involved
 
-The primary maintainer of the ontology is Janna Hastings (University of Cambridge, UK).  
+The primary maintainer of the ontology is Janna Hastings (University College London, UK).  
 
 Other current and historical contributors include: Barry Smith, (Buffalo, USA), Neil Otte (Buffalo, USA), Werner Ceusters (Buffalo, USA), Kevin Mulligan (Geneva, Switzerland), Mark Jensen (Buffalo, USA), Jeanette Chacón (Cambridge, UK) and Rasmus Rosenberg Larsen (Toronto, Canada).
 
