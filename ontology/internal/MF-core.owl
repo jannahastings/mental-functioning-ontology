@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/MF.owl#"
      xml:base="http://purl.obolibrary.org/obo/MF.owl"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:iao="http://purl.obolibrary.org/obo/iao/"
-     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
-     xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/MF/internal/MF-core.owl">
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MF/external/ontology-metadata-slim.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MF/external/bfo-properties-slim.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MF/external/ontology-metadata-slim.owl"/>
         <rdfs:comment>Core mental functioning ontology classes and properties. </rdfs:comment>
         <rdfs:comment>To be imported into the full MF.owl</rdfs:comment>
     </owl:Ontology>
@@ -301,6 +301,7 @@
     <!-- http://purl.obolibrary.org/obo/MF_0000010 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000071"/>
         <rdfs:label xml:lang="en">mathematical problem solving behavior</rdfs:label>
     </owl:Class>
     
@@ -309,6 +310,7 @@
     <!-- http://purl.obolibrary.org/obo/MF_0000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000071"/>
         <rdfs:label xml:lang="en">visual problem solving behavior</rdfs:label>
     </owl:Class>
     
@@ -342,6 +344,7 @@ http://en.wikipedia.org/wiki/Arousal</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/MF_0000014 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000071"/>
         <rdfs:label xml:lang="en">language problem solving behavior</rdfs:label>
     </owl:Class>
     
@@ -384,6 +387,18 @@ http://en.wikipedia.org/wiki/Arousal</obo:IAO_0000115>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000167"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MF_0000073"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000167"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MF_0000076"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Consciousness is an inseparable part of all mental processes. It is that part of the mental process that:
@@ -647,6 +662,7 @@ c) in which the relevant part of the environment is thereby represented to the s
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000037">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000017"/>
         <obo:IAO_0000115>Direct consciousness is consciousness of phenomenal experience, it is the given experience in consciousness of (for example) sounds, tastes, emotions and bodily feelings.</obo:IAO_0000115>
+        <obo:IAO_0000118>pre-reflexive consciousness</obo:IAO_0000118>
         <rdfs:label xml:lang="en">direct consciousness</rdfs:label>
     </owl:Class>
     
@@ -1005,6 +1021,7 @@ http://www.apa.org/research/action/glossary.aspx</obo:IAO_0000115>
         <obo:IAO_0000115>Consciousness of self is the higher order consciousness that reflexively includes the awareness that the organism that is the subject of the conscious experience exists.</obo:IAO_0000115>
         <obo:IAO_0000118>consciousness of the existence of the self</obo:IAO_0000118>
         <obo:IAO_0000118>self-consciousness</obo:IAO_0000118>
+        <obo:IAO_0000118>selfhood</obo:IAO_0000118>
         <rdfs:comment>The implication of Descartes&apos; famous &quot;Cogito ergo sum&quot; is that awareness of one&apos;s own existence entails that one exists. This is because consciousness creates a perspective, and awareness of this is a self-reflexive perspective of oneself. This is one aspect of intentionality that cannot fail. Intentionality can fail at all levels of content, but not at the level of intending through awareness the existence of the self that is consciously intending.</rdfs:comment>
         <rdfs:label xml:lang="en">consciousness of self</rdfs:label>
     </owl:Class>
@@ -1043,6 +1060,135 @@ c) which is experienced by the subject as being so caused</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
         <obo:IAO_0000115>A memory is a mental disposition that is realized in a process of remembering, i.e. a memory of X is a disposition realized in the process of remembering X.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">a memory</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000071 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000071">
+        <rdfs:label xml:lang="en">problem solving behaviour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000072 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000072">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000101"/>
+        <obo:IAO_0000115>The subjective experience of time as a coherent process inhabited by oneself as an embodied thinking being</obo:IAO_0000115>
+        <obo:IAO_0000118>time awareness</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">consciousness of time</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000073 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000073">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000075"/>
+        <obo:IAO_0000115>Intentionality is the fundamental quality of conscious mental processes of always having content, of being directed towards, or about something.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">intentionality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000074 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000074">
+        <obo:IAO_0000115>A bodily quality is a quality that inheres in some extended organism.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">bodily quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000075 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000075">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000074"/>
+        <obo:IAO_0000115>A mental quality is a bodily quality that inheres in those structures of the extended organism that are essential for mental functioning.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">mental quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000076 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000076">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
+        <obo:IAO_0000112>An example of an intentional modality is the capacity to represent objects of intentionality as unfolding in time or being time contingent.</obo:IAO_0000112>
+        <obo:IAO_0000115>A structural capacity that shapes how an object of intentionality is represented for the subject.</obo:IAO_0000115>
+        <obo:IAO_0000118>intentional mode</obo:IAO_0000118>
+        <obo:IAO_0000118>intentional structure</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">intentional modality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000077 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000077">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000101"/>
+        <obo:IAO_0000115>The subjective experience of the spatial surroundings one inhabits as an embodied entity.</obo:IAO_0000115>
+        <obo:IAO_0000118>space awareness</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">consciousness of space</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000078 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000078">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000101"/>
+        <obo:IAO_0000115>The subjective experience of being an embodied entity.</obo:IAO_0000115>
+        <obo:IAO_0000118>body awareness</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">consciousness of the body</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000079 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000079">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000101"/>
+        <obo:IAO_0000115>The subjective experience of other beings as self-aware entities.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">intersubjectivity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000080 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000080">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000076"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MF_0000072"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>The intentional structural capacity to experience lived time.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">time intentional modality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000081 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000081">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000080"/>
+        <obo:IAO_0000115>The partial structure of time consciousness that relates to linking and projecting the content of immediate moments to future moments (e.g. how the path of a moving object is intuitively projected).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">protention</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000082">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000080"/>
+        <obo:IAO_0000115>The partial structure of time consciousness that relates to retaining past events in memory and linking them to present events (e.g. how the individual tones in a melody is intuitively linked together to form a whole).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">retention</rdfs:label>
     </owl:Class>
     
 
@@ -1127,5 +1273,5 @@ c) which is experienced by the subject as being so caused</obo:IAO_0000115>
 
 
 
-<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
