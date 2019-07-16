@@ -215,33 +215,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/MF_0000010 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000010">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007610"/>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MF_0000011 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000011">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007632"/>
-    </rdf:Description>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/MF_0000012 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000012"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MF_0000014 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000014">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007610"/>
-    </rdf:Description>
     
 
 
