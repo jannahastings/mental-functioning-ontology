@@ -376,6 +376,12 @@ http://en.wikipedia.org/wiki/Arousal</obo:IAO_0000115>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000017">
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MF_0000076"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000132"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -393,12 +399,6 @@ http://en.wikipedia.org/wiki/Arousal</obo:IAO_0000115>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000167"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MF_0000073"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000167"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MF_0000076"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>Consciousness is an inseparable part of all mental processes. It is that part of the mental process that:
