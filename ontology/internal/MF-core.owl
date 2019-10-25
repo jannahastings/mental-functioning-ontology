@@ -704,11 +704,7 @@ c) in which the relevant part of the environment is thereby represented to the s
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000040">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000021"/>
-        <obo:IAO_0000115>A communication process is an interpersonal process that:
-(a) involves as participant at least two linguistically capable organisms;
-(b) one of whom produces an utterance that is well-formed in a given language;
-(c) the other of whom perceives and understands that utterance by virtue of their
-recognition of the meaning of the utterance through their knowledge of the language.</obo:IAO_0000115>
+        <obo:IAO_0000115>A communication process is an interpersonal process that involves the transmission of information between two organisms via a medium such as speaking or writing.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">communication</rdfs:label>
     </owl:Class>
     
@@ -1193,6 +1189,53 @@ c) which is experienced by the subject as being so caused</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MF_0000084 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000084">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000086"/>
+        <obo:IAO_0000115>A spoken communication process is a linguistic communication process that:
+(a) involves as participant at least two linguistically capable organisms;
+(b) one of whom produces an utterance that is well-formed in a given language;
+(c) the other of whom perceives and understands that utterance by virtue of their
+recognition of the meaning of the utterance through their knowledge of the language.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">spoken communication</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000085 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000085">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000086"/>
+        <obo:IAO_0000115>A written communication process is an interpersonal process that:
+(a) involves as participant at least two organisms,
+(b) one of whom produces a message in writing that is well-formed in a given language;
+(c) the other of whom reads the message and understands it.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">written communication</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000086 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000086">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000040"/>
+        <obo:IAO_0000115>A linguistic communication process is a communication process in which the information that is communicated is encoded in language.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">linguistic communication</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000087 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000087">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000040"/>
+        <obo:IAO_0000115>A gestural communication process is a communication process in which information is transferred by means of physical movements.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">gestural communication</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MF_0000101 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000101">
@@ -1265,8 +1308,8 @@ c) which is experienced by the subject as being so caused</obo:IAO_0000115>
      -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000110">
-        <ace_lexicon:TV_sg>BFO_0000110s</ace_lexicon:TV_sg>
         <ace_lexicon:TV_vbg>BFO_0000110ed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>BFO_0000110s</ace_lexicon:TV_sg>
         <ace_lexicon:TV_pl>BFO_0000110</ace_lexicon:TV_pl>
     </rdf:Description>
 </rdf:RDF>

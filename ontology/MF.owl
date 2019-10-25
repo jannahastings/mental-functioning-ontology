@@ -11,6 +11,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#">
@@ -31,7 +32,7 @@
         <rdfs:comment>The Mental Functioning Ontology is an overarching ontology for all aspects of mental functioning, founded on the Basic Formal Ontology (BFO) and related to the Ontology for General Medical Science (OGMS).</rdfs:comment>
         <rdfs:comment>The OWL representaions of MF and MD were split on 22 May 2012.</rdfs:comment>
         <rdfs:comment>This OWL version of the MF ontology was originally created by Janna Hastings and is maintained by all committers to the MF ontology project. </rdfs:comment>
-        <owl:versionInfo>2018-08-27</owl:versionInfo>
+        <owl:versionInfo>2019-10-25</owl:versionInfo>
     </owl:Ontology>
     
 
