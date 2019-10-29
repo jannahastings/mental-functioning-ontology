@@ -1719,6 +1719,7 @@ http://www.psychologytoday.com/conditions/anorexia-nervosa</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MFOMD_0000001">
         <obo:IAO_0000115>A disease which is a disposition to undergo pathological mental processes.</obo:IAO_0000115>
+        <obo:IAO_0000118>mental health condition</obo:IAO_0000118>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
         <rdfs:comment>The Mental Disease ontology follows the strategy of the Ontology of General Medical Science in distinguishing mental disease, mental disorder, diagnosis of mental disease, mental disease course and pathological mental process as separately distinguishable entities. Here is a quick guide to how these terms are used in this ontology. 
 
@@ -2018,6 +2019,7 @@ There is continuing evidence of two or more symptoms, such as marked social isol
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A disease course of a mental disease.</obo:IAO_0000115>
+        <obo:IAO_0000118>mental disorder</obo:IAO_0000118>
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mental disease course</rdfs:label>
     </owl:Class>
