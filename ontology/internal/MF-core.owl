@@ -366,6 +366,7 @@ http://en.wikipedia.org/wiki/Arousal</obo:IAO_0000115>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000016">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000087"/>
         <obo:IAO_0000115>A member of the species Homo Sapiens.</obo:IAO_0000115>
+        <obo:IAO_0000118>person</obo:IAO_0000118>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">human being</rdfs:label>
     </owl:Class>
     
