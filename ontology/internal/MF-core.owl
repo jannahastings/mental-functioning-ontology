@@ -528,7 +528,7 @@ c) in which the relevant part of the environment is thereby represented to the s
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000025">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000048"/>
-        <obo:IAO_0000115>A mental disposition realised in processes involving understanding complex ideas, adapting effectively to the environment, learning from experience, engaging in various forms of reasoning, and overcome obstacles through the outcome of thinking processes.</obo:IAO_0000115>
+        <obo:IAO_0000115>A mental capability realised in processes involving understanding complex ideas, adapting effectively to the environment, learning from experience, engaging in various forms of reasoning, and overcome obstacles through the outcome of thinking processes.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">intelligence</rdfs:label>
     </owl:Class>
     
@@ -739,6 +739,10 @@ Beliefs typically cause us to behave in ways that are characteristic with the co
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000043">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000032"/>
+        <obo:IAO_0000115>A disposition inhering in an organism whose realization in the normal case brings benefits to an organism or group of organisms, where &quot;in the normal case&quot; means not only in the normal range on the scale, but also in a context which is normal for the group to which the bearer or user belongs.</obo:IAO_0000115>
+        <obo:IAO_0000118>personal capability</obo:IAO_0000118>
+        <obo:IAO_0000119>https://github.com/NCOR-US/Capabilities/wiki/The-Account-of-Capabilities</obo:IAO_0000119>
+        <rdfs:comment>Note that, as discussed in https://philpapers.org/archive/MERMC.pdf, both organisms and artifacts can bear capabilities. However, this capability class is just applicable to organismal capabilities (as a subclass of &apos;bodily disposition&apos;) and the definition has been amended from that of the definition source accordingly.</rdfs:comment>
         <rdfs:label xml:lang="en">capability</rdfs:label>
     </owl:Class>
     
@@ -786,6 +790,7 @@ Beliefs typically cause us to behave in ways that are characteristic with the co
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000048">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000043"/>
+        <obo:IAO_0000115>A capability that necessarily includes mental processes in its realisation.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">mental capability</rdfs:label>
     </owl:Class>
     
@@ -795,6 +800,7 @@ Beliefs typically cause us to behave in ways that are characteristic with the co
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000049">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000050"/>
+        <obo:IAO_0000115>A linguistic capability that is realised by processes in which textual concretisations of linguistic expressions are processed and understood.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">capability to read</rdfs:label>
     </owl:Class>
     
@@ -804,6 +810,7 @@ Beliefs typically cause us to behave in ways that are characteristic with the co
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000050">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000048"/>
+        <obo:IAO_0000115>A mental capability that is realised in processes of communication involving language or in expressions of language.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">linguistic capability</rdfs:label>
     </owl:Class>
     
@@ -813,6 +820,7 @@ Beliefs typically cause us to behave in ways that are characteristic with the co
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000051">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000050"/>
+        <obo:IAO_0000115>A linguistic capability that is realised in processes in which well-formed expressions in a given language are understood.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">capability to understand language</rdfs:label>
     </owl:Class>
     
@@ -822,6 +830,7 @@ Beliefs typically cause us to behave in ways that are characteristic with the co
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000052">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000050"/>
+        <obo:IAO_0000115>A linguistic capability that is realised in processes in which well-formed vocal expressions in a given language are produced.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">capability to speak</rdfs:label>
     </owl:Class>
     
@@ -1190,6 +1199,16 @@ c) which is experienced by the subject as being so caused</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MF_0000083 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000083">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000015"/>
+        <obo:IAO_0000115>A mental process that evokes the visual representation of objects or events when these are not immendiately present to the senses.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">mental imagery</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MF_0000084 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000084">
@@ -1233,6 +1252,16 @@ recognition of the meaning of the utterance through their knowledge of the langu
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000040"/>
         <obo:IAO_0000115>A gestural communication process is a communication process in which information is transferred by means of physical movements.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">gestural communication</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000088 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000088">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
+        <obo:IAO_0000115>A bodily process that involves neuronal activity in response to a sensory stimuli but which is not the subject of consciousness.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">subliminal process</rdfs:label>
     </owl:Class>
     
 
