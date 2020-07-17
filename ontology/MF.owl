@@ -21,7 +21,7 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MF/external/GO_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MF/external/behavior-slim.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MF/internal/MF-core.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/omo/2020-06-08/omo.owl"/>
         <dc:contributor>Barry Smith</dc:contributor>
         <dc:contributor>Janna Hastings</dc:contributor>
         <dc:contributor>Jeanette Alicia Chacón Candia</dc:contributor>
