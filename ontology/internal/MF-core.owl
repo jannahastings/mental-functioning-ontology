@@ -240,6 +240,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000004">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000008"/>
+        <obo:IAO_0000115>A cognitive process that involves the mental representation of sequential numbers.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">mental counting</rdfs:label>
     </owl:Class>
     
@@ -249,6 +250,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000005">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000008"/>
+        <obo:IAO_0000115>A cognitive process that involves the manipulation of mental representations of numeric entities in order to compute the outcome of a mathematical function.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">mental calculation</rdfs:label>
     </owl:Class>
     
@@ -269,6 +271,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000007">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000006"/>
+        <obo:IAO_0000115>A judging that involves forming an opinion about the gender of a person.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">determining gender</rdfs:label>
     </owl:Class>
     
@@ -295,6 +298,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000009">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000006"/>
+        <obo:IAO_0000115>A judging that involves the determination of the orientation of some object.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">determining orientation</rdfs:label>
     </owl:Class>
     
@@ -707,8 +711,9 @@ c) in which the relevant part of the environment is thereby represented to the s
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000040">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000021"/>
-        <obo:IAO_0000115>A communication process is an interpersonal process that involves the transmission of information between two organisms via a medium such as speaking or writing.</obo:IAO_0000115>
+        <obo:IAO_0000115>A communication process is an interpersonal process that involves the transmission of information between two organisms.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">communication</rdfs:label>
+        <rdfs:seeAlso>http://purl.obolibrary.org/obo/OMRSE_00000192</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -754,6 +759,7 @@ Beliefs typically cause us to behave in ways that are characteristic with the co
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000044">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000043"/>
+        <obo:IAO_0000115>A capability that is realised in an activity of producing or interpreting music.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">musical capability</rdfs:label>
     </owl:Class>
     
@@ -774,6 +780,7 @@ Beliefs typically cause us to behave in ways that are characteristic with the co
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000046">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000044"/>
+        <obo:IAO_0000115>A musical capability that is realised in the production of music using a piano.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">capability to play piano</rdfs:label>
     </owl:Class>
     
@@ -783,6 +790,7 @@ Beliefs typically cause us to behave in ways that are characteristic with the co
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000047">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000044"/>
+        <obo:IAO_0000115>A musical capability that is realised in the production of music using a violin.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">capability to play violin</rdfs:label>
     </owl:Class>
     
@@ -842,6 +850,7 @@ Beliefs typically cause us to behave in ways that are characteristic with the co
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000053">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000044"/>
+        <obo:IAO_0000115>A musical capability that is the ability to interpret the musical instructions represented in a musical score.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">capability to read music</rdfs:label>
     </owl:Class>
     
@@ -906,6 +915,8 @@ c) in which the relevant part of the environment is thereby represented to the s
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000057">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000008"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000013"/>
+        <obo:IAO_0000115>A cognitive process that involves the manipulation of mental language.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">thinking with language</rdfs:label>
     </owl:Class>
     
@@ -1217,7 +1228,7 @@ c) which is experienced by the subject as being so caused</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000086"/>
         <obo:IAO_0000115>A spoken communication process is a linguistic communication process that:
 (a) involves as participant at least two linguistically capable organisms;
-(b) one of whom produces an utterance that is well-formed in a given language;
+(b) one of whom produces an utterance that is well-formed in a given spoken language;
 (c) the other of whom perceives and understands that utterance by virtue of their
 recognition of the meaning of the utterance through their knowledge of the language.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">spoken communication</rdfs:label>
@@ -1251,7 +1262,7 @@ recognition of the meaning of the utterance through their knowledge of the langu
     <!-- http://purl.obolibrary.org/obo/MF_0000087 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000087">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000089"/>
         <obo:IAO_0000115>A gestural communication process is a communication process in which information is transferred by means of physical movements.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">gestural communication</rdfs:label>
     </owl:Class>
@@ -1264,6 +1275,36 @@ recognition of the meaning of the utterance through their knowledge of the langu
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
         <obo:IAO_0000115>A bodily process that involves neuronal activity in response to a sensory stimuli but which is not the subject of consciousness.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">subliminal process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000089 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000089">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000040"/>
+        <obo:IAO_0000115>A communication process in which information is transmitted without being encoded in the meaning units of any language.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">non-linguistic communication</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000090 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000090">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000086"/>
+        <obo:IAO_0000115>A linguistic communication in which the meaning units are encoded in a sign language.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">sign-language communication</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000091 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000091">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000089"/>
+        <obo:IAO_0000115>A non-linguistic communication process that involves the transmission of information by one participant interpreting the facial expressions of another participant.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">facial expression communication</rdfs:label>
     </owl:Class>
     
 
@@ -1340,8 +1381,8 @@ recognition of the meaning of the utterance through their knowledge of the langu
      -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000110">
-        <ace_lexicon:TV_vbg>BFO_0000110ed</ace_lexicon:TV_vbg>
         <ace_lexicon:TV_sg>BFO_0000110s</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>BFO_0000110ed</ace_lexicon:TV_vbg>
         <ace_lexicon:TV_pl>BFO_0000110</ace_lexicon:TV_pl>
     </rdf:Description>
 </rdf:RDF>
