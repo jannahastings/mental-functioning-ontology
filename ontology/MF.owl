@@ -16,7 +16,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/MF.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/MF/2020-08-07/MF.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/MF/2020-10-14/MF.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MF/external/GO_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MF/external/behavior-slim.owl"/>
@@ -33,7 +33,7 @@
         <rdfs:comment>The Mental Functioning Ontology is an overarching ontology for all aspects of mental functioning, founded on the Basic Formal Ontology (BFO) and related to the Ontology for General Medical Science (OGMS).</rdfs:comment>
         <rdfs:comment>The OWL representaions of MF and MD were split on 22 May 2012.</rdfs:comment>
         <rdfs:comment>This OWL version of the MF ontology was originally created by Janna Hastings and is maintained by all committers to the MF ontology project. </rdfs:comment>
-        <owl:versionInfo>2020-08-07</owl:versionInfo>
+        <owl:versionInfo>2020-10-14</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -321,26 +321,14 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000006">
-        <obo:IAO_0000115>A mental process during which a decision is made and the outcome of which is a belief or opinion.</obo:IAO_0000115>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000007">
         <obo:IAO_0000115>A judging process during which an opinion about the gender of a person is determined.</obo:IAO_0000115>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000015">
-        <obo:IAO_0000115>A mental process that manipulates mental images and words that go beyond mere memory and thoughts about the objects and entities that the person has encountered, to visualise or consider entities and states of affairs that the person has never encountered and which may not yet exist or obtain in the world.</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000022">
         <oboInOwl:hasAlternativeId>http://www.github.com/no/ontologies/2017/PAO/Agreeableness</oboInOwl:hasAlternativeId>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000027">
-        <obo:IAO_0000115>A mental process that involves mentally manipulating representations of steps in an imagined process which has some objective, e.g. to bring about a desired state of affairs. The outcome of this mental process is a plan which has the potential to be followed to bring about the desired outcome.</obo:IAO_0000115>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000028">
         <oboInOwl:hasAlternativeId>http://www.github.com/no/ontologies/2017/PAO/Conscientiousness</oboInOwl:hasAlternativeId>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000045">
-        <obo:IAO_0000115>A mental process that involves thinking about a state of affairs that does not yet obtain together with a desire for that state of affairs to obtain.</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000063">
         <oboInOwl:hasAlternativeId>http://www.github.com/no/ontologies/2017/PAO/Extraversion</oboInOwl:hasAlternativeId>

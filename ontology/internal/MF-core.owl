@@ -260,7 +260,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
-        <obo:IAO_0000115>Judging is the evaluation of evidence to make a decision or form a belief.</obo:IAO_0000115>
+        <obo:IAO_0000115>A mental process during which evidence is evaluated, the outcome of which is a belief or opinion.</obo:IAO_0000115>
         <obo:IAO_0000118>act of judging</obo:IAO_0000118>
         <rdfs:label xml:lang="en">judging</rdfs:label>
     </owl:Class>
@@ -360,7 +360,7 @@ http://en.wikipedia.org/wiki/Arousal</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000015">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
-        <obo:IAO_0000115>Imagination is the capacity to produce images, ideas and sensations in the mind without any immediate input of the senses (such as seeing or hearing).</obo:IAO_0000115>
+        <obo:IAO_0000115>A mental process that manipulates mental images and words that go beyond mere memory and thoughts about the objects and entities that the person has encountered, to visualise or consider entities and states of affairs that the person has never encountered and which may not yet exist or obtain in the world. Imagination is the capacity to produce images, ideas and sensations in the mind without any immediate input of the senses.</obo:IAO_0000115>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Imagination</obo:IAO_0000119>
         <rdfs:label xml:lang="en">imagination</rdfs:label>
     </owl:Class>
@@ -553,9 +553,8 @@ c) in which the relevant part of the environment is thereby represented to the s
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000027">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
-        <obo:IAO_0000115>Planning is the process of thinking about the activities required to achieve a desired goal. It involves the creation and maintenance of a plan, such as psychological aspects that require conceptual skills.</obo:IAO_0000115>
+        <obo:IAO_0000115>A mental process that involves mentally manipulating representations of steps in an imagined process which has some objective, e.g. to bring about a desired state of affairs. The outcome of this mental process is a plan which has the potential to be followed to bring about the desired outcome.</obo:IAO_0000115>
         <obo:IAO_0000118>act of planning</obo:IAO_0000118>
-        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Planning</obo:IAO_0000119>
         <rdfs:label>planning</rdfs:label>
     </owl:Class>
     
@@ -769,7 +768,7 @@ Beliefs typically cause us to behave in ways that are characteristic with the co
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000045">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
-        <obo:IAO_0000115>Wanting is a mental process that includes a feeling of longing towards some future state of affairs.</obo:IAO_0000115>
+        <obo:IAO_0000115>A mental process that involves thinking about a state of affairs that does not yet obtain together with a desire for that state of affairs to obtain.</obo:IAO_0000115>
         <obo:IAO_0000118>act of wanting</obo:IAO_0000118>
         <rdfs:label>wanting</rdfs:label>
     </owl:Class>
