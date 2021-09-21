@@ -260,7 +260,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000006">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
-        <obo:IAO_0000115>A mental process during which evidence is evaluated, the outcome of which is a belief or opinion.</obo:IAO_0000115>
+        <obo:IAO_0000115>A mental process during which information is evaluated, the outcome of which is a belief or opinion.</obo:IAO_0000115>
         <obo:IAO_0000118>act of judging</obo:IAO_0000118>
         <rdfs:label xml:lang="en">judging</rdfs:label>
     </owl:Class>
@@ -326,10 +326,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000012">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
-        <obo:IAO_0000115>Physiological and psychological state of being awake or reactive to stimuli.
-
-
-http://en.wikipedia.org/wiki/Arousal</obo:IAO_0000115>
+        <obo:IAO_0000115>A mental process that is the psychological and physiological state of being awake and reactive to stimuli.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">arousal</rdfs:label>
         <owl:priorVersion>MFOMD_0000146</owl:priorVersion>
     </owl:Class>
@@ -768,7 +765,7 @@ Beliefs typically cause us to behave in ways that are characteristic with the co
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000045">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
-        <obo:IAO_0000115>A mental process that involves thinking about a state of affairs that does not yet obtain together with a desire for that state of affairs to obtain.</obo:IAO_0000115>
+        <obo:IAO_0000115>A mental process that involves the subjective desire for a specific object or state of affairs.</obo:IAO_0000115>
         <obo:IAO_0000118>act of wanting</obo:IAO_0000118>
         <rdfs:label>wanting</rdfs:label>
     </owl:Class>
@@ -799,7 +796,7 @@ Beliefs typically cause us to behave in ways that are characteristic with the co
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000048">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000043"/>
-        <obo:IAO_0000115>A capability that necessarily includes mental processes in its realisation.</obo:IAO_0000115>
+        <obo:IAO_0000115>A capability that includes mental processes in its realisation.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">mental capability</rdfs:label>
     </owl:Class>
     
