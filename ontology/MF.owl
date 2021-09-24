@@ -271,6 +271,7 @@
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000032">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <obo:IAO_0000118>personal disposition</obo:IAO_0000118>
     </rdf:Description>
     
 
