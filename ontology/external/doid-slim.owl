@@ -2113,27 +2113,6 @@ OMIM mapping confirmed by DO. [SN].</rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DOID_10919 -->
-
-    <owl:Class rdf:about="&obo;DOID_10919">
-        <rdfs:label rdf:datatype="&xsd;string">transsexualism</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;DOID_1234"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A gender identity disorder that is characterized by an individual&apos;s identification with a gender inconsistent or not culturally associated with their biological sex.</obo:IAO_0000115>
-        <oboInOwl:id rdf:datatype="&xsd;string">DOID:10919</oboInOwl:id>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM:302.50</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_2010_1_31:191782007</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0040630</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">A gender identity disorder that is characterized by an individual&apos;s identification with a gender inconsistent or not culturally associated with their biological sex.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://en.wikipedia.org/wiki/Transsexualism</oboInOwl:hasDbXref>
-        <owl:annotatedSource rdf:resource="&obo;DOID_10919"/>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/DOID_10930 -->
 
     <owl:Class rdf:about="&obo;DOID_10930">
