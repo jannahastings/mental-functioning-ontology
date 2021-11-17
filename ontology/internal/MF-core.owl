@@ -428,8 +428,11 @@ b) intends the object or event that the mental process is about, should such exi
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000019">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
-        <obo:IAO_0000115>a mental process which is a) produced by a causal process (for example involving light rays or air vibrations) involving a part of the environment of the organism, and b) is experienced by the organism as being so caused, and c) in
-which the relevant part of the environment is thereby represented to the organism</obo:IAO_0000115>
+        <obo:IAO_0000115>A mental process which is 
+a) produced by a causal process involving a part of the environment of the organism, and 
+b) is experienced by the organism as being so caused, and 
+c) in which the relevant part of the environment is thereby represented to the organism.</obo:IAO_0000115>
+        <rdfs:comment>Examples for &apos;causal processes involving a part of the environment of an organism&apos; that can be perceived are light rays and air vibrations.</rdfs:comment>
         <rdfs:label>perception</rdfs:label>
     </owl:Class>
     
@@ -451,8 +454,11 @@ which the relevant part of the environment is thereby represented to the organis
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MF_0000017"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A mental process is a bodily process that is of a type such that it can of itself be conscious. Examples include thinking, feeling pain, remembering and emotion as occurrent experiences. </obo:IAO_0000115>
-        <rdfs:comment>A bodily process which brings into being, sustains or modifies a cognitive representation or a beahvior inducing state.</rdfs:comment>
+        <obo:IAO_0000115>A bodily process that occurs in the brain, and that can of itself be conscious, or can give rise to a process that can of itself be conscious or can give rise to behaviour.</obo:IAO_0000115>
+        <rdfs:comment>A &apos;mental process&apos; is a subclass of &apos;bodily process&apos;, as mental processes occur within the body, specifically involving the brain.</rdfs:comment>
+        <rdfs:comment>A bodily process which brings into being, sustains or modifies a cognitive representation or a behavior inducing state.</rdfs:comment>
+        <rdfs:comment>Examples include thinking, feeling pain, remembering and emotion as occurrent experiences.</rdfs:comment>
+        <rdfs:comment>Mental processes can varying in the degree to which they involve consciousness.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mental process</rdfs:label>
         <rdfs:seeAlso>GO:0050890, cognition, defined as  `The operation of the mind by which an organism becomes aware of objects of thought or perception; it includes the mental activities associated with thinking, learning, and memory.&apos; </rdfs:seeAlso>
     </owl:Class>
@@ -550,8 +556,9 @@ c) in which the relevant part of the environment is thereby represented to the s
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000027">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
-        <obo:IAO_0000115>A mental process that involves mentally manipulating representations of steps in an imagined process which has some objective, e.g. to bring about a desired state of affairs. The outcome of this mental process is a plan which has the potential to be followed to bring about the desired outcome.</obo:IAO_0000115>
+        <obo:IAO_0000115>A mental process that involves mentally manipulating representations of steps in an imagined process which has some goal.</obo:IAO_0000115>
         <obo:IAO_0000118>act of planning</obo:IAO_0000118>
+        <rdfs:comment>The outcome of this mental process is a plan which has the potential to be followed to bring about the desired outcome.</rdfs:comment>
         <rdfs:label>planning</rdfs:label>
     </owl:Class>
     
@@ -609,6 +616,8 @@ c) in which the relevant part of the environment is thereby represented to the s
             </owl:Restriction>
         </owl:equivalentClass>
         <obo:IAO_0000115>A bodily disposition is a disposition that inheres in some extended organism. Examples are: my disposition to catch a cold when exposed to a virus, my ability to speak the English language.</obo:IAO_0000115>
+        <rdfs:comment>Bodily disposition includes features that can be used in a specific context, such as a person&apos;s strength, but not a person&apos;s weight. A person has a specific weight independent of the circumstances they are in.</rdfs:comment>
+        <rdfs:comment>Extended organism refers to an organism and its microbiome (e.g., the bacteria that live in one&apos;s digestive system).</rdfs:comment>
         <rdfs:label xml:lang="en">bodily disposition</rdfs:label>
     </owl:Class>
     
@@ -625,6 +634,7 @@ c) in which the relevant part of the environment is thereby represented to the s
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A mental disposition is a bodily disposition that is realized in a mental process. </obo:IAO_0000115>
+        <rdfs:comment>&apos;Mental disposition&apos; is a subclass of &apos;bodily disposition&apos;, as mental dispositions occur in the body.</rdfs:comment>
         <rdfs:label xml:lang="en">mental disposition</rdfs:label>
     </owl:Class>
     
@@ -718,7 +728,7 @@ c) in which the relevant part of the environment is thereby represented to the s
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000041">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
-        <obo:IAO_0000115>A belief is a disposition to mental processes that represent some proposition X to be true.</obo:IAO_0000115>
+        <obo:IAO_0000115>A mental disposition to represent a proposition to be true.</obo:IAO_0000115>
         <rdfs:comment>Judging is a mental process that brings a belief into existence. Judging differently may also bring that belief out of existence.
 
 An act of believing is just thinking about a belief.
@@ -742,10 +752,11 @@ Beliefs typically cause us to behave in ways that are characteristic with the co
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000043">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000032"/>
-        <obo:IAO_0000115>A disposition inhering in an organism whose realization in the normal case brings benefits to an organism or group of organisms, where &quot;in the normal case&quot; means not only in the normal range on the scale, but also in a context which is normal for the group to which the bearer or user belongs.</obo:IAO_0000115>
+        <obo:IAO_0000115>A bodily disposition whose realization ordinarily brings benefits to an organism or group of organisms, where &quot;ordinarily&quot; means within a typical range or context.</obo:IAO_0000115>
         <obo:IAO_0000118>personal capability</obo:IAO_0000118>
         <obo:IAO_0000119>https://github.com/NCOR-US/Capabilities/wiki/The-Account-of-Capabilities</obo:IAO_0000119>
         <rdfs:comment>Note that, as discussed in https://philpapers.org/archive/MERMC.pdf, both organisms and artifacts can bear capabilities. However, this capability class is just applicable to organismal capabilities (as a subclass of &apos;bodily disposition&apos;) and the definition has been amended from that of the definition source accordingly.</rdfs:comment>
+        <rdfs:comment>The phrase &apos;ordinarily brings benefits to an organism or group of organism&apos; is used to explain that capabilities normally provide a benefit. For exampoe, having a musical ability is usually an ability that is positive for a person (e.g., they enjoy playing music, they receive positive feedback about their ability). However, in certain exceptional cases (e.g., a neighbour becoming annoyed with a person playing the piano and expressing this annoyance), the ability might not bring benefits.</rdfs:comment>
         <rdfs:label xml:lang="en">capability</rdfs:label>
     </owl:Class>
     
@@ -796,7 +807,7 @@ Beliefs typically cause us to behave in ways that are characteristic with the co
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000048">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000043"/>
-        <obo:IAO_0000115>A capability that includes mental processes in its realisation.</obo:IAO_0000115>
+        <obo:IAO_0000115>A personal capability that includes mental processes in its realisation.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">mental capability</rdfs:label>
     </owl:Class>
     
@@ -1212,7 +1223,7 @@ c) which is experienced by the subject as being so caused</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000083">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000015"/>
-        <obo:IAO_0000115>A mental process that evokes the visual representation of objects or events when these are not immendiately present to the senses.</obo:IAO_0000115>
+        <obo:IAO_0000115>A mental process that evokes the representation of the sensory characteristics of objects or events when these are not immediately present to the senses.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">mental imagery</rdfs:label>
     </owl:Class>
     
@@ -1269,7 +1280,7 @@ recognition of the meaning of the utterance through their knowledge of the langu
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000088">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
-        <obo:IAO_0000115>A bodily process that involves neuronal activity in response to a sensory stimuli but which is not the subject of consciousness.</obo:IAO_0000115>
+        <obo:IAO_0000115>A mental process that involves neuronal activity in response to a sensory stimuli but which is not the subject of consciousness.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">subliminal process</rdfs:label>
     </owl:Class>
     
