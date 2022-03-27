@@ -368,7 +368,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000016">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000087"/>
-        <obo:IAO_0000115>A member of the species Homo Sapiens.</obo:IAO_0000115>
+        <obo:IAO_0000115>An extended organism that is a member of the species Homo sapiens.</obo:IAO_0000115>
         <obo:IAO_0000118>person</obo:IAO_0000118>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">human being</rdfs:label>
     </owl:Class>
@@ -1388,8 +1388,8 @@ recognition of the meaning of the utterance through their knowledge of the langu
      -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000110">
-        <ace_lexicon:TV_sg>BFO_0000110s</ace_lexicon:TV_sg>
         <ace_lexicon:TV_vbg>BFO_0000110ed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>BFO_0000110s</ace_lexicon:TV_sg>
         <ace_lexicon:TV_pl>BFO_0000110</ace_lexicon:TV_pl>
     </rdf:Description>
 </rdf:RDF>
