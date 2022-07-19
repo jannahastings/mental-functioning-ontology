@@ -1,0 +1,350 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/MF.owl#"
+     xml:base="http://purl.obolibrary.org/obo/MF.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:go="http://purl.obolibrary.org/obo/go#"
+     xmlns:iao="http://purl.obolibrary.org/obo/iao/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/MF-edits.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/MF/2022-11-17/MF-edits.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MF/external/GO_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MF/external/behavior-slim.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/MF/internal/MF-core.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/omo/2020-06-08/omo.owl"/>
+        <dc:contributor>Alison Wright</dc:contributor>
+        <dc:contributor>Barry Smith</dc:contributor>
+        <dc:contributor>Janna Hastings</dc:contributor>
+        <dc:contributor>Jeanette Alicia Chacón Candia</dc:contributor>
+        <dc:contributor>Mark Jensen</dc:contributor>
+        <dc:contributor>Neil Otte</dc:contributor>
+        <dc:contributor>Paulina Schenk</dc:contributor>
+        <dc:license>https://creativecommons.org/licenses/by/3.0/</dc:license>
+        <dc:title>Mental Functioning Ontology</dc:title>
+        <rdfs:comment>The Mental Functioning Ontology (MF) was first described in the publication available at http://www.jbiomedsem.com/content/1/1/10 entitled &apos;Foundations for a realist ontology of mental disease&apos; (Barry Smith and Werner Ceusters). </rdfs:comment>
+        <rdfs:comment>The Mental Functioning Ontology is an overarching ontology for all aspects of mental functioning, founded on the Basic Formal Ontology (BFO) and related to the Ontology for General Medical Science (OGMS).</rdfs:comment>
+        <rdfs:comment>The OWL representaions of MF and MD were split on 22 May 2012.</rdfs:comment>
+        <rdfs:comment>This OWL version of the MF ontology was originally created by Janna Hastings and is maintained by all committers to the MF ontology project. </rdfs:comment>
+        <owl:versionInfo>2022-07-19</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF#isAbout -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/MF#isAbout"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000002"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000144 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000144"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0007600 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0007600">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0007610 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0007610">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000060"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0007612 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0007612">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000020"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000024"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000112"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MF_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>An anatomical structure in which there inheres the disposition to be the agent of a mental process.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mental functioning related anatomical structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000107"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MF_0000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disposition to be agent of mental process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000003"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000012"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000017 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000144"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000020"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0051705"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0051705"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000031"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000032 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000032">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <obo:IAO_0000118>personal disposition</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000071 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000071">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007610"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MF_0000074 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000074">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115>A process in which at least one bodily component of an organsim participates.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/1/1/10</obo:IAO_0000119>
+        <rdfs:comment>From OGMS: http://purl.obolibrary.org/obo/OGMS_0000060</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bodily process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000087 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000087">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:comment>From OGMS: http://purl.obolibrary.org/obo/OGMS_0000087</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">extended organism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000007">
+        <obo:IAO_0000115>A judging process during which an opinion about the gender of a person is determined.</obo:IAO_0000115>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000022">
+        <oboInOwl:hasAlternativeId>http://www.github.com/no/ontologies/2017/PAO/Agreeableness</oboInOwl:hasAlternativeId>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000028">
+        <oboInOwl:hasAlternativeId>http://www.github.com/no/ontologies/2017/PAO/Conscientiousness</oboInOwl:hasAlternativeId>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000063">
+        <oboInOwl:hasAlternativeId>http://www.github.com/no/ontologies/2017/PAO/Extraversion</oboInOwl:hasAlternativeId>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000064">
+        <oboInOwl:hasAlternativeId>http://www.github.com/no/ontologies/2017/PAO/Neuroticism</oboInOwl:hasAlternativeId>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MF_0000065">
+        <oboInOwl:hasAlternativeId>http://www.github.com/no/ontologies/2017/PAO/OpennessToExperience</oboInOwl:hasAlternativeId>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
