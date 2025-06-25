@@ -14,12 +14,13 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/MF.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/MF/2022-07-19/MF.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/MF/2025-06-25/MF.owl"/>
         <dc:contributor>Alison Wright</dc:contributor>
         <dc:contributor>Barry Smith</dc:contributor>
         <dc:contributor>Janna Hastings</dc:contributor>
         <dc:contributor>Jeanette Alicia Chacón Candia</dc:contributor>
         <dc:contributor>Mark Jensen</dc:contributor>
+        <dc:contributor>Maya Braun</dc:contributor>
         <dc:contributor>Neil Otte</dc:contributor>
         <dc:contributor>Paulina Schenk</dc:contributor>
         <dc:license>https://creativecommons.org/licenses/by/3.0/</dc:license>
@@ -29,7 +30,7 @@
         <rdfs:comment>The OWL representaions of MF and MD were split on 22 May 2012.</rdfs:comment>
         <rdfs:comment>The release version of the MF is now a single, merged file prepared from the source module files using the ROBOT library&apos;s merge function.</rdfs:comment>
         <rdfs:comment>This OWL version of the MF ontology was originally created by Janna Hastings and is maintained by all committers to the MF ontology project. </rdfs:comment>
-        <owl:versionInfo>2022-07-19</owl:versionInfo>
+        <owl:versionInfo>2025-06-25</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -6095,7 +6096,7 @@ Beliefs typically cause us to behave in ways that are characteristic with the co
         <obo:IAO_0000119>https://github.com/NCOR-US/Capabilities/wiki/The-Account-of-Capabilities</obo:IAO_0000119>
         <rdfs:comment>Note that, as discussed in https://philpapers.org/archive/MERMC.pdf, both organisms and artifacts can bear capabilities. However, this capability class is just applicable to organismal capabilities (as a subclass of &apos;bodily disposition&apos;) and the definition has been amended from that of the definition source accordingly.</rdfs:comment>
         <rdfs:comment>The phrase &apos;ordinarily brings benefits to an organism or group of organism&apos; is used to explain that capabilities normally provide a benefit. For exampoe, having a musical ability is usually an ability that is positive for a person (e.g., they enjoy playing music, they receive positive feedback about their ability). However, in certain exceptional cases (e.g., a neighbour becoming annoyed with a person playing the piano and expressing this annoyance), the ability might not bring benefits.</rdfs:comment>
-        <rdfs:label xml:lang="en">capability</rdfs:label>
+        <rdfs:label xml:lang="en">personal capability</rdfs:label>
     </owl:Class>
     
 
@@ -6104,7 +6105,7 @@ Beliefs typically cause us to behave in ways that are characteristic with the co
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000044">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000043"/>
-        <obo:IAO_0000115>A capability that is realised in an activity of producing or interpreting music.</obo:IAO_0000115>
+        <obo:IAO_0000115>A personal capability that is realised in an activity of producing or interpreting music.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">musical capability</rdfs:label>
     </owl:Class>
     
