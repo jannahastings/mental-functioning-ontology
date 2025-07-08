@@ -14,7 +14,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/MF.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/MF/2025-06-25/MF.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/MF/2025-07-08/MF.owl"/>
         <dc:contributor>Alison Wright</dc:contributor>
         <dc:contributor>Barry Smith</dc:contributor>
         <dc:contributor>Janna Hastings</dc:contributor>
@@ -30,7 +30,7 @@
         <rdfs:comment>The OWL representaions of MF and MD were split on 22 May 2012.</rdfs:comment>
         <rdfs:comment>The release version of the MF is now a single, merged file prepared from the source module files using the ROBOT library&apos;s merge function.</rdfs:comment>
         <rdfs:comment>This OWL version of the MF ontology was originally created by Janna Hastings and is maintained by all committers to the MF ontology project. </rdfs:comment>
-        <owl:versionInfo>2025-06-25</owl:versionInfo>
+        <owl:versionInfo>2025-07-08</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -6426,7 +6426,9 @@ c) which is experienced by the subject as being so caused</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MF_0000070">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000033"/>
-        <obo:IAO_0000115>A memory is a mental disposition that is realized in a process of remembering, i.e. a memory of X is a disposition realized in the process of remembering X.</obo:IAO_0000115>
+        <obo:IAO_0000112>a memory of the smell of freshly cut grass</obo:IAO_0000112>
+        <obo:IAO_0000112>a memory of what I had for breakfast in the morning</obo:IAO_0000112>
+        <obo:IAO_0000115>A memory is a mental disposition that is realized in a process of remembering,  i.e. a memory of X is a disposition realized in the process of remembering X, which creates and sustains a cognitive representation of X for the duration of remembering.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">a memory</rdfs:label>
     </owl:Class>
     
